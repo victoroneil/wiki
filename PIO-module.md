@@ -5,18 +5,7 @@ Output) pins. Access can be at port level (all port i/o pins at the same time)
 or at pin level (only one port i/o pin). Port access are made using pio.port 
 functions and pin access are made using pio.pin functions.
 
-I/O ports are codded in a byte, where the 4 most significant bits are port and
-the 4 least significant bits are 0. Port A are coded as 1, B are coded as 2, 
-and so on. Ports can be refer by name using pio constants. For example, if you 
-need to refer to port PB you can use pio.PB. If you refer to an inexistent port,
- a nil value is returned.
-
-I/O pins are codded in a byte, where the 4 most significant bits are port and 
-the 4 least significant bits are pin number. Port A are coded as 1, B are coded 
-as 2, and so on. Pin 0 are coded as 0, pin 1 are coded as 1, and so on. For 
-example PB4 are coded as 0x24 and PG1 are coded as 0x61. Pins can be refer by
-name using pio constants. For example, if you need to refer to pin PB4 you can 
-use pio.PB_4. If you refer to an inexistent pin, a nil value is returned.
+I/O ports are encoded into a byte and are platform-dependent. For this reason PIO module define a numeric constant for each I/O port available. For example in ESP32 platform I/O GPIO15 pin is defined by the constant pio.GPIO15, and in PIC32MZ platform I/O RB4 is defined by the constant pio.RB4. Please refer to your platform or board documentation to know which I/O pins are available. If you refer to an inexistent I/O, a nil value is returned.
 
 Some pins on the whitecat are overlapped with other functions (such as ADC pins)
 . You don't need to worry about this, so pio functions take this on 
