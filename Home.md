@@ -4,6 +4,7 @@ Basics:
 
 Hardware access modules:
 * [PIO](https://github.com/whitecatboard/Lua-RTOS/wiki/PIO-Module)
+* [SCREEN](https://github.com/whitecatboard/Lua-RTOS/wiki/SCREEN-Module)
 
 Utility modules:
 * [PACK] (https://github.com/whitecatboard/Lua-RTOS/wiki/Pack-module)
