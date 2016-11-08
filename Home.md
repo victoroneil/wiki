@@ -4,3 +4,6 @@ Basics:
 
 Hardware access modules:
 * [PIO](https://github.com/whitecatboard/Lua-RTOS/wiki/PIO-Module)
+
+Utility modules:
+* [PACK] (https://github.com/whitecatboard/Lua-RTOS/wiki/Pack-module)
