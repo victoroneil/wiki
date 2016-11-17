@@ -20,7 +20,7 @@ further operations with it.
 ```lua
 -- Function to execute
 f1 = function()
-    local led_pin = pio.PB_4
+    local led_pin = pio.GPIO4
     pio.pin.setdir(pio.OUTPUT, led_pin)
 
     while true do
@@ -53,7 +53,7 @@ Returns: nothing.
 ```lua
 -- Function to execute
 f1 = function()
-    local led_pin = pio.PB_4
+    local led_pin = pio.GPIO4
     pio.pin.setdir(pio.OUTPUT, led_pin)
 
     while true do
@@ -90,7 +90,7 @@ Returns: nothing.
 ```lua
 -- Function to execute
 f1 = function()
-    local led_pin = pio.PB_4
+    local led_pin = pio.GPIO4
     pio.pin.setdir(pio.OUTPUT, led_pin)
 
     while true do
@@ -132,7 +132,7 @@ Returns: nothing.
 ```lua
 -- Function to execute
 f1 = function()
-    local led_pin = pio.PB_4
+    local led_pin = pio.GPIO4
     pio.pin.setdir(pio.OUTPUT, led_pin)
 
     while true do
@@ -167,7 +167,7 @@ Returns: thread status (running, suspended or nil).
 ```lua
 -- Function to execute
 f1 = function()
-    local led_pin = pio.PB_4
+    local led_pin = pio.GPIO4
     pio.pin.setdir(pio.OUTPUT, led_pin)
 
     while true do
