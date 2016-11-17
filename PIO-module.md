@@ -5,7 +5,7 @@ Output) pins. Access can be at port level (all port i/o pins at the same time)
 or at pin level (only one port i/o pin). Port access are made using pio.port 
 functions and pin access are made using pio.pin functions.
 
-I/O ports are encoded into a byte and are platform-dependent. For this reason PIO module define a numeric constant for each I/O port available. For example in ESP32 platform I/O GPIO15 pin is defined by the constant pio.GPIO15, and in PIC32MZ platform I/O RB4 is defined by the constant pio.RB4. Please refer to your platform or board documentation to know which I/O pins are available. If you refer to an inexistent I/O, a nil value is returned.
+I/O ports are encoded into a byte and are platform-dependent. For this reason PIO module define a numeric constant for each I/O port available. For example in ESP32 platform I/O GPIO15 pin is defined by the constant pio.GPIO15. Please refer to your platform or board documentation to know which I/O pins are available. If you refer to an inexistent I/O, a nil value is returned.
 
 Usually, when working with micro-controllers one I/O pin can be overlapped with other functions (such as ADC, SPI, UART, etc ...). In Lua RTOS you don't need to worry about this, so PIO functions take this on 
 consideration, and do the necessary actions to configure the pin as input / output.
