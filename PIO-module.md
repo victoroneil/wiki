@@ -206,7 +206,7 @@ Returns: nothing
 ## Example: configure for output and set high
 
 ```lua
-led_pin = pio.PB_4
+led_pin = pio.GPIO4
 pio.pin.setdir(pio.OUTPUT, led_pin)
 pio.pin.sethigh(led_pin)
 ```
