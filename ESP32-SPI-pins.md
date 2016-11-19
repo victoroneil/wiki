@@ -1,4 +1,4 @@
-ESP32 has 3 available SPI ports, but one of them are usually used for SPI flash. Default pin map are:
+ESP32 has 3 available SPI ports, but one of them are usually used by SPI flash. Default pin map are:
 
 |SPI port| SDI   | SDO   | SCK   | CS   |
 |--------|-------|-------|-------|------|
