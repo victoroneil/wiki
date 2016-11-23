@@ -11,6 +11,9 @@ Lua RTOS access modules:
 * [Thread](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Thread-Module)
 * [NVS (non volatile storage)](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/NVS-Module)
 
+Middleware modules
+
+* [LoRa WAN](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/LORAWAN-Module)
 
 Hardware access modules:
 * [PIO](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/PIO-Module)
