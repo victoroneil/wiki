@@ -1,0 +1,1 @@
+This module contains functions for store key-value pairs in flash without the need to have a file system. Although Lua RTOS has support for SPIFFS and FAT file systems the use of the NVS module can be useful for store small pieces of information, such as configuration parameters, without the overhead of a file system.
