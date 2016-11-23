@@ -1,0 +1,1 @@
+This module contains functions for send and receive information through [LoRa WAN] (https://www.lora-alliance.org/What-Is-LoRa/Technology). 
