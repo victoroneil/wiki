@@ -69,7 +69,7 @@ lora.setAppKey("8CXXXX5A80XXXX0FXX18XXBCXX41XXXX")
 Sets the DevEUI. The DevEUI is a global end-device ID in IEEE EUI64 address space that uniquely identifies
 the end-device.
 
-ATTENTION!!: it's your it's your responsibility to assign an IEEE EUI64 that you own.
+ATTENTION!! it's your responsibility to assign an IEEE EUI64 that you own.
 
 Arguments:
 
