@@ -4,6 +4,4 @@ Lua RTOS support for LoRa WAN is build over [LMIC] (https://www.research.ibm.com
 
 Please, take note that build a LoRa WAN network involves a lot of things, such as the node, the gateway, the network coordinator, etc ... In this page we only talk about the node and how it is programmed, you can know more about our work on LoRa WAN in [whitecatboard.org] (http://whitecatboard.org).
 
-# What do you need?
-
 For use this module you need a SPI LoRa WAN transceiver, such as [RFM95] (http://www.hoperf.com/rf_transceiver/lora/RFM95W.html). Currently we are working on a board that will integrate this chip and ESP32.
