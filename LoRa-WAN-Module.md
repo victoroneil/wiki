@@ -90,3 +90,62 @@ lora.setAppKey("8CXXXX5A80XXXX0FXX18XXBCXX41XXXX")
 -- Sets the DevEUI
 lora.setDevEui("XXB3XX7E000XX000")
 ```
+
+
+## lora.setDr(data_rate)
+
+Sets the maximum data rate to use in the next transmission. This value is ignored if the adaptive data rate is enabled.
+
+Arguments:
+
+* data_rate (integer): the data rate, a number between 0 (lowest data rate) and 7 (highest data rate).
+
+Returns: nothing, or an exception.
+
+```lua
+-- Setup LoRa WAN stack using ISM band 868 Mhz (Europe)
+lora.setup(lora.BAND868)
+
+-- Sets the AppEUI
+lora.setAppEui("70XXX57ED0000XX0")
+
+-- Sets the AppKEY
+lora.setAppKey("8CXXXX5A80XXXX0FXX18XXBCXX41XXXX")
+
+-- Sets the DevEUI
+lora.setDevEui("XXB3XX7E000XX000")
+
+-- Sets the data rate
+lora.setDr(5)
+```
+
+
+## lora.setAdr(enable)
+
+Enables or disables the adaptive data rate function.
+
+Arguments:
+
+* enable (boolean): if true adaptive data rate is enabled.
+
+Returns: nothing, or an exception.
+
+```lua
+-- Setup LoRa WAN stack using ISM band 868 Mhz (Europe)
+lora.setup(lora.BAND868)
+
+-- Sets the AppEUI
+lora.setAppEui("70XXX57ED0000XX0")
+
+-- Sets the AppKEY
+lora.setAppKey("8CXXXX5A80XXXX0FXX18XXBCXX41XXXX")
+
+-- Sets the DevEUI
+lora.setDevEui("XXB3XX7E000XX000")
+
+-- Sets the data rate
+lora.setDr(5)
+
+-- Disable the ADR function
+lora.setAdr(false)
+```
