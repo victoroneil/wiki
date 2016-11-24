@@ -26,7 +26,7 @@ lora.setup(lora.BAND868)
 ## lora.setAppEui(appEui)
 
 Sets the AppEUI. The AppEUI is a global application ID in IEEE EUI64 address space that uniquely identifies
-the application provider of the end-device. It must be set before the joining procedure.
+the application provider of the end-device. It must be set before the activation procedure.
 
 Arguments:
 
