@@ -13,7 +13,7 @@ Lua RTOS access modules:
 
 Middleware modules
 
-* [LoRa WAN](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/LORAWAN-Module)
+* [LoRa WAN](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/LoRa-WAN-Module)
 
 Hardware access modules:
 * [PIO](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/PIO-Module)
