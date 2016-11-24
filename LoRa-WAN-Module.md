@@ -41,3 +41,50 @@ lora.setup(lora.BAND868)
 -- Sets the AppEUI
 lora.setAppEui("70XXX57ED0000XX0")
 ```
+
+## lora.setAppKey(appKey)
+
+Sets the AppKey. The AppKey is an AES-128 application key specific for the end-device that is assigned by
+the application owner to the end-device. It must be set before the activation procedure.
+
+Arguments:
+
+* appKey (16 bytes coded in an hex-string): the AppKey.
+
+Returns: nothing, or an exception.
+
+```lua
+-- Setup LoRa WAN stack using ISM band 868 Mhz (Europe)
+lora.setup(lora.BAND868)
+
+-- Sets the AppEUI
+lora.setAppEui("70XXX57ED0000XX0")
+
+-- Sets the AppKEY
+lora.setAppKey("8CXXXX5A80XXXX0FXX18XXBCXX41XXXX")
+```
+
+## lora.setDevEui(devEui)
+
+Sets the DevEUI. The DevEUI is a global end-device ID in IEEE EUI64 address space that uniquely identifies
+the end-device.
+
+Arguments:
+
+* devEui (8 bytes coded in an hex-string): the AppKey.
+
+Returns: nothing, or an exception.
+
+```lua
+-- Setup LoRa WAN stack using ISM band 868 Mhz (Europe)
+lora.setup(lora.BAND868)
+
+-- Sets the AppEUI
+lora.setAppEui("70XXX57ED0000XX0")
+
+-- Sets the AppKEY
+lora.setAppKey("8CXXXX5A80XXXX0FXX18XXBCXX41XXXX")
+
+-- Sets the DevEUI
+lora.setDevEui("XXB3XX7E000XX000")
+```
