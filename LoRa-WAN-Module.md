@@ -8,6 +8,20 @@ For use this module you need a SPI LoRa WAN transceiver, such as [RFM95] (http:/
 
 It's highly recommended to read the [LoRa WAN specification] (https://www.lora-alliance.org/portals/0/specs/LoRaWAN%20Specification%201R0.pdf).
 
+To participate in a LoRaWAN network, each end-device has to be personalized and activated. This can be achieved in two ways, either via Over-The-Air Activation (OTAA) or via Activation By Personalization (ABP). After activation, the following information is stored in the end-device: a device address (DevAddr), an application identifier (AppEUI), a network session key (NwkSKey), and an application session key (AppSKey):
+
+* OTAA: end-devices must follow a join procedure (calling the lora.join function) prior to participating in data exchanges with the network server. The following data must be provided:
+
+   * DevEUI: use lora.setDevEui for this
+   * AppEUI: use lora.setAppEui for this
+   * AppKet: use lora.setAppKey for this
+
+* ABP: end-devices don't need to follow a join procedure to participate in data exchanges with the network server. The following data must be provided:
+
+   * DevAddr: use lora.setDevAddr for this
+   * NwkSKey: use lora.setNwkSKey for this
+   * AppSKey: use lora.setAppSKey for this
+
 ## lora.setup(band)
 
 Setup the LoRa WAN stack.
