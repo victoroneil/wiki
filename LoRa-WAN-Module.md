@@ -14,7 +14,7 @@ To participate in a LoRaWAN network, each end-device has to be personalized and 
 
    * DevEUI: use lora.setDevEui for this
    * AppEUI: use lora.setAppEui for this
-   * AppKet: use lora.setAppKey for this
+   * AppKey: use lora.setAppKey for this
 
 * ABP: end-devices don't need to follow a join procedure to participate in data exchanges with the network server. The following data must be provided:
 
@@ -40,7 +40,7 @@ lora.setup(lora.BAND868)
 ## lora.setAppEui(appEui)
 
 Sets the AppEUI. The AppEUI is a global application ID in IEEE EUI64 address space that uniquely identifies
-the application provider of the end-device. It must be set before the activation procedure.
+the application provider of the end-device. It must be set before the activation procedure via OTAA.
 
 Arguments:
 
@@ -59,7 +59,7 @@ lora.setAppEui("70XXX57ED0000XX0")
 ## lora.setAppKey(appKey)
 
 Sets the AppKey. The AppKey is an AES-128 application key specific for the end-device that is assigned by
-the application owner to the end-device. It must be set before the activation procedure.
+the application owner to the end-device. It must be set before the activation procedure via OTAA.
 
 Arguments:
 
@@ -81,7 +81,7 @@ lora.setAppKey("8CXXXX5A80XXXX0FXX18XXBCXX41XXXX")
 ## lora.setDevEui(devEui)
 
 Sets the DevEUI. The DevEUI is a global end-device ID in IEEE EUI64 address space that uniquely identifies
-the end-device.
+the end-device. It must be set before the activation procedure via OTAA.
 
 ATTENTION!! it's your responsibility to assign an IEEE EUI64 that you own.
 
