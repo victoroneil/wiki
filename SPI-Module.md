@@ -174,7 +174,7 @@ instance = spi.setup(spi.SPI2, spi.MASTER, 0, 1000, 1, 1, 8)
 instance:select()
 
 -- Write and read
-print(instance:write("Hello, whitecat!"))
+print(instance:write("Hello, Lua RTOS!"))
 
 -- Deselect
 instance:deselect()
