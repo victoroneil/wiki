@@ -20,7 +20,34 @@ SPI use 4 signals:
 * MISO / SDI: Master Input, Slave Output (output from slave).
 * SS   / CS : Slave Select (active low, output from master).
 
-Multiple slave devices can share the same SPI bus (SCK, SDO and SDI lines), and each of them are selected through individual CS lines per device, when the master needs to communicate with one device.
+Multiple slave devices can share the same SPI bus (SCK, SDO and SDI lines), and each of them are selected through individual CS lines per device, when the master needs to communicate with one device; in addition each device can work at different speeds, clock polarity, etc ...
+
+To use this module you must take into consideration the following:
+
+1. Create an SPI instance per device, using the spi.setup function, and store the instance into a variable.
+
+  ```lua
+   instance = spi.setup(.....)
+   ```
+
+2. Use the variable instance for select the device. This selects the device trough the CS pin connected to the device and configures the bus (speed, polarity, etc ...):
+
+   ```lua
+   instance:select()
+   ```
+
+3. Use the variable instance for read from / write to the device:
+
+   ```lua
+   instance:write(...)
+   ```
+
+4. Use the variable instance for deselect the device. This deselects the device trough the CS pin connected to the device and disconnects the device from the bus:
+
+   ```lua
+   instance:deselect()
+   ```
+
 
 # Functions
 
