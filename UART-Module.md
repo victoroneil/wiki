@@ -7,7 +7,21 @@ UART units are encoded into a byte and are platform-dependent. For this reason t
 UART functions are not thread-safe, except for uart.write to the console (uart.CONSOLE), and should be only used from one thread.
 
 
-# Functions
+# Utility functions
+
+## uart.pins()
+
+Show available UART units, an it's pins, provided but your platform.
+   
+```lua
+/ > uart.pins()
+uart0: rx=040	(pin 40)	tx=041	(pin 41)
+uart1: rx=028	(pin 28)	tx=029	(pin 29)
+/ >
+```
+
+
+# Setup functions
 
 ## uart = uart.setup(id, baud rate, data bits, parity, stop bits, [buffer size])
 
@@ -29,6 +43,9 @@ Returns: the real baud rate set on the UART unit, or an exception. This might ha
 -- Setup UART3, 115200 bps, 8N1
 uart.setup(uart.UART3, 115200, 8, uart.PARNONE, uart.STOP1)
 ```
+
+
+# Operation functions
 
 ## uart.write(id, data)
 
