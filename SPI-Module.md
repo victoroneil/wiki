@@ -65,7 +65,7 @@ spi3: sdi=019	(pin 19)	sdo=023	(pin 23)	sck=018	(pin 18)
 
 # Setup functions
 
-## spi = spi.setup(id, mode, cs, speed, polarity, phase, data bits)
+## spi = spi.setup(id, mode, cs, speed, mode number, data bits)
 
 Setup the SPI module.
 
@@ -75,8 +75,14 @@ Arguments:
 * mode: SPI mode, can be either spi.MASTER or spi.SLAVE.
 * cs: chip select pin, for example gpio.GPIO5. If cs is 0 the default cs pin for this SPI unit is used.
 * speed: speed of the spi module, expressed in kilohertz.
-* polarity: clock polarity (0 or 1)
-* phase: clock phase (0 or 1)
+* mode number: an integer between 0 and 3, according the following table:
+
+  |mode number|polarity|phase|
+  ----------------------------
+  |     0     |   0    |  0  |
+  ----------------------------
+  |     1     |   0    |  1  |
+
 * data bits: can be either, 8, 16 or 32 bits.
 
 Returns: an spi instance, or an exception. You must store this instance into a variable for further operations with it.
