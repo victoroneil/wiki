@@ -48,8 +48,22 @@ To use this module you must take into consideration the following:
    instance:deselect()
    ```
 
+# Utility functions
 
-# Functions
+## spi.pins()
+
+Show available SPI units, an it's pins, provided but your platform.
+   
+```lua
+/ > spi.pins()
+spi1: sdi=07	(pin  7)	sdo=08	(pin  8)	sck=06	(pin  6)
+spi2: sdi=012	(pin 12)	sdo=013	(pin 13)	sck=014	(pin 14)
+spi3: sdi=019	(pin 19)	sdo=023	(pin 23)	sck=018	(pin 18)
+/ >
+```
+
+
+# Setup functions
 
 ## spi = spi.setup(id, mode, cs, speed, polarity, phase, data bits)
 
@@ -72,6 +86,7 @@ Returns: an spi instance, or an exception. You must store this instance into a v
 instance = spi.setup(spi.SPI2, spi.MASTER, 0, 1000, 1, 1, 8)
 ```
 
+# Operation functions
 
 ## instance:select()
 
