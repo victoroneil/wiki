@@ -78,18 +78,19 @@ Arguments:
 * mode number: an integer between 0 and 3, according the following table:
 
   |mode number|polarity|phase|
-  ----------------------------
+  |-----------|--------|-----|
   |     0     |   0    |  0  |
-  ----------------------------
   |     1     |   0    |  1  |
+  |     2     |   1    |  0  |
+  |     3     |   1    |  1  |
 
 * data bits: can be either, 8, 16 or 32 bits.
 
 Returns: an spi instance, or an exception. You must store this instance into a variable for further operations with it.
 
 ```lua
--- Setup SPI2 as master, 1 Mhz speed, 8 bits
-instance = spi.setup(spi.SPI2, spi.MASTER, 0, 1000, 1, 1, 8)
+-- Setup SPI2 as master, 1 Mhz speed, 8 bits, using GPIO5 as CS, number mode 0
+instance = spi.setup(spi.SPI2, spi.MASTER, pio.GPIO5, 1000, 0, 8)
 ```
 
 # Operation functions
@@ -103,8 +104,8 @@ Returns: nothing
 
 
 ```lua
--- Setup SPI2 as master, 1 Mhz speed, 8 bits
-instance = spi.setup(spi.SPI2, spi.MASTER, 0, 1000, 1, 1, 8)
+-- Setup SPI2 as master, 1 Mhz speed, 8 bits, using GPIO5 as CS, number mode 0
+instance = spi.setup(spi.SPI2, spi.MASTER, pio.GPIO5, 1000, 0, 8)
 
 -- Select
 instance:select()
@@ -124,8 +125,8 @@ Returns: nothing
 
 
 ```lua
--- Setup SPI2 as master, 1 Mhz speed, 8 bits
-instance = spi.setup(spi.SPI2, spi.MASTER, 0, 1000, 1, 1, 8)
+-- Setup SPI2 as master, 1 Mhz speed, 8 bits, using GPIO5 as CS, number mode 0
+instance = spi.setup(spi.SPI2, spi.MASTER, pio.GPIO5, 1000, 0, 8)
 
 -- Select
 instance:select()
@@ -149,8 +150,8 @@ Arguments:
 Returns: nothing, or an exception.
 
 ```lua
--- Setup SPI2 as master, 1 Mhz speed, 8 bits
-instance = spi.setup(spi.SPI2, spi.MASTER, 0, 1000, 1, 1, 8)
+-- Setup SPI2 as master, 1 Mhz speed, 8 bits, using GPIO5 as CS, number mode 0
+instance = spi.setup(spi.SPI2, spi.MASTER, pio.GPIO5, 1000, 0, 8)
 
 -- Select
 instance:select()
@@ -173,8 +174,8 @@ Arguments:
 Returns: readed data, or an exception.
 
 ```lua
--- Setup SPI2 as master, 1 Mhz speed, 8 bits
-instance = spi.setup(spi.SPI2, spi.MASTER, 0, 1000, 1, 1, 8)
+-- Setup SPI2 as master, 1 Mhz speed, 8 bits, using GPIO5 as CS, number mode 0
+instance = spi.setup(spi.SPI2, spi.MASTER, pio.GPIO5, 1000, 0, 8)
 
 -- Select
 instance:select()
