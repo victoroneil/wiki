@@ -7,6 +7,21 @@ SPI units are encoded into a byte and are platform-dependent. For this reason th
 SPI module can work in master or slave mode, each of then identified by spi.MASTER and spi.SLAVE constants.
 
 
+# Key concepts
+
+The Serial Peripheral Interface (SPI) bus is a synchronous serial communication interface specification used for short distance communication, primarily in embedded systems. The interface was developed by Motorola in the late eighties and has become a de facto standard.
+
+SPI devices communicate in full duplex mode using a master-slave architecture with a single master. The master device originates the frame for reading and writing. 
+
+SPI use 4 signals:
+
+* SCLK / SCK: Serial Clock (output from master).
+* MOSI / SDO: Master Output, Slave Input (output from master).
+* MISO / SDI: Master Input, Slave Output (output from slave).
+* SS   / CS : Slave Select (active low, output from master).
+
+Multiple slave devices can share the same SPI bus (SCK, SDO and SDI lines), and each of them are selected through individual CS lines per device, when the master needs to communicate with one device.
+
 # Functions
 
 ## spi = spi.setup(id, mode, cs, speed, polarity, phase, data bits)
