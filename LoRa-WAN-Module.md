@@ -1,12 +1,18 @@
+# About this
+
 This module contains functions for send and receive information through [LoRa WAN] (https://www.lora-alliance.org/What-Is-LoRa/Technology).
 
 Lua RTOS support for LoRa WAN is build over [LMIC] (https://www.research.ibm.com/labs/zurich/ics/lrsc/lmic.html) stack from IBM. Currently only LoRa WAN class A end-devices are supported in Lua RTOS (support for LoRa WAN class B end-devices are scheluded to 2017 Q2).
 
 Please, take note that build a LoRa WAN network involves a lot of things, such as the end-device, the gateway, the network coordinator, etc ... In this page we only talk about the end-device and how is programmed, you can know more about our work on LoRa WAN in [whitecatboard.org] (http://whitecatboard.org).
 
+# What do you need?
+
 For use this module you need a SPI LoRa WAN transceiver, such as [RFM95] (http://www.hoperf.com/rf_transceiver/lora/RFM95W.html). Currently we are working on a board that will integrate this chip and ESP32.
 
 It's highly recommended to read the [LoRa WAN specification] (https://www.lora-alliance.org/portals/0/specs/LoRaWAN%20Specification%201R0.pdf).
+
+# Key concepts
 
 To participate in a LoRaWAN network, each end-device has to be personalized and activated. This can be achieved in two ways, either via Over-The-Air Activation (OTAA) or via Activation By Personalization (ABP). After activation, the following information is stored in the end-device: a device address (DevAddr), an application identifier (AppEUI), a network session key (NwkSKey), and an application session key (AppSKey):
 
@@ -21,6 +27,10 @@ To participate in a LoRaWAN network, each end-device has to be personalized and 
    * DevAddr: use lora.setDevAddr for this
    * NwkSKey: use lora.setNwkSKey for this
    * AppSKey: use lora.setAppSKey for this
+
+# Setup functions
+
+Setup functions are used for setup the LoRa WAN stack, such as init the stack, set the stack configuration, etc ...
 
 ## lora.setup(band)
 
@@ -163,3 +173,5 @@ lora.setDr(5)
 -- Disable the ADR function
 lora.setAdr(false)
 ```
+
+# Status functions
