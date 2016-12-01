@@ -47,6 +47,8 @@ Returns: nothing, or an exception.
 lora.setup(lora.BAND868)
 ```
 
+# Configuration functions for end-device activation
+ 
 ## lora.setAppEui(appEui)
 
 Sets the AppEUI. The AppEUI is a global application ID in IEEE EUI64 address space that uniquely identifies
@@ -59,8 +61,8 @@ Arguments:
 Returns: nothing, or an exception.
 
 ```lua
--- Setup LoRa WAN stack using ISM band 868 Mhz (Europe)
-lora.setup(lora.BAND868)
+....
+....
 
 -- Sets the AppEUI
 lora.setAppEui("70XXX57ED0000XX0")
@@ -78,11 +80,8 @@ Arguments:
 Returns: nothing, or an exception.
 
 ```lua
--- Setup LoRa WAN stack using ISM band 868 Mhz (Europe)
-lora.setup(lora.BAND868)
-
--- Sets the AppEUI
-lora.setAppEui("70XXX57ED0000XX0")
+....
+....
 
 -- Sets the AppKEY
 lora.setAppKey("8CXXXX5A80XXXX0FXX18XXBCXX41XXXX")
@@ -102,19 +101,14 @@ Arguments:
 Returns: nothing, or an exception.
 
 ```lua
--- Setup LoRa WAN stack using ISM band 868 Mhz (Europe)
-lora.setup(lora.BAND868)
-
--- Sets the AppEUI
-lora.setAppEui("70XXX57ED0000XX0")
-
--- Sets the AppKEY
-lora.setAppKey("8CXXXX5A80XXXX0FXX18XXBCXX41XXXX")
+....
+....
 
 -- Sets the DevEUI
 lora.setDevEui("XXB3XX7E000XX000")
 ```
 
+# Stack configuration functions
 
 ## lora.setDr(data_rate)
 
@@ -127,17 +121,8 @@ Arguments:
 Returns: nothing, or an exception.
 
 ```lua
--- Setup LoRa WAN stack using ISM band 868 Mhz (Europe)
-lora.setup(lora.BAND868)
-
--- Sets the AppEUI
-lora.setAppEui("70XXX57ED0000XX0")
-
--- Sets the AppKEY
-lora.setAppKey("8CXXXX5A80XXXX0FXX18XXBCXX41XXXX")
-
--- Sets the DevEUI
-lora.setDevEui("XXB3XX7E000XX000")
+....
+....
 
 -- Sets the data rate
 lora.setDr(5)
@@ -155,23 +140,9 @@ Arguments:
 Returns: nothing, or an exception.
 
 ```lua
--- Setup LoRa WAN stack using ISM band 868 Mhz (Europe)
-lora.setup(lora.BAND868)
-
--- Sets the AppEUI
-lora.setAppEui("70XXX57ED0000XX0")
-
--- Sets the AppKEY
-lora.setAppKey("8CXXXX5A80XXXX0FXX18XXBCXX41XXXX")
-
--- Sets the DevEUI
-lora.setDevEui("XXB3XX7E000XX000")
-
--- Sets the data rate
-lora.setDr(5)
+....
+....
 
 -- Disable the ADR function
 lora.setAdr(false)
 ```
-
-# Status functions
