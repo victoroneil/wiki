@@ -47,8 +47,11 @@ Returns: nothing, or an exception.
 lora.setup(lora.BAND868)
 ```
 
-# Configuration functions for end-device activation
- 
+# End-device activation functions
+
+This functions set the data that must be provided for the end-device activation. Remember that for OTAA you must provide DevEUI, AppEUI, and AppKey, and for ABP you must provide DevAddr, NwkSKey and AppSKey. Use the functions described in this section for that.
+
+
 ## lora.setAppEui(appEui)
 
 Sets the AppEUI. The AppEUI is a global application ID in IEEE EUI64 address space that uniquely identifies
@@ -109,6 +112,9 @@ lora.setDevEui("XXB3XX7E000XX000")
 ```
 
 # Stack configuration functions
+
+This functions configure certain operating parameters of the stack, such us the data rate. This parameters are configured automatically when you setup the stack with the lora.setup function, and can be changed using one of the functions that we describe in this section.
+
 
 ## lora.setDr(data_rate)
 
