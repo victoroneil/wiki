@@ -111,6 +111,40 @@ Returns: nothing, or an exception.
 lora.setDevEui("XXB3XX7E000XX000")
 ```
 
+## lora.setDevAddr(devAddr)
+
+Sets the DevAddr. The DevAddr identifies the end-device within the current network, and is provided by the network owner.
+
+Arguments:
+
+* devAddr (4 bytes coded in an hex-string): the DevAddr.
+
+Returns: nothing, or an exception.
+
+```lua
+....
+....
+
+-- Sets the DevAddr
+lora.setDevAddr("03XXEXXA")
+```
+
+## lora.join()
+
+Joins the end-device via OTAA.
+
+Arguments: nothing
+
+Returns: nothing, or an exception.
+
+```lua
+....
+....
+
+-- Join to the network
+lora.join()
+```
+
 # Stack configuration functions
 
 This functions configure certain operating parameters of the stack, such us the data rate. This parameters are configured automatically when you setup the stack with the lora.setup function, and can be changed using one of the functions that we describe in this section.
