@@ -65,7 +65,7 @@ spi3: sdi=019	(pin 19)	sdo=023	(pin 23)	sck=018	(pin 18)
 
 # Setup functions
 
-## spi = spi.setup(id, mode, cs, speed, mode number, data bits)
+## spi = spi.setup(id, mode, cs, speed, data bits, mode number)
 
 Setup the SPI module.
 
@@ -90,7 +90,7 @@ Returns: an spi instance, or an exception. You must store this instance into a v
 
 ```lua
 -- Setup SPI2 as master, 1 Mhz speed, 8 bits, using GPIO5 as CS, number mode 0
-instance = spi.setup(spi.SPI2, spi.MASTER, pio.GPIO5, 1000, 0, 8)
+instance = spi.setup(spi.SPI2, spi.MASTER, pio.GPIO5, 1000, 8, 0)
 ```
 
 # Operation functions
@@ -105,7 +105,7 @@ Returns: nothing
 
 ```lua
 -- Setup SPI2 as master, 1 Mhz speed, 8 bits, using GPIO5 as CS, number mode 0
-instance = spi.setup(spi.SPI2, spi.MASTER, pio.GPIO5, 1000, 0, 8)
+instance = spi.setup(spi.SPI2, spi.MASTER, pio.GPIO5, 1000, 8, 0)
 
 -- Select
 instance:select()
@@ -126,7 +126,7 @@ Returns: nothing
 
 ```lua
 -- Setup SPI2 as master, 1 Mhz speed, 8 bits, using GPIO5 as CS, number mode 0
-instance = spi.setup(spi.SPI2, spi.MASTER, pio.GPIO5, 1000, 0, 8)
+instance = spi.setup(spi.SPI2, spi.MASTER, pio.GPIO5, 1000, 8, 0)
 
 -- Select
 instance:select()
@@ -151,7 +151,7 @@ Returns: nothing, or an exception.
 
 ```lua
 -- Setup SPI2 as master, 1 Mhz speed, 8 bits, using GPIO5 as CS, number mode 0
-instance = spi.setup(spi.SPI2, spi.MASTER, pio.GPIO5, 1000, 0, 8)
+instance = spi.setup(spi.SPI2, spi.MASTER, pio.GPIO5, 1000, 8, 0)
 
 -- Select
 instance:select()
@@ -175,7 +175,7 @@ Returns: readed data, or an exception.
 
 ```lua
 -- Setup SPI2 as master, 1 Mhz speed, 8 bits, using GPIO5 as CS, number mode 0
-instance = spi.setup(spi.SPI2, spi.MASTER, pio.GPIO5, 1000, 0, 8)
+instance = spi.setup(spi.SPI2, spi.MASTER, pio.GPIO5, 1000, 8, 0)
 
 -- Select
 instance:select()
