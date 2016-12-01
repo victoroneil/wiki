@@ -146,3 +146,21 @@ Returns: nothing, or an exception.
 -- Disable the ADR function
 lora.setAdr(false)
 ```
+
+## lora.setReTx(retransmissions)
+
+Set the number of retransmissions for confirmed up-link frames. If no confirmation is received by the end-device the frame will be retransmitted a maximum of "retransmissions" times.
+
+Arguments:
+
+* retransmissions (integer): number of retransmissions, between 0 and 8.
+
+Returns: nothing, or an exception.
+
+```lua
+....
+....
+
+-- Disable the ADR function
+lora.setAdr(false)
+```
