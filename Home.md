@@ -17,10 +17,12 @@ Middleware modules
 * [LoRa WAN](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/LoRa-WAN-Module)
 
 Hardware access modules:
+
+* [ADC](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/ADC-Module)
 * [PIO](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/PIO-Module)
-* [UART](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/UART-Module)
 * [SPI](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/SPI-Module)
 * [SCREEN](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/SCREEN-Module)
+* [UART](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/UART-Module)
 
 
 Utility modules:
