@@ -56,7 +56,7 @@ Setup a PWM channel.
 
 Arguments:
 
-* channel: a PWM channel identifier. Use pwm.PWM_CHx defined for this purpose.
+* channel: a PWM channel identifier. Use pwm.PWM_CHx defined for this purpose. If channel is -1 channel assignment is made by Lua RTOS.
 * pin: the GPIO identifier to use. Use pio.GPIOx defined for this purpose.
 * frequency: pulse frequency, expressed in hertzs
 * initial duty: initial duty value, a decimal number beetween 0 and 1, where 0 is 0%, and 1 is 100%.
