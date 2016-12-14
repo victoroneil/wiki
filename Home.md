@@ -3,10 +3,6 @@ Basics:
 * [What's Lua RTOS?] (https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/What's-Lua-RTOS%3F)
 * [Booting process] (https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Boot-process)
 
-ESP32 pins:
-
-* [SPI] (https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/ESP32-SPI-pins)
-
 Lua RTOS modules:
 
 * [Exception handling] (https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Exception-handling)
