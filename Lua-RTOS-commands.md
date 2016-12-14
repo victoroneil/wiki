@@ -125,7 +125,7 @@ Returns: the current directory
 
 ## os.mkdir(path)
 
-Make a directory.
+Make a directory. A file or directory can be removed with Lua [os.remove()] (http://www.lua.org/manual/5.3/manual.html#6.9) standard function.
 
 Arguments:
 
@@ -139,6 +139,21 @@ Returns: true if success
 os.mkdir("test")
 true
 ```
+
+## os.cp(source path,destination path)
+
+Copy a file.
+
+Arguments:
+
+* source path: file source path
+* destination path: file destination path
+
+Returns: nothing
+
+```lua
+-- Copy autorun.lua into autorun.old
+os.cp("/autorun.lua","/autorun.old")
 
 ## os.edit(file)
 
@@ -156,7 +171,7 @@ Returns: nothing
 
 # Configuration commands
 
-## os.shell([enable])
+## os.shell(enable)
 
 Enable or disable Lua RTOS shell. If shell is enabled the programmer can interact with Lua RTOS in a friendly way:
 
@@ -213,6 +228,21 @@ Returns: nothing
 ```lua
 -- Disable logs on the console
 os.logcons(false)
+```
+
+## os.history(enable)
+
+If enabled Lua RTOS records the commands entered by the programmer. The programmer can access the previous entered commands with the up & down keys. This functions is only available if an SD Card is attached to your board.
+
+Arguments:
+
+* enable: true for enable / false for disable
+
+Returns: nothing
+
+```lua
+-- Enable history
+os.histrory(true)
 ```
 
 # Other functions
