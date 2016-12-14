@@ -138,6 +138,37 @@ Returns: nothing
 /> os.edit("autorun.lua")
 ```
 
+# Configuration commands
+
+## os.shell([enable])
+
+Enable or disable Lua RTOS shell. If shell is enabled the programmer can interact with Lua RTOS in a friendly way:
+
+```lua
+/ > ls
+f	     370		abp.lua
+d	       -		examples
+d	       -		sys
+f	     468		system.lua
+f	     388		wifi.lua
+f	      40		autorun.lua
+/ > cd examples
+/examples > ls
+d	       -		blocks
+d	       -		lua
+d	       -		a
+f	       0		system.lua
+/examples >
+```
+
+Lua RTOS shell is experimental and it's implementation is not finished!!.
+
+Arguments:
+
+* enable: true for enable / false for disable
+
+Returns: nothing
+
 # Other functions
 
 ## os.clear()
