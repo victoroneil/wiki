@@ -7,7 +7,7 @@ ESP32 pins:
 
 * [SPI] (https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/ESP32-SPI-pins)
 
-Lua RTOS access modules:
+Lua RTOS modules:
 
 * [Thread](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Thread-Module)
 * [NVS (non volatile storage)](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/NVS-Module)
