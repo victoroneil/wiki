@@ -49,6 +49,22 @@ print("OS: "..oss..", version: "..version..", build: "..build)
 OS: Lua RTOS, version: beta 0.1, build: 1481679957
 ```
 
+# Control commands
+
+## os.sleep([seconds])
+
+Put the board in sleep mode, including the CPU for a time specified in the seconds argument. Once the sleep time ends the CPU is reset.
+
+Arguments:
+
+* seconds: the number of seconds to sleep
+
+Returns: nothing
+
+````lua
+-- Sleep for 10 seconds
+os.sleep(10)
+
 # File system commands
 
 ## os.ls([path])
@@ -168,6 +184,36 @@ Arguments:
 * enable: true for enable / false for disable
 
 Returns: nothing
+
+## os.loglevel(level)
+
+Sets the log level. The log level controls the amount of log information that Lua RTOS show in the console, and puts in the /log/messages.log file (is an SD Card is attached).
+
+Arguments:
+
+* level: the log level, can be either os.LOG_ALL, os.LOG_INFO, os.LOG_EMERG, os.LOG_ALERT, os.LOG_CRIT, os.LOG_ERR, os.LOG_WARNING, os.LOG_NOTICE, os.LOG_DEBUG
+
+Returns: nothing
+
+```lua
+-- Show only error logs
+os.loglevel(os.LOG_ERR()
+```
+
+## os.logcons(enable)
+
+Enable or disable Lua RTOS log to the console. If it's enabled log messages are displayed in the console and written to the /log/messages.log file if an SD Card is attached. If it's disabled log mesages are written to the /log/messages.log file if an SD Card is attached.
+
+Arguments:
+
+* enable: true for enable / false for disable
+
+Returns: nothing
+
+```lua
+-- Disable logs on the console
+os.logcons(false)
+```
 
 # Other functions
 
