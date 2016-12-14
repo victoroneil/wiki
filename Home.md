@@ -9,6 +9,7 @@ ESP32 pins:
 
 Lua RTOS modules:
 
+* [Exception handling] (https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Exception-handling)
 * [Thread](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Thread-Module)
 * [NVS (non volatile storage)](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/NVS-Module)
 
