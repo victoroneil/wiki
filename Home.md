@@ -9,6 +9,7 @@ Lua RTOS modules:
 * [Lua RTOS commands] (https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Lua-RTOS-commands)
 * [Thread](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Thread-Module)
 * [NVS (non volatile storage)](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/NVS-Module)
+* [Net](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Net-Module)
 
 Middleware modules
 
