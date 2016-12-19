@@ -46,6 +46,38 @@ Returns:
 scan = net.wf.scan(true)
 ````
 
+## net.stat([table])
+
+Get the network stats for all the available interfaces.
+
+Arguments:
+
+* table: if true, stats are return in a Lua table, if false stats are printed on the console.
+
+Returns:
+
+* if table is false: nothing or an exception.
+
+* if table is true: a Lua table with the scan's result, or an exception. This table is an array of tables. Each entry corresponds to an interface. Each interface gives the following fields:
+
+  * interface: the interface name. In this version only wf interface are returned.
+  * ip: interface ip
+  * gw: interface gateway ip
+  * netmask: interface netmask
+
+```lua
+-- Get the network stats to the console
+/ > net.stat()
+wf: mac address 24:0a:c4:00:c9:5c
+   ip address 192.168.1.41 netmask 255.255.255.0
+   gw address 192.168.1.1
+```
+
+```lua
+-- Get the network stats to a table
+net.stat(true)
+```
+
 # Network configuration
 
 ## net.wf.setup(mode, ssid, password)
@@ -58,4 +90,18 @@ Arguments:
 * ssid: network's ssid to connect.
 * password: network's password
 
+Returns: nothing, or an exception.
+
+## net.wf.start()
+
+Start the wifi interface.
+
+Arguments: nothing.
+Returns: nothing, or an exception.
+
+## net.wf.stop()
+
+Stop the wifi interface.
+
+Arguments: nothing.
 Returns: nothing, or an exception.
