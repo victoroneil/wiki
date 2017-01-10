@@ -5,7 +5,9 @@ In Lua you can access some underlying Operation System functions through the os 
 Wed Dec 14 02:23:39 2016
 ```
 
-Lua RTOS extends the standard Lua os module for allow the programmer to access to all Lua RTOS characteristics.  Please, refer to (http://www.lua.org/manual/5.3/manual.html#6.9) to know more about the standard features of this module.
+Lua RTOS extends the standard Lua os module for allow the programmer to access to all Lua RTOS characteristics.  
+
+Please, refer to (http://www.lua.org/manual/5.3/manual.html#6.9) to know more about the standard features of this module.
 
 # Information commands
 
@@ -35,7 +37,7 @@ Get Lua RTOS version installed in your board.
 
 Arguments: nothing
 
-Returns: the operating system name (Lua RTOS), the version number, the operation system build time.
+Returns: the operating system name (Lua RTOS), the version number, and the operation system build time.
 
 ```lua
 -- Get operating system name and version
@@ -53,7 +55,7 @@ OS: Lua RTOS, version: beta 0.1, build: 1481679957
 
 ## os.sleep([seconds])
 
-Put the board in sleep mode, including the CPU for a time specified in the seconds argument. Once the sleep time ends the CPU is reset.
+Put the board in sleep mode for a time specified in the seconds argument. Once the sleep time ends the CPU is reset.
 
 Arguments:
 
@@ -64,6 +66,7 @@ Returns: nothing
 ````lua
 -- Sleep for 10 seconds
 os.sleep(10)
+```
 
 # File system commands
 
