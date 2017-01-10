@@ -53,7 +53,7 @@ OS: Lua RTOS, version: beta 0.1, build: 1481679957
 
 # Control commands
 
-## os.sleep([seconds])
+## os.sleep(seconds)
 
 Put the board in sleep mode for a time specified in the seconds argument. Once the sleep time ends the CPU is reset.
 
