@@ -215,7 +215,7 @@ Returns: nothing
 
 ```lua
 -- Show only error logs
-os.loglevel(os.LOG_ERR()
+os.loglevel(os.LOG_ERR)
 ```
 
 ## os.logcons(enable)
