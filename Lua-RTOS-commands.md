@@ -7,7 +7,7 @@ Wed Dec 14 02:23:39 2016
 
 Lua RTOS extends the standard Lua os module for allow the programmer to access to all Lua RTOS characteristics.  
 
-Please, refer to (http://www.lua.org/manual/5.3/manual.html#6.9) to know more about the standard features of this module.
+Please, refer to (http://www.lua.org/manual/5.3/manual.html#6.9) to know more about the standard features for this module.
 
 # Information commands
 
