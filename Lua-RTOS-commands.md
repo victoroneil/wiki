@@ -157,6 +157,7 @@ Returns: nothing
 ```lua
 -- Copy autorun.lua into autorun.old
 os.cp("/autorun.lua","/autorun.old")
+```
 
 ## os.edit(file)
 
