@@ -21,4 +21,4 @@ s1:read("humidity")
     - DHT11
 
   * Distance
-    -- PING))) 28015
+    - PING))) 28015
