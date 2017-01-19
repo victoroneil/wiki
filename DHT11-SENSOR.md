@@ -1,4 +1,4 @@
-
+# Sensor spec
 
 | What         |             | Comments                   |
 |--------------|-------------|----------------------------|
@@ -8,7 +8,7 @@
 |              | humidity    | % relative humidity        |
 
 
-**Example code**
+# Code
 
 ```lua
 s1 = sensor.setup("DHT11", pio.GPIO4)
