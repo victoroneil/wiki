@@ -2,7 +2,7 @@
 
 |              |             | Comments                   |
 |--------------|-------------|----------------------------|
-| Datasheet    | [Datasheet] (http://www.micropik.com/PDF/dht11.pdf)            |                            |
+| [Datasheet] (http://www.micropik.com/PDF/dht11.pdf)    |             |                            |
 | Interface    | GPIO        | 1 pin                      |
 | Provides     | temperature | celsius degrees            |
 |              | humidity    | % relative humidity        |
