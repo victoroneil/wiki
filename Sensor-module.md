@@ -10,3 +10,15 @@ s1:acquire()
 s1:read("temperature")
 s1:read("humidity")
 ````
+
+# Supported sensors
+
+  * Temperature
+    - DHT11
+    - TMP36
+
+  * Humidity
+    - DHT11
+
+  * Distance
+    -- PING))) 28015
