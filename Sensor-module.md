@@ -23,4 +23,4 @@ Here is the list of sensors currently natively supported in Lua RTOS. Remember t
     - DHT11
 
   * Distance
-    - PING))) 28015
+    - PING))) 28015 (ultrasonic sensor)
