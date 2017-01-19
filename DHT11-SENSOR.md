@@ -6,7 +6,7 @@
 | Provides     | temperature | celsius degrees            |
 |              | humidity    | % relative humidity        |
 
-**Example code **
+**Example code**
 
 ```lua
 s1 = sensor.setup("DHT11", pio.GPIO4)
