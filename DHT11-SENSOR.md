@@ -1,7 +1,7 @@
 ![](http://whitecatboard.org/git/dht11.jpg)
 
 +--------------+-------------+----------------------------+
-|                            | Comments                   |
+|      w                     | Comments                   |
 +--------------+-------------+----------------------------+
 | Interface    | GPIO        | 1 pin                      |
 | Provides     | temperature | celsius degrees            |
