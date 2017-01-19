@@ -1,4 +1,4 @@
-# Sensor spec
+# Specification
 
 | What         |             | Comments                   |
 |--------------|-------------|----------------------------|
