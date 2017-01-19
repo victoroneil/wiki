@@ -18,6 +18,7 @@ Middleware modules
 
 Hardware access modules:
 
+* [SENSOR] (https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Sensor-module)
 * [ADC](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/ADC-Module)
 * [PWM](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/PWM-Module)
 * [PIO](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/PIO-Module)
