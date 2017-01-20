@@ -16,9 +16,15 @@ s1:read("temperature")
 s1:read("humidity")
 ````
 
+# Enumeration functions
+
+Enumeration functions allows to know which sensors are supported by your Lua RTOS firmware. Remember that through Kconfig options you can build your own firmware only with the sensors that you need for your project.
+
+## sensor.list([table])
+
 # Supported sensors
 
-Here is the list of sensors currently natively supported in Lua RTOS. Remember that through Kconfig options you can build your own firmware only with the sensors that you need for your project.
+Here is the list of sensors currently natively supported in Lua RTOS.
 
   * Temperature
     - [DHT11] (https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/DHT11-SENSOR)
