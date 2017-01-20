@@ -42,7 +42,7 @@ Returns:
 ```
 
 ```lua
--- Scan wifi, and print to the console
+-- Scan wifi, and get result into a table
 scan = net.wf.scan(true)
 ````
 
