@@ -20,6 +20,14 @@ s1:read("humidity")
 
 A sensor is a device that measures some type of magnitude from the physical environment, and generates an output signal  that can be process by other devices. The magnitude could be temperature, humidity, motion, sound, etc.
 
+To use a sensor you must take into consideration the following:
+
+1. Create a sensor instance, using the sensor.setup function, and store the instance into a variable.
+
+2. Use the variable instance for acquire data:
+
+3. Use the variable instance for read data provided by the sensor:
+
 # Enumeration functions
 
 Enumeration functions allows to know which sensors are supported by your Lua RTOS firmware. Remember that through Kconfig options you can build your own firmware only with the sensors that you need for your project.
