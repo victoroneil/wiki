@@ -16,6 +16,6 @@ s1 = sensor.setup("DHT11", pio.GPIO4)
 
 s1:acquire()
 
-temperature = s1:read("temperature")
-humidity = s1:read("humidity")
+s1:read("temperature")
+s1:read("humidity")
 ```
