@@ -28,4 +28,4 @@ Here is the list of sensors currently natively supported in Lua RTOS. Remember t
     - [DHT11] (https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/DHT11-SENSOR)
 
   * Distance
-    - [PING))) 28015 (ultrasonic sensor)] (https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/PING)))-28015-(ultrasonic-sensor))
+    - [PING))) 28015 ultrasonic sensor] (https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/PING)))-28015-(ultrasonic-sensor))
