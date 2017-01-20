@@ -26,13 +26,16 @@ List the sensors supported by your Lua RTOS firmware.
 
 Arguments:
 
-table: if true, sensor's list is returned in a Lua table, if false sensor's list is printed on the console.
+* table: if true, sensor's list is returned in a Lua table, if false sensor's list is printed on the console.
 
 Returns:
 
-if table is false: nothing or an exception.
+* if table is false: nothing or an exception.
 
-if table is true: a Lua table with the sensor's list result, or an exception. This table is an array of tables. Each entry corresponds to a sensor.
+* if table is true: a Lua table with the sensor's list result, or an exception. This table is an array of tables. Each entry corresponds to a sensor. Each sensor gives the following fields:
+
+  * id: the sensor's id.
+  * interface: the sensor's interface name.
 
 
 
