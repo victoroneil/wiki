@@ -24,10 +24,25 @@ To use a sensor you must take into consideration the following:
 
 1. Create a sensor instance, using the sensor.setup function, and store the instance into a variable.
 
+   ```lua
+   -- Instantiate a DHT11 sensor connected to GPIO4
+   s1 = sensor.setup("DHT11", pio.GPIO4)
+   ````
+
 2. Use the variable instance for acquire data:
+
+   ```lua
+   -- Acquire data
+   s1:acquire()
+   ````
 
 3. Use the variable instance for read data provided by the sensor:
 
+   ```lua
+   -- Read data provided by sensor
+   s1:read("temperature")
+   s1:read("humidity")
+   ````
 # Enumeration functions
 
 Enumeration functions allows to know which sensors are supported by your Lua RTOS firmware. Remember that through Kconfig options you can build your own firmware only with the sensors that you need for your project.
