@@ -5,7 +5,7 @@
 | Identifier   | TMPO36      |                            |
 | Interface    | ADC         |                            |
 | Provides     | temperature | celsius degrees            |
-| [Datasheet] (http://www.micropik.com/PDF/tmp36.pdf)    |             | ![](http://whitecatboard.org/git/dht11.jpg)                           |
+| [Datasheet] (http://www.micropik.com/PDF/tmp36.pdf)    |             | ![](http://whitecatboard.org/git/tmp36.jpg)                           |
 
 
 # Code
