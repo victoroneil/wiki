@@ -20,6 +20,8 @@ s1:read("humidity")
 
 Enumeration functions allows to know which sensors are supported by your Lua RTOS firmware. Remember that through Kconfig options you can build your own firmware only with the sensors that you need for your project.
 
+These functions are usually used by the Blockly Environment in order to know which sensors are supported by your board, but in some cases they are useful to the programmer.
+ 
 ## sensor.list([table])
 
 List the sensors supported by your Lua RTOS firmware.
