@@ -18,7 +18,7 @@ s1:read("humidity")
 
 # Key concepts
 
-A sensor is a device that measures some type of magnitude from the physical environment, and generates an output signal  that can be process by other devices. The magnitude could be temperature, humidity, motion, etc.
+A sensor is a device that measures some type of magnitude from the physical environment, and generates an output signal  that can be process by other devices. The magnitude could be temperature, humidity, motion, sound, etc.
 
 # Enumeration functions
 
