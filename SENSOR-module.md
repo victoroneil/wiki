@@ -39,9 +39,20 @@ Returns:
   * id: the sensor's id.
   * interface: the sensor's interface name.
 
+```lua
+-- List the sensors supported by Lua RTOS firmware on the console
+/ > sensor.list()
+SENSOR      INTERFACE
+---------------------
+DHT11       GPIO     
+PING28015   GPIO     
+TMP36       ADC    
+```
 
-
-
+```lua
+-- List the sensors supported by Lua RTOS firmware to a table
+sensors = sensor.list(true)
+```
 
 # Supported sensors
 
