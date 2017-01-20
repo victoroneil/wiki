@@ -5,8 +5,13 @@ This module contains functions for accessing the sensors supported by Lua RTOS. 
 Sensor module allows the programmer to access sensors in an unified way from a common interface. Programs are written faster and source code is more clearly.
 
 ```lua
+-- Instantiate a DHT11 sensor connected to GPIO4
 s1 = sensor.setup("DHT11", pio.GPIO4)
+
+-- Acquire data
 s1:acquire()
+
+-- Read temperature and humidity
 s1:read("temperature")
 s1:read("humidity")
 ````
