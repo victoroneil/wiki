@@ -16,11 +16,11 @@ s1:read("humidity")
 Here is the list of sensors currently natively supported in Lua RTOS. Remember that through Kconfig options you can build your own firmware only with the sensors that you need for your project.
 
   * Temperature
-    - DHT11
+    - [DHT11] (https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/DHT11-SENSOR)
     - TMP36
 
   * Humidity
-    - DHT11
+    - [DHT11] (https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/DHT11-SENSOR)
 
   * Distance
     - PING))) 28015 (ultrasonic sensor)
