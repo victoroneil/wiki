@@ -16,6 +16,10 @@ s1:read("temperature")
 s1:read("humidity")
 ````
 
+# Key concepts
+
+A sensor is a device that measures some type of magnitude from the physical environment, and generates an output signal  that can be process by other devices. The magnitude could be temperature, humidity, motion, etc.
+
 # Enumeration functions
 
 Enumeration functions allows to know which sensors are supported by your Lua RTOS firmware. Remember that through Kconfig options you can build your own firmware only with the sensors that you need for your project.
