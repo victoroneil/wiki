@@ -67,6 +67,14 @@ Returns:
   * id: the sensor's id.
   * interface: the sensor's interface name.
 
+  * provides: an array with magnitudes provided by the sensor. Each magnitude have the following fields:
+    * id: name of the magnitude.
+    * type: data type of the magnitude. Can be either int, float or double.
+
+  * settings: an array with setting parameters supported by the sensor. Each setting have the following fields:
+    * id: name of the setting.
+    * type: data type of the magnitude. Can be either int, float or double.
+
 ```lua
 -- List the sensors supported by Lua RTOS firmware on the console
 / > sensor.list()
