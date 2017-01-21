@@ -70,11 +70,11 @@ Returns:
 ```lua
 -- List the sensors supported by Lua RTOS firmware on the console
 / > sensor.list()
-SENSOR      INTERFACE
----------------------
-DHT11       GPIO     
-PING28015   GPIO     
-TMP36       ADC    
+SENSOR      INTERFACE   PROVIDES                    SETTINGS                   
+-------------------------------------------------------------------------------
+DHT11       GPIO        temperature,humidity        
+PING28015   GPIO        distance                    temperature
+TMP36       ADC         temperature                 
 ```
 
 ```lua
