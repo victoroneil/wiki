@@ -19,7 +19,7 @@ A sensor is a device that measures some type of magnitude from the physical envi
 
 To use a sensor in your program you must do the following:
 
-1. Attach a sensor to it's hardware interface, using the sensor.attach function. This returns a sensor instance that you must store into a variable.
+1. Attach the sensor to it's hardware interface, using the sensor.attach(..) function. This returns a sensor instance that you must store into a variable.
 
    ```lua
    -- Attach a DHT11 sensor connected to GPIO4
