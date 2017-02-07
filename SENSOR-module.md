@@ -20,23 +20,16 @@ s1:read("humidity")
 
 A sensor is a device that measures some type of magnitude from the physical environment, and generates an output signal  that can be process by other devices. The magnitude could be temperature, humidity, motion, sound, etc.
 
-To use a sensor you must take into consideration the following:
+To use a sensor in your program you must do the following:
 
-1. Create a sensor instance, using the sensor.setup function, and store the instance into a variable.
+1. Attach a sensor to it's hardware interface, using the sensor.attach function. This returns a sensor instance that you must store into a variable.
 
    ```lua
-   -- Instantiate a DHT11 sensor connected to GPIO4
+   -- Attach a DHT11 sensor connected to GPIO4
    s1 = sensor.setup("DHT11", pio.GPIO4)
    ````
 
-2. Use the sensor instance for acquire data:
-
-   ```lua
-   -- Acquire data
-   s1:acquire()
-   ````
-
-3. Use the sensor instance for read data provided by the sensor:
+2. Use the sensor instance for read data provided by the sensor:
 
    ```lua
    -- Read data provided by sensor
@@ -46,9 +39,9 @@ To use a sensor you must take into consideration the following:
 
 # Enumeration functions
 
-Enumeration functions allows to know which sensors are supported by your Lua RTOS firmware. Remember that through Kconfig options you can build your own firmware only with the sensors that you need for your project.
+Enumeration functions allows you to know which sensors are supported by your Lua RTOS firmware. Remember that through Kconfig options you can build your own firmware with the sensors that you need for your project.
 
-These functions are usually used by the Blockly Environment in order to know which sensors are supported by your board, but in some cases they are useful to the programmer.
+These functions are usually used by the Whitecat IDE in order to know which sensors are supported by your board, but in some cases they will be useful for you.
  
 ## sensor.list([table])
 
