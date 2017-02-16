@@ -6,20 +6,6 @@ UART units are encoded into a byte and are platform-dependent. For this reason t
 
 UART functions are not thread-safe. You must call to the lock / unlock functions for made UART functions thread-safe.
 
-# Utility functions
-
-## uart.pins()
-
-Show available UART units, an it's pins, provided but your platform.
-   
-```lua
-/ > uart.pins()
-uart0: rx=040	(pin 40)	tx=041	(pin 41)
-uart1: rx=028	(pin 28)	tx=029	(pin 29)
-/ >
-```
-
-
 # Setup functions
 
 ## uart = uart.setup(id, baud rate, data bits, parity, stop bits, [buffer size])
