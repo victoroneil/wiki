@@ -4,8 +4,7 @@ This module contains functions for accessing the CPU's UART.
 
 UART units are encoded into a byte and are platform-dependent. For this reason the UART module define a numeric constant for each available UART unit. For example in ESP32 UART1 is defined by the constant uart.UART1. Please refer to your platform or board documentation to know which UART units are available. If you refer to an inexistent UART, a nil value is returned.
 
-UART functions are not thread-safe, except for uart.write to the console (uart.CONSOLE), and should be only used from one thread.
-
+UART functions are not thread-safe. You must call to the lock / unlock functions for made UART functions thread-safe.
 
 # Utility functions
 
@@ -44,8 +43,46 @@ Returns: the real baud rate set on the UART unit, or an exception. This might ha
 uart.setup(uart.UART3, 115200, 8, uart.PARNONE, uart.STOP1)
 ```
 
-
 # Operation functions
+
+## uart.lock(id)
+
+Lock the UART by the calling thread.
+
+* id: UART unit identifier. Use uart.UARTx defined for this purpose.
+
+Returns: nothing, or an exception.
+
+```lua
+-- Lock the console
+uart.lock(uart.CONSOLE)
+
+...
+...
+
+-- Unlock the console
+uart.unlock(uart.CONSOLE)
+```
+
+## uart.unlock(id)
+
+Unlock the UART locked by the calling thread.
+
+* id: UART unit identifier. Use uart.UARTx defined for this purpose.
+
+Returns: nothing, or an exception.
+
+```lua
+-- Lock the console
+uart.lock(uart.CONSOLE)
+
+...
+...
+
+-- Unlock the console
+uart.unlock(uart.CONSOLE)
+
+```
 
 ## uart.write(id, data)
 
@@ -55,12 +92,6 @@ Write data to an UART unit. Data can be a byte (raw data) or a string.
 * data: data to write can be either a byte (0 from 255) or a string.
 
 Returns: nothing, or an exception.
-
-Notes:
-
-* write function to console (uart.CONSOLE) is thread-safe.
-* write function to other UART unit are not thread-safe.
-
 
 ```lua
 -- Setup UART3, 115200 bps, 8N1
@@ -74,7 +105,6 @@ uart.write(uart.UART3, '\n')
 uart.write(uart.UART3, '\r')
 ```
 
-
 ## uart.read(id, format, timeout)
 
 Read data from an UART unit.
@@ -86,10 +116,6 @@ Arguments:
 * timeout: timeout, expressed in milliseconds. This function blocks the current thread until all data is received in the specified timeout.
 
 Returns: the readed data, or nil if nothing is received in the specified timeout, or an exception.
-
-Notes:
-
-* read function are not thread-safe.
 
 ```lua
 -- Setup UART3, 115200 bps, 8N1
@@ -108,10 +134,6 @@ Arguments:
 * id: UART module identifier. Use uart.UARTx defined for this purpose.
 
 Returns: nothing, or an exception.
-
-Notes:
-
-* consume function are not thread-safe.
 
 ```lua
 -- Setup UART3, 115200 bps, 8N1
