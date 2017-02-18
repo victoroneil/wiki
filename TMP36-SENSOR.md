@@ -5,7 +5,7 @@
 | Identifier   | TMP36       |                            |
 | Interface    | ADC         |                            |
 | Provides     | temperature | celsius degrees            |
-| Settings     | none        |                            |
+| Properties   | none        |                            |
 | [Datasheet] (http://www.analog.com/media/en/technical-documentation/data-sheets/TMP35_36_37.pdf)    |             | ![](http://whitecatboard.org/git/tmp36.png)                           |
 
 
