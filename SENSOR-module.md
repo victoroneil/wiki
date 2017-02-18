@@ -131,24 +131,24 @@ The arguments for this function varies according to the hardware interface type.
    For GPIO:
    ---------
 
-   * id: a string containing the sensor id, for example DHT11.
-   * gpio: the GPIO which sensor is attached. Use pio.GPIOx defined for this purpose.
+      * id: a string containing the sensor id, for example DHT11.
+      * gpio: the GPIO which sensor is attached. Use pio.GPIOx defined for this purpose.
 
    For ADC:
    --------
 
-   * id: a string containing the sensor id, for example TMP36.
-   * adc: ADC unit. Use adc.ADCx defined for this purpose.
-   * channel: ADC channel. Use adc.ADC_CHx for this purpose.
-   * resolution: resolution to use, can be either 12, 11, 10, 9, 8 or 6 bits.
+      * id: a string containing the sensor id, for example TMP36.
+      * adc: ADC unit. Use adc.ADCx defined for this purpose.
+      * channel: ADC channel. Use adc.ADC_CHx for this purpose.
+      * resolution: resolution to use, can be either 12, 11, 10, 9, 8 or 6 bits.
 
    For 1-WIRE:
    -----------
 
-   * id: a string containing the sensor id, for example DS1820.
-   * gpio: the GPIO which sensor is attached. Use pio.GPIOx defined for this purpose.
-   * adressh: sensor's address (most significant word) in the bus.
-   * adressl: sensor's address (less significant word) in the bus.
+      * id: a string containing the sensor id, for example DS1820.
+      * gpio: the GPIO which sensor is attached. Use pio.GPIOx defined for this purpose.
+      * adressh: sensor's address (most significant word) in the bus.
+      * adressl: sensor's address (less significant word) in the bus.
 
 Returns: a sensor instance or an exception. You must store this instance into a variable for further operations with it.
 
