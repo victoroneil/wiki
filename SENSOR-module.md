@@ -23,7 +23,7 @@ To use a sensor in your program you must do the following:
 
    ```lua
    -- Attach a DHT11 sensor connected to GPIO4
-   s1 = sensor.setup("DHT11", pio.GPIO4)
+   s1 = sensor.attach("DHT11", pio.GPIO4)
    ````
 
 2. Use the sensor instance for read data provided by the sensor:
@@ -78,6 +78,44 @@ TMP36       ADC         temperature
 ```lua
 -- List the sensors supported by Lua RTOS firmware to a table
 sensors = sensor.list(true)
+```
+
+## sensor.enumerate(type, interface, [table])
+
+In some cases, such as the 1-WIRE interface, sensors can be enumerated by the enumerate function. 
+
+Arguments:
+
+* type: enumeration type. For now only sensor.OWire are allowed.
+* interface: the interface to enumerate. For now, a valid gpio.
+* table: if true, enumeration list is returned in a Lua table, if falseenumeration list is printed on the console.
+
+Returns:
+
+* if table is false: nothing or an exception.
+
+* if table is true: a Lua table with the enumeration list result, or an exception. This table is an array of tables. Each entry corresponds to a sensor. Each sensor gives the following fields for 1-WIRE:
+
+  * id: the sensor's id.
+  * device: device number in the bus.
+  * addressh: the most significant word device address.
+  * addressl: the less significant word device address.
+  * model: a string containing the device's model name.
+
+```lua
+-- Enumerate the sensors connected to GPIO4 using 1-WIRE bus
+/ > sensor.enumerate(sensor.OWire, pio.GPIO4)
+SENSOR      DEVICE   ADDRESS             MODEL         
+-------------------------------------------------------
+DS1820      01       28ff900fb316041a    DS18B20
+DS1820      02       28ffc1acb2160596    DS18B20
+DS1820      03       28fff919b316034a    DS18B20
+DS1820      04       28ffad17b31603d5    DS18B20
+```
+
+```lua
+-- Enumerate the sensors connected to GPIO4 using 1-WIRE bus to a table
+owire = sensor.enumerate(sensor.OWire, pio.GPIO4, true)
 ```
 
 # Supported sensors
