@@ -120,25 +120,54 @@ owire = sensor.enumerate(sensor.OWire, pio.GPIO4, true)
 
 # Setup functions
 
-## s = sensor.attach(id, interface, options)
+## s = sensor.attach(id, ...)
 
 Attach a sensor to it's hardware interface.
 
 Arguments:
 
-* id: a string containing the sensor id, for example DHT11.
-* interface: the hardware interface to which it is attached. This can vary according to the hardware interface type.
+The arguments for this function varies according to the hardware interface type.
 
    For GPIO:
-   ========
+   ---------
+
+   * id: a string containing the sensor id, for example DHT11.
+   * gpio: the GPIO which sensor is attached. Use pio.GPIOx defined for this purpose.
 
    For ADC:
-   ========
+   --------
+
+   * id: a string containing the sensor id, for example TMP36.
+   * adc: ADC unit. Use adc.ADCx defined for this purpose.
+   * channel: ADC channel. Use adc.ADC_CHx for this purpose.
+   * resolution: resolution to use, can be either 12, 11, 10, 9, 8 or 6 bits.
 
    For 1-WIRE:
-   ===========
+   -----------
 
-* options: 
+   * id: a string containing the sensor id, for example DS1820.
+   * gpio: the GPIO which sensor is attached. Use pio.GPIOx defined for this purpose.
+   * adressh: sensor's address (most significant word) in the bus.
+   * adressl: sensor's address (less significant word) in the bus.
+
+Returns: a sensor instance or an exception. You must store this instance into a variable for further operations with it.
+
+```lua
+-- Attach a DHT11 (gpio sensor) sensor to GPIO4
+s = sensor.attach("DHT11", pio.GPIO4)
+```
+
+```lua
+-- Attach a TMP36 (adc sensor) sensor using ADC1 module, ADC_CH6 channel
+-- with a 12-bit resolution
+s = sensor.setup("TMP36", adc.ADC1, adc.ADC_CH6, 12)
+```
+
+```lua
+-- Attach a DS1820 (1-WIRE sensor) sensor to GPIO4 with 
+-- address 0x28ff900fb316041a
+s = sensor.setup("DS1820",pio.GPIO4, 0x28ff900f, 0xb316041a)
+```
 
 # Supported sensors
 
