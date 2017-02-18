@@ -13,7 +13,7 @@
 # Code
 
 ```lua
-s1 = sensor.setup("DHT11", pio.GPIO4)
+s1 = sensor.attach("DHT11", pio.GPIO4)
 
 s1:read("temperature")
 s1:read("humidity")
