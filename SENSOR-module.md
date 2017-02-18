@@ -118,6 +118,28 @@ DS1820      04       28ffad17b31603d5    DS18B20
 owire = sensor.enumerate(sensor.OWire, pio.GPIO4, true)
 ```
 
+# Setup functions
+
+## s = sensor.attach(id, interface, options)
+
+Attach a sensor to it's hardware interface.
+
+Arguments:
+
+* id: a string containing the sensor id, for example DHT11.
+* interface: the hardware interface to which it is attached. This can vary according to the hardware interface type.
+
+   For GPIO:
+   ========
+
+   For ADC:
+   ========
+
+   For 1-WIRE:
+   ===========
+
+* options: 
+
 # Supported sensors
 
 Here is the list of sensors currently natively supported in Lua RTOS.
