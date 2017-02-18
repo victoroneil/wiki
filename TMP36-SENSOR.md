@@ -12,7 +12,7 @@
 # Code
 
 ```lua
-s1 = sensor.setup("TMP36", adc.ADC1, adc.ADC_CH6, 12)
+s1 = sensor.attach("TMP36", adc.ADC1, adc.ADC_CH6, 12)
 
 s1:read("temperature")
 ```
