@@ -18,7 +18,5 @@ s1 = sensor.setup("PING28015", pio.GPIO4)
 -- object
 s1:set("temperature", 25)
 
-s1:acquire()
-
 s1:read("distance")
 ```
