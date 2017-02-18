@@ -15,8 +15,6 @@
 ```lua
 s1 = sensor.setup("DHT11", pio.GPIO4)
 
-s1:acquire()
-
 s1:read("temperature")
 s1:read("humidity")
 ```
