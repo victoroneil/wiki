@@ -6,7 +6,7 @@ Sensor module allows the programmer to access sensors in an unified way from a c
 
 ```lua
 -- Instantiate a DHT11 sensor connected to GPIO4
-s1 = sensor.setup("DHT11", pio.GPIO4)
+s1 = sensor.attach("DHT11", pio.GPIO4)
 
 -- Read temperature and humidity
 s1:read("temperature")
@@ -160,13 +160,13 @@ s = sensor.attach("DHT11", pio.GPIO4)
 ```lua
 -- Attach a TMP36 (adc sensor) sensor using ADC1 module, ADC_CH6 channel
 -- with a 12-bit resolution
-s = sensor.setup("TMP36", adc.ADC1, adc.ADC_CH6, 12)
+s = sensor.attach("TMP36", adc.ADC1, adc.ADC_CH6, 12)
 ```
 
 ```lua
 -- Attach a DS1820 (1-WIRE sensor) sensor to GPIO4 with 
 -- address 0x28ff900fb316041a
-s = sensor.setup("DS1820",pio.GPIO4, 0x28ff900f, 0xb316041a)
+s = sensor.attach("DS1820",pio.GPIO4, 0x28ff900f, 0xb316041a)
 ```
 
 # Supported sensors
