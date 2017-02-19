@@ -95,13 +95,13 @@ sensors = sensor.list(true)
 
 ## sensor.enumerate(type, interface, [table])
 
-In some cases, such as the 1-WIRE interface, sensors can be enumerated by the enumerate function. 
+In some cases, such as the 1-WIRE interface, sensors present in the 1-WIRE bus can be enumerated. Using the enumerate function allow you to known which sensors are present in the bus, and know for example, the sensor address needed for the attach function.
 
 Arguments:
 
 * type: enumeration type. For now only sensor.OWire are allowed.
 * interface: the interface to enumerate. For now, a valid gpio.
-* table: if true, enumeration list is returned in a Lua table, if falseenumeration list is printed on the console.
+* table: if true, enumeration list is returned in a Lua table, if false enumeration list is printed on the console.
 
 Returns:
 
