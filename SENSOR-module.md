@@ -34,7 +34,7 @@ To use a sensor in your program you must do the following:
    s1:read("humidity")
    ````
 
-In some cases you must to configure your sensor, for example, set the measure resolution, set an alarm, etc. Sensor configuration are made using the set function:
+In some cases you need to configure your sensor, for example, set the measure resolution, set an alarm, etc. Sensor configuration are made using the set function:
 
 ```lua
 -- Instantiate a DS1820 sensor connected to GPIO4
