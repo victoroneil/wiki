@@ -34,6 +34,19 @@ To use a sensor in your program you must do the following:
    s1:read("humidity")
    ````
 
+In some cases you must to configure your sensor, for example, set the measure resolution, set an alarm, etc. Sensor configuration are made using the set function:
+
+```lua
+-- Instantiate a DS1820 sensor connected to GPIO4
+s1 = sensor.setup("DS1820", pio.GPIO4, 0x28ff900f, 0xb316041a)
+
+-- Configure sensor resolution
+s1:set("resolution", 10)
+
+-- Read temperature
+s1:read("temperature")
+````
+
 # Enumeration functions
 
 Enumeration functions allows you to know which sensors are supported by your Lua RTOS firmware. Remember that through Kconfig options you can build your own firmware with the sensors that you need for your project.
