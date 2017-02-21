@@ -15,7 +15,7 @@
 # Code
 
 ```lua
-s1 = sensor.attach("TMP36", adc.ADC1, adc.ADC_CH6, 12)
+s1 = sensor.attach("DS1820", gpio.GPIO15)
 
 s1:read("temperature")
 ```
