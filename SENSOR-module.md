@@ -188,6 +188,7 @@ Here is the list of sensors currently natively supported in Lua RTOS.
 
   * Temperature
     - [DHT11] (https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/DHT11-SENSOR)
+    - [DS1820] (https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/DS1820-SENSOR)
     - [TMP36] (https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/TMP36-SENSOR)
 
   * Humidity
