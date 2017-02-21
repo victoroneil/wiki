@@ -1,15 +1,15 @@
 # Specification
 
-| What         |             | Comments                   |
-|--------------|-------------|----------------------------|
-| Identifier   | DS1820      |                            |
-| Interface    | 1-WIRE      |                            |
-| Provides     | temperature | celsius degrees            |
-| Properties   | resolution  | bits of resolution         |
-| Properties   | rom         | address in the bus         |
-| Properties   | type        | model                      |
-| Properties   | numdev      | number of DS180 sensor in the bus |
-| [Datasheet] (https://datasheets.maximintegrated.com/en/ds/DS18S20.pdf)          |             | ![](http://whitecatboard.org/git/ds1820.png)                                 |
+| What         |             | Comments                    |
+|--------------|-------------|-----------------------------|
+| Identifier   | DS1820      |                             |
+| Interface    | 1-WIRE      |                             |
+| Provides     | temperature | celsius degrees             |
+| Properties   | resolution  | bits of resolution          |
+| Properties   | rom         | address in the bus          |
+| Properties   | type        | model                       |
+| Properties   | numdev      | number of DS180 sensors in the bus |
+| [Datasheet] (https://datasheets.maximintegrated.com/en/ds/DS18S20.pdf)           |             | ![](http://whitecatboard.org/git/ds1820.png)                                  |
 
 
 # Code
