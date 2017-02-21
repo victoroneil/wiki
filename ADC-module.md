@@ -2,9 +2,9 @@
 
 This module contains functions for accessing the analog to digital converter (ADC) module.
 
-ADC units are encoded into a byte and are platform-dependent. For this reason the ADC module define a numeric constant for each available ADC unit. For example, in ESP32 only one ADC unit is available, and it is defined by the constant ADC1. Please refer to your platform or board documentation to know which ADC units are available. If you refer to an inexistent ADC, a nil value is returned.
+ADC units are encoded into a byte and are platform-dependent. For this reason the ADC module define a numeric constant for each available ADC unit. For example, in ESP32 only one ADC unit is available, and it is defined by the constant adc.ADC1. Please refer to your platform or board documentation to know which ADC units are available. If you refer to an inexistent ADC, a nil value is returned.
 
-Each ADC unit has one or more ADC channels that are encoded into a byte and are platform-dependent. The ADC module define a numeric constant for each available ADC channel. For example, in ESP32 there are 8 ADC channels, defined by the constants from ADC_CH0 to ADC_CH7. Please refer to your platform or board documentation to know which ADC channels are available. If you refer to an inexistent ADC channel, a nil value is returned.
+Each ADC unit has one or more ADC channels that are encoded into a byte and are platform-dependent. The ADC module define a numeric constant for each available ADC channel. For example, in ESP32 there are 8 ADC channels, defined by the constants from adc.ADC_CH0 to adc.ADC_CH7. Please refer to your platform or board documentation to know which ADC channels are available. If you refer to an inexistent ADC channel, a nil value is returned.
 
 # Key concepts
 
@@ -14,7 +14,7 @@ Internally an ADC is calibrated to operate in a range voltages defined by VRef- 
 
 To use this module you must take into consideration the following:
 
-1. Create an ADC channel instance, using the spi.setup function, and store the instance into a variable.
+1. Create an ADC channel instance, using the adc.setup function, and store the instance into a variable.
 
   ```lua
    channel = adc.setup(.....)
@@ -28,16 +28,17 @@ To use this module you must take into consideration the following:
 
 # Setup funcions
 
-## adc = adc.setup(id, channel, resolution, [vref])
+## adc = adc.setup(id, channel, resolution, [vrefneg, vrefpos])
 
 Setup the ADC channel.
 
 Arguments:
 
-* id: ADC module identifier. Use adc.ADCx defined for this purpose.
-* channel: ADC channel identifier. Use adc.ADC_CHx for this purpose.
+* id: ADC module identifier. Use the constant adc.ADCx defined for this purpose.
+* channel: ADC channel identifier. Use the constant adc.ADC_CHx for this purpose.
 * resolution: resolution to use, can be either 12, 11, 10, 9, 7, 8 or 6 bits.
-* vref (optional): voltage reference in millivolts. If you don't provide this argument vref is set to the default vref for the ADC module.
+* vrefneg (optional): negative voltage reference in millivolts. If you don't provide this argument vref- is set to the default vref- for the ADC module.
+* vrefpos (optional): positive voltage reference in millivolts. If you don't provide this argument vref+ is set to the default vref+ for the ADC module.
 
 Returns: an ADC channel instance, or an exception. You must store this instance into a variable for further operations with it.
 
