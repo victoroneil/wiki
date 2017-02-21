@@ -53,7 +53,7 @@ channel = adc.setup(adc.ADC1, adc.ADC_CH0, 12)
 
 Read the channel instance's ADC value.
 
-Returns:
+Returns: the raw value, the raw value converted to millivolts, or an exception.
 
 * raw: raw value
 * millivolts: raw value converted to millivolts 
