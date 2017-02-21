@@ -23,7 +23,7 @@ To use this module you must take into consideration the following:
 2. Use the variable channel for read :
 
    ```lua
-   channel(...)
+   channel:read(...)
    ```
 
 # Setup funcions
