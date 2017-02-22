@@ -2,9 +2,9 @@
 
 This module contains functions for accessing the analog to digital converter (ADC) module.
 
-ADC units are encoded into a byte and are platform-dependent. For this reason the ADC module define a numeric constant for each available ADC unit. For example, in ESP32 only one ADC unit is available, and it is defined by the constant adc.ADC1. Please refer to your platform or board documentation to know which ADC units are available. If you refer to an inexistent ADC, a nil value is returned.
+ADC units are encoded into a byte and are platform-dependent. For this reason the ADC module define a numeric constant for each available ADC unit. For example, in ESP32 only one ADC unit is available, and it is defined by the constant adc.ADC1.
 
-Each ADC unit has one or more ADC channels that are encoded into a byte and are platform-dependent. The ADC module define a numeric constant for each available ADC channel. For example, in ESP32 there are 8 ADC channels, defined by the constants from adc.ADC_CH0 to adc.ADC_CH7. Please refer to your platform or board documentation to know which ADC channels are available. If you refer to an inexistent ADC channel, a nil value is returned.
+Each ADC unit has one or more ADC channels that are encoded into a byte and are platform-dependent. The ADC module define a numeric constant for each available ADC channel. For example, in ESP32 there are 8 ADC channels, defined by the constants from adc.ADC_CH0 to adc.ADC_CH7. If you refer to an inexistent ADC channel, a nil value is returned.
 
 # Key concepts
 
