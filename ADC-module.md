@@ -28,7 +28,7 @@ To use this module you must take into consideration the following:
 
 # Setup funcions
 
-## adc = adc.setup(id, channel, resolution, [vrefneg, vrefpos])
+## adc = adc.setup(id, channel, resolution, [vrefpos, vrefneg])
 
 Setup the ADC channel.
 
@@ -37,8 +37,8 @@ Arguments:
 * id: ADC module identifier. Use the constant adc.ADCx defined for this purpose.
 * channel: ADC channel identifier. Use the constant adc.ADC_CHx for this purpose.
 * resolution: resolution to use, can be either 12, 11, 10, 9, 7, 8 or 6 bits.
-* vrefneg (optional): negative voltage reference in millivolts. If you don't provide this argument vref- is set to the default vref- for the ADC module.
 * vrefpos (optional): positive voltage reference in millivolts. If you don't provide this argument vref+ is set to the default vref+ for the ADC module.
+* vrefneg (optional): negative voltage reference in millivolts. If you don't provide this argument vref- is set to the default vref- for the ADC module.
 
 Returns: an ADC channel instance, or an exception. You must store this instance into a variable for further operations with it.
 
