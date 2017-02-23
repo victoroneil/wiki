@@ -32,15 +32,20 @@ In ESP32 the ADC module allows the programmer to access to 3 ADC units:
 
 * adc.ADC1:
 
-  This is the internal ADC module, with a maximum 12-bit resolution. VRef- is 0.0V and VRef+ is arround 1.1V.
+  * This is the internal ADC module, with a maximum 12-bit resolution. VRef- is 0.0V and VRef+ is arround 1.1V.
+  * 8 ADC channels are provided, from adc.ADC_CH0 to adc.ADC_CH7.
 
 * adc.MCP3008:
 
-  This unit is mapped to an external ADC converted through the MCP3008 chip (SPI interface), with a maximum 10-bit resolution.
+  * This unit is mapped to an external ADC converted through the MCP3008 chip (SPI interface), with a maximum 10-bit resolution. The programmer must to provide VRef+ and VRef- values when using this unit (see adc.setup function). The default VRef+ and VRef- values are 3.3V and 0V respectively.
+
+  * 8 ADC channels are provided, from adc.ADC_CH0 to adc.ADC_CH7.
 
 * adc.MCP3208:
 
-  This unit is mapped to an external ADC converted through the MCP3208 chip (SPI interface), with a maximum 12-bit resolution.
+  * This unit is mapped to an external ADC converted through the MCP3208 chip (SPI interface), with a maximum 12-bit resolution. The programmer must to provide VRef+ and VRef- values when using this unit (see adc.setup function). The default VRef+ and VRef- values are 3.3V and 0V respectively.
+
+  * 8 ADC channels are provided, from adc.ADC_CH0 to adc.ADC_CH7.
 
 # Setup funcions
 
