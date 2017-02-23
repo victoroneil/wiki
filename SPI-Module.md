@@ -76,26 +76,26 @@ Arguments:
 Returns: spi device instance, or an exception. You must store this instance into a variable for further operations with it.
 
 ```lua
--- Setup SPI2 as master, 1 Mhz speed, 8 bits, using GPIO5 as CS, number mode 0
-instance = spi.setup(spi.SPI2, spi.MASTER, pio.GPIO5, 1000, 8, 0)
+-- Setup a SPI device using SPI2 as master, 1 Mhz speed, 8 bits, using GPIO5 as CS, number mode 0
+device = spi.setup(spi.SPI2, spi.MASTER, pio.GPIO5, 1000, 8, 0)
 ```
 
 # Operation functions
 
 ## instance:select()
 
-Select the SPI hardware attached to the SPI instance.
+Select the SPI device.
 
 Arguments: nothing
 Returns: nothing
 
 
 ```lua
--- Setup SPI2 as master, 1 Mhz speed, 8 bits, using GPIO5 as CS, number mode 0
-instance = spi.setup(spi.SPI2, spi.MASTER, pio.GPIO5, 1000, 8, 0)
+-- Setup a SPI device using SPI2 as master, 1 Mhz speed, 8 bits, using GPIO5 as CS, number mode 0
+device = spi.setup(spi.SPI2, spi.MASTER, pio.GPIO5, 1000, 8, 0)
 
 -- Select
-instance:select()
+device:select()
 
 -- Do something
 ...
@@ -105,31 +105,31 @@ instance:select()
 
 ## instance:deselect()
 
-Deselect the SPI hardware attached to the SPI instance.
+Deselect the SPI device.
 
 Arguments: nothing
 Returns: nothing
 
 
 ```lua
--- Setup SPI2 as master, 1 Mhz speed, 8 bits, using GPIO5 as CS, number mode 0
-instance = spi.setup(spi.SPI2, spi.MASTER, pio.GPIO5, 1000, 8, 0)
+-- Setup a SPI device using SPI2 as master, 1 Mhz speed, 8 bits, using GPIO5 as CS, number mode 0
+device = spi.setup(spi.SPI2, spi.MASTER, pio.GPIO5, 1000, 8, 0)
 
 -- Select
-instance:select()
+device:select()
 
 -- Do something
 ...
 ...
 
 -- Deselect
-instance:deselect()
+device:deselect()
 ```
 
 
 ## instance:write(data1, [data2], ... [datan])
 
-Write data to the spi instance.
+Write data to the spi device.
 
 Arguments:
 * data1 to datan: data to write, can be either a byte or a string.
@@ -137,23 +137,23 @@ Arguments:
 Returns: nothing, or an exception.
 
 ```lua
--- Setup SPI2 as master, 1 Mhz speed, 8 bits, using GPIO5 as CS, number mode 0
-instance = spi.setup(spi.SPI2, spi.MASTER, pio.GPIO5, 1000, 8, 0)
+-- Setup a SPI device using SPI2 as master, 1 Mhz speed, 8 bits, using GPIO5 as CS, number mode 0
+device = spi.setup(spi.SPI2, spi.MASTER, pio.GPIO5, 1000, 8, 0)
 
 -- Select
-instance:select()
+device:select()
 
 -- Do something
-instance:write("Hello, Lua RTOS!")
+device:write("Hello, Lua RTOS!")
 
 -- Deselect
-instance:deselect()
+device:deselect()
 ```
 
 
 ## readed data = instance:readwrite(data1, [data2], ... [datan])
 
-Write and read data to the SPI instance.
+Write and read data to a SPI device.
 
 Arguments:
 * data1 to datan: data to write, can be either a byte or a string.
@@ -161,15 +161,15 @@ Arguments:
 Returns: readed data, or an exception.
 
 ```lua
--- Setup SPI2 as master, 1 Mhz speed, 8 bits, using GPIO5 as CS, number mode 0
-instance = spi.setup(spi.SPI2, spi.MASTER, pio.GPIO5, 1000, 8, 0)
+-- Setup a SPI device using SPI2 as master, 1 Mhz speed, 8 bits, using GPIO5 as CS, number mode 0
+device = spi.setup(spi.SPI2, spi.MASTER, pio.GPIO5, 1000, 8, 0)
 
 -- Select
-instance:select()
+device:select()
 
 -- Write and read
-print(instance:write("Hello, Lua RTOS!"))
+print(device:write("Hello, Lua RTOS!"))
 
 -- Deselect
-instance:deselect()
+device:deselect()
 ```
