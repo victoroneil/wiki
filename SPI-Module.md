@@ -50,19 +50,6 @@ To use this module you must take into consideration the following:
 
 # Utility functions
 
-## spi.pins()
-
-Show available SPI units, an it's pins, provided but your platform.
-   
-```lua
-/ > spi.pins()
-spi1: sdi=07	(pin  7)	sdo=08	(pin  8)	sck=06	(pin  6)
-spi2: sdi=012	(pin 12)	sdo=013	(pin 13)	sck=014	(pin 14)
-spi3: sdi=019	(pin 19)	sdo=023	(pin 23)	sck=018	(pin 18)
-/ >
-```
-
-
 # Setup functions
 
 ## spi = spi.setup(id, mode, cs, speed, data bits, mode number)
