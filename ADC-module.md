@@ -26,6 +26,19 @@ To use this module you must take into consideration the following:
    channel:read(...)
    ```
 
+# ESP32 notes
+
+In ESP32 the ADC module allows the programmer to access to 3 ADC units:
+
+* adc.ADC1:
+  This is the internal ADC module, with a maximum 12-bit resolution. VRef- is 0.0V and VRef+ is arround 1.1V.
+
+* adc.MCP3008:
+  This unit is mapped to an external ADC converted through the MCP3008 chip (SPI interface), with a maximum 10-bit resolution.
+
+* adc.MCP3208:
+  This unit is mapped to an external ADC converted through the MCP3208 chip (SPI interface), with a maximum 12-bit resolution.
+
 # Setup funcions
 
 ## adc = adc.setup(id, channel, resolution, [vrefpos, vrefneg])
