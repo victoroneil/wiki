@@ -24,25 +24,25 @@ Multiple slave devices can share the same SPI bus (SCK, SDO and SDI lines), and 
 
 To use this module you must take into consideration the following:
 
-1. Create an SPI instance per device, using the spi.setup function, and store the instance into a variable.
+1. Create a SPI instance device, using the spi.setup function, and store the instance into a variable.
 
   ```lua
-   instance = spi.setup(.....)
+   device = spi.setup(.....)
    ```
 
-2. Use the variable instance for select the device. This selects the device trough the CS pin connected to the device and configures the bus (speed, polarity, etc ...):
+2. Use the device instance for select the device. This selects the device trough the CS pin connected to the device and configures the bus (speed, polarity, etc ...):
 
    ```lua
-   instance:select()
+   device:select()
    ```
 
-3. Use the variable instance for read from / write to the device:
+3. Use the device instance for read from / write to the device:
 
    ```lua
-   instance:write(...)
+   device:write(...)
    ```
 
-4. Use the variable instance for deselect the device. This deselects the device trough the CS pin connected to the device and disconnects the device from the bus:
+4. Use the device instance for deselect the device. This deselects the device trough the CS pin connected to the device and disconnects the device from the bus:
 
    ```lua
    instance:deselect()
@@ -54,13 +54,13 @@ To use this module you must take into consideration the following:
 
 ## spi = spi.setup(id, mode, cs, speed, data bits, mode number)
 
-Setup the SPI module.
+Setup a SPI device.
 
 Arguments:
 
 * id: SPI unit identifier. Use spi.SPIx defined for this purpose.
 * mode: SPI mode, can be either spi.MASTER or spi.SLAVE.
-* cs: chip select pin, for example gpio.GPIO5. If cs is 0 the default cs pin for this SPI unit is used.
+* cs: device's chip select pin, for example gpio.GPIO5. If cs is 0 the default cs pin for this SPI unit is used.
 * speed: speed of the spi module, expressed in kilohertz.
 * mode number: an integer between 0 and 3, according the following table:
 
@@ -73,7 +73,7 @@ Arguments:
 
 * data bits: can be either, 8, 16 or 32 bits.
 
-Returns: an spi instance, or an exception. You must store this instance into a variable for further operations with it.
+Returns: spi device instance, or an exception. You must store this instance into a variable for further operations with it.
 
 ```lua
 -- Setup SPI2 as master, 1 Mhz speed, 8 bits, using GPIO5 as CS, number mode 0
