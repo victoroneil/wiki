@@ -4,7 +4,7 @@ This module contains functions for accessing the CPU's SPI module.
 
 SPI units are encoded into a byte and are platform-dependent. For this reason the SPI module define a numeric constant for each available SPI unit. For example in ESP32 SPI1 is defined by the constant spi.SPI1. Please refer to your platform or board documentation to know which SPI units are available. If you refer to an inexistent SPI, a nil value is returned.
 
-SPI module can work in master or slave mode, each of then identified by spi.MASTER and spi.SLAVE constants.
+SPI module can work in master or slave mode, each of then identified by spi.MASTER and spi.SLAVE constants. For now only spi.MASTER is allowed.
 
 
 # Key concepts
