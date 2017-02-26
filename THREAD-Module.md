@@ -5,16 +5,18 @@ Unlike Lua coroutines, native threads are scheluded by the operating system,
 allowing to run operations in real time.
 
 
-## thread.start(function)
+## thread.start(function, [stack, priority, cpu])
 
 Start a new thread.
 
 Arguments:
 
 * function: function to execute in the thread.
+* stack (optional): the number of bytes to allocate for use as the thread's stack. Must be >= 1024.
+* priority (optional): the priority at which the thread will execute. Must be >= 3 and <= 25, where 3 is the minimal priority.
+* cpu (optional): the CPU at which the thread will execute.
 
-Returns: thread identifier. You must store this identifier into a variable for
-further operations with it.
+Returns: the thread identifier, or an exception. You must store this identifier into a variable for further operations with it.
 
 
 ```lua
