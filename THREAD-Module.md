@@ -12,7 +12,7 @@ Start a new thread.
 Arguments:
 
 * function: function to execute in the thread.
-* stack (optional): the number of bytes to allocate for use as the thread's stack. Must be >= 1024.
+* stack (optional): the number of bytes to allocate for use as the thread's stack. Must be >= 2048.
 * priority (optional): the priority at which the thread will execute. Must be >= 3 and <= 25, where 3 is the minimal priority.
 * cpu (optional): the CPU at which the thread will execute.
 
