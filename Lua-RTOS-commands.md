@@ -51,6 +51,20 @@ print("OS: "..oss..", version: "..version..", build: "..build)
 OS: Lua RTOS, version: beta 0.1, build: 1481679957
 ```
 
+## os.bootcount()
+
+Get the number of boots from the deep sleep state.
+
+Arguments: nothing
+Returns: the number of boots.
+
+## os.resetreason()
+
+Get the reset reason.
+
+Arguments: nothing
+Returns: reset reason.
+
 # Control commands
 
 ## os.sleep(seconds)
