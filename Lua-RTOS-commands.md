@@ -13,7 +13,7 @@ Please, refer to (http://www.lua.org/manual/5.3/manual.html#6.9) to know more ab
 
 ## os.cpu()
 
-Get the CPU name installed in your board.
+Get the CPU name and CPU revision number, installed in your board.
 
 Arguments: nothing
 
@@ -28,7 +28,7 @@ print("CPU: "..cpu)
 ```
 
 ```lua
-CPU: ESP32
+CPU: ESP32 rev 0
 ```
 
 ## os.version()
