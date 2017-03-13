@@ -1,6 +1,8 @@
 # About this
 
-This module contains functions for work with WS2812B leds connected in a one-wired bus. Each led in the bus is known as pixel. The primary limiting factor to the number of pixels you can drive with this module is the memory you have on your board, with 1 Kb of memory you can drive 128 pixels.
+This module contains functions for work with leds connected in a one-wired bus, such as the WS2812B led. Each led in the bus is known as pixel.
+
+The primary limiting factor to the number of pixels you can drive with this module is the memory you have on your board. With 1 Kb of memory you can drive 128 pixels. In ESP32, when Lua RTOS is booted you have arround of 200 Kb of memory available for your applications, so you can drive a very high number of pixels.
 
 # Setup funcions
 
@@ -25,7 +27,7 @@ neo = neopixel.setup(neopixel.WS2812B, pio.GPIO14, 6)
 
 ## instance:setPixel(pixel, red, green, blue)
 
-Set the color, expressed in it's r/g/b components, for a pixel.
+Set the pixel's color, expressed in it's r/g/b components. This function only updates the internal pixel buffer, but anything is transmitted over the bus. You must call to the update function for update the leds connected to the bus.
 
 Arguments:
 
@@ -48,4 +50,63 @@ neo:setPixel(0, 255, 0, 0)
 
 -- Set color for pixel 2 (pure white)
 neo:setPixel(0, 255, 255, 255)
+```
+
+## instance:update()
+
+Updates the leds connected to the bus.
+
+Arguments: nothing.
+
+Returns: nothing, or an exception.
+
+```lua
+-- Setup a NEOPIXEL bus formed by 6 WS2812B leds, connected to GPIO14
+neo = neopixel.setup(neopixel.WS2812B, pio.GPIO14, 6)
+
+-- Set color for pixel 0 (pure red)
+neo:setPixel(0, 255, 0, 0)
+
+-- Set color for pixel 1 (pure green)
+neo:setPixel(0, 255, 0, 0)
+
+-- Set color for pixel 2 (pure white)
+neo:setPixel(0, 255, 255, 255)
+
+-- Update the bus
+neo:update()
+```
+
+# Full example
+
+```lua
+thread.start(function()
+  neo = neopixel.setup(neopixel.WS2812B, pio.GPIO14, 6)
+
+  pixel = 0
+  direction = 0
+
+  while true do
+    neo:setPixel(pixel, 0, 255, 0)
+    neo:update()
+    tmr.delayms(100)
+    neo:setPixel(pixel, 0, 00, 0)
+
+    if (direction == 0) then
+      if (pixel == 5) then
+        direction = 1
+        pixel = 4
+      else
+        pixel = pixel + 1
+      end
+    else
+      if (pixel == 0) then
+        direction = 0
+        pixel = 1
+      else
+        pixel = pixel - 1
+      end
+    end
+  end
+end)
 ```
