@@ -92,7 +92,7 @@ thread.start(function()
     neo:setPixel(pixel, 0, 255, 0)
     neo:update()
     tmr.delayms(100)
-    neo:setPixel(pixel, 0, 00, 0)
+    neo:setPixel(pixel, 0, 0, 0)
 
     if (direction == 0) then
       if (pixel == 5) then
