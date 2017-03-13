@@ -79,6 +79,8 @@ neo:update()
 
 # Full example
 
+In this example a pixel is moved from right to left, and from left to right, in a 6 pixel bus.
+
 ```lua
 thread.start(function()
   neo = neopixel.setup(neopixel.WS2812B, pio.GPIO14, 6)
