@@ -53,6 +53,62 @@ Returns: a stepper instance, or an exception. You must store this instance into 
 --
 --   stepper1: dir pin at GPIO26, step pin at GPIO14
 --   stepper2: dir pin at GPIO12, step pin at GPIO13
+
 s1 = stepper.attach(pio.GPIO26, pio.GPIO14)
 s2 = stepper.attach(pio.GPIO12, pio.GPIO13)
+```
+
+## instance:move(units, [speed, accel])
+
+Setup the next movement for the stepper instance. You must call to the start function for start the movement.
+
+Movement is specified by:
+
+* units: a decimal number that indicates how many units to move.
+* speed (optional): a decimal number that indicates the speed of the movement.
+* accel (optional): a decimal number that indicates the acceleration of the movement.
+
+Returns: noting, or an exception.
+
+```lua
+-- Attach 2 steppers, using the default configuration
+--
+--   stepper1: dir pin at GPIO26, step pin at GPIO14
+--   stepper2: dir pin at GPIO12, step pin at GPIO13
+
+s1 = stepper.attach(pio.GPIO26, pio.GPIO14)
+s2 = stepper.attach(pio.GPIO12, pio.GPIO13)
+
+-- Move s1 10 revolutions
+s1:move(10)
+
+-- Move s2 5 revolutions
+s2:move(5)
+```
+
+## stepper.start(instance1, [instance2, instance3, ...])
+
+Start the movement for a group of stepper defined by the move function. This function blocks until the movement is done.
+
+Arguments: noting
+
+Returns: noting, or an exception.
+
+```lua
+-- Attach 2 steppers, using the default configuration
+--
+--   stepper1: dir pin at GPIO26, step pin at GPIO14
+--   stepper2: dir pin at GPIO12, step pin at GPIO13
+
+s1 = stepper.attach(pio.GPIO26, pio.GPIO14)
+s2 = stepper.attach(pio.GPIO12, pio.GPIO13)
+
+-- Move s1 10 revolutions
+s1:move(10)
+
+-- Move s2 5 revolutions
+s2:move(5)
+
+-- Start the movement
+stepper.start(s1, s2)
 ```
