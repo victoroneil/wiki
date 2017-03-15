@@ -15,18 +15,22 @@ Lua RTOS modules:
 Middleware modules
 
 * [LoRa WAN](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/LoRa-WAN-Module)
-* [MQTT] (https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/MQTT-module)
+* [MQTT](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/MQTT-module)
 
-Hardware access modules:
+Low-level hardware access modules:
 
-* [SENSOR] (https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Sensor-module)
-* [SCREEN](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/SCREEN-Module)
-* [NEOPIXEL](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/NEOPIXEL-module)
 * [PIO](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/PIO-Module)
 * [ADC](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/ADC-Module)
 * [PWM](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/PWM-Module)
 * [SPI](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/SPI-Module)
 * [UART](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/UART-Module)
+
+High-level hardware access modules:
+
+* [NEOPIXEL](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/NEOPIXEL-module)
+* [SENSOR](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Sensor-module)
+* [STEPPER](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Sensor-module)
+* [SCREEN](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/SCREEN-Module)
 
 Utility modules:
 * [PACK] (https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Pack-module)
