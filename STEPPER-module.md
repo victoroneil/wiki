@@ -132,7 +132,7 @@ dir = 1
 s1 = stepper.attach(pio.GPIO26, pio.GPIO14)
 s2 = stepper.attach(pio.GPIO12, pio.GPIO13)
 
--- Move the steppers (10 revolutions), in bucle, changing the
+-- Move the steppers (10 revolutions), in loop, changing the
 -- direction
 while true do
   s1:move(dir * 10)
