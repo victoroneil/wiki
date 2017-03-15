@@ -1,13 +1,13 @@
 Basics:
 
-* [What's Whitecat?] (https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/What's-Whitecat%3F)
-* [What's Lua RTOS?] (https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/What's-Lua-RTOS%3F)
-* [Booting process] (https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Boot-process)
+* [What's Whitecat?](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/What's-Whitecat%3F)
+* [What's Lua RTOS?](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/What's-Lua-RTOS%3F)
+* [Booting process](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Boot-process)
 
 Lua RTOS modules:
 
-* [Exception handling] (https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Exception-handling)
-* [Lua RTOS commands] (https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Lua-RTOS-commands)
+* [Exception handling](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Exception-handling)
+* [Lua RTOS commands](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Lua-RTOS-commands)
 * [Thread](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Thread-Module)
 * [NVS (non volatile storage)](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/NVS-Module)
 * [Net](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Net-Module)
