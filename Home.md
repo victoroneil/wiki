@@ -33,4 +33,4 @@ High-level hardware access modules:
 * [SCREEN](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/SCREEN-Module)
 
 Utility modules:
-* [PACK] (https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Pack-module)
+* [PACK](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Pack-module)
