@@ -20,3 +20,39 @@ Once attached, the programmer can move the steppers specifying:
    1. How many units to move, for example 10 centimeter.
    1. At which speed, for example, 5 centimeter / minute.
    1. At which acceleration, for example, 0.1 centimeters / seconds ^ 2
+
+# Setup functions
+
+## instance = stepper.attach(direction pin, step pin, [stpu, min spd, max spd, accel])
+
+Create a new instance for a stepper.
+
+Arguments:
+
+* direction pin: GPIO to use for the direction signal. Use defined constants in the PIO module for this, for example pio.GPIO26.
+
+* step pin: GPIO to use for the step signal. Use defined constants in the PIO module for this, for example pio.GPIO14.
+
+* stpu (optional): a decimal number that sets the number of steps per unit.
+* min spd (optional): a decimal number that sets the minimum speed (in units / minutes).
+* max spd (optional): a decimal number that sets the maximum speed (in units / minutes).
+* accel (optional): a decimal number that sets the default acceleration(in units / seconds ^2).
+
+By default (if you don't use the optional arguments) the stepper is defined as follows:
+
+* Units are revolutions
+* stpu = 200 (200 steps per revolution)
+* min spd = 60 rpm (60 revolutions per minute) 
+* max spd = 1000 rpm (1000 revolutions per minute) 
+* accl = 2 revolutions / seconds ^ 2
+
+Returns: a stepper instance, or an exception. You must store this instance into a variable for further operations with it.
+
+```lua
+-- Attach 2 steppers, using the default configuration
+--
+--   stepper1: dir pin at GPIO26, step pin at GPIO14
+--   stepper2: dir pin at GPIO12, step pin at GPIO13
+s1 = stepper.attach(pio.GPIO26, pio.GPIO14)
+s2 = stepper.attach(pio.GPIO12, pio.GPIO13)
+```
