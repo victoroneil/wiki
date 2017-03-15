@@ -135,15 +135,15 @@ s2 = stepper.attach(pio.GPIO12, pio.GPIO13)
 -- Move the steppers (10 revolutions), in bucle, changing the
 -- direction
 while true do
-	s1:move(dir * 10)
-	s2:move(dir * 10)
+  s1:move(dir * 10)
+  s2:move(dir * 10)
 
-	stepper.start(s1,s2)
+  stepper.start(s1,s2)
 
-	if (dir == 1) then
-		dir = -1
-	else
-		dir = 1
-	end
+  if (dir == 1) then
+    dir = -1
+  else
+    dir = 1
+  end
 end
 ```
