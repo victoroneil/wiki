@@ -86,8 +86,8 @@ device = spi.setup(spi.SPI2, spi.MASTER, pio.GPIO5, 1000, 8, 0)
 
 Select the SPI device.
 
-Arguments: nothing
-Returns: nothing
+Arguments: nothing.
+Returns: nothing, or an exception.
 
 
 ```lua
@@ -107,8 +107,8 @@ device:select()
 
 Deselect the SPI device.
 
-Arguments: nothing
-Returns: nothing
+Arguments: nothing.
+Returns: nothing, or an exception.
 
 
 ```lua
