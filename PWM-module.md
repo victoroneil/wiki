@@ -18,7 +18,7 @@ To use this module you must take into consideration the following:
 1. Create a PWM channel instance, using the pwm.setup function, and store the instance into a variable.
 
   ```lua
-   chan = pwm.setupcha(.....)
+   chan = pwm.setupchan(.....)
    ```
 
 2. Use the variable chan for operate with the channel :
