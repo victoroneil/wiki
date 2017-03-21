@@ -15,19 +15,13 @@ In ESP32 implementation only PWM0 is allowed in current version. This module is 
 
 To use this module you must take into consideration the following:
 
-1. Create a PWM instance, using the pwm.setup function, and store the instance into a variable.
+1. Create a PWM channel instance, using the pwm.setup function, and store the instance into a variable.
 
   ```lua
-   instance = pwm.setup(.....)
+   instance = pwm.setupcha(.....)
    ```
 
-2. Use the variable instance for create an instance of a PWM channel:
-
-   ```lua
-   chan = instance:setupchan()
-   ```
-
-3. Use the variable chan for operate with the channel :
+2. Use the variable chan for operate with the channel :
 
    ```lua
    chan:start(...)
@@ -37,25 +31,13 @@ To use this module you must take into consideration the following:
 
 # Setup functions
 
-## pwm.setup(id)
-
-Arguments:
-
-* id: PWM module identifier. Use pwm.PWMx defined for this purpose.
-
-Returns: PWM instance or an exception. You must store this instance into a variable for further operations with it.
-
-```lua
--- Setup PWM0 unit
-pwm0 = pwm.setup(pwm.PWM0)
-```
-
-## chan = instance:setupchan(channel, pin, frequency, initial duty)
+## chan = pwm.setupchan(id, channel, pin, frequency, initial duty)
 
 Setup a PWM channel.
 
 Arguments:
 
+* id: PWM module identifier. Use pwm.PWMx defined for this purpose.
 * channel: a PWM channel identifier. Use pwm.PWM_CHx defined for this purpose. If channel is -1 channel assignment is made by Lua RTOS.
 * pin: the GPIO identifier to use. Use pio.GPIOx defined for this purpose.
 * frequency: pulse frequency, expressed in hertzs
@@ -64,11 +46,8 @@ Arguments:
 Returns: the PWM channel instance or an exception. You must store this instance into a variable for further operations with it.
 
 ```lua
--- Setup PWM0 unit
-pwm0 = pwm.setup(pwm.PWM0)
-
 -- Setup PWM0's channel 0 connected to GPIO16, at 10 Khz, with initial duty value of 50%.
-chan = pwm0:setup(0, pio.GPIO16, 10000, 0.5)
+chan = pwm0:setup(pwm.PWM0, 0, pio.GPIO16, 10000, 0.5)
 ```
 
 # Operation functions
@@ -80,11 +59,8 @@ Start the PWM channel.
 Returns: nothing, or an exception.
 
 ```lua
--- Setup PWM0 unit
-pwm0 = pwm.setup(pwm.PWM0)
-
 -- Setup PWM0's channel 0 connected to GPIO16, at 10 Khz, with initial duty value of 50%.
-chan = pwm0:setup(0, pio.GPIO16, 10000, 0.5)
+chan = pwm0:setup(pwm.PWM0, 0, pio.GPIO16, 10000, 0.5)
 
 -- Start the PWM channel
 chan:start()
@@ -97,11 +73,8 @@ Stop the PWM channel.
 Returns: nothing, or an exception.
 
 ```lua
--- Setup PWM0 unit
-pwm0 = pwm.setup(pwm.PWM0)
-
 -- Setup PWM0's channel 0 connected to GPIO16, at 10 Khz, with initial duty value of 50%.
-chan = pwm0:setup(0, pio.GPIO16, 10000, 0.5)
+chan = pwm0:setup(pwm.PWM0, 0, pio.GPIO16, 10000, 0.5)
 
 -- Start the PWM channel
 chan:start()
@@ -124,11 +97,8 @@ Arguments:
 Returns: nothing, or an exception.
 
 ```lua
--- Setup PWM0 unit
-pwm0 = pwm.setup(pwm.PWM0)
-
 -- Setup PWM0's channel 0 connected to GPIO16, at 10 Khz, with initial duty value of 50%.
-chan = pwm0:setup(0, pio.GPIO16, 10000, 0.5)
+chan = pwm0:setup(pwm.PWM0, 0, pio.GPIO16, 10000, 0.5)
 
 -- Start the PWM channel
 chan:start()
