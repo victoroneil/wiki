@@ -6,7 +6,7 @@ Lua RTOS support for MQTT is build over [Eclipse Paho MQTT] (https://github.com/
 
 # What do you need?
 
-For use MQTT you need an internet connection. You can configure an internet connection in Lua RTOS through [Net module] (https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Net-module).
+For use MQTT you need an internet connection, and credentials to connect to a MQTT broker. You can configure an internet connection in Lua RTOS through [Net module] (https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Net-module).
 
 # Key concepts
 
@@ -56,29 +56,6 @@ client = mqtt.client("100", "xxxx.xx", 1883, false)
 client:connect("","")
 ```
 
-## client:publish(topic, payload, qos)
-
-Publish a message to a topic.
-
-Arguments:
-
-* topic: topic name in which to publish.
-* payload: payload, a string with the information to publish packed on it.
-* qos: quality of service, according to MQTT specs, can be either mqtt.QOS0, mqtt.QOS1, or mqtt.QOS2
-
-Returns: nothing or an exception
-
-```lua
--- Creates an mqtt instance. Broker domain is xxxx.xx, at port 1883
-client = mqtt.client("100", "xxxx.xx", 1883, false)
-
--- Connect
-client:connect("","")
-
--- Publish to topic
-client:publish("/100", "hello", mqtt.QOS0)
-```
-
 ## instance:disconnect()
 
 Disconnects the client instance from the broker.
@@ -100,13 +77,36 @@ client:connect("","")
 client:disconnect()
 ```
 
+## client:publish(topic, payload, qos)
+
+Publish a message to a topic.
+
+Arguments:
+
+* topic: topic name.
+* payload: payload, a string with the information to publish packed on it.
+* qos: quality of service, according to MQTT specs, can be either mqtt.QOS0, mqtt.QOS1, or mqtt.QOS2
+
+Returns: nothing or an exception
+
+```lua
+-- Creates an mqtt instance. Broker domain is xxxx.xx, at port 1883
+client = mqtt.client("100", "xxxx.xx", 1883, false)
+
+-- Connect
+client:connect("","")
+
+-- Publish to topic
+client:publish("/100", "hello", mqtt.QOS0)
+```
+
 ## client:subscribe(topic, qos, callback)
 
 Subscribe to a topic.
 
 Arguments:
 
-* topic: topic name in which to publish.
+* topic: topic name.
 * qos: quality of service, according to MQTT specs, can be either mqtt.QOS0, mqtt.QOS1, or mqtt.QOS2
 * function: callback function that will be executed when a message is received on topic. This function takes 2 arguments: the message length, and the message.
 
