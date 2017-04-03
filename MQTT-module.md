@@ -14,11 +14,33 @@ MQTT (Message Queue Telemetry Transport) is an ISO standard (ISO/IEC PRF 20922) 
 
 The publish-subscribe messaging pattern requires a message broker. The broker is responsible for distributing messages to interested clients based on the topic of a message.
 
+To use this module you must take into consideration the following:
+
+1. Create a MQTT client instance, and store the instance into a variable.
+
+  ```lua
+   client = mqtt.client("100", "xxxx.xx", 1883, false)
+   ```
+
+2. Connect to the broker:
+
+   ```lua
+   client:connect("","")
+   ```
+
+3. Publish to a topic, or subscribe to a topic using client:publish or client:subcribe functions.
+
+4. Disconnect from the broker:
+
+   ```lua
+   client:disconnect()
+   ```
+
 # Setup functions
 
 ## client = mqtt.client(clientid, host, port, secure)
 
-Creates a new mqtt client instance.
+Creates a new MQTT client instance.
 
 Arguments:
 
