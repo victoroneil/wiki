@@ -4,6 +4,10 @@ Basics:
 * [What's Lua RTOS?](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/What's-Lua-RTOS%3F)
 * [Booting process](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Boot-process)
 
+Boards:
+
+* [Whitecat ESP32N1](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Whitecat-ESP32-N1)
+
 Lua RTOS modules:
 
 * [Exception handling](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Exception-handling)
