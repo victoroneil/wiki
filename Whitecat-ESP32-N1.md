@@ -13,10 +13,10 @@ The Whitecat ESP32 N1 board integrates an ESP32 MCU and a LoRa WAN transceiver. 
 * Dual-core Tensilica LX6 microprocessor
 * Up to 240MHz clock frequency
 * 520kB internal SRAM
-* Integrated LoRa WAN transceiver, with onboard antenna, and UFL connector for external antenna.
-* Integrated 802.11 BGN WiFi transceiver, with onboard antenna, and UFL connector for external antenna.
+* Integrated LoRa WAN transceiver, with onboard antenna, and UFL connector for external antenna
+* Integrated 802.11 BGN WiFi transceiver, with onboard antenna, and UFL connector for external antenna
 * Integrated dual-mode Bluetooth (classic and BLE)
-* 5.5 to 3.3V operating range through input voltage regulator
+* 3.3 to 5.5V operating range through input voltage regulator
 * Second voltage regulator for power on / power off sensors through a dedicated GPIO
 * RTC clock
 * 2MB Flash memory
