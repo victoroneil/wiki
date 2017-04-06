@@ -15,4 +15,5 @@ The Whitecat ESP32 N1 board integrates an ESP32 MCU and a LoRa WAN transceiver. 
 * 2MB Flash memory
 
 **Pinout:**
+
 ![](http://whitecatboard.org/git/n1-pinout.png)
