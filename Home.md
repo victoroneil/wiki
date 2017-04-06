@@ -6,7 +6,7 @@ Basics:
 
 Boards:
 
-* [Whitecat ESP32N1](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Whitecat-ESP32-N1)
+* [Whitecat ESP32 N1](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Whitecat-ESP32-N1)
 
 Lua RTOS modules:
 
