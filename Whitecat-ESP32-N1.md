@@ -9,5 +9,6 @@ The Whitecat ESP32 N1 board integrates an ESP32 MCU and a LoRa WAN transceiver. 
 * Integrated LoRa WAN transceiver
 * Integrated 802.11 BGN WiFi transceiver
 * Integrated dual-mode Bluetooth (classic and BLE)
-* 3.3V operating range
-* 4MB Flash memory
+* 5.5 to 3.3V operating range through input voltage regulator
+* Second voltage regulator for power on / power off sensors through a dedicated GPIO
+* 2MB Flash memory
