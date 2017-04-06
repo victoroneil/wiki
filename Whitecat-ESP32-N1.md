@@ -4,10 +4,10 @@ The Whitecat ESP32 N1 board integrates an ESP32 MCU and a LoRa WAN transceiver. 
 
 **How to order:**
 
-| Reference              | Comments                 | Order now                  |
-|------------------------|--------------------------|----------------------------|
-| Whitecat ESP32 N1 LORA | With LoRa transceiver    | [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=P59CMKZDTJRYS)                           |
-| Whitecat ESP32 N1      | Without LoRa transceiver | [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LHHPU9XFDZD56)                      |
+| Reference              | Comments                 | Price                 | Buy now                  |
+|------------------------|--------------------------|-----------------------|---------------------------
+| Whitecat ESP32 N1 LORA | With LoRa transceiver    | 45,00 EUR world wide\s\sshipping included | [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=P59CMKZDTJRYS)                           |
+| Whitecat ESP32 N1      | Without LoRa transceiver | 35,00 EUR world wide\s\sshipping included | [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LHHPU9XFDZD56)                      |
 
 **Features:**
 * Dual-core Tensilica LX6 microprocessor
