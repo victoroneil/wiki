@@ -2,6 +2,38 @@
 
 This module contains functions for configure and access the network.
 
+# Key concepts
+
+Lua RTOS has support for the following network interfaces, each of one identified by it's name:
+
+* en: ethernet interface
+* wf: wifi interface
+
+To use this module you must take into consideration the following:
+
+1. Configure the interface, using the interface's setup function.
+
+   ```lua
+   -- Setup wifi
+   net.wf.setup(...)
+   ````
+
+1. Start the interface, using the interface's start function.
+
+   ```lua
+   -- Start wifi
+   net.wf.start()
+   ````
+
+1. Interact with the network, for example, creating and MQTT client instance and publish some messages.
+
+1. Stop the interface, using the interface's stop function.
+
+   ```lua
+   -- Stop wifi
+   net.wf.stop()
+   ````
+
 # Network information
 
 ## net.wf.scan([table])
