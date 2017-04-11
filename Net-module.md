@@ -137,3 +137,88 @@ wf: mac address 24:0a:c4:00:c9:5c
 -- Get the network stats to a table
 net.stat(true)
 ```
+
+## ip = net.packip(ip1, ip2, ip3, ip4)
+
+Returns packet representation of an IPv4 address that can be used with all 
+net's module functions that require an IP address as argument. The IP address is
+ provided from the 4 elements that make up an IPv4 address: ip1.ip2.ip3.ip4
+
+Arguments:
+
+* ip1: the first part of the ip address
+* ip2: the second part of the ip address
+* ip3: the third part of the ip address
+* ip4: the fourth part of the ip address
+
+Returns: an integer that encodes the IP address.
+
+```lua
+localhost = net.packip(127,0,0,1)
+print(localhost)
+16777343
+```
+
+
+## ip = net.packip("ip")
+
+Returns a packet representation of an IPv4 address that can be used with all 
+net's module functions that require an IP address as argument. The IP address is
+ provided as the IPv4 canonical representation.
+
+Arguments:
+
+* ip: the IP addres string in  IPv4 canonical representation
+
+Returns: an integer that encodes the IP address.
+
+```lua
+localhost = net.packip("127.0.0.1")
+print(localhost)
+16777343
+```
+
+
+## ip1, ip2, ip3, ip4 = net.unpackip(ip, '*n')
+
+Returns an unpacked representation of an IPv4 address packed by net.packip 
+function. The unpacket representation is provided by the 4 elements that make 
+up an IPv4 address.
+
+Arguments:
+
+* ip: the packet IP address
+
+Returns:
+
+* ip1: the first part of the ip address
+* ip2: the second part of the ip address
+* ip3: the third part of the ip address
+* ip4: the fourth part of the ip address
+
+```lua
+localhost = net.packip("127.0.0.1")
+ip1, ip2, ip3, ip4 = net.unpackip(localhost, '*n')
+print(ip1.." "..ip2.." "..ip3.." "..ip4)
+127 0 0 1
+```
+
+
+## ip = net.unpackip(ip, '*s')
+
+Returns an unpacked representation of an IPv4 address packed by net.packip 
+function. The IP unpacket representation is provided as the IPv4 canonical 
+representation.
+
+Arguments:
+
+* ip: the packet IP address
+
+Returns: the IP addres string in  IPv4 canonical representation
+
+```lua
+localhost = net.packip("127.0.0.1")
+ip = net.unpackip(localhost, '*s')
+print(ip)
+127.0.0.1
+```
