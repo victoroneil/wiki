@@ -222,3 +222,19 @@ ip = net.unpackip(localhost, '*s')
 print(ip)
 127.0.0.1
 ```
+
+## ip = net.lookup(hostname)
+
+Makes a DNS lookup.
+
+Arguments:
+
+* hostname: the hostname to make the lookup
+
+Returns: the packet IP of the hostname.
+
+```lua
+ip = net.lookup("whitecatboard.org")
+print(net.unpackip(ip, "*s"))
+207.148.248.143
+```
