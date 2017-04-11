@@ -34,7 +34,7 @@ To use this module you must take into consideration the following:
    net.wf.stop()
    ````
 
-# Network information
+# Wi-Fi
 
 ## net.wf.scan([table])
 
@@ -78,6 +78,34 @@ Returns:
 scan = net.wf.scan(true)
 ````
 
+## net.wf.setup(mode, ssid, password)
+
+Setup wifi interface.
+
+Arguments:
+
+* mode: wifi mode. In this version only net.wf.mode.STA (station) is supported.
+* ssid: network's ssid to connect.
+* password: network's password
+
+Returns: nothing, or an exception.
+
+## net.wf.start()
+
+Start the wifi interface.
+
+Arguments: nothing.
+Returns: nothing, or an exception.
+
+## net.wf.stop()
+
+Stop the wifi interface.
+
+Arguments: nothing.
+Returns: nothing, or an exception.
+
+# Common functions
+
 ## net.stat([table])
 
 Get the network stats for all the available interfaces.
@@ -109,31 +137,3 @@ wf: mac address 24:0a:c4:00:c9:5c
 -- Get the network stats to a table
 net.stat(true)
 ```
-
-# Network configuration
-
-## net.wf.setup(mode, ssid, password)
-
-Setup wifi interface.
-
-Arguments:
-
-* mode: wifi mode. In this version only net.wf.mode.STA (station) is supported.
-* ssid: network's ssid to connect.
-* password: network's password
-
-Returns: nothing, or an exception.
-
-## net.wf.start()
-
-Start the wifi interface.
-
-Arguments: nothing.
-Returns: nothing, or an exception.
-
-## net.wf.stop()
-
-Stop the wifi interface.
-
-Arguments: nothing.
-Returns: nothing, or an exception.
