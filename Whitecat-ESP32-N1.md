@@ -19,7 +19,7 @@ The Whitecat ESP32 N1 board integrates an ESP32 MCU and a LoRa WAN transceiver. 
 * 3.3 to 5.5V operating range through input voltage regulator
 * Second voltage regulator for power on / power off sensors through a dedicated GPIO
 * RTC clock
-* 2MB Flash memory
+* 4MB Flash memory
 
 **Pinout:**
 
