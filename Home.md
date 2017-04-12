@@ -29,6 +29,7 @@ Low-level hardware access modules:
 * [PWM](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/PWM-Module)
 * [SPI](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/SPI-Module)
 * [UART](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/UART-Module)
+* [CAN](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/CAN-module)
 
 High-level hardware access modules:
 
