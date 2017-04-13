@@ -19,7 +19,9 @@ Lua RTOS modules:
 
 Middleware modules
 
-* [LoRa WAN](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/LoRa-WAN-Module)
+* LoRa WAN
+   * [LoRa WAN node](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/LoRa-WAN-node-module)
+
 * [MQTT](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/MQTT-module)
 
 Low-level hardware access modules:
