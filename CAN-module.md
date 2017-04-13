@@ -12,7 +12,14 @@ A Controller Area Network (CAN bus) is a vehicle bus standard designed to allow 
 
 # ESP32 Notes
 
-The ESP32 CAN module is based on the [SJA100](https://www.nxp.com/documents/data_sheet/SJA1000.pdf).
+The ESP32 CAN module is based on the [SJA100 CAN controller](https://www.nxp.com/documents/data_sheet/SJA1000.pdf), and needs an external CAN transceiver, such as the [VP231](https://upverter.com/datasheet/fb1ba5237f33ad28b4f78a053c64762efe576adc.pdf).
+
+Proposed connection:
+
+| ESP32                  | VP231 | Description |
+|------------------------|-------|-------------|
+|GPIO5 / GPIO12 / GPIO25 | D     | CAN TX      |
+|GPIO4 / GPIO14 / GPIO35 | R     | CAN RX      |
  
 # Setup functions
 
