@@ -2,14 +2,18 @@
 
 This module contains functions for accessing the Controller Area Network (CAN) module.
 
-CAN modules are encoded into a byte and are platform-dependent. For this reason the CAN module define a numeric constant for each available CAN module.
+CAN modules are encoded into a byte and are platform-dependent. For this reason the CAN module defines a numeric constant for each available CAN module.
 
-In ESP32 only one CAN module is available, and it is defined by the constant can.CAN0.
+In ESP32 only one CAN module is available, and it's defined by the constant can.CAN0.
 
 # Key concepts
 
 A Controller Area Network (CAN bus) is a vehicle bus standard designed to allow MCUs and devices to communicate with each other in applications without a host computer. It is a message-based protocol, designed originally for multiplex electrical wiring within automobiles, but is also used in many other contexts.
 
+# ESP32 Notes
+
+The ESP32 CAN module is based on the [SJA100](https://www.nxp.com/documents/data_sheet/SJA1000.pdf).
+ 
 # Setup functions
 
 ## can.setup(id, speed)
