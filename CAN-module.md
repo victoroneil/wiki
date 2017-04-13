@@ -21,6 +21,8 @@ Proposed connection:
 |GPIO5 / GPIO12 / GPIO25 | D     | CAN TX      |
 |GPIO4 / GPIO14 / GPIO35 | R     | CAN RX      |
  
+CAN TX / CAN RX pin assignment is done in build-time through Kconfig under Lua RTOS -> Hardware -> CAN pin map.
+
 # Setup functions
 
 ## can.setup(id, speed)
