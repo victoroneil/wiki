@@ -38,7 +38,7 @@ Setup the LoRa WAN stack.
 
 Arguments:
 
-* band: the ISM band, can be either lora.BAND868 (Europe) or lora.BAND433 (United States)
+* band: the ISM band, can be either lora.BAND868 (Europe) or lora.BAND915 (United States)
 
 Returns: nothing, or an exception.
 
