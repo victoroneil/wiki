@@ -8,8 +8,7 @@
 |              | humidity    | % relative humidity        |
 |              | pressure    | hPa                        |
 | Properties   | address     | sensor address (r/w)       |
-|              | mode        | sensor mode (r/w)<br>          |
-|              |             | 0=sleep, 1=forced, 2=normal|
+|              | mode        | sensor mode (r/w)<br>0=sleep, 1=forced, 2=normal          |
 |              | standbytime | standby time in msecs (r/w)|
 | [Datasheet](https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME280_DS001-11.pdf)    |             | ![](https://whitecatboard.org/git/bme280.jpg)                           |
 
