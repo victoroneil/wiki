@@ -187,12 +187,17 @@ s = sensor.attach("DS1820",pio.GPIO4, 0x28ff900f, 0xb316041a)
 Here is the list of sensors currently natively supported in Lua RTOS.
 
   * Temperature
-    - [DHT11] (https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/DHT11-SENSOR)
-    - [DS1820] (https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/DS1820-SENSOR)
-    - [TMP36] (https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/TMP36-SENSOR)
+    - [BME280](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/BME280-SENSOR)
+    - [DHT11](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/DHT11-SENSOR)
+    - [DS1820](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/DS1820-SENSOR)
+    - [TMP36](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/TMP36-SENSOR)
 
   * Humidity
-    - [DHT11] (https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/DHT11-SENSOR)
+    - [BME280](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/BME280-SENSOR)
+    - [DHT11](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/DHT11-SENSOR)
+
+  * Pressure
+    - [BME280](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/BME280-SENSOR)
 
   * Distance
-    - [PING))) 28015 ultrasonic sensor] (https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/PING-28015-ultrasonic-sensor)
+    - [PING))) 28015 ultrasonic sensor](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/PING-28015-ultrasonic-sensor)
