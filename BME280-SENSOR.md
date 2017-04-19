@@ -7,7 +7,9 @@
 | Provides     | temperature | celsius degrees            |
 |              | humidity    | % relative humidity        |
 |              | pressure    | hPa                        |
-| Properties   | none        |                            |
+| Properties   | address     | sensor address (r/w)       |
+|              | mode        | sensor mode (r/w)          |
+|              | standbytime |                            |
 | [Datasheet](https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME280_DS001-11.pdf)    |             | ![](https://whitecatboard.org/git/bme280.jpg)                           |
 
 # Code
