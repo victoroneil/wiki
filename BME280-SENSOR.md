@@ -13,8 +13,8 @@
 # Code
 
 ```lua
--- Setup BME280, attached at I2C0, sda=GPIO14, SCL=GPIO26
--- BME280 adress is 0x76
+-- Setup BME280, attached at I2C0, speed=400Khz
+-- sda=GPIO14, SCL=GPIO26, adress is 0x76
 s1 = sensor.setup("BME280", i2c.I2C0, 400, 14, 26, 0x76)
 
 -- Read temperature
