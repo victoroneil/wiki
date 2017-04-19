@@ -30,7 +30,7 @@ while true do
   pressure = s1:read("pressure")
 
   -- Print results
-  print("temperature: "..temperature..", humidity: "..humidity..", pressure: "..pressure)
+  print("temp: "..temperature..", humidity: "..humidity..", pressure: "..pressure)
 
   tmr.delayms(500)
 end
