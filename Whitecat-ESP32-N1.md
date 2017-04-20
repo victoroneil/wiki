@@ -1,4 +1,4 @@
-![](http://whitecatboard.org/git/whitecatn1.png)
+![](https://whitecatboard.org/git/whitecatn1.png)
 
 The Whitecat ESP32 N1 board integrates an ESP32 MCU and a LoRa WAN transceiver. This board is a good start point for deploy real IOT use cases, in both outdoor and indoor environments, since all the elements that can compromise the power consumption, and that are not used when the board is deployed have not been incorporated (battery charger, usb adapters, etc.).
 
