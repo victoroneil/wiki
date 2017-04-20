@@ -9,7 +9,7 @@
 |              | rom         | address in the bus          |
 |              | type        | model                       |
 |              | numdev      | number of DS180 sensors in the bus |
-| [Datasheet](https://datasheets.maximintegrated.com/en/ds/DS18S20.pdf)           |             | ![](http://whitecatboard.org/git/ds1820.png)                                  |
+| [Datasheet](https://datasheets.maximintegrated.com/en/ds/DS18S20.pdf)           |             | ![](http://git.whitecatboard.org/ds1820.png)                                  |
 
 
 # Code
