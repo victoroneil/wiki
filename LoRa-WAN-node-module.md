@@ -4,13 +4,13 @@ This module contains functions for send and receive information through [LoRa WA
 
 Lua RTOS support for LoRa WAN is build over [LMIC](https://www.research.ibm.com/labs/zurich/ics/lrsc/lmic.html) stack from IBM.
 
-Please, take note that build a LoRa WAN network involves a lot of things, such as the end-device, the gateway, the network coordinator, etc ... In this page we only talk about the end-device and how is programmed, you can know more about our work on LoRa WAN in [whitecatboard.org] (http://whitecatboard.org).
+Please, take note that build a LoRa WAN network involves a lot of things, such as the end-device, the gateway, the network coordinator, etc ... In this page we only talk about the end-device and how is programmed, you can know more about our work on LoRa WAN in [whitecatboard.org](https://whitecatboard.org).
 
 # What do you need?
 
-For use this module you need a SPI LoRa WAN transceiver, such as [RFM95] (http://www.hoperf.com/rf_transceiver/lora/RFM95W.html). Currently we are working on a board that will integrate this chip and ESP32.
+For use this module you need a SPI LoRa WAN transceiver. If you need a ready-to-use LoRa WAN board based on ESP32 you can buy the [Whitecat ESP32 N1 board](https://whitecatboard.org/whitecat-esp32-n1-board).
 
-It's highly recommended to read the [LoRa WAN specification] (https://www.lora-alliance.org/portals/0/specs/LoRaWAN%20Specification%201R0.pdf).
+It's highly recommended to read the [LoRa WAN specification](https://www.lora-alliance.org/portals/0/specs/LoRaWAN%20Specification%201R0.pdf).
 
 # Key concepts
 
