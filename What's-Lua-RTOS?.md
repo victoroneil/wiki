@@ -8,6 +8,6 @@ Lua RTOS has a 3-layers design:
 
 3. In the bottom layer there is a hardware abstraction layer, which talk directly with the platform hardware.
 
-![](http://whitecatboard.org/git/luaos.png)
+![](httpz://git.whitecatboard.org/luaos.png)
 
 For porting Lua RTOS to other platforms is only necessary to write the code for the bottom layer, because the top and the middle layer are the same for all platforms.
