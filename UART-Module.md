@@ -98,7 +98,7 @@ Read data from an UART unit.
 Arguments:
 
 * id: UART unit identifier. Use uart.UARTx defined for this purpose.
-* format: a string indicating the data type format to read. Can be "*l" for read a string without waiting for a line break, or "*el" for read a string until a line break is received, or "*c" for read a byte.
+* format: a string indicating the data type format to read. Can be "*l" for read a string without waiting for a line break, "*el" for read a string until a line break is received, or "*c" for read a byte.
 * timeout: timeout, expressed in milliseconds. This function blocks the current thread until all data is received in the specified timeout.
 
 Returns: the readed data, or nil if nothing is received in the specified timeout, or an exception.
