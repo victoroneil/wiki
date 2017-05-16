@@ -92,7 +92,7 @@ Arguments:
   - When setup in AP is the channel number to use by the Soft-AP. It's a natural number between 1 and 13.
   - When setup in STA is the starting channel number to use for connect the AP. It's a natural number between 1 and 13. Set to 0 if the AP's channel is unknown.
   - Default value is 0.
-* hidden (optional): only available when setup in AP mode. If true the SSID is visible, if false is hidden.
+* hidden (optional): only available when setup in AP mode. If true the SSID is hidden, if false it's visible.
 
 Returns: nothing, or an exception.
 
