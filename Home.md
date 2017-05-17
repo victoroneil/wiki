@@ -16,6 +16,11 @@ Lua RTOS modules:
 * [Net](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Net-Module)
    * [Wi-Fi](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Net-module#wi-fi)
 
+Network services
+
+* [HTTP](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Net-services#http)
+* [Captive DNS](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Net-services#captive-dns)
+
 Middleware modules
 
 * LoRa WAN
