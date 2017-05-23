@@ -37,18 +37,18 @@ Get Lua RTOS version installed in your board.
 
 Arguments: nothing
 
-Returns: the operating system name (Lua RTOS), the version number, and the operation system build time.
+Returns: the operating system name (Lua RTOS), the version number,the system build time (expressed in EPOCH time) and the commit's hash (from github) used in build.
 
 ```lua
 -- Get operating system name and version
-oss, version, build = os.version();
+oss, version, build, commit = os.version();
 
 -- Print to screen
-print("OS: "..oss..", version: "..version..", build: "..build)
+print("OS: "..oss..", version: "..version..", build: "..build..", commit: "..commit)
 ```
 
 ```lua
-OS: Lua RTOS, version: beta 0.1, build: 1481679957
+OS: Lua RTOS, version: beta 0.1, build: 1495574689, commit: 4d92804451cbec7d3ad545c66a92ffab35c63871
 ```
 
 ## os.bootcount()
