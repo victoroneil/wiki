@@ -63,11 +63,6 @@ Arguments:
 * cs: device's chip select pin, for example gpio.GPIO5. If cs is 0 the default cs pin for this SPI unit is used.
 * speed: speed of the spi module, expressed in kilohertz.
 * mode number: an integer between 0 and 3, according the following table:
-* flags (optional): a bit mask formed by the following constants
-   * spi.READ: setup spi as read only (only MISO are used)
-   * spi.WRITE: setup spi as write only (only MOSI are used)
-   * default value is spi.READ | spi.WRITE: setup spi as read / write (MISO and MOSI are used)
-
 
   |mode number|polarity|phase|
   |-----------|--------|-----|
@@ -75,6 +70,12 @@ Arguments:
   |     1     |   0    |  1  |
   |     2     |   1    |  0  |
   |     3     |   1    |  1  |
+
+
+* flags (optional): a bit mask formed by the following constants
+   * spi.READ: setup spi as read only (only MISO are used)
+   * spi.WRITE: setup spi as write only (only MOSI are used)
+   * default value is spi.READ | spi.WRITE: setup spi as read / write (MISO and MOSI are used)
 
 * data bits: can be either, 8, 16 or 32 bits.
 
