@@ -68,6 +68,7 @@ Arguments:
    * spi.WRITE: setup spi as write only (only MOSI are used)
    * default value is spi.READ | spi.WRITE: setup spi as read / write (MISO and MOSI are used)
 
+
   |mode number|polarity|phase|
   |-----------|--------|-----|
   |     0     |   0    |  0  |
