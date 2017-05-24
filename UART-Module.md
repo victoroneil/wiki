@@ -8,7 +8,7 @@ UART functions are not thread-safe. You must call to the lock / unlock functions
 
 # Setup functions
 
-## uart = uart.setup(id, baud rate, data bits, parity, stop bits, [buffer size])
+## uart = uart.setup(id, baud rate, data bits, parity, stop bits, [buffer size, flags])
 
 Setup the UART module.
 
@@ -20,6 +20,10 @@ Arguments:
 * parity: parity, can be either uart.PARNONE (none parity), uart.PAREVEN (even parity) or uart.PARODD (odd parity).
 * stop bits: number of stop bits, can be either uart.STOP1 (1 stop bits) or uart.STOP2 (2 stop bits)
 * buffer size (optional): size of UART rx buffer, expressed in bytes. If you don't pass any value a 1024 byte-buffer is used.
+* flags (optional): a bit mask formed by the following constants
+   * uart.READ: setup uart as read only (only RX is used)
+   * uart.WRITE: setup uart as write only (only TX is used)
+   * default value is uart.READ | uart.WRITE: setup uart as read / write (RX and TX are used)
 
 Returns: the real baud rate set on the UART unit, or an exception. This might have a different value than the desired baud rate argument.
 
