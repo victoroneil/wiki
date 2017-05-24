@@ -73,8 +73,8 @@ Arguments:
 
 
 * flags (optional): a bit mask formed by the following constants
-   * spi.READ: setup spi as read only (only MISO are used)
-   * spi.WRITE: setup spi as write only (only MOSI are used)
+   * spi.READ: setup spi as read only (only MISO is used)
+   * spi.WRITE: setup spi as write only (only MOSI is used)
    * default value is spi.READ | spi.WRITE: setup spi as read / write (MISO and MOSI are used)
 
 * data bits: can be either, 8, 16 or 32 bits.
