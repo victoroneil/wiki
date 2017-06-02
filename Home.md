@@ -3,6 +3,7 @@ Basics:
 * [What's Whitecat?](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/What's-Whitecat%3F)
 * [What's Lua RTOS?](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/What's-Lua-RTOS%3F)
 * [Startup scripts](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Startup-scripts)
+* [The Lua prompt](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/The-Lua-prompt)
 * [The shell](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/The-shell)
 
 Boards:
