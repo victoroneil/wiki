@@ -1,3 +1,5 @@
+# About this
+
 When Lua RTOS launches the Lua interpreter, and before the Lua prompt appears, 2 scripts are automatically executed. These scripts must be in the root directory:
 
 1. system.lua
@@ -24,3 +26,8 @@ When Lua RTOS launches the Lua interpreter, and before the Lua prompt appears, 2
    -- Execute the application
    dofile("application.lua")
    ```
+
+# Why 2 startup scripts?
+
+During the Lua RTOS design phase, the Lua RTOS team decided to create this 2 startup scripts for allow external IDE (Integrated Development Environment) to send the application code to the board without losing the system settings. Settings goes to the system.lua script, and the application goes to the autorun.lua script.
+ 
