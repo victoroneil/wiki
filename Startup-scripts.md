@@ -33,5 +33,5 @@ During the Lua RTOS design phase, the Lua RTOS team decided to create this 2 sta
 
 # Can I avoid the execution of the startup scripts?
 
-Yes. If you want to avoid the execution of the startup scripts, connect 
+Yes. If you want to avoid the execution of the startup scripts, can connect to the Lua RTOS console using your favorite terminal emulator program, press the Ctrl-D key while Lua RTOS is booting.
  
