@@ -30,4 +30,8 @@ When Lua RTOS launches the Lua interpreter, and before the Lua prompt appears, 2
 # Why 2 startup scripts?
 
 During the Lua RTOS design phase, the Lua RTOS team decided to create this 2 startup scripts for allow external IDE (Integrated Development Environment) to send the application code to the board without losing the system settings. Settings goes to the system.lua script, and the application goes to the autorun.lua script.
+
+# Can I avoid the execution of the startup scripts?
+
+Yes. If you want to avoid the execution of the startup scripts, connect 
  
