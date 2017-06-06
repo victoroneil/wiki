@@ -75,7 +75,9 @@ luac test.lua
 
 ## more _FILE_
 
-## move _SOURCE_ _DESTINATION_
+## mv _SOURCE_ _DESTINATION_
+
+Move (rename) _SOURCE_ to _DESTINATION_.
 
 ## pwd
 
