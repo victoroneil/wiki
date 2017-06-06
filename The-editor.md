@@ -43,4 +43,4 @@ In the table below you will find all available functions of the editor:
 | Ctrl+ end | Move to end of file | Ctrl+L | Goto line |
 | backspace | Delete previous character | Shift+left/right | Select text |
 | tab | Indent selection | Shift+tab | Unindent selection |
-| delete | Delete current character |
+| delete | Delete current character | Ctrl-Y | Help |
