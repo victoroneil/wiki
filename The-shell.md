@@ -93,4 +93,4 @@ Print name of current/working directory.
 
 ## rm _FILE_
 
-Remove __FILE__.
+Remove _FILE_.
