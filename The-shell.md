@@ -85,6 +85,7 @@ Print name of current/working directory.
 
 ```lua
 /examples > pwd
+/examples	
 /examples > 
 ```
 
