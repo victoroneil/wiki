@@ -57,7 +57,7 @@ Print the syslog contents on the standard output.
 
 ## mkdir _DIRECTORY_
 
-## more __FILE_
+## more _FILE_
 
 ## move _SOURCE_ _DESTINATION_
 
