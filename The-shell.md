@@ -32,6 +32,10 @@ Change the working directory.
 /examples > 
 ````
 
+## clear
+
+Clear the terminal screen.
+
 ## cp _SOURCE_ _DESTINATION_
 
 Copy the _SOURCE_ file to the _DESTINATION_ file.
@@ -46,7 +50,3 @@ Copy the _SOURCE_ file to the _DESTINATION_ file.
 Print the syslog contents on the standard output.
 
 **Note:** dmesg is only available if the underlying storage for your root filesystem is not the SPI FLASH.
-
-## clear
-
-Clear the terminal screen.
