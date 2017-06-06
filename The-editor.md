@@ -28,18 +28,16 @@ os.history(false)          -- Enable/disable history
 
 In the table below you will find all available functions of the editor:
 
-|Key| Function |
-|---|----------|
-| Ctrl+S | Save file |
-| Ctrl+Q | Quit |
-| up | Move one line up |
-| down | Move one line down |
-| left | Move one character left |
-| right | Move one character right |
-| right | Move one character right |
-| page up | Move one page up |
-| page down | Move one page down |
-| Ctrl+left | Move to previous word |
+|Key| Function |Key| Function |
+|---|----------|---|----------|
+| up | Move one line up | Ctrl+S | Save file |
+| down | Move one line down | Ctrl+Q | Quit |
+| left | Move one character left | Ctrl+O | Open file |
+| right | Move one character right | Ctrl+W | Close file |
+| right | Move one character right | Ctrl+A | Select all |
+| page up | Move one page up | Ctrl+C | Copy selection to cliboard |
+| page down | Move one page down | Ctrl+X | Cut selection to clipboard |
+| Ctrl+left | Move to previous word | Ctrl+V | Paste from clipboard |
 | Ctrl+right | Move to next word |
 | home | Move to start of line |
 | end | Move to end of line |
