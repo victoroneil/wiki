@@ -2,4 +2,23 @@ Lua RTOS has an integrated shell that allows you to execute certain commands in 
 
 The following explains all the commands supported by the shell.
 
-## cat _file_
+## cat _FILE_
+
+Print _FILE_ on the standard output.
+
+```lua
+/ > cat system.lua
+-- system.lua
+--
+-- This script is executed after a system boot or a system reset and is intended
+-- for setup the system.
+
+---------------------------------------------------
+-- Main setups
+---------------------------------------------------
+os.loglevel(os.LOG_INFO)   -- Log level to info
+os.logcons(true)           -- Enable/disable sys log messages to console
+os.shell(true)             -- Enable/disable shell
+os.history(false)          -- Enable/disable history
+/ > 
+```
