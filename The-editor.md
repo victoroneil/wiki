@@ -1,4 +1,4 @@
-Lua RTOS has an integrated editor that allows you to edit files. You can edit a file typing _os.edit("file")_ in the Lua prompt or typing _edit file_ in the shell.
+Lua RTOS has an integrated editor that allows you to edit files. You can edit a file typing _os.edit("file")_ in the Lua prompt, or typing _edit file_ in the shell.
 
 ```lua
 -- system.lua
@@ -25,6 +25,8 @@ os.history(false)          -- Enable/disable history
 
 /system.lua                                     Ctrl+Y=Help   Ln 1     Col 1   
 ```
+
+In the table below you will find all available functions of the editor:
 
 |Key| Function |
 |---|----------|
