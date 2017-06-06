@@ -51,7 +51,9 @@ Print the syslog contents on the standard output.
 
 **Note:** dmesg is only available if the underlying storage for your root filesystem is not the SPI FLASH.
 
-## exit
+## reboot
+
+Reboot the system.
 
 ## ls _PATTERN_
 
