@@ -2,11 +2,9 @@ Lua RTOS has an integrated editor that allows you to edit files. You can edit a 
 
 ```lua
 -- system.lua
---
--- This script is executed after a system boot or a system reset and is intended-- for setup the system.
 
 ---------------------------------------------------
--- Main setups
+-- Main setup
 ---------------------------------------------------
 os.loglevel(os.LOG_INFO)   -- Log level to info
 os.logcons(true)           -- Enable/disable sys log messages to console
