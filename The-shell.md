@@ -23,7 +23,7 @@ os.history(false)          -- Enable/disable history
 / > 
 ```
 
-## de _DIRECTORY_
+## cd _DIRECTORY_
 
 Change the working directory.
 
@@ -31,3 +31,12 @@ Change the working directory.
 / > cd examples
 /examples > 
 ````
+
+## cp _SOURCE_ _DESTINATION_
+
+Copy the _SOURCE_ file to the _DESTINATION_ file.
+
+```lua
+/ > cp autorun.lua autorun.old
+/ > 
+```
