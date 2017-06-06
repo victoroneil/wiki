@@ -1,4 +1,4 @@
-Lua RTOS has an integrated editor that allows you to edit files.
+Lua RTOS has an integrated editor that allows you to edit files. You can edit a file typing os.edit("file") in the Lua prompt or typing _edit file_ in the shell.
 
 |Key| Function |
 |---|----------|
