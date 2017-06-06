@@ -40,3 +40,7 @@ Copy the _SOURCE_ file to the _DESTINATION_ file.
 / > cp autorun.lua autorun.old
 / > 
 ```
+
+## clear
+
+Clear the terminal screen.
