@@ -39,3 +39,13 @@ In the table below you will find all available functions of the editor:
 | right | Move one character right |
 | page up | Move one page up |
 | page down | Move one page down |
+| Ctrl+left | Move to previous word |
+| Ctrl+right | Move to next word |
+| home | Move to start of line |
+| end | Move to end of line |
+| Ctrl+home | Move to start of file |
+| Ctrl+ end | Move to end of file |
+| backspace | Delete previous character |
+| delete | Delete current character |
+| tab | Indent selection |
+| Shift+tab | Unindent selection |
