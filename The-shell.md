@@ -59,7 +59,7 @@ Print the syslog contents on the standard output.
 
 Translates programs written in the Lua programming language into binary files that can be later loaded and executed.
 
-_DESTINATION_ is optional. If not provided the compiled filename is the _SOURCE_ filename postfixed with the "c" character.
+_DESTINATION_ is optional, and if it's not provided the compiled filename is the _SOURCE_ filename postfixed with the "c" character.
 
 Example:
 
