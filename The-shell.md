@@ -41,6 +41,12 @@ Copy the _SOURCE_ file to the _DESTINATION_ file.
 / > 
 ```
 
+## dmesg
+
+Print the syslog contents on the standard output.
+
+Note: dmesg is only available if the underlying storage for your root filesystem is not the SPI FLASH.
+
 ## clear
 
 Clear the terminal screen.
