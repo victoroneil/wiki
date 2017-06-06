@@ -45,7 +45,7 @@ Copy the _SOURCE_ file to the _DESTINATION_ file.
 
 Print the syslog contents on the standard output.
 
-Note: dmesg is only available if the underlying storage for your root filesystem is not the SPI FLASH.
+**Note:** dmesg is only available if the underlying storage for your root filesystem is not the SPI FLASH.
 
 ## clear
 
