@@ -50,3 +50,24 @@ Copy the _SOURCE_ file to the _DESTINATION_ file.
 Print the syslog contents on the standard output.
 
 **Note:** dmesg is only available if the underlying storage for your root filesystem is not the SPI FLASH.
+
+## exit
+
+## ls _PATTERN_
+
+## mkdir _DIRECTORY_
+
+## more __FILE_
+
+## move _SOURCE_ _DESTINATION_
+
+## pwd
+
+Print name of current/working directory.
+
+```lua
+/examples > pwd
+/examples > 
+```
+
+## rm _FILE_
