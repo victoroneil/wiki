@@ -38,11 +38,11 @@ In the table below you will find all available functions of the editor:
 | page up | Move one page up | Ctrl+C | Copy selection to cliboard |
 | page down | Move one page down | Ctrl+X | Cut selection to clipboard |
 | Ctrl+left | Move to previous word | Ctrl+V | Paste from clipboard |
-| Ctrl+right | Move to next word |
-| home | Move to start of line |
-| end | Move to end of line |
-| Ctrl+home | Move to start of file |
-| Ctrl+ end | Move to end of file |
+| Ctrl+right | Move to next word | Ctrl+Z | Undo |
+| home | Move to start of line | Ctrl+R | Redo |
+| end | Move to end of line | Ctrl+F | Find text |
+| Ctrl+home | Move to start of file | Ctrl+G | Find next |
+| Ctrl+ end | Move to end of file | Ctrl+L | Goto line |
 | backspace | Delete previous character |
 | delete | Delete current character |
 | tab | Indent selection |
