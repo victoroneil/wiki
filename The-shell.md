@@ -42,6 +42,7 @@ Copy the _SOURCE_ file to the _DESTINATION_ file.
 
 ```lua
 / > cp autorun.lua autorun.old
+true
 / > 
 ```
 
