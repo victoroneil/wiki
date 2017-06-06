@@ -22,3 +22,12 @@ os.shell(true)             -- Enable/disable shell
 os.history(false)          -- Enable/disable history
 / > 
 ```
+
+## de _DIRECTORY_
+
+Change the working directory.
+
+```lua
+/ > cd examples
+/examples > 
+````
