@@ -77,7 +77,7 @@ Arguments:
 
 Returns: nothing
 
-````lua
+```lua
 -- Sleep for 10 seconds
 os.sleep(10)
 ```
