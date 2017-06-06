@@ -55,6 +55,22 @@ Print the syslog contents on the standard output.
 
 ## ls _PATTERN_
 
+## luac _SOURCE_ _[DESTINATION]_
+
+Translates programs written in the Lua programming language into binary files that can be later loaded and executed.
+
+_DESTINATION_ is optional. If not provided the compiled filename is the _SOURCE_ filename postfixed with the "c" character.
+
+Example:
+
+```lua
+-- Compile test.lua into test.luac file
+luac test.lua test.luac
+
+-- Compile test.lua into test.luac file
+luac test.lua
+```
+
 ## mkdir _DIRECTORY_
 
 ## more _FILE_
