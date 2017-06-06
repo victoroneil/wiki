@@ -2,4 +2,4 @@ Lua RTOS has an integrated shell that allows you to execute certain commands in 
 
 The following explains all the commands supported by the shell.
 
-# cat file
+## cat file
