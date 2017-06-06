@@ -4,6 +4,7 @@ Basics:
 * [What's Lua RTOS?](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/What's-Lua-RTOS%3F)
 * [Startup scripts](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Startup-scripts)
 * [The Lua prompt](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/The-Lua-prompt)
+* [The editor](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/The-editor)
 * [The shell](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/The-shell)
 
 Boards:
