@@ -30,7 +30,7 @@ To use this module you must take into consideration the following:
 
 In ESP32 only one ADC unit is available:
 
-**adc.ADC1:**
+_adc.ADC1:_
 
   * This is the internal ADC module, with a maximum 12-bit resolution.
   * VRef- is 0.0V and VRef+ is arround 1.1V.
@@ -58,9 +58,9 @@ Lua RTOS allows the programmer to access to external ADC units using the same AP
 
 # Setup funcions
 
-## adc = adc.setup(id, channel, resolution, [vrefpos, vrefneg])
+## adc = adc.attach(id, channel, resolution, [vrefpos, vrefneg])
 
-Setup the ADC channel.
+Attach an ADC device to an ADC channel.
 
 Arguments:
 
@@ -90,7 +90,7 @@ Returns: the raw value, the raw value converted to millivolts, or an exception.
 
 ```lua
 -- Setup channel 0 for ADC1 with 12 bits of resolution
-channel = adc.setup(adc.ADC1, adc.ADC_CH0, 12)
+channel = adc.attach(adc.ADC1, adc.ADC_CH0, 12)
 
 -- Read
 raw, millivolts = channel:read()
