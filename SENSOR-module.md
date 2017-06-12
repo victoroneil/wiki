@@ -38,7 +38,7 @@ In some cases you need to configure your sensor, for example, set the measure re
 
 ```lua
 -- Instantiate a DS1820 sensor connected to GPIO4
-s1 = sensor.setup("DS1820", pio.GPIO4, 0x28ff900f, 0xb316041a)
+s1 = sensor.attach("DS1820", pio.GPIO4, 0x28ff900f, 0xb316041a)
 
 -- Configure sensor resolution
 s1:set("resolution", 10)
@@ -131,7 +131,7 @@ DS1820      04       28ffad17b31603d5    DS18B20
 owire = sensor.enumerate(sensor.OWire, pio.GPIO4, true)
 ```
 
-# Setup functions
+# Configuration functions
 
 ## s = sensor.attach(id, ...)
 
