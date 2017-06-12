@@ -6,11 +6,11 @@ UART units are encoded into a byte and are platform-dependent. For this reason t
 
 UART functions are not thread-safe. You must call to the lock / unlock functions for made UART functions thread-safe.
 
-# Setup functions
+# Configuration functions
 
-## uart = uart.setup(id, baud rate, data bits, parity, stop bits, [buffer size, flags])
+## uart = uart.attach(id, baud rate, data bits, parity, stop bits, [buffer size, flags])
 
-Setup the UART module.
+Attach an UART device to the UART module.
 
 Arguments:
 
@@ -21,17 +21,21 @@ Arguments:
 * stop bits: number of stop bits, can be either uart.STOP1 (1 stop bits) or uart.STOP2 (2 stop bits)
 * buffer size (optional): size of UART rx buffer, expressed in bytes. If you don't pass any value a 1024 byte-buffer is used.
 * flags (optional): a bit mask formed by the following constants
-   * uart.READ: setup uart as read only (only RX is used)
-   * uart.WRITE: setup uart as write only (only TX is used)
-   * default value is uart.READ | uart.WRITE: setup uart as read / write (RX and TX are used)
+   * uart.READ: attach the uart device as read only (only RX is used)
+   * uart.WRITE: attach the uart device as write only (only TX is used)
+   * default value is uart.READ | uart.WRITE: attach the uart device as read / write (RX and TX are used)
 
 Returns: the real baud rate set on the UART unit, or an exception. This might have a different value than the desired baud rate argument.
 
 
 ```lua
--- Setup UART3, 115200 bps, 8N1
-uart.setup(uart.UART3, 115200, 8, uart.PARNONE, uart.STOP1)
+-- Attach an UART device to UART3, 115200 bps, 8N1
+uart.attach(uart.UART3, 115200, 8, uart.PARNONE, uart.STOP1)
 ```
+
+## uart = uart.setup(id, baud rate, data bits, parity, stop bits, [buffer size, flags])
+
+_**This function is deprecated**, and will be removed in the future. Please, use uart.attach instead._
 
 # Operation functions
 
@@ -84,8 +88,8 @@ Write data to an UART unit. Data can be a byte (raw data) or a string.
 Returns: nothing, or an exception.
 
 ```lua
--- Setup UART3, 115200 bps, 8N1
-uart.setup(uart.UART3, 115200, 8, uart.PARNONE, uart.STOP1)
+-- Attach an UART device to UART3, 115200 bps, 8N1
+uart.attach(uart.UART3, 115200, 8, uart.PARNONE, uart.STOP1)
 
 -- Sends AT
 uart.write(uart.UART3, "AT")
@@ -108,8 +112,8 @@ Arguments:
 Returns: the readed data, or nil if nothing is received in the specified timeout, or an exception.
 
 ```lua
--- Setup UART3, 115200 bps, 8N1
-uart.setup(uart.UART3, 115200, 8, uart.PARNONE, uart.STOP1)
+-- Attach an UART device to UART3, 115200 bps, 8N1
+uart.attach(uart.UART3, 115200, 8, uart.PARNONE, uart.STOP1)
 
 -- Read line from UART, with a 500 milliseconds timeout
 uart.read(uart.UART3, "*l", 500)
@@ -126,8 +130,8 @@ Arguments:
 Returns: nothing, or an exception.
 
 ```lua
--- Setup UART3, 115200 bps, 8N1
-uart.setup(uart.UART3, 115200, 8, uart.PARNONE, uart.STOP1)
+-- Attach an UART device to UART3, 115200 bps, 8N1
+uart.attach(uart.UART3, 115200, 8, uart.PARNONE, uart.STOP1)
 
 -- Do something
 
