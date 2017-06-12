@@ -55,7 +55,7 @@ device = pwm.attach(pwm.PWM0, 0, pio.GPIO16, 10000, 0.5)
 device:start()
 ```
 
-## pwm.stop()
+## device:stop()
 
 Stop the PWM generation.
 
@@ -74,7 +74,7 @@ device:start()
 device:stop()
 ```
 
-## device(duty)
+## device:setduty(duty)
 
 Set a new duty value.
 
