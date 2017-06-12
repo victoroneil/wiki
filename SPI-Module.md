@@ -26,7 +26,7 @@ To use this module you must take into consideration the following:
 
 1. Attach an SPI device, using the spi.attach function. The attach function returns an instance of the SPI device. You must store this instance into a variable for further operation with it.
 
-  ```lua
+   ```lua
    device = spi.attach(.....)
    ```
 
