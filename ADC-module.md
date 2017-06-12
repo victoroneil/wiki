@@ -10,31 +10,35 @@ Each ADC unit has one or more ADC channels that are encoded into a byte and are 
 
 An ADC is a system that converts an analog signal, such as a sound picked up by a microphone or light entering a digital camera, into a digital signal.
 
-Internally an ADC is calibrated to operate in a range voltages defined by VRef- and VRef+, and converts the analog input, at a given resolution, to a binary number, that is proportional to [VRef-, VRef+]. For example, if an ADC has a 12-bit resolution, and VRef- = 0, and VRef+ = 3.3 V, when the analog signal is 0 V the conversion is 0, when the analog signal is 3.3 V the conversion is 4095, and when the input signal is 1,65 V the conversion is 2048.
+Internally an ADC is calibrated to operate in a range of voltages defined by VRef- and VRef+, and converts the analog input, at a given resolution, to a binary number, that is proportional to [VRef-, VRef+]. For example, if an ADC has a 12-bit resolution, and VRef- = 0, and VRef+ = 3.3 V, when the analog signal is 0 V the conversion is 0, when the analog signal is 3.3 V the conversion is 4095, and when the input signal is 1,65 V the conversion is 2048.
 
 To use this module you must take into consideration the following:
 
-1. Create an ADC channel instance, using the adc.setup function, and store the instance into a variable.
+1. Attach an ADC device to an ADC channel, using the adc.attach function. The attach function returns an instance of the ADC channel where the device is connected. You must store this instance into a variable for further operation with it.
 
   ```lua
-   channel = adc.setup(.....)
+   device = adc.setup(.....)
    ```
 
-2. Use the variable channel for read :
+2. Read from the ADC.
 
    ```lua
-   channel:read(...)
+   device:read()
    ```
 
 # ESP32 notes
 
-In ESP32 the ADC module allows the programmer to access to 3 ADC units:
+In ESP32 only one ADC unit is available:
 
-* adc.ADC1:
+**adc.ADC1:**
 
   * This is the internal ADC module, with a maximum 12-bit resolution.
   * VRef- is 0.0V and VRef+ is arround 1.1V.
   * 8 ADC channels are provided, from adc.ADC_CH0 to adc.ADC_CH7.
+
+# External ADC
+
+Lua RTOS allows the programmer to access to external ADC units using the same API.
 
 * adc.MCP3008:
 
