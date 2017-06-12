@@ -8,7 +8,7 @@ To use this module you must take into consideration the following:
 
 1. Attach a device to a PWM pin, using the pwm.attach function, and store the instance into a variable.
 
-  ```lua
+   ```lua
    device = pwm.attach(.....)
    ```
 
