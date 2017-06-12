@@ -28,13 +28,13 @@ To participate in a LoRaWAN network, each end-device has to be personalized and 
    * NwkSKey: use lora.setNwkSKey for this
    * AppSKey: use lora.setAppSKey for this
 
-# Setup functions
+# Configuration functions
 
-Setup functions are used for setup the LoRa WAN stack, such as init the stack, set the stack configuration, etc ...
+Configuration functions are used for configure the LoRa WAN stack, such as init the stack, set the stack configuration, etc ...
 
-## lora.setup(band)
+## lora.attach(band)
 
-Setup the LoRa WAN stack.
+Attach the Lora Transceiver.
 
 Arguments:
 
@@ -43,8 +43,8 @@ Arguments:
 Returns: nothing, or an exception.
 
 ```lua
--- Setup LoRa WAN stack using ISM band 868 Mhz (Europe)
-lora.setup(lora.BAND868)
+-- Attach LoRa transceiver using ISM band 868 Mhz (Europe)
+lora.attach(lora.BAND868)
 ```
 
 # End-device activation functions
@@ -147,7 +147,7 @@ lora.join()
 
 # Stack configuration functions
 
-This functions configure certain operating parameters of the stack, such us the data rate. This parameters are configured automatically when you setup the stack with the lora.setup function, and can be changed using one of the functions that we describe in this section.
+This functions configure certain operating parameters of the stack, such us the data rate. This parameters are configured automatically when you attach the LoRa transceiver with the lora.attach function, and can be changed using one of the functions that we describe in this section.
 
 
 ## lora.setDr(data_rate)
