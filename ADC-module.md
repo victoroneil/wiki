@@ -56,7 +56,7 @@ Lua RTOS allows the programmer to access to external ADC units using the same AP
 
   * 8 ADC channels are provided, from adc.ADC_CH0 to adc.ADC_CH7.
 
-# Setup funcions
+# Configuration funcions
 
 ## adc = adc.attach(id, channel, resolution, [vrefpos, vrefneg])
 
@@ -76,6 +76,10 @@ Returns: an ADC channel instance, or an exception. You must store this instance 
 -- Setup channel 0 for ADC1 with 12 bits of resolution
 channel = adc.setup(adc.ADC1, adc.ADC_CH0, 12)
 ```
+
+_## adc = adc.setup(id, channel, resolution, [vrefpos, vrefneg])_
+
+_This function is deprecated, and will be removed in the future. Please, use adc.attach instead._
 
 # Operation functions
 
