@@ -48,8 +48,6 @@ To use this module you must take into consideration the following:
    instance:deselect()
    ```
 
-# Utility functions
-
 # Contiguration functions
 
 ## spi = spi.attach(id, mode, cs, speed, data bits, mode number, [flags])
