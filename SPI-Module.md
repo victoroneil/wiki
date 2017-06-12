@@ -54,7 +54,7 @@ To use this module you must take into consideration the following:
 
 ## spi = spi.attach(id, mode, cs, speed, data bits, mode number, [flags])
 
-Setup a SPI device.
+Attach a SPI device.
 
 Arguments:
 
@@ -73,9 +73,9 @@ Arguments:
 
 
 * flags (optional): a bit mask formed by the following constants
-   * spi.READ: setup spi as read only (only MISO is used)
-   * spi.WRITE: setup spi as write only (only MOSI is used)
-   * default value is spi.READ | spi.WRITE: setup spi as read / write (MISO and MOSI are used)
+   * spi.READ: attach the spi device as read only (only MISO is used)
+   * spi.WRITE: attach the spi device as write only (only MOSI is used)
+   * default value is spi.READ | spi.WRITE: attach the spi device as read / write (MISO and MOSI are used)
 
 * data bits: can be either, 8, 16 or 32 bits.
 
