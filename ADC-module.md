@@ -77,9 +77,9 @@ Returns: an ADC channel instance, or an exception. You must store this instance 
 channel = adc.setup(adc.ADC1, adc.ADC_CH0, 12)
 ```
 
-_## adc = adc.setup(id, channel, resolution, [vrefpos, vrefneg])_
+## adc = adc.setup(id, channel, resolution, [vrefpos, vrefneg])
 
-_This function is deprecated, and will be removed in the future. Please, use adc.attach instead._
+_**This function is deprecated**, and will be removed in the future. Please, use adc.attach instead._
 
 # Operation functions
 
