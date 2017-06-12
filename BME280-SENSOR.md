@@ -17,7 +17,7 @@
 ```lua
 -- Attach BME280 to I2C0, speed=400Khz
 -- sda=GPIO14, scl=GPIO26, adress is 0x76
-s1 = sensor.attach("BME280", i2c.I2C0, 400, pio.GPIO14, pio.GPIO26, 0x76)
+s1 = sensor.attach("BME280", i2c.I2C0, 400, 0x76)
 
 while true do
   -- Read temperature
