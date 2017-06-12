@@ -17,7 +17,7 @@ To use this module you must take into consideration the following:
 1. Attach an ADC device to an ADC channel, using the adc.attach function. The attach function returns an instance of the ADC channel where the device is connected. You must store this instance into a variable for further operation with it.
 
    ```lua
-   device = adc.setup(.....)
+   device = adc.attach(.....)
    ```
 
 2. Read from the ADC.
