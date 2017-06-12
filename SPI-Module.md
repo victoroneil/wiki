@@ -13,9 +13,9 @@ The Serial Peripheral Interface (SPI) bus is a synchronous serial communication 
 
 SPI devices communicate in full duplex mode using a master-slave architecture with a single master. The master device originates the frame for reading and writing. 
 
-SPI use 4 signals:
+An SPI use 4 signals:
 
-* SCLK / SCK: Serial Clock (output from master).
+* CLK / SCK: Serial Clock (output from master).
 * MOSI / SDO: Master Output, Slave Input (output from master).
 * MISO / SDI: Master Input, Slave Output (output from slave).
 * SS   / CS : Slave Select (active low, output from master).
@@ -24,10 +24,10 @@ Multiple slave devices can share the same SPI bus (SCK, SDO and SDI lines), and 
 
 To use this module you must take into consideration the following:
 
-1. Create a SPI instance device, using the spi.setup function, and store the instance into a variable.
+1. Attach an SPI device, using the spi.attach function. The attach function returns an instance of the SPI device. You must store this instance into a variable for further operation with it.
 
   ```lua
-   device = spi.setup(.....)
+   device = spi.attach(.....)
    ```
 
 2. Use the device instance for select the device. This selects the device trough the CS pin connected to the device and configures the bus (speed, polarity, etc ...):
@@ -50,9 +50,9 @@ To use this module you must take into consideration the following:
 
 # Utility functions
 
-# Setup functions
+# Contiguration functions
 
-## spi = spi.setup(id, mode, cs, speed, data bits, mode number, [flags])
+## spi = spi.attach(id, mode, cs, speed, data bits, mode number, [flags])
 
 Setup a SPI device.
 
@@ -61,7 +61,7 @@ Arguments:
 * id: SPI unit identifier. Use spi.SPIx defined for this purpose.
 * mode: SPI mode, can be either spi.MASTER or spi.SLAVE.
 * cs: device's chip select pin, for example gpio.GPIO5. If cs is 0 the default cs pin for this SPI unit is used.
-* speed: speed of the spi module, expressed in kilohertz.
+* speed: speed of the spi module, expressed in hertz.
 * mode number: an integer between 0 and 3, according the following table:
 
   |mode number|polarity|phase|
@@ -82,9 +82,13 @@ Arguments:
 Returns: spi device instance, or an exception. You must store this instance into a variable for further operations with it.
 
 ```lua
--- Setup a SPI device using SPI2 as master, 1 Mhz speed, 8 bits, using GPIO5 as CS, number mode 0
-device = spi.setup(spi.SPI2, spi.MASTER, pio.GPIO5, 1000, 8, 0)
+-- Attach a SPI device using SPI2 as master, 1 Mhz speed, 8 bits, using GPIO5 as CS, number mode 0
+device = spi.attach(spi.SPI2, spi.MASTER, pio.GPIO5, 1000000, 8, 0)
 ```
+
+## spi = spi.setup(id, mode, cs, speed, data bits, mode number, [flags])
+
+_**This function is deprecated**, and will be removed in the future. Please, use adc.attach instead._
 
 # Operation functions
 
@@ -97,8 +101,8 @@ Returns: nothing, or an exception.
 
 
 ```lua
--- Setup a SPI device using SPI2 as master, 1 Mhz speed, 8 bits, using GPIO5 as CS, number mode 0
-device = spi.setup(spi.SPI2, spi.MASTER, pio.GPIO5, 1000, 8, 0)
+-- Attach a SPI device using SPI2 as master, 1 Mhz speed, 8 bits, using GPIO5 as CS, number mode 0
+device = spi.attach(spi.SPI2, spi.MASTER, pio.GPIO5, 1000000, 8, 0)
 
 -- Select
 device:select()
@@ -118,8 +122,8 @@ Returns: nothing, or an exception.
 
 
 ```lua
--- Setup a SPI device using SPI2 as master, 1 Mhz speed, 8 bits, using GPIO5 as CS, number mode 0
-device = spi.setup(spi.SPI2, spi.MASTER, pio.GPIO5, 1000, 8, 0)
+-- Attach a SPI device using SPI2 as master, 1 Mhz speed, 8 bits, using GPIO5 as CS, number mode 0
+device = spi.attach(spi.SPI2, spi.MASTER, pio.GPIO5, 1000000, 8, 0)
 
 -- Select
 device:select()
@@ -143,8 +147,8 @@ Arguments:
 Returns: nothing, or an exception.
 
 ```lua
--- Setup a SPI device using SPI2 as master, 1 Mhz speed, 8 bits, using GPIO5 as CS, number mode 0
-device = spi.setup(spi.SPI2, spi.MASTER, pio.GPIO5, 1000, 8, 0)
+-- Attach a SPI device using SPI2 as master, 1 Mhz speed, 8 bits, using GPIO5 as CS, number mode 0
+device = spi.attach(spi.SPI2, spi.MASTER, pio.GPIO5, 1000000, 8, 0)
 
 -- Select
 device:select()
@@ -167,8 +171,8 @@ Arguments:
 Returns: readed data, or an exception.
 
 ```lua
--- Setup a SPI device using SPI2 as master, 1 Mhz speed, 8 bits, using GPIO5 as CS, number mode 0
-device = spi.setup(spi.SPI2, spi.MASTER, pio.GPIO5, 1000, 8, 0)
+-- Attach a SPI device using SPI2 as master, 1 Mhz speed, 8 bits, using GPIO5 as CS, number mode 0
+device = spi.attach(spi.SPI2, spi.MASTER, pio.GPIO5, 1000000, 8, 0)
 
 -- Select
 device:select()
