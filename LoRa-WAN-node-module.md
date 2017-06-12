@@ -34,7 +34,7 @@ Configuration functions are used for configure the LoRa WAN stack, such as init 
 
 ## lora.attach(band)
 
-Attach the Lora Transceiver.
+Attach the end-device.
 
 Arguments:
 
@@ -43,7 +43,7 @@ Arguments:
 Returns: nothing, or an exception.
 
 ```lua
--- Attach LoRa transceiver using ISM band 868 Mhz (Europe)
+-- Attach the end-device using ISM band 868 Mhz (Europe)
 lora.attach(lora.BAND868)
 ```
 
@@ -147,7 +147,7 @@ lora.join()
 
 # Stack configuration functions
 
-This functions configure certain operating parameters of the stack, such us the data rate. This parameters are configured automatically when you attach the LoRa transceiver with the lora.attach function, and can be changed using one of the functions that we describe in this section.
+This functions configure certain operating parameters of the stack, such us the data rate. This parameters are configured automatically when you attach the end-device with the lora.attach function, and can be changed using one of the functions that we describe in this section.
 
 
 ## lora.setDr(data_rate)
