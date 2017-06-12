@@ -23,11 +23,11 @@ Proposed connection:
  
 CAN TX / CAN RX pin assignment is done in build-time through Kconfig under Lua RTOS -> Hardware -> CAN pin map.
 
-# Setup functions
+# Configuration functions
 
-## can.setup(id, speed)
+## can.attach(id, speed)
 
-Setup the CAN module.
+Attach a CAN device to a CAN module.
 
 Arguments:
 
@@ -37,9 +37,13 @@ Arguments:
 Returns: noting, or an exception.
 
 ```lua
--- Setup CAN at 1000 KBits/s
-can.setup(can.CAN0, 1000)
+-- Attach the CAN device to CAN0 at 1000 KBits/s
+can.attach(can.CAN0, 1000)
 ```
+
+## can.setup(id, speed)
+
+_**This function is deprecated**, and will be removed in the future. Please, use can.attach instead._
 
 # Operation functions
 
@@ -59,8 +63,8 @@ Returns: nothing, or an exception.
 
 
 ```lua
--- Setup CAN at 1000 KBits/s
-can.setup(can.CAN0, 1000)
+-- Attach the CAN device to CAN0 at 1000 KBits/s
+can.attach(can.CAN0, 1000)
 
 -- Send a data frame with standard identifier 100 and contents 1234
 can.send(can.CAN0, 100, can.STD, 4, "1234")
@@ -83,8 +87,8 @@ Returns:
 
 
 ```lua
--- Setup CAN at 1000 KBits/s
-can.setup(can.CAN0, 1000)
+-- Attach the CAN device to CAN0 at 1000 KBits/s
+can.attach(can.CAN0, 1000)
 
 -- Receive data frame
 id, type, len, data = can.recv(can.CAN0)
@@ -103,8 +107,8 @@ Arguments:
 Returns: nothing, or an exception.
 
 ```lua
--- Setup CAN at 1000 KBits/s
-can.setup(can.CAN0, 1000)
+-- Attach the CAN device to CAN0 at 1000 KBits/s
+can.attach(can.CAN0, 1000)
 
 can.dump(can.CAN0)
 can0  00000064  [8] 10 bf ba 52 4d 3f dd 80
