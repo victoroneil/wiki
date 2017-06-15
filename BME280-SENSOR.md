@@ -1,6 +1,6 @@
 # Specification
 
-| What         |             | Comments                   |
+| What         | Description | Comments                   |
 |--------------|-------------|----------------------------|
 | Identifier   | BME280      |                            |
 | Interface    | I2C         |                            |
