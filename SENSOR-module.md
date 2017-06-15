@@ -5,7 +5,7 @@ This module contains functions for access the sensors supported by Lua RTOS. Alt
 Sensor module allows the programmer to access sensors in an unified way from a common programming interface, programs are written faster, and source code is more clearly:
 
 ```lua
--- Instantiate a DHT11 sensor connected to GPIO4
+-- Attach a DHT11 sensor connected to GPIO4
 s1 = sensor.attach("DHT11", pio.GPIO4)
 
 -- Read temperature and humidity
