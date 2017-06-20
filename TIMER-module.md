@@ -62,7 +62,7 @@ Returns: nothing, or an exception.
 
 ## tmr.sleepus(microseconds)
 
-Sleeps for the specified millismicrosecondsconds, then returns.
+Sleeps for the specified microseconds, then returns.
 
 Arguments:
 
