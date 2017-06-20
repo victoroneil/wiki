@@ -4,7 +4,7 @@ This module contains functions for accessing the hardware timers, and include de
 
 # Delay functions
 
-The delay functions introduces a delay in the program for a specified  period of time. The delay is executed in the current thread, and no context switch is done, at least until the next context switch. 
+The delay functions introduces a delay in the program for a specified  period of time. The delay is executed in the current thread, and no context switch is done, at least until the next context switch scheduled by Lua RTOS.
 
 ## tmr.delay(seconds)
 
@@ -39,3 +39,33 @@ Returns: nothing, or an exception.
 # Sleep functions
 
 The sleep functions suspend the program's execution for a specified period of time by suspending the current thread.
+
+## tmr.sleep(seconds)
+
+Sleeps for the specified seconds, then returns.
+
+Arguments:
+
+* seconds: number of seconds to sleep.
+
+Returns: nothing, or an exception.
+
+## tmr.sleepms(milliseconds)
+
+Sleeps for the specified milliseconds, then returns.
+
+Arguments:
+
+* milliseconds: number of milliseconds to sleep.
+
+Returns: nothing, or an exception.
+
+## tmr.sleepus(microseconds)
+
+Sleeps for the specified millismicrosecondsconds, then returns.
+
+Arguments:
+
+* microseconds: number of microseconds to sleep.
+
+Returns: nothing, or an exception.
