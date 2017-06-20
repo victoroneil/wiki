@@ -10,7 +10,31 @@ The delay functions introduces a delay in the program for a specified  period of
 
 Waits for the specified seconds, then returns.
 
+Arguments:
 
+* seconds: number of seconds to wait.
+
+Returns: nothing, or an exception.
+
+## tmr.delayms(milliseconds)
+
+Waits for the specified milliseconds, then returns.
+
+Arguments:
+
+* milliseconds: number of milliseconds to wait.
+
+Returns: nothing, or an exception.
+
+## tmr.delayus(microseconds)
+
+Waits for the specified microseconds, then returns.
+
+Arguments:
+
+* microseconds: number of microseconds to wait.
+
+Returns: nothing, or an exception.
 
 # Sleep functions
 
