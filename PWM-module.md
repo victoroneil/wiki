@@ -101,3 +101,31 @@ device:setduty(0.25)
 -- Stop the PWM generation
 device:stop()
 ```
+
+## device:setfreq(frequency)
+
+Set a new frequency value.
+
+Arguments:
+
+* frequency: pulse frequency, expressed in hertzs
+
+Returns: nothing, or an exception.
+
+```lua
+-- Attach a device to PWM pin at GPIO16, at 10 Khz, with initial duty value of 50%.
+device = pwm.attach(pwm.PWM0, 0, pio.GPIO16, 10000, 0.5)
+
+-- Start the PWM generation
+device:start()
+
+....
+
+-- Set frequency to 5 khz
+device:setfreq(5000)
+
+....
+
+-- Stop the PWM generation
+device:stop()
+```
