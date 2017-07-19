@@ -50,6 +50,17 @@ Returns: nothing, or an exception.
 gdisplay.attach(gdisplay.ILI9341, gdisplay.LANDSCAPE_FLIP, false)
 ```
 
+## gdisplay.getscreensize()
+
+Get current screen size (width & height) in pixels. Remember that for the same display, the screen size may vary depending on the screen's orientation.
+
+Arguments: nothing.
+
+Returns: the screen size, or an exception
+
+* xsize: width of the screen in pixels
+* ysize: height of the screen in pixels
+
 ## gdisplay.clear([color])
 
 Clear the display to specified color.
