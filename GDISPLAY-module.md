@@ -2,7 +2,7 @@
 
 This module contains functions for accessing graphic displays, and gives the programmer an api to work with graphic displays in a unified form, regardless of the used display.
 
-Supported chipset displays:
+# Supported chipsets
 
 * ST7735: 1.8", 1.44", 0.96"
 * ILI9341
@@ -21,6 +21,10 @@ Arguments:
 * framed (optional): if true frame buffer is used. Default is false.
 
 Returns: nothing, or an exception.
+
+```lua
+gdisplay.init(tftdemo.dispType, gdisplay.LANDSCAPE_FLIP)
+```
 
 ## gdisplay.clear([color])
 
