@@ -161,10 +161,31 @@ Arguments:
 * font identifier: the identifier of the system's font. Can be any identifier from the [system fonts](#system-fonts).
 * font name: if the programmer wants to use a custom font, the file name with the font definition.
 
+Returns: nothing, or an exception.
+
 ```lua
 -- Set the font to UBUNTU16_FONT
 gdisplay.setfont(gdisplay.UBUNTU16_FONT)
 ```
+
+## gdisplay.getfontsize()
+
+Get current font size in pixels. Useful if FONT_7SEG is used to get actual character width and height.
+
+Arguments: nothing
+
+Returns: the font size, or an exception
+
+* xsize: width of the font character in pixels. For the proportional fonts, maximal char width will be returned.
+* ysize: height of the font character in pixels.
+
+## gdisplay.getfontheight()
+
+Get current font height in pixels.
+
+Arguments: nothing
+
+Returns: height of the font character in pixels, or an exception.
 
 ## gdisplay.setrot(angle)
 
