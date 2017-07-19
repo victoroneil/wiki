@@ -10,7 +10,7 @@ Supported chipset displays:
 
 # General purpose functions
 
-## gdisplay.attach(chipset, [orientation, framed, antialiasing])
+## gdisplay.attach(chipset, [orientation, framed])
 
 Initialize the display and clear the screen.
 
@@ -19,7 +19,6 @@ Arguments:
 * chipset: chipset used by the display.
 * orientation (optional): display orientation, can be either gdisplay.LANDSCAPE, gdisplay.LANDSCAPE_FLIP, gdisplay.PORTRAIT, or gdisplay.PORTRAIT_FLIP. Default orientation is gdisplay.LANDSCAPE.
 * framed (optional): if true frame buffer is used. Default is false.
-* antialiasing (optional): if true antialiasing is applied when rendering. Default is false.
 
 Returns: nothing, or an exception.
 
