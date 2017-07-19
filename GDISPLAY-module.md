@@ -14,6 +14,8 @@ This module contains functions for accessing graphic displays, and gives the pro
 | PCD8544      | ---          | Nokia 5110                 | gdisplay.PCD8544     |
 | ILI9341      | ---          | ---                        | gdisplay.ILI9341     |
 
+When using a display with this module you must attach the display, using the gdisplay.attach function, using the right display identifier.
+
 # General purpose functions
 
 ## gdisplay.attach(chipset, [orientation, framed])
@@ -22,7 +24,7 @@ Initialize the display and clear the screen.
 
 Arguments:
 
-* chipset: chipset used by the display.
+* chipset: chipset used by the display. Can be any identifier from the [supported chipsets](#supported-chipsets).
 * orientation (optional): display orientation, can be either gdisplay.LANDSCAPE, gdisplay.LANDSCAPE_FLIP, gdisplay.PORTRAIT, or gdisplay.PORTRAIT_FLIP. Default orientation is gdisplay.LANDSCAPE.
 * framed (optional): if true frame buffer is used. Default is false.
 
