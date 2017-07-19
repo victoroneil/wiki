@@ -4,9 +4,15 @@ This module contains functions for accessing graphic displays, and gives the pro
 
 # Supported chipsets
 
-* ST7735: 1.8", 1.44", 0.96"
-* ILI9341
-* PCD8544 (NOKIA 5110)
+| Chipset      | Variants     | Comments                   | Identifier           |
+|--------------|--------------|----------------------------|----------------------|
+| ST7735       | ST7735_18    | Black tab, 1.8"            | gdisplay.ST7735_18   |
+|              | ST7735B_18   | Blue tab, 1.8"             | gdisplay.ST7735B_18  |
+|              | ST7735G_18   | Green tab, 1.8"            | gdisplay.ST7735G_18  |
+|              | ST7735G_144  | Green tab, 1.44"           | gdisplay.ST7735G_144 |
+|              | ST7735_096   | Green tab, 0.96"           | gdisplay.ST7735_096  |
+| PCD8544      | ---          | Nokia 5110                 | gdisplay.PCD8544     |
+| ILI9341      | ---          | ---                        | gdisplay.ILI9341     |
 
 # General purpose functions
 
