@@ -1,3 +1,5 @@
+**This page is under construction**
+
 # About this
 
 This module contains functions for accessing graphic displays, and gives the programmer an api to work with graphic displays in a unified form, regardless of the used display.
