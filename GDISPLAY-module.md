@@ -362,7 +362,7 @@ function senyera()
 	local band = dh / 9
 
 	-- The Senyera has 2 colors
-	-- event bands are yellow, and odd bands are red
+	-- even bands are yellow, and odd bands are red
 	color1 = gdisplay.YELLOW
 	color2 = gdisplay.RED
 
