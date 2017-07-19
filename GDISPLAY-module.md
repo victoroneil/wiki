@@ -2,7 +2,7 @@
 
 # About this
 
-This module contains functions for accessing graphic displays, and gives the programmer an api to work with graphic displays in a unified form, regardless of the used display.
+This module contains functions for accessing graphic SPI displays, and gives the programmer an api to work with SPI graphic displays in a unified form, regardless of the used display.
 
 # Supported chipsets
 
@@ -252,7 +252,7 @@ Draws pixel on display at the point coordinates using the current foreground col
 Arguments:
 
 * point: the [point coordinates](#points) where draw the pixel.
-* color (optional): the [color](#colors) to use for draw the pixel. If not specified foreground color is used.
+* color (optional): the [color](#colors) to use for draw the pixel. If not specified, the foreground color is used.
 
 Returns: nothing, or an exception.
 
@@ -268,4 +268,25 @@ gdisplay.putpixel({50, 50}, gdisplay.RED)
 
 -- Draw a pixel at point (50, 50), using RED color
 gdisplay.putpixel({50, 50}, {255, 0, 0})
+```
+
+## gdisplay.line(point 1, point 2,  [color])
+
+Draws line from point 1 to point 2, using the current stroke color, or a given color.
+
+Arguments:
+
+* point 1: the start [point coordinates](#points).
+* point 2: the end [point coordinates](#points).
+* color (optional): the [color](#colors) to use for draw the line. If not specified, the stroke color is used.
+
+Returns: nothing, or an exception.
+
+```lua
+-- Get the screen size
+dw, dh = gdisplay.getscreensize()
+
+-- Draw a diagonal line, from the first screen's point to
+-- the last screen's point
+gdisplay.line({0,0}, {dw - 1, dh - 1})
 ```
