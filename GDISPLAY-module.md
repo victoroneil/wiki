@@ -112,11 +112,11 @@ gdisplay.setclipwin({10,10}, {50, 50})
 
 -- Draw a pixel outside the clipping area. Pixel is not show
 -- on the display.
-gdisplay.pixel({1,1})
+gdisplay.putpixel({1,1})
 
 -- Draw a pixel inside the clipping area. Pixel is show
 -- on the display.
-gdisplay.pixel({1,1})
+gdisplay.putpixel({20,20})
 ```
 
 ## gdisplay.resetclipwin()
@@ -125,6 +125,14 @@ Reset the clipping area to full screen.
 
 Arguments: nothing
 Returns: nothing, or an exception.
+
+```lua
+-- Reset the clipping area to full screen
+gdisplay.resetclipwin()
+
+-- Pixel now is show on the display.
+gdisplay.putpixel({1,1})
+```
 
 # Text functions
 
