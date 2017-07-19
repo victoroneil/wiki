@@ -14,6 +14,8 @@ This module contains functions for accessing graphic displays, and gives the pro
 | PCD8544      | ---          | Nokia 5110                 | gdisplay.PCD8544     |
 | ILI9341      | ---          | ---                        | gdisplay.ILI9341     |
 
+When using a display with this module you must attach the display, using the gdisplay.attach function, using the right display identifier.
+
 # System fonts
 
 | Font      | Identifier             | Comments |
@@ -27,8 +29,6 @@ This module contains functions for accessing graphic displays, and gives the pro
 | Minya 24  | gdisplay.FONT_MINYA24  | |
 | 7segments | gdisplay.FONT_7SEG | |
 | LCD       | gdisplay.FONT_LCD | Old style font, used in the past in smalls LCD, such as NOKIA 5110 |
-
-When using a display with this module you must attach the display, using the gdisplay.attach function, using the right display identifier.
 
 # General purpose functions
 
@@ -151,6 +151,20 @@ gdisplay.putpixel({1,1})
 # Text functions
 
 Text functions are used for write text.
+
+## gdisplay.setfont(font identifier | font name)
+
+Set the font used when writing the text to display.
+
+Arguments:
+
+* font identifier: the identifier of the system's font. Can be any identifier from the [system fonts](#system-fonts).
+* font name: if the programmer wants to use a custom font, the file name with the font definition.
+
+```lua
+-- Set the font to UBUNTU16_FONT
+gdisplay.setfont(gdisplay.UBUNTU16_FONT)
+```
 
 ## gdisplay.setrot(angle)
 
