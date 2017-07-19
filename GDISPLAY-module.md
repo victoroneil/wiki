@@ -324,3 +324,24 @@ dw, dh = gdisplay.getscreensize()
 gdisplay.rect({dw / 2 - 1, dh / 2 - 1}, 50, 50, {255, 255, 255}, {0,0,255})
 ```
 
+## gdisplay.circle(center point, radius, [color, fill color])
+
+Draws a circle centered at center point with a given radius, using the current stroke color, or a given color.  If the fill color is given, fills the circle.
+
+Arguments:
+
+* center point: the center [point coordinates](#points).
+* radius: circle's radius in pixels.
+* color (optional): the [color](#colors) to use for draw the rectangle. If not specified, the stroke color is used.
+* fill color (optional): the [color](#colors) to use for fill the rectangle.
+
+Returns: nothing, or an exception.
+
+```lua
+-- Get the screen size
+dw, dh = gdisplay.getscreensize()
+
+-- Draw a 80-pixel radius white circle, centered at the screen, and blue filled
+gdisplay.circle({dw /2 - 1, dh / 2 - 1}, 80, {255, 255, 255}, {0,0,255})
+```
+
