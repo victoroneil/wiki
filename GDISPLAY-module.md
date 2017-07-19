@@ -17,7 +17,7 @@ This module contains functions for accessing graphic displays, and gives the pro
 # System fonts
 
 | Font      | Identifier             | Comments |
-| ----------|------------------------||
+| ----------|------------------------|----------|
 | Default   | gdisplay.FONT_DEFAULT | |
 | DejaVu 18 | gdisplay.FONT_DEJAVU18 | |
 | DejaVu 24 | gdisplay.FONT_DEJAVU24 | |
