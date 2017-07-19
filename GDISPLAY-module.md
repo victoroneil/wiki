@@ -290,3 +290,37 @@ dw, dh = gdisplay.getscreensize()
 -- the last screen's point
 gdisplay.line({0,0}, {dw - 1, dh - 1})
 ```
+
+## gdisplay.rect(point, width, height, [color, fill color])
+
+Draws a width * height rectangle starting at point, using the current stroke color, or a given color.  If the fill color is given, fills the rectangle.
+
+Arguments:
+
+* point: the start [point coordinates](#points).
+* width: width of the rectangle in pixels.
+* height: height of the rectangle in pixels.
+* color (optional): the [color](#colors) to use for draw the rectangle. If not specified, the stroke color is used.
+* fill color (optional): the [color](#colors) to use for fill the rectangle.
+
+Returns: nothing, or an exception.
+
+```lua
+-- Get the screen size
+dw, dh = gdisplay.getscreensize()
+
+-- Draw a diagonal line, from the first screen's point to
+-- the last screen's point
+gdisplay.line({0,0}, {dw - 1, dh - 1})
+```
+
+Returns: nothing, or an exception.
+
+```lua
+-- Get the screen size
+dw, dh = gdisplay.getscreensize()
+
+-- Display 50 x 50 white rectangle, starting at screen's center, and blue filled
+gdisplay.rect({dw / 2 - 1, dh / 2 - 1}, 50, 50, {255, 255, 255}, {0,0,255})
+```
+
