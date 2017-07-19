@@ -345,3 +345,41 @@ dw, dh = gdisplay.getscreensize()
 gdisplay.circle({dw /2 - 1, dh / 2 - 1}, 80, {255, 255, 255}, {0,0,255})
 ```
 
+## Full examples
+
+Display the "Senyera", the Catalonian's flag.
+
+```lua
+function senyera()
+	-- Attach
+	gdisplay.attach(gdisplay.ILI9341, gdisplay.LANDSCAPE_FLIP, false)
+	gdisplay.clear()
+
+	-- Get the screen size
+	local dw, dh = gdisplay.getscreensize()
+
+	-- The Senyera has 9 bands
+	local band = dh / 9
+
+	-- The Senyera has 2 colors
+	-- event bands are yellow, and odd bands are red
+	color1 = gdisplay.YELLOW
+	color2 = gdisplay.RED
+
+	-- Draw bands
+	i = 1
+	y = 0
+	for i = 1,9,1 do
+	   if (i % 2 == 1) then
+	      color = color1
+	   else
+	      color = color2
+	   end 
+   
+	   gdisplay.rect({0, y}, dw - 1, band, color, color)
+	   y = y + band - 1
+	end
+end
+
+senyera()
+```
