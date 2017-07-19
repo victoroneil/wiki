@@ -31,7 +31,9 @@ Arguments:
 Returns: nothing, or an exception.
 
 ```lua
-gdisplay.init(tftdemo.dispType, gdisplay.LANDSCAPE_FLIP)
+-- Attach an ILI9341 display with orientation LANDSCAPE_FLIP,
+-- and without frame buffer
+gdisplay.attach(gdisplay.ILI9341, gdisplay.LANDSCAPE_FLIP, false)
 ```
 
 ## gdisplay.clear([color])
@@ -51,7 +53,7 @@ gdisplay.clear(gdisplay.RED)
 -- Clear the display to RED
 gdisplay.clear({255, 0, 0})
 
--- Clear the display to default colot
+-- Clear the display to default color
 gdisplay.clear()
 ```
 
