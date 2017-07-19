@@ -14,6 +14,20 @@ This module contains functions for accessing graphic displays, and gives the pro
 | PCD8544      | ---          | Nokia 5110                 | gdisplay.PCD8544     |
 | ILI9341      | ---          | ---                        | gdisplay.ILI9341     |
 
+# System fonts
+
+| Font      | Identifier             | Comments |
+| ----------|------------------------||
+| Default   | gdisplay.FONT_DEFAULT | |
+| DejaVu 18 | gdisplay.FONT_DEJAVU18 | |
+| DejaVu 24 | gdisplay.FONT_DEJAVU24 | |
+| Ubuntu 16 | gdisplay.FONT_UBUNTU16 | |
+| Comic 24  | gdisplay.FONT_COMIC24  | |
+| Tooney 32 | gdisplay.FONT_TOONEY32 | |
+| Minya 24  | gdisplay.FONT_MINYA24  | |
+| 7segments | gdisplay.FONT_7SEG | |
+| LCD       | gdisplay.FONT_LCD | Old style font, used in the past in smalls LCD, such as NOKIA 5110 |
+
 When using a display with this module you must attach the display, using the gdisplay.attach function, using the right display identifier.
 
 # General purpose functions
@@ -166,4 +180,13 @@ Arguments:
 
 * wrap: if true wrapping is on.
 
+Returns: nothing, or an exception.
+
+## gdisplay.setfixed(force)
+
+Forces fixed width print when using proportional fonts.
+
+Arguments:
+
+* force: if true force fixed.
 Returns: nothing, or an exception.
