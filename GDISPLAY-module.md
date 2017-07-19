@@ -30,6 +30,10 @@ When using a display with this module you must attach the display, using the gdi
 | 7segments | gdisplay.FONT_7SEG | |
 | LCD       | gdisplay.FONT_LCD | Old style font, used in the past in smalls LCD, such as NOKIA 5110 |
 
+# Points
+
+# Colors
+
 # General purpose functions
 
 ## gdisplay.attach(chipset, [orientation, framed])
@@ -236,3 +240,30 @@ Arguments:
 
 * force: if true force fixed.
 Returns: nothing, or an exception.
+
+# Drawing functions
+
+## gdisplay.putpixel(point, [color])
+
+Draws pixel on display at the point coordinates using the current foreground color, or a given color.
+
+Arguments:
+
+* point: the [point coordinates](#points) where draw the pixel.
+* color (optional): the [color](#colors) to use for draw the pixel. If not specified foreground color is used.
+
+Returns: nothing, or an exception.
+
+```lua
+-- Draw a pixel at point (50, 50), using current foreground
+gdisplay.putpixel(50, 50)
+
+-- Draw a pixel at point (50, 50), using current foreground
+gdisplay.putpixel({50, 50})
+
+-- Draw a pixel at point (50, 50), using RED color
+gdisplay.putpixel({50, 50}, gdisplay.RED)
+
+-- Draw a pixel at point (50, 50), using RED color
+gdisplay.putpixel({50, 50}, {255, 0, 0})
+```
