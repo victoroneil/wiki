@@ -34,7 +34,7 @@ When using a display with this module you must attach the display, using the gdi
 
 # Points
 
-Screen's coordinates are referenced as points. Many functions of this module expects one ore more points as an argument. For example, the gdisplay.putpixel takes this arguments:
+Screen's coordinates are referenced as points. Many functions of this module expects one ore more points as an argument. For example, the gdisplay.putpixel takes the following arguments:
 
 * point: the point coordinates where draw the pixel.
 * color (optional): the color to use for draw the pixel.
