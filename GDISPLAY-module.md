@@ -347,7 +347,7 @@ gdisplay.circle({dw /2 - 1, dh / 2 - 1}, 80, {255, 255, 255}, {0,0,255})
 
 ## Full examples
 
-Display the "Senyera", the Catalonian's flag.
+Display the "Senyera", the Catalonian's flag. This flag has been selected as a testimonial of where Lua RTOS has been developed.
 
 ```lua
 function senyera()
