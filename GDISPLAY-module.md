@@ -43,15 +43,15 @@ You can reference a point in two ways:
 
 * table notation: in this case the point is referenced as a table in format {x, y}, where x and y are the point's coordinates.
 
-```lua
-gdisplay.putpixel({10,10})
-```
+   ```lua
+   gdisplay.putpixel({10,10})
+   ```
 
 * legacy notation: in this case the point's coordinates are referenced as classical function arguments, using one argument for x and another argument for y.
 
-```lua
-gdisplay.putpixel(10,10)
-```
+   ```lua
+   gdisplay.putpixel(10,10)
+   ```
 
 We recommend to use the table notation, because source code is more clear.
 
@@ -64,15 +64,32 @@ You can reference a color in two ways:
 
 * table notation: in this case the color is referenced as a table in format {r, g, b}, where r, g and b are the color's components.
 
-```lua
-gdisplay.clear({255,0,0})
-```
+   ```lua
+   gdisplay.clear({255,0,0})
+   ```
 
 * a system color: in this case the color is referenced using a predefined gdisplay constant.
 
-```lua
-gdisplay.clear(gdisplay.RED)
-```
+   ```lua
+   gdisplay.clear(gdisplay.RED)
+   ```
+
+   Available system colors:
+   
+   | Constant             | Constant           |
+   |----------------------|--------------------|
+   | gdisplay.BLACK       | gdisplay.BLUE      |
+   | gdisplay.CYAN        | gdisplay.DARKCYAN  |
+   | gdisplay.DARKGREEN   | gdisplay.GREEN     |
+   | gdisplay.GREENYELLOW | gdisplay.LIGHTGREY |
+   | gdisplay.MAGENTA     | gdisplay.MAROON    |
+   | gdisplay.NAVY        | gdisplay.OLIVE     |
+   | gdisplay.ORANGE      | gdisplay.PINK      |
+   | gdisplay.PURPLE      | gdisplay.RED       |
+   | gdisplay.WHITE       | gdisplay.YELLOW    |
+
+
+
 
 # General purpose functions
 
