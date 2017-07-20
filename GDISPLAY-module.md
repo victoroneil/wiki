@@ -55,9 +55,6 @@ gdisplay.putpixel(10,10)
 
 We recommend to use the table notation, because source code is more clear.
 
-```lua
-gdisplay.putpixel(0,0)
-```
 
 # Colors
 
