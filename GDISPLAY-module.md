@@ -4,6 +4,8 @@
 
 This module contains functions for accessing graphic SPI displays, and gives the programmer an api to work with SPI graphic displays in a unified form, regardless of the used display.
 
+There are functions in this module that are not compatible with some displays. For example, it's not possible to show a JPG image (true color) in a monochrome display. Don't worry about this, the module raises an exception in this case.
+
 # Supported chipsets
 
 | Chipset      | Variants     | Comments                   | Identifier           |
@@ -87,8 +89,6 @@ You can reference a color in two ways:
    | gdisplay.ORANGE      | gdisplay.PINK      |
    | gdisplay.PURPLE      | gdisplay.RED       |
    | gdisplay.WHITE       | gdisplay.YELLOW    |
-
-
 
 
 # General purpose functions
