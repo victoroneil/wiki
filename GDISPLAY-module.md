@@ -34,6 +34,31 @@ When using a display with this module you must attach the display, using the gdi
 
 # Points
 
+Screen's coordinates are referenced as points. Many functions of this module expects one ore more points as an argument. For example, the gdisplay.putpixel takes this arguments:
+
+* point: the point coordinates where draw the pixel.
+* color (optional): the color to use for draw the pixel.
+
+You can reference a point in two ways:
+
+* table notation: in this case the point is referenced as a table in format {x, y}, where x and y are the point's coordinates.
+
+```lua
+gdisplay.putpixel({10,10})
+```
+
+* legacy notation: in this case the point's coordinates are referenced as classical function arguments, using one argument for x and another argument for y.
+
+```lua
+gdisplay.putpixel(10,10)
+```
+
+We recommend to use the table notation, because source code is more clear.
+
+```lua
+gdisplay.putpixel(0,0)
+```
+
 # Colors
 
 # General purpose functions
