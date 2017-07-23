@@ -74,7 +74,7 @@ Returns: nothing, or an exception.
 
 ## instance = tmr.attach(id, period, callback)
 
-Attach a hardware timer with a certain period, and calling a callback when the period expires. The timer is reloaded automatically after calling the callback.
+Attach a hardware timer, calling a callback at regular intervals defined by the period argument. The timer is reloaded automatically after calling the callback.
 
 Arguments:
 
