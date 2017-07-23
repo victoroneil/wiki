@@ -82,4 +82,51 @@ Arguments:
 * period: the timer's period in microseconds.
 * callback: the call back function to call when the timer expires.
 
-Returns: the timer instance, or an exception.
+Returns: the timer instance, or an exception. You must store the timer instance into a variable for further operations with it.
+
+## instance:start()
+
+Start the timer.
+
+Arguments: noting.
+Returns: nothing, or an exception.
+
+## instance:stop()
+
+Stop the timer.
+
+Arguments: noting.
+Returns: nothing, or an exception.
+
+## Full example
+
+This example use a hardware timer for blink a led every 50 milliseconds
+```lua
+-- Blink function
+function blink()
+   if (led_on) then
+      pio.pin.sethigh(pio.GPIO26)
+      led_on = false
+   else
+      pio.pin.setlow(pio.GPIO26)
+      led_on = true
+   end
+end
+
+-- Configure the GPIO where the led is attached
+pio.pin.setdir(pio.OUTPUT, pio.GPIO26)
+
+-- Variable for store the led status
+led_on = false
+
+-- Attach the timer. 50 milliseconds = 50000 micro seconds
+t0 = tmr.attach(tmr.TMR0, 50000, blink)
+
+-- Start the timer (the led blinks)
+t0:start()
+
+...
+
+-- Stop the timer
+t0:stop()
+```
