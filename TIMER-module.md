@@ -69,3 +69,17 @@ Arguments:
 * microseconds: number of microseconds to sleep.
 
 Returns: nothing, or an exception.
+
+# Hardware timers
+
+## instance = tmr.attach(id, period, callback)
+
+Attach a hardware timer with a certain period, and calling a callback when the period expires. The timer is reloaded automatically after calling the callback.
+
+Arguments:
+
+* id: the timer id. Can be either tmr.TMR0, tmr.TMR1, tmr.TMR2, or tmr.TMR3.
+* period: the timer's period in microseconds.
+* callback: the call back function to call when the timer expires.
+
+Returns: the timer instance, or an exception.
