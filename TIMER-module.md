@@ -1,6 +1,10 @@
 # About this
 
-This module contains functions for accessing the hardware timers, and include delays in your programs.
+This module contains functions for accessing the hardware timers, and include delays in your programs. The functions of this module are organized in the following categories:
+
+* [Delay functions](#delay-functions)
+* [Hardware timers](#hardware-timers)
+* [Software timers](#software-timers)
 
 # Delay functions
 
