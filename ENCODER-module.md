@@ -2,7 +2,10 @@
 
 # About this
 
-This module contains functions for work with digital relative rotary encoders.
+This module contains functions for work with digital relative rotary encoders. The functions of this module are organized in the following categories:
+
+* [Setup functions](#setup-functions)
+* [Operation functions](#operation-functions)
 
 # Key concepts
 
@@ -27,5 +30,13 @@ Filtering the noise out by using extra hardware is easier and it stops the noise
 The proposed values are R pull-up = 10 K, R = 0, C = 100nF.
 
 # Setup functions
+
+## instance = encoder.attach(A, B, SW, callback)
+
+Attach a encoder.
+
+Arguments:
+
+* A:
 
 # Operation functions
