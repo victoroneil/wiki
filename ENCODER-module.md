@@ -1,5 +1,3 @@
-**This page is under construction**
-
 # About this
 
 ![](http://git.whitecatboard.org/keyes-encoder.jpg)
