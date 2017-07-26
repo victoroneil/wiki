@@ -24,4 +24,4 @@ Filtering the noise out by using extra hardware is easier and it stops the noise
 
 ![](http://git.whitecatboard.org/encoder-filter.png)
 
-For most applications use R = 10K, C = 100nF.
+The proposed values are R pull-up = 10 K, R = 0, C = 100nF.
