@@ -48,11 +48,7 @@ Returns: an encoder instance, or an exception. You must store this instance into
 
 ```lua
 function callback(value, button)
-   if (button == 0) then
-      print("push")
-   else
-      print(value)
-   end
+   print("position: "..value..", button: "..button)
 end
 
 -- Attach an encoder with A=pio.GPIO26, B=pio.GPIO14, SW=pio.GPIO21.
