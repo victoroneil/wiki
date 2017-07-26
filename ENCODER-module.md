@@ -37,6 +37,39 @@ Attach a encoder.
 
 Arguments:
 
-* A:
+* A: the GPIO which encoder A signal is attached. Use pio.GPIOx defined for this purpose.
+* B: the GPIO which encoder B signal is attached. Use pio.GPIOx defined for this purpose.
+* SW: the GPIO which encoder SW (switch) signal is attached. Use pio.GPIOx defined for this purpose. Use nil for this argument if you don't want to use the switch.
+* callback: a callback function for get information about the encoder changes. This function takes 2 arguments: value (encoder value), and button (a boolean that tell us if the switch is pressed).
+
+Returns: an encoder instance, or an exception. You must store this instance into a variable for further operations with it.
+
+```lua
+function callback(value, button)
+   if (button) then
+      print("push")
+   else
+      print(value)
+   end
+end
+
+-- Attach an encoder with A=pio.GPIO26, B=pio.GPIO14, SW=pio.GPIO21.
+-- Using a calback for get the encoder changes.
+enc = encoder.attach(pio.GPIO26, pio.GPIO14, pio.GPIO21, callback)
+```
 
 # Operation functions
+
+## instance:read()
+
+Read the encoder position. When encoder is attached the position is 0. If encoder rotates clockwise the position is incremented by 1. If encoder rotates counter-clockwise, the position is incremented by -1.
+
+Arguments: nothing
+Returns: the current encoder position, or nothing.
+
+## instance:write(position)
+ 
+Set the encoder position to a specified position.
+
+Arguments: nothing
+Returns: nothing
