@@ -2,7 +2,7 @@
 
 # About this
 
-![](http://git.whitecatboard.org/keyes-encoder.png)
+![](http://git.whitecatboard.org/keyes-encoder.jpg)
 
 This module contains functions for work with digital relative rotary encoders. The functions of this module are organized in the following categories:
 
