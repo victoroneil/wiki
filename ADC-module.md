@@ -33,7 +33,7 @@ In ESP32 only one ADC unit is available:
 _adc.ADC1:_
 
   * This is the internal ADC module, with a maximum 12-bit resolution.
-  * VRef- is 0.0V and VRef+ is arround 1.1V.
+  * VRef- is 0.0V and VRef+ can be either 1.1V, 1.5V, 2.2V, or 3.3V.
   * 8 ADC channels are provided, from adc.ADC_CH0 to adc.ADC_CH7.
 
 # External ADC
