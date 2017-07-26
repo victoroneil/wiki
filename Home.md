@@ -39,10 +39,11 @@ Low-level hardware access modules:
 
 High-level hardware access modules:
 
+* [ENCODER](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/ENCODER-module)
+* [GDISPLAY](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/GDISPLAY-module)
 * [NEOPIXEL](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/NEOPIXEL-module)
 * [SENSOR](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Sensor-module)
 * [STEPPER](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/STEPPER-module)
-* [GDISPLAY](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/GDISPLAY-module)
 
 Utility modules:
 * [PACK](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Pack-module)
