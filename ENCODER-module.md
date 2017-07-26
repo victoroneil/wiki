@@ -42,7 +42,7 @@ Arguments:
 * A: the GPIO which encoder A signal is attached. Use pio.GPIOx defined for this purpose.
 * B: the GPIO which encoder B signal is attached. Use pio.GPIOx defined for this purpose.
 * SW: the GPIO which encoder SW (switch) signal is attached. Use pio.GPIOx defined for this purpose. Use nil for this argument if you don't want to use the switch.
-* callback (optional): a callback function for get information about the encoder changes. This function takes 2 arguments: value (encoder value), and button (an integer that tell us if the switch is pressed 0 = pressed, 1 = not pressed).
+* callback (optional): a callback function for get information about the encoder changes. This function takes 2 arguments: value (encoder value), and button (an integer that tell us if the switch is pressed, 1 = pressed, 0 = not pressed).
 
 Returns: an encoder instance, or an exception. You must store this instance into a variable for further operations with it.
 
@@ -70,7 +70,7 @@ enc:detach()
 
 ## instance:read()
 
-Read the encoder position and the switch status. When encoder is attached the position is 0. If encoder rotates clockwise the position is incremented by 1. If encoder rotates counter-clockwise, the position is incremented by -1. If the switch status is 0 is pressed, and if is 1 is not pressed.
+Read the encoder position and the switch status. When encoder is attached the position is 0. If encoder rotates clockwise the position is incremented by 1. If encoder rotates counter-clockwise, the position is incremented by -1. If the switch status is 1 it is pressed, and if is 0 it is not pressed.
 
 Arguments: nothing
 Returns: the current encoder position and the switch status, or nothing.
