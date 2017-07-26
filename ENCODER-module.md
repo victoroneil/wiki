@@ -31,3 +31,6 @@ Digital relative rotary encoders employ two outputs called A & B, which are call
 |4|0|0|
 
 The two output wave forms are 90 degrees out of phase, which is what quadrature means. These signals are decoded to produce a count up pulse or a count down pulse. For decoding Lua RTOS use interrupts and a machine state that filters invalid combinations.
+
+Please, take note that encoders have built-in switches which generate the quadrature waveform during rotation.
+
