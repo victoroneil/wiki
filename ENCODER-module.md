@@ -23,3 +23,5 @@ Please, take note that encoders have built-in switches which generate the quadra
 Filtering the noise out by using extra hardware is easier and it stops the noise at its source.
 
 ![](http://git.whitecatboard.org/encoder-filter.png)
+
+For most applications use R = 10K, C = 100nF.
