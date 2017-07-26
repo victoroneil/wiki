@@ -33,7 +33,7 @@ The proposed values are R pull-up = 10 K, R = 0, C = 100nF.
 
 ## instance = encoder.attach(A, B, SW, callback)
 
-Attach a encoder.
+Attach an encoder.
 
 Arguments:
 
