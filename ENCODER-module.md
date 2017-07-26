@@ -12,7 +12,6 @@ Encoders are used in many applications that require precise shaft unlimited rota
 
 Digital relative rotary encoders employ two outputs called A & B, which are called quadrature outputs, as they are 90 degrees out of phase.
 
-	{| class="wikitable" width="180"
 	|+Coding for<br/>clockwise rotation
 	!Phase !!A !!B 
 	|-
@@ -22,10 +21,8 @@ Digital relative rotary encoders employ two outputs called A & B, which are call
 	|-
 	|3||1||1 
 	|-
-	|4||1||0 
-	|}
-|
-	{| class="wikitable" width="180"
+	|4||1||0
+
 	|+ Coding for<br/>counter-clockwise rotation
 	!Phase !!A !!B 
 	|-
@@ -36,5 +33,3 @@ Digital relative rotary encoders employ two outputs called A & B, which are call
 	|3||0||1 
 	|-
 	|4||0||0 
-	|}
-|}
