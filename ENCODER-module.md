@@ -67,9 +67,19 @@ Read the encoder position. When encoder is attached the position is 0. If encode
 Arguments: nothing
 Returns: the current encoder position, or nothing.
 
+```lua
+-- Read the position
+encoder:read()
+```
+
 ## instance:write(position)
  
 Set the encoder position to a specified position.
 
 Arguments: nothing
 Returns: nothing
+
+```lua
+-- Set the position
+encoder:write(10)
+```
