@@ -58,6 +58,16 @@ end
 enc = encoder.attach(pio.GPIO26, pio.GPIO14, pio.GPIO21, callback)
 ```
 
+## instance:detach()
+
+Detach an encoder, and free all resources used by the encoder.
+
+Arguments: nothing. Returns: nothing, or an exception.
+
+```lua
+enc:detach()
+```
+
 # Operation functions
 
 ## instance:read()
@@ -69,7 +79,7 @@ Returns: the current encoder position, or nothing.
 
 ```lua
 -- Read the position
-encoder:read()
+enc:read()
 ```
 
 ## instance:write(position)
@@ -81,5 +91,5 @@ Returns: nothing
 
 ```lua
 -- Set the position
-encoder:write(10)
+enc:write(10)
 ```
