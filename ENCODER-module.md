@@ -15,7 +15,7 @@ A digital relative rotary encoder, is an electro-mechanical device that converts
 
 Encoders are used in many applications that require precise shaft unlimited rotation, including industrial controls, robotics, special purpose photographic lenses,computer input devices (such as optomechanical mice and trackballs), controlled stress rheometers, and rotating radar platforms.
 
-Digital relative rotary encoders employ two outputs called A & B, which are called quadrature outputs, as they are 90 degrees out of phase.
+Digital relative rotary encoders employ two outputs called A & B, which are called quadrature outputs, as they are 90 degrees out of phase. Signal A is known as clock, and B as data.
 
 ![](http://git.whitecatboard.org/encoder-quadrature.png)
 
