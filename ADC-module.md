@@ -48,7 +48,7 @@ Lua RTOS allows the programmer to access to external ADC units using the same AP
 
   * 8 ADC channels are provided, from adc.ADC_CH0 to adc.ADC_CH7.
 
-    [Datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/21295C.pdf)
+    [MCP3008 Datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/21295C.pdf)
 
 * adc.MCP3208:
 
@@ -58,7 +58,7 @@ Lua RTOS allows the programmer to access to external ADC units using the same AP
 
   * 8 ADC channels are provided, from adc.ADC_CH0 to adc.ADC_CH7.
 
-    [Datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/21298D.pdf)
+    [MCP3208 Datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/21298D.pdf)
 
 # Configuration funcions
 
