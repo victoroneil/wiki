@@ -36,6 +36,8 @@ _adc.ADC1:_
   * VRef- is 0.0V and VRef+ can be either 1.1V, 1.5V, 2.2V, or 3.3V.
   * 8 ADC channels are provided, from adc.ADC_CH0 to adc.ADC_CH7.
 
+In ESP32 voltage references higher than 1.1V are achieved using an attenuation factor that reduces the input voltage, but this attenuation generates imprecise conversions, almost with the current esp-idf. Please, use external ADC hardware if you need to measure voltages higher than 1.1V.
+
 # External ADC
 
 Lua RTOS allows the programmer to access to external ADC units using the same API.
