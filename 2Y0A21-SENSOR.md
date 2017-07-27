@@ -2,7 +2,7 @@
 
 | What         |             | Comments                   |
 |--------------|-------------|----------------------------|
-| Identifier   | 2Y0A21      |                            |
+| Identifier   | 2Y0A21      | Infrared sensor            |
 | Interface    | ADC         |                            |
 | Provides     | distance    | centimeters                |
 | Properties   | none        |                            |
