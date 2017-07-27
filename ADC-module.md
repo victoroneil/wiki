@@ -48,6 +48,8 @@ Lua RTOS allows the programmer to access to external ADC units using the same AP
 
   * 8 ADC channels are provided, from adc.ADC_CH0 to adc.ADC_CH7.
 
+  [Datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/21295C.pdf)
+
 * adc.MCP3208:
 
   * This unit is mapped to an external ADC converter through the MCP3208 chip (SPI interface), with a maximum 12-bit resolution.
@@ -55,6 +57,8 @@ Lua RTOS allows the programmer to access to external ADC units using the same AP
   * The programmer must to provide VRef+ and VRef- values when using this unit (see adc.attach function). The default VRef+ and VRef- values are 3.3V and 0V respectively.
 
   * 8 ADC channels are provided, from adc.ADC_CH0 to adc.ADC_CH7.
+
+  [Datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/21298D.pdf)
 
 # Configuration funcions
 
