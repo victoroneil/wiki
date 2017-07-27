@@ -14,5 +14,5 @@
 ```lua
 s1 = sensor.attach("2Y0A21", adc.MCP3208, 0, 12)
 
-s1:read("temperature")
+s1:read("distance")
 ```
