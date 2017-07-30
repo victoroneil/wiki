@@ -1,13 +1,11 @@
 # About this
 
-This module contains functions for configure and access the network.
+This module contains functions for configure and access the network. Lua RTOS has support for the following network interfaces, each of one identified by it's name:
+
+* en: ethernet interface (SPI or RMII)
+* wf: wifi interface
 
 # Key concepts
-
-Lua RTOS has support for the following network interfaces, each of one identified by it's name:
-
-* en: ethernet interface
-* wf: wifi interface
 
 To use this module you must take into consideration the following:
 
