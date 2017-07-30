@@ -39,6 +39,13 @@ To use this module you must take into consideration the following:
 
 # Common functions
 
+## net.connected()
+
+Check if the network is available.
+
+Arguments: nothing.
+Returns: true if the network is available, false if is not available, or an exception.
+
 ## net.stat([table])
 
 Get the network stats for all the available interfaces.
