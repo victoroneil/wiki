@@ -8,7 +8,7 @@ This module contains functions for configure and access the network. Lua RTOS ha
 The functions of this module are organized in the following categories:
 
 * [Common functions](#common-functions)
-* [Wi-Fi functions](#wi-fi-functions)
+* [Wi-Fi functions](#wi-fi)
 
 # Key concepts
 
