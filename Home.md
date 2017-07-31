@@ -11,7 +11,7 @@ Boards:
 
 * [Whitecat ESP32 N1](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Whitecat-ESP32-N1)
 
-Lua RTOS modules:
+General purpose modules:
 
 * [Exception handling](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Exception-handling)
 * [Lua RTOS commands](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Lua-RTOS-commands)
