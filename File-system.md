@@ -4,6 +4,10 @@ File access functions are provided through the standard Lua [io module](http://w
 
 The functions of this module are organized in the following categories:
 
+* [Directory management functions](#directory-management-functions)
+
+# Directory management functions
+
 ## os.ls([path])
 
 List the path contents.
