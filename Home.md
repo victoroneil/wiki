@@ -15,6 +15,7 @@ Boards:
 General purpose modules:
 
 * [Exception handling](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Exception-handling)
+* [Lua RTOS configuration](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Lua-RTOS-configuration)
 * [Lua RTOS & board status](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Lua-RTOS-&-board-status)
 * [File system](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/File-system)
 * [Lua RTOS commands](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Lua-RTOS-commands)
