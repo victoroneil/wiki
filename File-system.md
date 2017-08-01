@@ -4,7 +4,27 @@ File access functions are provided through the standard Lua [io module](http://w
 
 The functions of this module are organized in the following categories:
 
+* [Format functions](#format-functions)
 * [File and directory management functions](#directory-management-functions)
+
+# Format functions
+
+## os.format(filesystem)
+
+Format a file system. Because all data is removed in the format process the function ask for a confirmation.
+
+Arguments:
+
+* file system: a string identifying the file system. Can be either spiffs or fat.
+
+Returns: nothing or an exception.
+
+```lua
+/ > os.format("fat")
+All data in fat will be deleted. Continue? [y/n]: y
+Formatting...
+Initializing FAT area: 4% completed
+```
 
 # File and directory management functions
 
