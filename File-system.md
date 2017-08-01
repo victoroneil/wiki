@@ -4,9 +4,54 @@ File access functions are provided through the standard Lua [io module](http://w
 
 The functions of this module are organized in the following categories:
 
-* [Directory management functions](#directory-management-functions)
+* [File and directory management functions](#directory-management-functions)
 
-# Directory management functions
+# File and directory management functions
+
+## os.cat(filename)
+
+Show (but not modify) the contents of a text file to the screen.
+
+Arguments:
+
+* filename: file path to show. Path can be absolute or relative to current working directory.
+
+Returns: nothing or an error.
+
+## os.cd(path)
+
+Change the current working directory.
+
+Arguments:
+
+* path: directory path. Path can be absolute or relative to current working directory.
+
+Returns: nothing.
+
+```lua
+/> os.cd("/examples")
+/examples >
+```
+
+## os.dmseg()
+
+Show (but not modify) the contents of the system log file one screen at a time. The content is paging through text one screenful at a time.
+
+**Note:** os.dmseg() is not available in file systems that use NOR flash technology for store it's data, such as SPIFFS.
+
+## os.edit(file)
+
+Edits a file.
+
+Arguments:
+
+* file: file path. Can be absolute or relative to current working directory.
+
+Returns: nothing
+
+```lua
+/> os.edit("autorun.lua")
+```
 
 ## os.ls([path])
 
@@ -36,34 +81,6 @@ Directory contents is listed on the screen in columns (separated by tab):
 * second column: entry size in bytes
 * third column: entry name
 
-## os.cd(path)
-
-Change the current working directory.
-
-Arguments:
-
-* path: directory path. Path can be absolute or relative to current working directory.
-
-Returns: nothing.
-
-```lua
-/> os.cd("/examples")
-/examples >
-```
-
-## os.pwd()
-
-Get the current working directory.
-
-Arguments: nothing
-
-Returns: the current directory
-
-```lua
-/examples > os.pwd()
-/examples
-```
-
 ## os.mkdir(path)
 
 Make a directory.
@@ -81,13 +98,37 @@ os.mkdir("test")
 true
 ```
 
+## os.more(filename)
+
+Show (but not modify) the contents of a text file one screen at a time. The content is paging through text one screenful at a time.
+
+Arguments:
+
+* filename: file path to show. Path can be absolute or relative to current working directory.
+
+Returns: nothing or an error.
+
+
+## os.pwd()
+
+Get the current working directory.
+
+Arguments: nothing
+
+Returns: the current directory
+
+```lua
+/examples > os.pwd()
+/examples
+```
+
 ## os.remove(path)
 
 Remove a file or a directory.
 
 Arguments:
 
-* file or directory path. Path can be absolute or relative to current working directory.
+* path: file or directory path to remove. Path can be absolute or relative to current working directory.
 
 Returns: nothing or an error.
 
@@ -116,18 +157,4 @@ Returns: nothing
 ```lua
 -- Copy autorun.lua into autorun.old
 os.cp("/autorun.lua","/autorun.old")
-```
-
-## os.edit(file)
-
-Edits a file.
-
-Arguments:
-
-* file: file path. Can be absolute or relative to current working directory.
-
-Returns: nothing
-
-```lua
-/> os.edit("autorun.lua")
 ```
