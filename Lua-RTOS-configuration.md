@@ -30,15 +30,15 @@ Returns: nothing, or the current logcons setting (true/false) if the enable argu
 os.logcons(false)
 ```
 
-## os.loglevel(level)
+## os.loglevel([level])
 
 Sets the log level. The log level controls the amount of log information that Lua RTOS show in the console, and puts in the /log/messages.log file (is an SD Card is attached).
 
 Arguments:
 
-* level: the log level, can be either os.LOG_ALL, os.LOG_INFO, os.LOG_EMERG, os.LOG_ALERT, os.LOG_CRIT, os.LOG_ERR, os.LOG_WARNING, os.LOG_NOTICE, os.LOG_DEBUG
+* level (optional): the log level, can be either os.LOG_ALL, os.LOG_INFO, os.LOG_EMERG, os.LOG_ALERT, os.LOG_CRIT, os.LOG_ERR, os.LOG_WARNING, os.LOG_NOTICE, os.LOG_DEBUG. If this argument is not provided the function returns the current loglevel setting.
 
-Returns: nothing
+Returns: nothing, or the current loglevel setting if the enable argument is not provided.
 
 ```lua
 -- Show only error logs
