@@ -4,7 +4,8 @@ The Lua RTOS sleep functions allows to put the CPU in sleep mode. This functions
 
 Get the number of boots from the deep sleep state.
 
-Arguments: nothing
+Arguments: nothing.
+
 Returns: the number of boots.
 
 ## os.sleep(seconds)
