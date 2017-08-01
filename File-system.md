@@ -5,7 +5,7 @@ File access functions are provided through the standard Lua [io module](http://w
 The functions of this module are organized in the following categories:
 
 * [Format functions](#format-functions)
-* [File and directory management functions](#directory-management-functions)
+* [File and directory management functions](#file-and-directory-management-functions)
 
 # Format functions
 
