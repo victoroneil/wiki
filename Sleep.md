@@ -7,5 +7,7 @@ Arguments:
 seconds: the number of seconds to sleep
 Returns: nothing
 
+```lua
 -- Sleep for 10 seconds
 os.sleep(10)
+```
