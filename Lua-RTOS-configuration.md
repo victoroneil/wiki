@@ -15,15 +15,15 @@ Returns: nothing, or the current history setting (true/false) if the enable argu
 os.histrory(true)
 ```
 
-## os.logcons(enable)
+## os.logcons([enable])
 
 Enable or disable Lua RTOS log to the console. If it's enabled log messages are displayed in the console and written to the /log/messages.log file if an SD Card is attached. If it's disabled log mesages are written to the /log/messages.log file if an SD Card is attached.
 
 Arguments:
 
-* enable: true for enable / false for disable
+* enable (optional): true for enable / false for disable. If this argument is not provided the function returns the current logcons setting.
 
-Returns: nothing
+Returns: nothing, or the current logcons setting (true/false) if the enable argument is not provided.
 
 ```lua
 -- Disable logs on the console
