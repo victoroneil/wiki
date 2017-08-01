@@ -40,13 +40,6 @@ print("OS: "..oss..", version: "..version..", build: "..build..", commit: "..com
 OS: Lua RTOS, version: beta 0.1, build: 1495574689, commit: 4d92804451cbec7d3ad545c66a92ffab35c63871
 ```
 
-## os.bootcount()
-
-Get the number of boots from the deep sleep state.
-
-Arguments: nothing
-Returns: the number of boots.
-
 ## os.resetreason()
 
 Get the reset reason.
