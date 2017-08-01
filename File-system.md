@@ -66,7 +66,7 @@ Returns: the current directory
 
 ## os.mkdir(path)
 
-Make a directory. A file or directory can be removed with Lua [os.remove()] (http://www.lua.org/manual/5.3/manual.html#6.9) standard function.
+Make a directory.
 
 Arguments:
 
@@ -80,6 +80,27 @@ Returns: true if success
 os.mkdir("test")
 true
 ```
+
+## os.remove(path)
+
+Remove a file or a directory.
+
+Arguments:
+
+* file or directory path. Path can be absolute or relative to current working directory.
+
+Returns: nothing or an error.
+
+## os.rename(old path, new path)
+
+Rename a file or a directory.
+
+Arguments:
+
+* old path: file or directory path to rename. Path can be absolute or relative to current working directory.
+* new path: file or directory new path. Path can be absolute or relative to current working directory.
+
+Returns: nothing or an error.
 
 ## os.cp(source path,destination path)
 
