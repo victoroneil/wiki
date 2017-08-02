@@ -38,6 +38,16 @@ In ESP32 voltage references higher than 1.1V are achieved using an attenuation f
 
 Lua RTOS allows the programmer to access to external ADC units using the same API.
 
+* adc.ADS1115:
+
+  * This unit is mapped to an external ADC converter through the ADS1115 chip (I2C interface), with a maximum 15-bit resolution.
+
+  * The programmer must to provide VRef+ and VRef- values when using this unit (see adc.attach function). The default VRef+ and VRef- values are 3.3V and 0V respectively.
+
+  * 4 ADC channels are provided.
+
+    [ADS1115 Datasheet](http://www.ti.com/lit/ds/sbas444c/sbas444c.pdf)
+
 * adc.MCP3008:
 
   * This unit is mapped to an external ADC converter through the MCP3008 chip (SPI interface), with a maximum 10-bit resolution.
@@ -54,7 +64,7 @@ Lua RTOS allows the programmer to access to external ADC units using the same AP
 
   * The programmer must to provide VRef+ and VRef- values when using this unit (see adc.attach function). The default VRef+ and VRef- values are 3.3V and 0V respectively.
 
-  * 8 ADC channels are provided, from adc.ADC_CH0 to adc.ADC_CH7.
+  * 8 ADC channels are provided.
 
     [MCP3208 Datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/21298D.pdf)
 
