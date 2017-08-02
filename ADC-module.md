@@ -64,7 +64,7 @@ Lua RTOS allows the programmer to access to external ADC units using the same AP
 
 # Configuration funcions
 
-## adc = adc.attach(id, channel, resolution, [vref+, vref-])
+## adc = adc.attach(id, channel, [resolution, vref+, vref-])
 
 Attach an ADC device to an ADC channel.
 
@@ -72,7 +72,7 @@ Arguments:
 
 * id: ADC module identifier. Use the constant adc.ADCx defined for this purpose.
 * channel: ADC channel identifier. Use the constant adc.ADC_CHx for this purpose.
-* resolution: resolution to use, can be either 12, 11, 10, 9, 7, 8 or 6 bits.
+* resolution (optional): resolution to use, can be either 16, 15, 14, 13, 12, 11, 10, 9, 8, 7 or 6 bits. If resolutions is not provided, or it's value is 0 default resolution is applied.
 * vref+ (optional): positive voltage reference in millivolts. If you don't provide this argument vref+ is set to the default vref+ for the ADC module.
 * vref- (optional): negative voltage reference in millivolts. If you don't provide this argument vref- is set to the default vref- for the ADC module.
 
@@ -83,10 +83,6 @@ Returns: an ADC channel instance, or an exception. You must store this instance 
 -- reference voltages
 channel = adc.attach(adc.ADC1, adc.ADC_CH0, 12)
 ```
-
-## adc = adc.setup(id, channel, resolution, [vref+, vref-])
-
-_**This function is deprecated**, and will be removed in the future. Please, use adc.attach instead._
 
 # Operation functions
 
