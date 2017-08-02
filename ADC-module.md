@@ -28,7 +28,7 @@ In ESP32 only one ADC unit is available:
 
 _adc.ADC1:_
 
-  * This is the internal ADC module, with a maximum 12-bit resolution.
+  * This is the internal ADC module, with a maximum of 12-bit resolution.
   * VRef- is 0.0V and VRef+ can be either 1.1V, 1.5V, 2.2V, or 3.3V.
   * 8 ADC channels are provided, from adc.ADC_CH0 to adc.ADC_CH7.
 
@@ -40,7 +40,7 @@ Lua RTOS allows the programmer to access to external ADC units using the same AP
 
 * adc.ADS1115:
 
-  * This unit is mapped to an external ADC converter through the ADS1115 chip (I2C interface), with a maximum 15-bit resolution.
+  * This unit is mapped to an external ADC converter through the ADS1115 chip (I2C interface), with a maximum of 15-bit resolution.
 
   * The programmer must to provide VRef+ and VRef- values when using this unit (see adc.attach function). The default VRef+ and VRef- values are 3.3V and 0V respectively.
 
@@ -50,7 +50,7 @@ Lua RTOS allows the programmer to access to external ADC units using the same AP
 
 * adc.MCP3008:
 
-  * This unit is mapped to an external ADC converter through the MCP3008 chip (SPI interface), with a maximum 10-bit resolution.
+  * This unit is mapped to an external ADC converter through the MCP3008 chip (SPI interface), with a maximum of 10-bit resolution.
 
   * The programmer must to provide VRef+ and VRef- values when using this unit (see adc.attach function). The default VRef+ and VRef- values are 3.3V and 0V respectively.
 
@@ -60,7 +60,7 @@ Lua RTOS allows the programmer to access to external ADC units using the same AP
 
 * adc.MCP3208:
 
-  * This unit is mapped to an external ADC converter through the MCP3208 chip (SPI interface), with a maximum 12-bit resolution.
+  * This unit is mapped to an external ADC converter through the MCP3208 chip (SPI interface), with a maximum of 12-bit resolution.
 
   * The programmer must to provide VRef+ and VRef- values when using this unit (see adc.attach function). The default VRef+ and VRef- values are 3.3V and 0V respectively.
 
