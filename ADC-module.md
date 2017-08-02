@@ -2,10 +2,6 @@
 
 This module contains functions for accessing the analog to digital converter (ADC) module.
 
-ADC units are encoded into a byte and are platform-dependent. For this reason the ADC module define a numeric constant for each available ADC unit. For example, in ESP32 only one ADC unit is available, and it is defined by the constant adc.ADC1.
-
-Each ADC unit has one or more ADC channels that are encoded into a byte and are platform-dependent. The ADC module define a numeric constant for each available ADC channel. For example, in ESP32 there are 8 ADC channels, defined by the constants from adc.ADC_CH0 to adc.ADC_CH7. If you refer to an inexistent ADC channel, a nil value is returned.
-
 # Key concepts
 
 An ADC is a system that converts an analog signal, such as a sound picked up by a microphone or light entering a digital camera, into a digital signal.
@@ -26,7 +22,7 @@ To use this module you must take into consideration the following:
    device:read()
    ```
 
-# ESP32 notes
+# Internal ADC
 
 In ESP32 only one ADC unit is available:
 
