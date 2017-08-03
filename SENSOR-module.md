@@ -221,7 +221,9 @@ Reads a specified property from a sensor instance previously created with the se
 
 Arguments:
 
-* property: the property name to read
+* property: the property name to read. You can use the and [enumeration function](#enumeration-functions) for know what properties are provided by a sensor.
+
+             The special property "all" is defined for read all the properties provided by the sensor.
 
 Returns: the property value or an exception.
 
