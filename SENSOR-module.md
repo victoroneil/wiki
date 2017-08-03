@@ -221,11 +221,23 @@ Reads a specified property from a sensor instance previously created with the se
 
 Arguments:
 
-* property: the property name to read. You can use the and [enumeration function](#enumeration-functions) for know what properties are provided by a sensor.
-
-             The special property "all" is defined for read all the properties provided by the sensor.
+* property: the property name to read. You can use the and [enumeration function](#enumeration-functions) for know what properties are provided by a sensor. The special property "all" is defined for read all the properties provided by the sensor.
 
 Returns: the property value or an exception.
+
+```lua
+-- Attach BME280 to I2C0, with default values
+s1 = sensor.attach("BME280", i2c.I2C0)
+
+-- Read temperature
+temp = s1:read("temperature")
+
+-- Read pressure
+press = s1:read("pressure")
+
+-- Read all properties
+temp, hum, press = s1:read("all")
+```
 
 # Supported sensors
 
