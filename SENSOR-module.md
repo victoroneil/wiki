@@ -151,9 +151,17 @@ The arguments for this function varies according to the hardware interface type.
    --------
 
       * id: a string containing the sensor id, for example TMP36.
-      * adc: ADC unit. Use adc.ADCx defined for this purpose.
-      * channel: ADC channel. Use adc.ADC_CHx for this purpose.
-      * resolution: resolution to use, can be either 12, 11, 10, 9, 8 or 6 bits.
+      * adc: ADC unit. Use adc.xxx defined for this purpose, for example adc.ADC1.
+      * channel: ADC channel.
+      * resolution (optional): bits of resolution to use. If not provided or 0, the default resolution is applied.
+
+   For I2C:
+   --------
+
+      * id: a string containing the sensor id, for example BME280.
+      * i2c: i2c unit. Use i2c.I2Cx defined for this purpose.
+      * speed (optional): i2c speed, in hertz. If not provided or 0 the default speed is applied.
+      * address (optional): i2c device address. If not provided or 0 the default device address is applied.
 
    For 1-WIRE:
    -----------
