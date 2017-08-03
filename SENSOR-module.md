@@ -1,6 +1,7 @@
 # About this
 
-This module contains functions for access the sensors supported by Lua RTOS. Although with Lua RTOS you can access sensors using the provided hardware access modules, mostly used sensors in education and industry are supported directly by the operating system. Please feel free to send us any suggestion for include new sensors in Lua RTOS.
+This module contains functions for access the [sensors supported by Lua RTOS](#supported-sensors)
+. Although with Lua RTOS you can access sensors using the provided hardware access modules, mostly used sensors in education and industry are supported directly by the operating system. Please feel free to send us any suggestion for include new sensors in Lua RTOS.
 
 Sensor module allows the programmer to access sensors in an unified way from a common programming interface, programs are written faster, and source code is more clearly:
 
@@ -12,6 +13,13 @@ s1 = sensor.attach("DHT11", pio.GPIO4)
 s1:read("temperature")
 s1:read("humidity")
 ````
+
+The functions of this module are organized in the following categories:
+
+* [Enumeration functions](#enumeration-functions)
+* [Configuration functions](#configuration-functions)
+* [Read functions](#read-functions)
+* [Set functions](#set-functions)
 
 # Key concepts
 
