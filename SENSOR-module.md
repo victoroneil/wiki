@@ -161,6 +161,7 @@ The arguments for this function varies according to the hardware interface type.
    * data bits: number of data bits, can be 8 or 9. 
    * parity: parity, can be either uart.PARNONE (none parity), uart.PAREVEN (even parity) or uart.PARODD (odd parity).
    * stop bits: number of stop bits, can be either uart.STOP1 (1 stop bits) or uart.STOP2 (2 stop bits)
+
    For I2C:
 
    * id: a string containing the sensor id, for example BME280.
