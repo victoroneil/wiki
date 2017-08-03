@@ -12,7 +12,8 @@
 # Code
 
 ```lua
-s1 = sensor.attach("2Y0A21", adc.MCP3208, 0, 12)
+-- Attach sensor using an external ADC (MCP3208) / channel 0
+s1 = sensor.attach("2Y0A21", adc.MCP3208, 0)
 
 s1:read("distance")
 ```
