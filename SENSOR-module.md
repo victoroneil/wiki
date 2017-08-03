@@ -164,8 +164,13 @@ The arguments for this function varies according to the hardware interface type.
 
    * id: a string containing the sensor id, for example DS1820.
    * gpio: the GPIO which sensor is attached. Use pio.GPIOx defined for this purpose.
-   * adressh: sensor's address (most significant word) in the bus.
-   * adressl: sensor's address (less significant word) in the bus.
+   * device id: the device id can be either the position that the device occupies in the bus, or the device address
+
+      device position: an integer
+      
+      device address: two words
+         * adressh: sensor's address (most significant word) in the bus.
+         * adressl: sensor's address (less significant word) in the bus.
 
 Returns: a sensor instance or an exception. You must store this instance into a variable for further operations with it.
 
@@ -175,15 +180,20 @@ s = sensor.attach("DHT11", pio.GPIO4)
 ```
 
 ```lua
--- Attach a TMP36 (adc sensor) sensor using ADC1 module, ADC_CH6 channel
+-- Attach a TMP36 (adc sensor) sensor using ADC1 module, channel 6
 -- with a 12-bit resolution
-s = sensor.attach("TMP36", adc.ADC1, adc.ADC_CH6, 12)
+s = sensor.attach("TMP36", adc.ADC1, 6, 12)
 ```
 
 ```lua
--- Attach a DS1820 (1-WIRE sensor) sensor to GPIO4 with 
+-- Attach a DS1820 (1-WIRE sensor) sensor to GPIO26 with 
 -- address 0x28ff900fb316041a
-s = sensor.attach("DS1820",pio.GPIO4, 0x28ff900f, 0xb316041a)
+s = sensor.attach("DS1820",pio.GPIO26, 0x28ff900f, 0xb316041a)
+```
+
+```lua
+-- Attach a DS1820 (1-WIRE sensor) sensor to GPIO26 at pos #2
+s = sensor.attach("DS1820",pio.GPIO26, 2)
 ```
 
 # Supported sensors
