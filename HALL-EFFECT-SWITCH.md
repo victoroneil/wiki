@@ -7,7 +7,7 @@
 | Provides     | on          | 1 = switch active          |
 |              |             | 0 = switch inactive        |
 | Properties   | none        |                            |
-| [Datasheet](http://www.hyzt.com/manager/upimg/2007328165759.pdf)    |             | ![](http://git.whitecatboard.org/hall_switch.jpg)                           |
+| [Datasheet](http://www.hyzt.com/manager/upimg/2007328165759.pdf)    |             | ![](http://git.whitecatboard.org/hall_switch.png)                           |
 
 
 # Code
