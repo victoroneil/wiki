@@ -12,7 +12,8 @@
 # Code
 
 ```lua
-s1 = sensor.attach("TMP36", adc.ADC1, adc.ADC_CH6, 12)
+-- Attach sensor using internal ADC / channel 6
+s1 = sensor.attach("TMP36", adc.ADC1, 6)
 
 s1:read("temperature")
 ```
