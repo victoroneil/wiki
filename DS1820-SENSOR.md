@@ -15,7 +15,9 @@
 # Code
 
 ```lua
-s1 = sensor.attach("DS1820", gpio.GPIO15)
+-- Attach the second DS1820 sensor connected to GPIO26
+s1 = sensor.attach("DS1820", pio.GPIO26, 2)
 
+-- Read the temperature
 s1:read("temperature")
 ```
