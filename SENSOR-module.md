@@ -220,6 +220,9 @@ Here is the list of sensors currently natively supported in Lua RTOS.
     - [BME280](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/BME280-SENSOR)
     - [DHT11](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/DHT11-SENSOR)
 
+  * Presence
+    - [AM412] https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/AM412-PIR-SENSOR)
+
   * Pressure
     - [BME280](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/BME280-SENSOR)
 
