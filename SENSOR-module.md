@@ -215,15 +215,15 @@ s = sensor.attach("DS1820",pio.GPIO26, 2)
 
 # Read functions
 
-## instance:read(property)
+## instance:read(magnitude)
 
-Reads a specified property from a sensor instance previously created with the sensor.attach function.
+Reads a specified magnitude from a sensor instance previously created with the sensor.attach function.
 
 Arguments:
 
-* property: the property name to read. You can use the and [enumeration function](#enumeration-functions) for know what properties are provided by a sensor. The special property "all" is defined for read all the properties provided by the sensor.
+* magnitude: the magnitude name to read. You can use an [enumeration function](#enumeration-functions) for know what magnitudes are provided by a sensor. The special magnitude "all" is defined for read all the magnitudes provided by the sensor.
 
-Returns: the property value or an exception.
+Returns: the magnitude value or an exception.
 
 ```lua
 -- Attach BME280 to I2C0, with default values
