@@ -213,6 +213,18 @@ s = sensor.attach("DS1820",pio.GPIO26, 0x28ff900f, 0xb316041a)
 s = sensor.attach("DS1820",pio.GPIO26, 2)
 ```
 
+# Read functions
+
+## instance:read(property)
+
+Reads a specified property from a sensor instance previously created with the sensor.attach function.
+
+Arguments:
+
+* property: the property name to read
+
+Returns: the property value or an exception.
+
 # Supported sensors
 
 Here is the list of sensors currently natively supported in Lua RTOS.
