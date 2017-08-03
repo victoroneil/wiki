@@ -239,6 +239,18 @@ press = s1:read("pressure")
 temp, hum, press = s1:read("all")
 ```
 
+# Set functions
+
+## instance:set(property, value)
+
+Sets the value for a specified property for a sensor instance previously created with the sensor.attach function. With the set function you can set the resolution you want for a DS1820 sensor.
+
+Arguments:
+
+* property: the property name to set. You can use an [enumeration function](#enumeration-functions) for know what properties are provided by a sensor.
+
+* value: the property value.
+
 # Supported sensors
 
 Here is the list of sensors currently natively supported in Lua RTOS.
