@@ -214,7 +214,7 @@ Here is the list of sensors currently natively supported in Lua RTOS.
     - [PING))) 28015 ultrasonic sensor](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/PING-28015-ultrasonic-sensor)
 
   * Geographic position
-    -[GPS](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/GPS-SENSOR)
+    - [GPS](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/GPS-SENSOR)
 
   * Humidity
     - [BME280](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/BME280-SENSOR)
