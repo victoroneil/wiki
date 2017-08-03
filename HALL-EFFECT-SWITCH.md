@@ -12,7 +12,7 @@
 
 # Code
 
-In this example a hall effect switch is attached to GPIO26. Sensor changes are processed using a callback.
+In this example a hall effect switch is attached to GPIO26. Sensor changes are processed using a callback:
 ```lua
 s = sensor.attach("HALL_SWITCH", pio.GPIO26)
 
@@ -27,7 +27,7 @@ s:callback(
 )
 ```
 
-In this example a hall effect switch is attached to GPIO26. Sensor changes are processed using an infinite loop.
+In this example a hall effect switch is attached to GPIO26. Sensor changes are processed using an infinite loop:
 ```lua
 s = sensor.attach("HALL_SWITCH", pio.GPIO26)
 
