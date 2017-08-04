@@ -251,6 +251,17 @@ Arguments:
 
 * value: the property value.
 
+```lua
+-- Attach the second DS1820 sensor connected to GPIO26
+s1 = sensor.attach("DS1820", pio.GPIO26, 2)
+
+-- Set resolution to 8 bits
+s1:set("resolution", 8)
+
+-- Read the temperature
+s1:read("temperature")
+```
+
 # Supported sensors
 
 Here is the list of sensors currently natively supported in Lua RTOS.
