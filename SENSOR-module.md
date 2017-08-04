@@ -318,4 +318,5 @@ Here is the list of sensors currently natively supported in Lua RTOS.
     - [BME280](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/BME280-SENSOR)
     - [DHT11](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/DHT11-SENSOR)
     - [DS1820](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/DS1820-SENSOR)
+    - [10K THERMISTOR](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/10K-THERMISTOR-SENSOR)
     - [TMP36](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/TMP36-SENSOR)
