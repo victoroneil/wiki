@@ -213,6 +213,34 @@ s = sensor.attach("DS1820",pio.GPIO26, 0x28ff900f, 0xb316041a)
 s = sensor.attach("DS1820",pio.GPIO26, 2)
 ```
 
+## instance:callback(function)
+
+Registers a callback for a sensor instance previously created with the sensor.attach function. The callback function is executed when a new value is available from the sensor (now only for driven interrupt sensors). Programmer can register up to 4 callbacks for sensor instance.
+
+Callbacks allow programmers to program alarm functions in an easy and clear way. Example do something when a hall effect switch is "on".
+
+Arguments:
+
+* function: the callback function. This function has only 1 argument, where a table with all the magnitude values provided by the sensor is passed. You can use an [enumeration function](#enumeration-functions) for know what magnitudes are provided by a sensor.
+
+Returns: nothing, or an exception.
+
+```lua
+-- Attach a hall switch to GPIO26
+s = sensor.attach("HALL_SWITCH", pio.GPIO26)
+
+-- Register a callback
+s:callback(
+   function(magnitude)
+      if (magnitude["on"] == 1) then
+         print("on")
+      else
+         print("off")
+      end
+   end
+)
+```
+
 # Read functions
 
 ## instance:read(magnitude)
