@@ -17,8 +17,8 @@ In this example an AM412 is attached to GPIO26. Sensor changes are processed usi
 s = sensor.attach("AM412", pio.GPIO26)
 
 s:callback(
-   function(properties)
-      if (properties["presence"] == 1) then
+   function(magnitude)
+      if (magnitude["presence"] == 1) then
          print("somebody in area")
       else
          print("nobody in area")
