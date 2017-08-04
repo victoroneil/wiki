@@ -17,8 +17,8 @@ In this example a hall effect switch is attached to GPIO26. Sensor changes are p
 s = sensor.attach("HALL_SWITCH", pio.GPIO26)
 
 s:callback(
-   function(properties)
-      if (properties["on"] == 1) then
+   function(magnitude)
+      if (magnitude["on"] == 1) then
          print("on")
       else
          print("off")
