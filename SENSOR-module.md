@@ -217,7 +217,7 @@ s = sensor.attach("DS1820",pio.GPIO26, 2)
 
 Registers a callback for a sensor instance previously created with the sensor.attach function. The callback function is executed when a new value is available from the sensor (now only for driven interrupt sensors). Programmer can register up to 4 callbacks for sensor instance.
 
-Callbacks allow programmers to program alarm functions in an easy and clear way. Example do something when a hall effect switch is "on".
+Callbacks allow programmers to program alarm functions in an easy and clear way. Example: do something when a hall effect switch is "on".
 
 Arguments:
 
