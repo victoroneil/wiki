@@ -60,6 +60,7 @@ Arguments:
 * mode: SPI mode, can be either spi.MASTER or spi.SLAVE.
 * cs: device's chip select pin, for example gpio.GPIO5. If cs is 0 the default cs pin for this SPI unit is used.
 * speed: speed of the spi module, expressed in hertz.
+* data bits: can be either, 8, 16 or 32 bits.
 * mode number: an integer between 0 and 3, according the following table:
 
   |mode number|polarity|phase|
@@ -75,7 +76,6 @@ Arguments:
    * spi.WRITE: attach the spi device as write only (only MOSI is used)
    * default value is spi.READ | spi.WRITE: attach the spi device as read / write (MISO and MOSI are used)
 
-* data bits: can be either, 8, 16 or 32 bits.
 
 Returns: spi device instance, or an exception. You must store this instance into a variable for further operations with it.
 
