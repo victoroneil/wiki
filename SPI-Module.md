@@ -52,7 +52,8 @@ To use this module you must take into consideration the following:
 
 ## spi.pins([table])
 
-List the pins assigned to the SPI ports.
+List the pins assigned to the SPI ports. The initial assignments are defined in Kconfig under the Component config -> Lua RTOS -> Hardware -> SPI pin map. Prior to use any spi module functions you can change the assigned pins through the spi.setpins function.
+
 
 Arguments:
 
