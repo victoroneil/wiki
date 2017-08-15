@@ -9,7 +9,7 @@ SPI module can work in master or slave mode, each of then identified by spi.MAST
 The functions of this module are organized in the following categories:
 
 * [Information functions](#information-functions)
-* [Configuration functions](#information-functions)
+* [Configuration functions](#configuration-functions)
 * [Operation functions](#operation-functions)
 
 # Key concepts
@@ -81,7 +81,7 @@ SPI2: miso=GPIO12 mosi=GPIO13 clk=GPIO14
 SPI3: miso=GPIO19 mosi=GPIO23 clk=GPIO18 
 ```
 
-# Contiguration functions
+# Configuration functions
 
 ## spi.setpins(id, miso, mosi, clk)
 
