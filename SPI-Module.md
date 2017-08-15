@@ -48,6 +48,12 @@ To use this module you must take into consideration the following:
    instance:deselect()
    ```
 
+# Information functions
+
+## spi.pins([table])
+
+List the pins assigned to the SPI ports.
+
 # Contiguration functions
 
 ## spi = spi.attach(id, mode, cs, speed, data bits, mode number, [flags])
