@@ -84,10 +84,6 @@ Returns: spi device instance, or an exception. You must store this instance into
 device = spi.attach(spi.SPI2, spi.MASTER, pio.GPIO5, 1000000, 8, 0)
 ```
 
-## spi = spi.setup(id, mode, cs, speed, data bits, mode number, [flags])
-
-_**This function is deprecated**, and will be removed in the future. Please, use adc.attach instead._
-
 # Operation functions
 
 ## instance:select()
