@@ -54,6 +54,20 @@ To use this module you must take into consideration the following:
 
 List the pins assigned to the SPI ports.
 
+Arguments:
+
+table: if true, pin list is returned in a Lua table, if false pin list is printed on the console.
+Returns:
+
+if table is false: nothing or an exception.
+
+if table is true: a Lua table with the pin list, or an exception. This table is an array of tables. Each entry corresponds to a SPI port. Each port gives the following fields:
+
+id: the SPI port id.
+miso: the GPIO number assigned to the miso signal.
+mosi: the GPIO number assigned to the mosi signal.
+clk: the GPIO number assigned to the clk signal.
+
 # Contiguration functions
 
 ## spi = spi.attach(id, mode, cs, speed, data bits, mode number, [flags])
