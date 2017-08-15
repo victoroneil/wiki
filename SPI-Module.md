@@ -6,6 +6,11 @@ SPI units are encoded into a byte and are platform-dependent. For this reason th
 
 SPI module can work in master or slave mode, each of then identified by spi.MASTER and spi.SLAVE constants. For now only spi.MASTER is allowed.
 
+The functions of this module are organized in the following categories:
+
+* [Information functions](#information-functions)
+* [Configuration functions](#configuration-functions)
+* [Operation functions](#operation-functions)
 
 # Key concepts
 
