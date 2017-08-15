@@ -7,7 +7,7 @@
 | Provides     | on          | 1 = switch active          |
 |              |             | 0 = switch inactive        |
 | Properties   | none        |                            |
-| ![](http://git.whitecatboard.org/push_button.png)                           |
+|              |             | ![](http://git.whitecatboard.org/push_button.png)                           |
 
 
 # Code
