@@ -64,10 +64,16 @@ Returns:
 
 * if table is true: a Lua table with the pin list, or an exception. This table is an array of tables. Each entry corresponds to a SPI port. Each port gives the following fields:
 
-  id: the SPI port id.
-  miso: the GPIO number assigned to the miso signal.
-  mosi: the GPIO number assigned to the mosi signal.
-  clk: the GPIO number assigned to the clk signal.
+  * id: the SPI port id.
+  * miso: the GPIO number assigned to the miso signal.
+  * mosi: the GPIO number assigned to the mosi signal.
+  * clk: the GPIO number assigned to the clk signal.
+
+```lua
+/ > spi.pins()
+SPI2: miso=GPIO12 mosi=GPIO13 clk=GPIO14 
+SPI3: miso=GPIO19 mosi=GPIO23 clk=GPIO18 
+```
 
 # Contiguration functions
 
