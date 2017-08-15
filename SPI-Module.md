@@ -9,7 +9,7 @@ SPI module can work in master or slave mode, each of then identified by spi.MAST
 The functions of this module are organized in the following categories:
 
 * [Information functions](#information-functions)
-* [Configuration functions](#configuration-functions)
+* [Configuration functions](#information-functions)
 * [Operation functions](#operation-functions)
 
 # Key concepts
