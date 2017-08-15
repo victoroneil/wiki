@@ -6,6 +6,34 @@ UART units are encoded into a byte and are platform-dependent. For this reason t
 
 UART functions are not thread-safe. You must call to the lock / unlock functions for made UART functions thread-safe.
 
+# Information functions
+
+## uart.pins([table])
+
+List the pins assigned to the UART ports. The initial assignments are defined in Kconfig under the Component config -> Lua RTOS -> Hardware -> UART pin map. Prior to use any uart module function you can change the assigned pins through the uart.setpins function.
+
+
+Arguments:
+
+* table: if true, pin list is returned in a Lua table, if false pin list is printed on the console.
+
+Returns:
+
+* if table is false: nothing or an exception.
+
+* if table is true: a Lua table with the pin list, or an exception. This table is an array of tables. Each entry corresponds to an UART port. Each port gives the following fields:
+
+  * id: the UART port id.
+  * rx: the GPIO number assigned to the rx signal.
+  * tx: the GPIO number assigned to the tx signal.
+
+```lua
+/ > uart.pins()
+UART0: rx=GPIO3 tx=GPIO1 
+UART1: rx=GPIO26 tx=GPIO25 
+UART2: rx=GPIO2 tx=GPIO15 
+```
+
 # Configuration functions
 
 ## uart = uart.attach(id, baud rate, data bits, parity, stop bits, [buffer size, flags])
