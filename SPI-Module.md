@@ -52,7 +52,7 @@ To use this module you must take into consideration the following:
 
 ## spi.pins([table])
 
-List the pins assigned to the SPI ports. The initial assignments are defined in Kconfig under the Component config -> Lua RTOS -> Hardware -> SPI pin map. Prior to use any spi module functions you can change the assigned pins through the spi.setpins function.
+List the pins assigned to the SPI ports. The initial assignments are defined in Kconfig under the Component config -> Lua RTOS -> Hardware -> SPI pin map. Prior to use any spi module function you can change the assigned pins through the spi.setpins function.
 
 
 Arguments:
@@ -77,6 +77,17 @@ SPI3: miso=GPIO19 mosi=GPIO23 clk=GPIO18
 ```
 
 # Contiguration functions
+
+## spi.setpins(id, miso, mosi, clk)
+
+Sets the pins assigned to an SPI port. Use this function if you need to change the initial assignments. The initial assignments are defined in Kconfig under the Component config -> Lua RTOS -> Hardware -> SPI pin map.
+
+Arguments:
+
+* id: SPI unit identifier. Use spi.SPIx defined for this purpose.
+* miso: GPIO number assigned to the miso signal. Use any pio.GPIOxx constant for this.
+* mosi: GPIO number assigned to the mosi signal. Use any pio.GPIOxx constant for this.
+* clk: GPIO number assigned to the clk signal. Use any pio.GPIOxx constant for this.
 
 ## spi = spi.attach(id, mode, cs, speed, data bits, mode number, [flags])
 
