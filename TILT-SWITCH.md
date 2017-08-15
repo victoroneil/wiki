@@ -12,7 +12,7 @@
 
 # Code
 
-In this example a tilt effect switch is attached to GPIO26. Sensor changes are processed using a callback:
+In this example a tilt switch is attached to GPIO26. Sensor changes are processed using a callback:
 ```lua
 s = sensor.attach("TILT_SWITCH", pio.GPIO26)
 
