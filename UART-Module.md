@@ -10,8 +10,7 @@ UART functions are not thread-safe. You must call to the lock / unlock functions
 
 ## uart.pins([table])
 
-List the pins assigned to the UART ports. The initial assignments are defined in Kconfig under the Component config -> Lua RTOS -> Hardware -> UART pin map. Prior to use any UART module function you can change the assigned pins through the uart.setpins function.
-
+List the pins assigned to the UART ports. The initial assignments are defined in Kconfig under the Component config -> Lua RTOS -> Hardware -> UART pin map. Prior to use any UART module function you can change the assigned pins through the [uart.setpins](#uartsetpinsid-rx-tx) function.
 
 Arguments:
 
@@ -43,8 +42,8 @@ Sets the pins assigned to an UART port. Use this function if you need to change 
 Arguments:
 
 * id: SPI unit identifier. Use any uart.UARTx defined for this purpose.
-* rx: GPIO number assigned to the miso signal. Use any pio.GPIOxx constant for this.
-* tx: GPIO number assigned to the mosi signal. Use any pio.GPIOxx constant for this.
+* rx: GPIO number assigned to the rx signal. Use any pio.GPIOxx constant for this.
+* tx: GPIO number assigned to the tx signal. Use any pio.GPIOxx constant for this.
 
 ## uart = uart.attach(id, baud rate, data bits, parity, stop bits, [buffer size, flags])
 
