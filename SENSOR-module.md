@@ -12,7 +12,9 @@ s1 = sensor.attach("DHT11", pio.GPIO4)
 -- Read temperature and humidity
 s1:read("temperature")
 s1:read("humidity")
-````
+```
+
+By default all sensors are included in the Lua RTOS firmware. You can select the sensors to include in Lua RTOS build through Kconfig under the Component config -> Lua RTOS -> Hardware -> Sensors category.
 
 The functions of this module are organized in the following categories:
 
