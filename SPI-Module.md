@@ -124,7 +124,8 @@ Arguments:
 Returns: spi device instance, or an exception. You must store this instance into a variable for further operations with it.
 
 ```lua
--- Attach a SPI device using SPI2 as master, 1 Mhz speed, 8 bits, using GPIO5 as CS, number mode 0
+-- Attach a SPI device using SPI2 as master, 1 Mhz speed, 8 bits
+-- using GPIO5 as CS, number mode 0
 device = spi.attach(spi.SPI2, spi.MASTER, pio.GPIO5, 1000000, 8, 0)
 ```
 
@@ -139,7 +140,8 @@ Returns: nothing, or an exception.
 
 
 ```lua
--- Attach a SPI device using SPI2 as master, 1 Mhz speed, 8 bits, using GPIO5 as CS, number mode 0
+-- Attach a SPI device using SPI2 as master, 1 Mhz speed, 8 bits
+-- using GPIO5 as CS, number mode 0
 device = spi.attach(spi.SPI2, spi.MASTER, pio.GPIO5, 1000000, 8, 0)
 
 -- Select
@@ -160,7 +162,8 @@ Returns: nothing, or an exception.
 
 
 ```lua
--- Attach a SPI device using SPI2 as master, 1 Mhz speed, 8 bits, using GPIO5 as CS, number mode 0
+-- Attach a SPI device using SPI2 as master, 1 Mhz speed, 8 bits
+-- using GPIO5 as CS, number mode 0
 device = spi.attach(spi.SPI2, spi.MASTER, pio.GPIO5, 1000000, 8, 0)
 
 -- Select
@@ -185,7 +188,8 @@ Arguments:
 Returns: nothing, or an exception.
 
 ```lua
--- Attach a SPI device using SPI2 as master, 1 Mhz speed, 8 bits, using GPIO5 as CS, number mode 0
+-- Attach a SPI device using SPI2 as master, 1 Mhz speed, 8 bits
+-- using GPIO5 as CS, number mode 0
 device = spi.attach(spi.SPI2, spi.MASTER, pio.GPIO5, 1000000, 8, 0)
 
 -- Select
@@ -209,7 +213,8 @@ Arguments:
 Returns: readed data, or an exception.
 
 ```lua
--- Attach a SPI device using SPI2 as master, 1 Mhz speed, 8 bits, using GPIO5 as CS, number mode 0
+-- Attach a SPI device using SPI2 as master, 1 Mhz speed, 8 bits
+-- using GPIO5 as CS, number mode 0
 device = spi.attach(spi.SPI2, spi.MASTER, pio.GPIO5, 1000000, 8, 0)
 
 -- Select
