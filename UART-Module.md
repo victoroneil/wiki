@@ -6,6 +6,12 @@ UART units are encoded into a byte and are platform-dependent. For this reason t
 
 UART functions are not thread-safe. You must call to the lock / unlock functions for made UART functions thread-safe.
 
+The functions of this module are organized in the following categories:
+
+* [Information functions](#information-functions)
+* [Configuration functions](#configuration-functions)
+* [Operation functions](#operation-functions)
+
 # Information functions
 
 ## uart.pins([table])
