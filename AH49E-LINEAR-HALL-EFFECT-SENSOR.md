@@ -6,7 +6,7 @@
 | Interface    | ADC            |                            |
 | Provides     | magnetic field | gauss                      |
 | Properties   | none           |                            |
-| [Datasheet](https://www.diodes.com/assets/Datasheets/AH49E.pdf)    |             | ![](http://git.whitecatboard.org/tmp36.png)                           |
+| [Datasheet](https://www.diodes.com/assets/Datasheets/AH49E.pdf)    |             | ![](http://git.whitecatboard.org/ah49e.png)                           |
 
 
 # Code
