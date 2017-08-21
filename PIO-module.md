@@ -67,6 +67,17 @@ Arguments:
 
 Returns: nothing
 
+## pio.pin.inv(pin1 [, pin2, ..., pinn])
+
+Invert pin values from 0 to 1 and from 1 to 0.
+
+Arguments:
+
+* pin1: first pin
+* pin2: second pin (optional)
+* ....
+
+Returns: nothing
 
 ## pio.pin.setval(value, pin1 [, pin2, ..., pinn])
 
