@@ -61,6 +61,31 @@ can.attach(can.CAN0, 1000)
 can.addfilter(can.CAN0, 200, 250)
 ```
 
+## can.removefilter(id, from, to)
+
+Remove a filter.
+
+Arguments:
+
+* id: CAN module identifier, for example can.CAN0.
+* from: first id.
+* to: last id.
+
+Returns: noting, or an exception.
+
+```lua
+-- Attach the CAN device to CAN0 at 1000 KBits/s
+can.attach(can.CAN0, 1000)
+
+-- Accept only packets from 200 to 250
+can.addfilter(can.CAN0, 200, 250)
+
+....
+
+-- Remove filter from 200 to 250
+can.removefilter(can.CAN0, 200, 250)
+```
+
 # Operation functions
 
 ## can.send(id, frame id, frame type, len, data)
