@@ -48,7 +48,7 @@ can.attach(can.CAN0, 1000)
 
 ## can.addfilter(id, from, to)
 
-Add a filter. Only CAN packet that match the filter will be accepted.
+Add a filter. Only CAN packets that match the filter will be accepted.
 
 Arguments:
 
@@ -68,7 +68,7 @@ can.addfilter(can.CAN0, 200, 250)
 
 ## can.removefilter(id, from, to)
 
-Remove a filter.
+Remove a filter. If all filters are removed, all CAN packets will be accepted.
 
 Arguments:
 
