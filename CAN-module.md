@@ -6,6 +6,11 @@ CAN modules are encoded into a byte and are platform-dependent. For this reason 
 
 In ESP32 only one CAN module is available, and it's defined by the constant can.CAN0.
 
+The functions of this module are organized in the following categories:
+
+* [Configuration functions](#configuration-functions)
+* [Operation functions](#operation-functions)
+
 # Key concepts
 
 A Controller Area Network (CAN bus) is a vehicle bus standard designed to allow MCUs and devices to communicate with each other in applications without a host computer. It is a message-based protocol, designed originally for multiplex electrical wiring within automobiles, but is also used in many other contexts.
