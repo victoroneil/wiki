@@ -41,9 +41,25 @@ Returns: noting, or an exception.
 can.attach(can.CAN0, 1000)
 ```
 
-## can.setup(id, speed)
+## can.addfilter(id, from, to)
 
-_**This function is deprecated**, and will be removed in the future. Please, use can.attach instead._
+Add a filter. Only CAN packet that match the filter will be accepted.
+
+Arguments:
+
+* id: CAN module identifier, for example can.CAN0.
+* from: first id.
+* to: last id.
+
+Returns: noting, or an exception.
+
+```lua
+-- Attach the CAN device to CAN0 at 1000 KBits/s
+can.attach(can.CAN0, 1000)
+
+-- Accept only packets from 200 to 250
+can.addfilter(can.CAN0, 200, 250)
+```
 
 # Operation functions
 
