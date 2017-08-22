@@ -27,7 +27,7 @@ CAN TX / CAN RX pin assignment is done in build-time through Kconfig under Lua R
 
 ## can.attach(id, speed)
 
-Attach a CAN device to a CAN module.
+Attach a CAN device to a CAN module. When the device is attached no filters are defined, and all CAN packets are accepted.
 
 Arguments:
 
