@@ -7,6 +7,7 @@
 | Provides     | PM2.5       | particles per million <= 2.5 micrometers |
 |              |             | in micro-grams / m3                      |   
 |              | PM10        | particles per million <= 10 micrometers  |
+|              |             | in micro-grams / m3                      |   
 | Properties   | none        |                                          |
 
 
