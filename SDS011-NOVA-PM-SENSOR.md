@@ -9,6 +9,7 @@
 |              | PM10        | particles per million <= 10 micrometers  |
 |              |             | in micro-grams / m3                      |   
 | Properties   | none        |                                          |
+| [Datasheet](http://www.socle-tech.com/doc/IC%20Channel%20Product/Sensors/Distance%20Measuring%20Sensor/Analog%20Output/gp2y0a21yk_e.pdf)    |             | ![](http://git.whitecatboard.org/GP2Y0A21YK.jpg)                           |
 
 
 # Code
