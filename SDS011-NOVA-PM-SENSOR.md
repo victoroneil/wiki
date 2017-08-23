@@ -9,7 +9,7 @@
 |              | PM10        | particles per million <= 10 micrometers  |
 |              |             | in micro-grams / m3                      |   
 | Properties   | none        |                                          |
-| [Datasheet](http://breathe.indiaspend.org/wp-content/uploads/2015/11/nova_laser_sensor.pdf)    |             | ![](http://git.whitecatboard.org/GP2Y0A21YK.jpg)                           |
+| [Datasheet](http://breathe.indiaspend.org/wp-content/uploads/2015/11/nova_laser_sensor.pdf)    |             | ![](http://git.whitecatboard.org/sds011.png)                           |
 
 
 # Code
