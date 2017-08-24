@@ -40,7 +40,7 @@ Arguments:
 * A: the GPIO which encoder A signal is attached. Use pio.GPIOx defined for this purpose.
 * B: the GPIO which encoder B signal is attached. Use pio.GPIOx defined for this purpose.
 * SW: the GPIO which encoder SW (switch) signal is attached. Use pio.GPIOx defined for this purpose. Use nil for this argument if you don't want to use the switch.
-* callback (optional): a callback function for get information about the encoder changes. This function takes 2 arguments: value (encoder value), and button (an integer that tell us if the switch is pressed, 1 = pressed, 0 = not pressed).
+* callback (optional): a callback function for get information about the encoder changes. This function takes 3 arguments: direction (an integer that tell us if the encoder is rotating clockwise = 1, counter clockwise = -1, or static = 0), counter (encoder value), and button (an integer that tell us if the switch is pressed, 1 = pressed, 0 = not pressed).
 
 Returns: an encoder instance, or an exception. You must store this instance into a variable for further operations with it.
 
