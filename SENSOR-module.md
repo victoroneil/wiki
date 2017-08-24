@@ -25,7 +25,7 @@ The functions of this module are organized in the following categories:
 
 # Key concepts
 
-A sensor is a device that measures some type of magnitude from the physical environment, and generates an output signal  that can be process by other devices. The magnitude could be temperature, humidity, motion, sound, etc.
+A sensor is a device that measures some type of magnitude from the physical environment, and generates an output signal  that can be process by other devices. The magnitude could be temperature, humidity, motion, sound, a switch status, etc.
 
 To use a sensor in your program you must do the following:
 
