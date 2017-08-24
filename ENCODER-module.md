@@ -45,8 +45,8 @@ Arguments:
 Returns: an encoder instance, or an exception. You must store this instance into a variable for further operations with it.
 
 ```lua
-function callback(value, button)
-   print("position: "..value..", button: "..button)
+function callback(dir, counter, button)
+   print("direction: "..dir..", counter: "..counter..", button: "..button)
 end
 
 -- Attach an encoder with A=pio.GPIO26, B=pio.GPIO14, SW=pio.GPIO21.
