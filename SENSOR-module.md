@@ -89,7 +89,7 @@ Returns:
     * type: data type of the magnitude. Can be either int, float or double.
 
 ```lua
--- List the sensors supported by Lua RTOS firmware on the console
+-- List the sensors supported by the Lua RTOS firmware on the console
 / > sensor.list()
 SENSOR      INTERFACE   PROVIDES                    SETTINGS                   
 -------------------------------------------------------------------------------
@@ -99,7 +99,7 @@ TMP36       ADC         temperature
 ```
 
 ```lua
--- List the sensors supported by Lua RTOS firmware to a table
+-- List the sensors supported by the Lua RTOS firmware to a table
 sensors = sensor.list(true)
 ```
 
