@@ -26,10 +26,16 @@ In this example an encoder is attached at GPIO26 (A), GPIO14 (B) and GPIO21 (SW)
 s = sensor.attach("REL_ROT_ENCODER", pio.GPIO26, pio.GPIO14, pio.GPIO21)
 s:callback(
    function(magnitude)
-      if (magnitude["dir"] == -1) then
-         print("ccw, value "..magnitude["val"])
-      elseif (magnitude["dir"] == 1) then
-         print("cw, value "..magnitude["val"])
+      if (magnitude.dir == -1) then
+         print("ccw, value "..magnitude.val)
+      elseif (magnitude.dir == 1) then
+         print("cw, value "..magnitude.val)
+      end
+      
+      if (magnitude.sw == 1) then
+         print("sw on")
+      elseif (magnitude.sw == 0) then
+         print("sw off")
       end
    end
 )
