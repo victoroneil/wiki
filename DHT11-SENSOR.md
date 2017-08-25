@@ -13,7 +13,7 @@
 # Code
 
 ```lua
--- Attach DHT11 to  GPIO26
+-- Attach DHT11 to GPIO26
 s = sensor.attach("DHT11", pio.GPIO26)
 
 while true do
