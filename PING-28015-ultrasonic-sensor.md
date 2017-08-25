@@ -11,12 +11,16 @@
 # Code
 
 ```lua
-s1 = sensor.attach("PING28015", pio.GPIO4)
+-- Attach sensor to GPIO26
+s = sensor.attach("PING28015", pio.GPIO26)
 
 -- We tell to PING28015 that ambient temperature are 25º for adjust
 -- the sound speed, used internally for calculate the distance from an
 -- object
-s1:set("temperature", 25)
+s:set("temperature", 25)
 
-s1:read("distance")
+while true do
+  print("distance: "..s:read("distance"))
+  tmr.delayms(500)
+end
 ```
