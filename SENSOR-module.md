@@ -284,6 +284,9 @@ Here is the list of sensors currently natively supported in Lua RTOS.
     - [2Y0A21](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/2Y0A21-SENSOR)
     - [PING))) 28015 ultrasonic sensor](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/PING-28015-ultrasonic-sensor)
 
+  * Rotation
+    - [Relative rotary encoder](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Relative-Rotary-Encoder-SENSOR)
+
   * Geographic position
     - [GPS](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/GPS-SENSOR)
 
