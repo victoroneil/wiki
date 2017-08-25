@@ -15,6 +15,9 @@
 | Properties   | none            |                            |
 |              |                 | ![](http://git.whitecatboard.org/encoder.png)                           |
 
+**Notes:**
+
+  * This sensor requires debouncing by hardware
 
 # Code
 
