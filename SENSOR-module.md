@@ -161,35 +161,23 @@ The arguments for this function varies according to the hardware interface type.
    * id: a string containing the sensor id, for example TMP36.
    * adc: ADC unit. Use adc.xxx defined for this purpose, for example adc.ADC1.
    * channel: ADC channel.
-   * resolution (optional): bits of resolution to use. If not provided or 0, the default resolution is applied.
 
    For UART:
 
    * id: a string containing the sensor id, for example GPS.
    * uart: UART unit identifier. Use uart.UARTx defined for this purpose.
-   * baud rate: desired baud rate, expressed in bauds.
-   * data bits: number of data bits, can be 8 or 9. 
-   * parity: parity, can be either uart.PARNONE (none parity), uart.PAREVEN (even parity) or uart.PARODD (odd parity).
-   * stop bits: number of stop bits, can be either uart.STOP1 (1 stop bits) or uart.STOP2 (2 stop bits)
 
    For I2C:
 
    * id: a string containing the sensor id, for example BME280.
    * i2c: i2c unit. Use i2c.I2Cx defined for this purpose.
-   * speed (optional): i2c speed, in hertz. If not provided or 0 the default speed is applied.
-   * address (optional): i2c device address. If not provided or 0 the default device address is applied.
+   * address: i2c device address. If 0 the default device address is applied.
 
    For 1-WIRE:
 
    * id: a string containing the sensor id, for example DS1820.
    * gpio: the GPIO which sensor is attached. Use pio.GPIOx defined for this purpose.
-   * device id: the device id can be either the position that the device occupies in the bus, or the device address
-
-      device position: an integer
-      
-      device address: two words
-         * adressh: sensor's address (most significant word) in the bus.
-         * adressl: sensor's address (less significant word) in the bus.
+   * position: the device position that the device occupies in the bus
 
 Returns: a sensor instance or an exception. You must store this instance into a variable for further operations with it.
 
@@ -200,19 +188,14 @@ s = sensor.attach("DHT11", pio.GPIO4)
 
 ```lua
 -- Attach a TMP36 (adc sensor) sensor using ADC1 module, channel 6
--- with a 12-bit resolution
-s = sensor.attach("TMP36", adc.ADC1, 6, 12)
+s = sensor.attach("TMP36", adc.ADC1)
 ```
 
 ```lua
--- Attach a DS1820 (1-WIRE sensor) sensor to GPIO26 with 
--- address 0x28ff900fb316041a
-s = sensor.attach("DS1820",pio.GPIO26, 0x28ff900f, 0xb316041a)
+-- Attach a DS1820 (1-WIRE sensor) sensor to GPIO26 at position 3 
+s = sensor.attach("DS1820",pio.GPIO26, 3)
 ```
 
-```lua
--- Attach a DS1820 (1-WIRE sensor) sensor to GPIO26 at pos #2
-s = sensor.attach("DS1820",pio.GPIO26, 2)
 ```
 
 ## instance:callback(function)
