@@ -13,7 +13,10 @@
 
 ```lua
 -- Attach an A49E sensor to an external ADC (ADS1115) on channel 0
-s1 = sensor.attach("A49E", adc.ADS1115, 0)
+s = sensor.attach("A49E", adc.ADS1115, 0)
 
-s1:read("magnetic field")
+while true do
+  print("magnetic field: "..s:read("magnetic field").." gauss")
+  tmr.delayms(500)
+end
 ```
