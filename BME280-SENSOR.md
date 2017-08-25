@@ -16,17 +16,17 @@
 
 ```lua
 -- Attach BME280 to I2C0, with default values
-s1 = sensor.attach("BME280", i2c.I2C0)
+s = sensor.attach("BME280", i2c.I2C0, 0)
 
 while true do
   -- Read temperature
-  temperature = s1:read("temperature")
+  temperature = s:read("temperature")
 
   -- Read humidity
-  humidity = s1:read("humidity")
+  humidity = s:read("humidity")
 
   -- Read preassure
-  pressure = s1:read("pressure")
+  pressure = s:read("pressure")
 
   -- Print results
   print("temp: "..temperature..", humidity: "..humidity..", pressure: "..pressure)
