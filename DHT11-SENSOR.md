@@ -13,8 +13,11 @@
 # Code
 
 ```lua
-s1 = sensor.attach("DHT11", pio.GPIO4)
+-- Attach DHT11 to  GPIO26
+s = sensor.attach("DHT11", pio.GPIO26)
 
-s1:read("temperature")
-s1:read("humidity")
+while true do
+  print("temp: "..s:read("temperature")..", hum: "..s:read("humidity"))
+  tmr.delayms(500)
+end
 ```
