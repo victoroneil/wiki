@@ -24,23 +24,12 @@
 In this example an encoder is attached at GPIO26 (A), GPIO14 (B) and GPIO21 (SW)
 ```lua
 s = sensor.attach("REL_ROT_ENCODER", pio.GPIO26, pio.GPIO14, pio.GPIO21)
-
 s:callback(
    function(magnitude)
       if (magnitude["dir"] == -1) then
          print("ccw, value "..magnitude["val"])
       elseif (magnitude["dir"] == 1) then
          print("cw, value "..magnitude["val"])
-      end
-   end
-)
-
-s:callback(
-   function(magnitude)
-      if (magnitude["sw"] == 0) then
-         print("released")
-      elseif (magnitude["sw"] == 1) then
-         print("pressed")
       end
    end
 )
