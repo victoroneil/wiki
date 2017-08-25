@@ -18,7 +18,7 @@
 
 # Code
 
-In this example an encoder is attached at GPIO26 (A), GPIO14 (B) and GPIO21 (C)
+In this example an encoder is attached at GPIO26 (A), GPIO14 (B) and GPIO21 (SW)
 ```lua
 s = sensor.attach("REL_ROT_ENCODER", pio.GPIO26, pio.GPIO14, pio.GPIO21)
 
