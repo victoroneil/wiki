@@ -43,7 +43,7 @@ To use a sensor in your program you must do the following:
    s1:read("temperature")
    s1:read("humidity")
    ```
-1. Detach the sensor instance when it is no longer necessary_
+1. Detach the sensor instance when it is no longer necessary:
 
    ```lua
     s1:detach()
