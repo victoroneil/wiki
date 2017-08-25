@@ -42,7 +42,13 @@ To use a sensor in your program you must do the following:
    -- Read data provided by sensor
    s1:read("temperature")
    s1:read("humidity")
-   ````
+   ```
+1. Detach the sensor instance when it is no longer necessary_
+
+   ```lua
+    s1:detach()
+   ```
+
 In some cases you need to configure your sensor, for example, set the measure resolution, set an alarm, etc. Sensor configuration are made using the set function:
 
 ```lua
