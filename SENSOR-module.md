@@ -36,14 +36,13 @@ To use a sensor in your program you must do the following:
    s1 = sensor.attach("DHT11", pio.GPIO4)
    ````
 
-2. Use the sensor instance for read data provided by the sensor:
+1. Use the sensor instance for read data provided by the sensor:
 
    ```lua
    -- Read data provided by sensor
    s1:read("temperature")
    s1:read("humidity")
    ````
-
 In some cases you need to configure your sensor, for example, set the measure resolution, set an alarm, etc. Sensor configuration are made using the set function:
 
 ```lua
