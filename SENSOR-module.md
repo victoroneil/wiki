@@ -196,8 +196,6 @@ s = sensor.attach("TMP36", adc.ADC1)
 s = sensor.attach("DS1820",pio.GPIO26, 3)
 ```
 
-```
-
 ## instance:callback(function)
 
 Registers a callback for a sensor instance previously created with the sensor.attach function. The callback function is executed when a new value is available from the sensor (now only for driven interrupt sensors). Programmer can register up to 4 callbacks for sensor instance.
