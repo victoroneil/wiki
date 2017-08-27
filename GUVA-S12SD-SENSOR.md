@@ -4,10 +4,13 @@
 |--------------|-------------|----------------------------|
 | Identifier   | GUVA-S12SD  |                            |
 | Interface    | ADC         |                            |
-| Provides     | UV Index    | celsius degrees            |
+| Provides     | UV Index    | see note 1                 |
 | Properties   | none        |                            |
 | [Datasheet](https://cdn-shop.adafruit.com/datasheets/1918guva.pdf)    |             | ![](http://git.whitecatboard.org/guva-s12sd.png)                           |
 
+Note 1:
+
+http://git.whitecatboard.org/uv-index.png
 
 # Code
 
