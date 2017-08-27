@@ -10,7 +10,7 @@
 
 Note 1:
 
-http://git.whitecatboard.org/uv-index.png
+(http://git.whitecatboard.org/uv-index.png)
 
 # Code
 
