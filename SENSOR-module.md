@@ -330,4 +330,4 @@ Here is the list of sensors currently natively supported in Lua RTOS.
     - [TMP36](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/TMP36-SENSOR)
 
   * UV
-    -[GUVA-S12SD](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/GUVA-S12SD-SENSOR)
+    - [GUVA-S12SD](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/GUVA-S12SD-SENSOR)
