@@ -328,3 +328,6 @@ Here is the list of sensors currently natively supported in Lua RTOS.
     - [DS1820](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/DS1820-SENSOR)
     - [10K THERMISTOR](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/10K-THERMISTOR-SENSOR)
     - [TMP36](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/TMP36-SENSOR)
+
+  * UV
+    -[GUVA-S12SD](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/GUVA-S12SD-SENSOR)
