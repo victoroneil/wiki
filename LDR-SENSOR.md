@@ -36,6 +36,8 @@ LDR can be placed in the R1 location and R2 is a fixed-value register, or in the
 
 Typically the fixed-value register is 10K = 10.000 ohms.
 
+Sensor default values are R1 = 10.000 ohms / R2 = 0 ohms.
+
 # Code
 
 ```lua
