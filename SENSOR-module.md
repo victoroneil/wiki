@@ -307,6 +307,9 @@ Here is the list of sensors currently natively supported in Lua RTOS.
   * Magnetic field
     - [AH49E](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/AH49E-LINEAR-HALL-EFFECT-SENSOR)
 
+  * Potentiometers
+    - [Linear potentiometer](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/LINEAR-POT-SENSOR)
+
   * Presence
     - [AM412](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/AM412-PIR-SENSOR)
 
