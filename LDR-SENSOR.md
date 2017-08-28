@@ -53,5 +53,6 @@ s:set("R2", 0)
 
 while true do
   print(s:read("illuminance"))
+  tmr.delayms(500)
 end
 ```
