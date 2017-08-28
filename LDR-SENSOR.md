@@ -8,7 +8,7 @@
 | Properties   | R1<br/>R2              | R1 resistance in ohms (*)<br/>R2 resistance in ohms (\**)   | 
 |              |                 | ![](http://git.whitecatboard.org/ldr.png)                           |
 
-**_(*):_**
+**_(\*)_**
 
 | lux            | Surfaces illuminated by                         |
 |----------------|-------------------------------------------------|
@@ -26,7 +26,7 @@
 | 10,000–25,000	 | Full daylight (not direct sun)                  |
 | 32,000–100,000 | Direct sunlight
 
-**_(**):_**
+**_(\*\*)_**
 
 # Code
 
