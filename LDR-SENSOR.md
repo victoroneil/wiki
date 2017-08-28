@@ -32,6 +32,10 @@ LDR component must be part of a voltage divider circuit:
 
 ![](http://git.whitecatboard.org/divider.png)
 
+LDR can be placed in the R1 location and R2 is a fixed-value register, or in the R2 location and R1 is a fixed-value register.
+
+Typically the fixed-value register is 10K = 10.000 ohms.
+
 # Code
 
 ```lua
