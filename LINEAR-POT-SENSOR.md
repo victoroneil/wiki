@@ -20,10 +20,10 @@ led:start()
 -- Attach a potentiometer connected to an external ADC (ADS1115) / cannel 0
 s = sensor.attach("POT", adc.ADS1115, 0)
 
--- Read potentiometer value every 100 msecs
+-- Read potentiometer value every 10 msecs
 thread.start(function()
   while true do
-    tmr.delayms(100)
+    tmr.delayms(10)
     led:setfreq(1000)
     led:setduty(s:read("val"))
   end
