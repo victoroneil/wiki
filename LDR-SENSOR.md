@@ -28,6 +28,10 @@
 
 **_(\*\*)_**
 
+LDR component must be part of a voltage divider circuit:
+
+![](http://git.whitecatboard.org/divider.png)
+
 # Code
 
 ```lua
