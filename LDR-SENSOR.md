@@ -5,7 +5,7 @@
 | Identifier   | LDR             |                             |
 | Interface    | ADC             |                             |
 | Provides     | illuminance     | lux (\*)                         |
-| Properties   | R1<br/>R2              | R1 resistance in ohms (\*\*)<br/>R2 resistance in ohms (\*\*)<br/>If R1=0, LDR is on R1<br/>If R2=0, LDR is on R2<br/>Default R1 = 10.000 ohms<br/>Default R2 = 0 ohms   | 
+| Properties   | R1<br/>R2              | R1 resistance in ohms (\*\*)<br/>R2 resistance in ohms (\*\*)| 
 |              |                 | ![](http://git.whitecatboard.org/ldr.png)                           |
 
 **_(\*)_**
@@ -32,11 +32,14 @@ LDR component must be part of a voltage divider circuit:
 
 ![](http://git.whitecatboard.org/divider.png)
 
-LDR can be placed in the R1 location and R2 is a fixed-value register, or in the R2 location and R1 is a fixed-value register.
+LDR can be placed in the R1 or R2 location:
 
-Typically the fixed-value register is 10K = 10.000 ohms.
+* R1 location: R1 = 0, R2 = fixed resistor.
+* R2 location: R1 = fixed resistor, R2 = 0.
 
-Sensor default values are R1 = 10.000 ohms / R2 = 0 ohms.
+Typically the fixed resistor is 10K = 10.000 ohms.
+
+Sensor default values are R1 = 10.000 ohms / R2 = 0.
 
 # Code
 
