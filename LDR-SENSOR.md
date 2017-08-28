@@ -5,7 +5,7 @@
 | Identifier   | LDR             |                             |
 | Interface    | ADC             |                             |
 | Provides     | illuminance     | lux                         |
-| Properties   | R1<br/>R2              | R1 resistance in ohms (*)<br/>R2 resistance in ohms (*)   | 
+| Properties   | R1<br/>R2              | R1 resistance in ohms (*)<br/>R2 resistance in ohms (\*)   | 
 |              |                 | ![](http://git.whitecatboard.org/ldr.png)                           |
 
 **_(*) Note:_**
