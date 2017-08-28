@@ -304,6 +304,9 @@ Here is the list of sensors currently natively supported in Lua RTOS.
     - [DHT11](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/DHT11-SENSOR)
     - [DHT22](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/DHT22-SENSOR)
 
+  * Illuminance
+    - [LDR](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/LDR-SENSOR)
+
   * Magnetic field
     - [AH49E](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/AH49E-LINEAR-HALL-EFFECT-SENSOR)
 
