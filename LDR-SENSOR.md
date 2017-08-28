@@ -39,9 +39,19 @@ LDR can be placed in the R1 or R2 location:
 
 Typically the fixed resistor is 10K = 10.000 ohms.
 
-Sensor default values are R1 = 10.000 ohms / R2 = 0.
+Sensor default values are R1 = 10.000 ohms / R2 = 0. Default settings can be changed setting the sensor properties once sensor is attached (see example code).
 
 # Code
 
 ```lua
+-- Attach LDR sensor to an external ADC (ADS1115) / channel 0
+s = sensor.attach("LDR", adc.ADS1115, 0)
+
+-- Configure sensor. LDR is set on R2, R1 has a fixed value of 10K
+s:set("R1", 10000)
+s:set("R2", 0)
+
+while true do
+  print(s:read("illuminance"))
+end
 ```
