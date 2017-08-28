@@ -10,22 +10,25 @@
 
 # Code
 
-In this example an encoder is attached at GPIO26 (A), GPIO14 (B) and GPIO21 (SW)
+In this example a potentiometer is used to control the brightness of a led (using PWM).
+
 ```lua
-s = sensor.attach("REL_ROT_ENCODER", pio.GPIO26, pio.GPIO14, pio.GPIO21)
-s:callback(
-   function(magnitude)
-      if (magnitude.dir == -1) then
-         print("ccw, value "..magnitude.val)
-      elseif (magnitude.dir == 1) then
-         print("cw, value "..magnitude.val)
-      end
+-- Attach a led at GPIO32
+led = pwm.attach(pio.GPIO32, 1000, 0)
+led:start()
       
-      if (magnitude.sw == 1) then
-         print("sw on")
-      elseif (magnitude.sw == 0) then
-         print("sw off")
-      end
-   end
-)
+-- Attach a potentiometer connected to an external ADC (ADS1115) / cannel 0
+s = sensor.attach("POT", adc.ADS1115, 0)
+
+-- attach timer every 100 milliseconds
+t = thread.create(function()
+  while true do
+    tmr.delayms(100)
+    led:setfreq(1000)
+    led:setduty(s:read("val"))
+  end
+end)
+
+-- start timers
+thread.resume(t)
 ```
