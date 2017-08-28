@@ -4,8 +4,7 @@
 |--------------|-----------------|-----------------------------|
 | Identifier   | LINEAR_POT      |                             |
 | Interface    | ADC             |                             |
-| Provides     | val             | Potentiometer % value, from |
-|              |                 | 0 to 1.                     |
+| Provides     | val             | Potentiometer % value, from<br />0 to 1.|
 | Properties   | none            |                             | 
 |              |                 | ![](http://git.whitecatboard.org/pot.png)                           |
 
