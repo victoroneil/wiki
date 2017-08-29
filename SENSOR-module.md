@@ -326,6 +326,7 @@ Here is the list of sensors currently natively supported in Lua RTOS.
     - [HALL EFECT](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/HALL-EFFECT-SWITCH-SENSOR)
     - [PUSH SWITCH](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/PUSH-SWITCH-SENSOR)
     - [TILT SWITCH](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/TILT-SWITCH)
+    - [ANALOG JOYSTICK](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/ANALOG-JOYSTICK-SENSOR)
 
   * Temperature
     - [BME280](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/BME280-SENSOR)
