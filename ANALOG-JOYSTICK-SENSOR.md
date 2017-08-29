@@ -10,7 +10,7 @@
 |              | y               | -1: up movement<br/>0: no movement<br/>1: down movement         |
 |              | sw              | 0: switch released<br/>1: switch pressed        |
 | Properties   | none            |                            |
-|              |                 | ![](http://git.whitecatboard.org/joystick.png)                           |
+|              |                 | ![](http://git.whitecatboard.org/joystick.png)         |
 
 # Code
 
