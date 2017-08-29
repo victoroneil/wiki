@@ -2,41 +2,28 @@
 
 | What         |             | Comments                   |
 |--------------|-------------|----------------------------|
-| Identifier   | TILT_SWITCH |                            |
+| Identifier   | TILT_SWITCH | ![](http://git.whitecatboard.org/sw520d.png) |
 | Interface    | GPIO        |                            |
-| Provides     | on          | 1 = switch active          |
-|              |             | 0 = switch inactive        |
+| Provides     | on          | 1 = switch active<br/>0 = switch inactive |
 | Properties   | none        |                            |
-| [Datasheet](http://funduino.de/DL/SW-520D.pdf)    |             | ![](http://git.whitecatboard.org/sw520d.png)                           |
+| Callbacks?   | yes         |                            |
+| [Datasheet](http://funduino.de/DL/SW-520D.pdf)    |             |                            |
 
 
 # Code
 
-In this example a tilt switch is attached to GPIO26. Sensor changes are processed using a callback:
 ```lua
+-- Attach a tilt switch to GPIO26
 s = sensor.attach("TILT_SWITCH", pio.GPIO26)
 
+-- Register a callback. Callback is executed when some sensor property changes.
 s:callback(
-   function(magnitude)
-      if (magnitude["on"] == 1) then
+   function(data)
+      if (data.on == 1) then
          print("on")
-      else
+      elseif (data.on == 0) then
          print("off")
       end
    end
 )
 ```
-
-In this example a tilt switch is attached to GPIO26. Sensor changes are processed using an infinite loop:
-```lua
-s = sensor.attach("TILT_SWITCH", pio.GPIO26)
-
-while true do
-   if (s:read("on") == 1) then
-      print("on")
-   else
-      print("off")
-   end
-end
-```
-
