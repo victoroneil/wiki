@@ -18,6 +18,10 @@
 
 In this example an encoder is attached at GPIO26 (A), GPIO14 (B) and GPIO21 (SW)
 ```lua
+-- Attach encoder. Signal assignments are:
+-- A: GPIO26
+-- B: GPIO14
+-- SW: GPIO21
 s = sensor.attach("REL_ROT_ENCODER", pio.GPIO26, pio.GPIO14, pio.GPIO21)
 s:callback(
    function(magnitude)
