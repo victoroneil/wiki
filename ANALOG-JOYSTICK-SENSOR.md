@@ -13,4 +13,25 @@
 # Code
 
 ```lua
+s = sensor.attach("ANALOG_JOYSTICK", adc.ADS1115, 0, adc.ADS1115, 1, pio.GPIO26)
+
+s:callback(function(data)
+  if (data.x == -1) then
+    print("left")
+  elseif (data.x == 1) then
+    print("right")
+  end
+
+  if (data.y == -1) then
+    print("up")
+  elseif (data.y == 1) then
+    print("down")
+  end
+  
+  if (data.sw == 1) then
+    print("sw on")
+  elseif (data.sw == 0) then
+    print("sw off")
+  end
+end)
 ```
