@@ -19,7 +19,7 @@
 -- sw (switch) GPIO26
 s = sensor.attach("ANALOG_JOYSTICK", adc.ADS1115, 0, adc.ADS1115, 1, pio.GPIO26)
 
--- Register a callback. Callback is executed when some sensor property changes
+-- Register a callback. Callback is executed when some sensor property changes.
 s:callback(function(data)
   if (data.x == -1) then
     print("left")
