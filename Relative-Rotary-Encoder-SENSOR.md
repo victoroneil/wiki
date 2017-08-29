@@ -2,18 +2,13 @@
 
 | What         |                 | Comments                   |
 |--------------|-----------------|----------------------------|
-| Identifier   | REL_ROT_ENCODER |                            |
-| Interface    | 3 GPIO          | GPIO 1: A signal           |
-|              |                 | GPIO 2: B signal           |
-|              |                 | GPIO 3: SW signal (switch) |
-| Provides     | dir             | -1: counter clockwise      |
-|              |                 |  0: no movement            |
-|              |                 |  1: clockwise              |
+| Identifier   | REL_ROT_ENCODER | ![](http://git.whitecatboard.org/encoder.png)|
+| Interface    | 3 GPIO          | GPIO 1: A signal<br/>GPIO 2: B signal<br/>GPIO 3: SW signal (switch)|
+| Provides     | dir             | -1: counter clockwise<br/>0: no movement<br/>1: clockwise|
 |              | val             | encoder value              |
-|              | sw              | 0: switch released         |
-|              |                 | 1: switch pushed           |
+|              | sw              | 0: switch released<br/>1: switch pressed|
 | Properties   | none            |                            |
-|              |                 | ![](http://git.whitecatboard.org/encoder.png)                           |
+| Callbacks?   | yes             | |
 
 **Notes:**
 
