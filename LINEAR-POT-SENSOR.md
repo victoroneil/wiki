@@ -2,11 +2,11 @@
 
 | What         |                 | Comments                    |
 |--------------|-----------------|-----------------------------|
-| Identifier   | LINEAR_POT      |                             |
+| Identifier   | LINEAR_POT      | ![](http://git.whitecatboard.org/pot.png |
 | Interface    | ADC             |                             |
-| Provides     | val             | Potentiometer % value, from 0 to 1. 0 is 0%,<br/>1 is 100%, 0.5 is 50%.|
+| Provides     | val             | Potentiometer % value, from 0.0 to 1. 0 is 0%,<br/>1.0 is 100%, 0.5 is 50%.|
 | Properties   | none            |                             | 
-|              |                 | ![](http://git.whitecatboard.org/pot.png)                           |
+| Callbacks?   | no              |                             |
 
 # Code
 
