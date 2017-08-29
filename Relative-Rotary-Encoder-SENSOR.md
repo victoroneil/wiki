@@ -25,16 +25,16 @@ s = sensor.attach("REL_ROT_ENCODER", pio.GPIO26, pio.GPIO14, pio.GPIO21)
 
 -- Register a callback. Callback is executed when some sensor property changes.
 s:callback(
-   function(magnitude)
-      if (magnitude.dir == -1) then
-         print("ccw, value "..magnitude.val)
-      elseif (magnitude.dir == 1) then
-         print("cw, value "..magnitude.val)
+   function(data)
+      if (data.dir == -1) then
+         print("ccw, value "..data.val)
+      elseif (data.dir == 1) then
+         print("cw, value "..data.val)
       end
       
-      if (magnitude.sw == 1) then
+      if (data.sw == 1) then
          print("sw on")
-      elseif (magnitude.sw == 0) then
+      elseif (data.sw == 0) then
          print("sw off")
       end
    end
