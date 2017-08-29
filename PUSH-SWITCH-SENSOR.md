@@ -15,6 +15,7 @@
 -- Attach switch to GPIO26
 s = sensor.attach("PUSH_SWITCH", pio.GPIO26)
 
+-- Register a callback. Callback is executed when some sensor property changes.
 s:callback(
    function(data)
       if (data.on == 1) then
