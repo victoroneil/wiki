@@ -46,3 +46,15 @@ Get the reset reason.
 
 Arguments: nothing
 Returns: reset reason.
+
+## os.flashEUI()
+
+Get the EUI from Winbond SPI FLASH chips. This EUI is read in the Lua RTOS boot process if the Lua RTOS -> General -> Read SPI flash EUI setting is enabled in Kconfig.
+
+Arguments: nothing.
+Returns: the SPI FLASH EUI or nil if EUI is not available in your board.
+
+```lua
+/ > os.flashEUI()
+cb6254185b430e2e
+```
