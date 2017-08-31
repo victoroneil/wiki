@@ -64,6 +64,7 @@ Returns:
   * ip: interface ip
   * gw: interface gateway ip
   * netmask: interface netmask
+  * mac: interface mac address
 
 ```lua
 -- Get the network stats to the console
