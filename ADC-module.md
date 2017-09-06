@@ -42,7 +42,7 @@ Lua RTOS allows the programmer to access to external ADC units using the same AP
 
   * This unit is mapped to an external ADC converter through the ADS1115 chip (I2C interface), with a maximum of 15-bit resolution.
 
-  * The programmer must to provide VRef+ and VRef- values when using this unit (see adc.attach function). The default VRef+ and VRef- values are 3.3V and 0V respectively.
+  * The programmer can provide the VRef+ and VRef- values when using this unit (see adc.attach function). The default VRef+ and VRef- values are 3.3V and 0V.
 
   * 4 ADC channels are provided.
 
@@ -52,7 +52,7 @@ Lua RTOS allows the programmer to access to external ADC units using the same AP
 
   * This unit is mapped to an external ADC converter through the MCP3008 chip (SPI interface), with a maximum of 10-bit resolution.
 
-  * The programmer must to provide VRef+ and VRef- values when using this unit (see adc.attach function). The default VRef+ and VRef- values are 3.3V and 0V respectively.
+  * The programmer can provide the VRef+ and VRef- values when using this unit (see adc.attach function). The default VRef+ and VRef- values are 3.3V and 0V.
 
   * 8 ADC channels are provided, from adc.ADC_CH0 to adc.ADC_CH7.
 
@@ -62,7 +62,7 @@ Lua RTOS allows the programmer to access to external ADC units using the same AP
 
   * This unit is mapped to an external ADC converter through the MCP3208 chip (SPI interface), with a maximum of 12-bit resolution.
 
-  * The programmer must to provide VRef+ and VRef- values when using this unit (see adc.attach function). The default VRef+ and VRef- values are 3.3V and 0V respectively.
+  * The programmer can provide the VRef+ and VRef- values when using this unit (see adc.attach function). The default VRef+ and VRef- values are 3.3V and 0V.
 
   * 8 ADC channels are provided.
 
