@@ -79,9 +79,19 @@ Arguments:
 
 * id: ADC module identifier. Use one of the constants defined in [Internal ADC](#internal-adc) or [External ADC](#external-adc) for this purpose.
 * channel: ADC channel identifier. Use the constant adc.ADC_CHx for this purpose.
-* resolution (optional): resolution to use. This is not supported in all ADC supported devices (see [Supported ADC devices](ADC-module#supported-adc-devices).If resolution is not provided, or it's value is 0 or nil the default resolution is applied.
-* vref (optional): positive voltage reference in millivolts. This is not supported in all ADC supported devices (see [Supported ADC devices](ADC-module#supported-adc-devices). If vref is not provided,  or it's value is 0 or nil the default vref is applied.
-* max value (optional): max input voltage applied to the channel. This is not supported in all ADC supported devices (see [Supported ADC devices](ADC-module#supported-adc-devices). If max value is not provided,  or it's value is 0 or nil the default vref is applied.
+* resolution (optional): resolution to use.
+
+  This is not allowed in all ADC supported devices (see [Supported ADC devices](ADC-module#supported-adc-devices)).
+  If resolution is not provided, or it's value is 0 or nil the default resolution is applied.
+
+* vref (optional): positive voltage reference in millivolts.
+
+  This is not allowed in all ADC supported devices (see [Supported ADC devices](ADC-module#supported-adc-devices)).
+  If vref is not provided,  or it's value is 0 or nil the default vref is applied.
+* max value (optional): max input voltage applied to the channel.
+  
+  This is not allowed in all ADC supported devices (see [Supported ADC devices](ADC-module#supported-adc-devices)).
+  If max value is not provided, or it's value is 0 or nil the default vref is applied.
 
 Returns: an ADC channel instance, or an exception. You must store this instance into a variable for further operations with it.
 
