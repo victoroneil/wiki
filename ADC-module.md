@@ -35,7 +35,7 @@ _adc.ADC1:_
   * VRef- is 0.0V and VRef+ is set to 1.1V. This reference voltages can't be set by the programmer.
   * 8 ADC channels are provided, but only 6 are available: 0, 3, 4, 5, 6, 7.
 
-When using the internal ADC the programmer can reference the channel by it's number (from 0 to 7) or by GPIO:
+When using the internal ADC the programmer can reference the channel by it's number or by GPIO:
 
 | Channel | GPIO |
 |---------|------|
