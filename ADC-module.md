@@ -22,7 +22,9 @@ To use this module you must take into consideration the following:
    device:read()
    ```
 
-# Internal ADC
+# Supported ADC devices
+
+## Internal ADC
 
 In ESP32 only one ADC unit is available:
 
@@ -35,7 +37,7 @@ _adc.ADC1:_
 
 In ESP32 readings higher than 1.1V are achieved using an attenuation factor that reduces the input voltage, but the tests performed by the Whitecat Team shows that using attenuation can cause imprecise readings. Our recommendation is to use a voltage divider or external ADC hardware if you need to measure voltages higher than 1.1V.
 
-# External ADC
+## External ADC
 
 Lua RTOS allows the programmer to access to external ADC units using the same API.
 
@@ -69,7 +71,7 @@ Lua RTOS allows the programmer to access to external ADC units using the same AP
 
 # Configuration funcions
 
-## adc = adc.attach(id, channel, [resolution, vref+, vref-])
+## adc = adc.attach(id, channel, [resolution, vref, max value])
 
 Attach an ADC device to an ADC channel.
 
@@ -77,9 +79,9 @@ Arguments:
 
 * id: ADC module identifier. Use one of the constants defined in [Internal ADC](#internal-adc) or [External ADC](#external-adc) for this purpose.
 * channel: ADC channel identifier. Use the constant adc.ADC_CHx for this purpose.
-* resolution (optional): resolution to use, can be either 16, 15, 14, 13, 12, 11, 10, 9, 8, 7 or 6 bits. If resolutions is not provided, or it's value is 0 default resolution is applied.
-* vref+ (optional): positive voltage reference in millivolts. If you don't provide this argument vref+ is set to the default vref+ for the ADC module. It is not possible to set vref+ for internal ADC.
-* vref- (optional): negative voltage reference in millivolts. If you don't provide this argument vref- is set to the default vref- for the ADC module. It is not possible to set vref+ for internal ADC.
+* resolution (optional): resolution to use. This is not supported in all ADC supported devices (see [Supported ADC devices](#Supported-ADC-devices).If resolution is not provided, or it's value is 0 or nil the default resolution is applied.
+* vref (optional): positive voltage reference in millivolts. This is not supported in all ADC supported devices (see [Supported ADC devices](#Supported-ADC-devices). If vref is not provided,  or it's value is 0 or nil the default vref is applied.
+* max value (optional): max input voltage applied to the channel. This is not supported in all ADC supported devices (see [Supported ADC devices](#Supported-ADC-devices). If max value is not provided,  or it's value is 0 or nil the default vref is applied.
 
 Returns: an ADC channel instance, or an exception. You must store this instance into a variable for further operations with it.
 
