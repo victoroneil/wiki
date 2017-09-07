@@ -47,6 +47,17 @@ When using the internal ADC the programmer can reference the channel by it's num
 | 6       | 34   |
 | 7       | 35   |
 
+ADC1 should to be calibrated because internal voltage reference is around 1100 mVolts, but can vary. For this use the adc.calibrate function and an external ADC. This function gives the internal voltage reference value in mVolts. Once internal voltage reference is known set this value in Kconfig under the "Component config -> Lua RTOS -> Hardware -> Internal ADC -> vref" category.
+
+```lua
+-- Get the internal voltage reference for ADC1 using GPIO26, and measure it with an ADS1115 connecting
+-- channel 0 to GPIO26
+/ > adc.calibrate(adc.ADC1, pio.GPIO26, adc.ADS1115, 0)
+i2c0 at pins scl=GPIO21/sdc=GPIO25 at speed 400000 hz
+adc ADS1115 channel 0 at i2c0, PGA +/- 2048 mvolts, address 0, 15 bits of resolution
+1108
+```
+
 In ESP32 readings higher than 1.1V are achieved using an attenuation factor that reduces the input voltage, but the tests performed by the Whitecat Team shows that using attenuation can cause imprecise readings. Our recommendation is to use a voltage divider or external ADC hardware if you need to measure voltages higher than 1.1V.
 
 ## External ADC
