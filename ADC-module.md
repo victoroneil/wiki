@@ -28,11 +28,12 @@ In ESP32 only one ADC unit is available:
 
 _adc.ADC1:_
 
-  * This is the internal ADC module, with a maximum of 12-bit resolution.
-  * VRef- is 0.0V and VRef+ is 1.1V.
+  * This is the internal ADC module.
+  * ADC1 can work at 9, 10, 11 and 12 bits of resolution.
+  * VRef- is 0.0V and VRef+ is 1.1V. This reference voltages can't be set by the programmer.
   * 8 ADC channels are provided, from adc.ADC_CH0 to adc.ADC_CH7.
 
-In ESP32 voltage references higher than 1.1V are achieved using an attenuation factor that reduces the input voltage, but this can cause imprecise readings. Please, use external ADC hardware if you need to measure voltages higher than 1.1V.
+In ESP32 readings higher than 1.1V are achieved using an attenuation factor that reduces the input voltage, but but the tests performed by the Whitecat Team shows that using attenuation can cause imprecise readings. Our recommendation is to use a voltage divider or external ADC hardware if you need to measure voltages higher than 1.1V.
 
 # External ADC
 
