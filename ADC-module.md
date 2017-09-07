@@ -33,6 +33,7 @@ _adc.ADC1:_
   * This is the internal ADC module.
   * ADC1 can work at 9, 10, 11 and 12 bits of resolution.
   * VRef- is 0.0V and VRef+ is set to 1.1V. This reference voltages can't be set by the programmer.
+  * Programmer can set the max ADC input value for a given channel. This is used internally to set the attenuation factor.
   * 8 ADC channels are provided, but only 6 are available: 0, 3, 4, 5, 6, 7.
 
 When using the internal ADC the programmer can reference the channel by it's number or by GPIO:
@@ -58,6 +59,7 @@ Lua RTOS allows the programmer to access to external ADC units using the same AP
   * Working resolution is 15 bits.
   * The internal voltage reference that cannot be set by hardware or software.
   * ADC input values can vary from 0 to 6144 mVolts.
+  * Programmer can set the max ADC input value for a given channel. This is used internally to set the PGA.
   * 4 ADC channels are provided, from 0 to 4.
 
     [ADS1115 Datasheet](http://www.ti.com/lit/ds/sbas444c/sbas444c.pdf)
@@ -67,6 +69,7 @@ Lua RTOS allows the programmer to access to external ADC units using the same AP
   * This unit is mapped to an external MCP3008 chip (SPI interface), with a maximum of 10-bit resolution.
   * Working resolution is 10 bits.
   * The programmer can provide the VRef+ and VRef- values when using this unit (see adc.attach function). The default VRef+ and VRef- values are 3.3V and 0V.
+  * Max ADC input value cannot be set by the programmer. It is assumed that max value is equal to Vref+.
   * 8 ADC channels are provided, from 0 to 7.
 
     [MCP3008 Datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/21295C.pdf)
@@ -76,6 +79,7 @@ Lua RTOS allows the programmer to access to external ADC units using the same AP
   * This unit is mapped to an external MCP3208 chip (SPI interface), with a maximum of 12-bit resolution.
   * Working resolution is 12 bits.
   * The programmer can provide the VRef+ and VRef- values when using this unit (see adc.attach function). The default VRef+ and VRef- values are 3.3V and 0V.
+  * Max ADC input value cannot be set by the programmer. It is assumed that max value is equal to Vref+.
   * 8 ADC channels are provided, from 0 to 7.
 
     [MCP3208 Datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/21298D.pdf)
