@@ -324,6 +324,8 @@ Here is the list of sensors currently natively supported in Lua RTOS.
 
   * Switches
     - [4x4 key matrix](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/KEY-MATRIX-4x4)
+    - [2 POSITION TOGGLE SWITCH](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/2-POSITION-TOGGLE-SWITCH)
+    - [3 POSITION TOGGLE SWITCH](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/3-POSITION-TOGGLE-SWITCH)
     - [ANALOG JOYSTICK](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/ANALOG-JOYSTICK-SENSOR)
     - [HALL EFECT](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/HALL-EFFECT-SWITCH-SENSOR)
     - [PUSH SWITCH](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/PUSH-SWITCH-SENSOR)
