@@ -15,6 +15,7 @@ Detector of PM2.5. Purifier.
 Using laser scattering principle. Light scattering can be induced when particles go through the detecting area. The scattered light is transformed into electrical signals and these signals will be amplified and processed. The number and diameter of particles can be obtained by analysis because the signal waveform has certain relations with the particles diameter.
 
 **Power requirement:**
+
 Power Voltage：4.7~5.3V
 Power supply：>1W
 Supply voltage ripple：<20mV
