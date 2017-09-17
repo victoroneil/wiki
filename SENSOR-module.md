@@ -299,17 +299,15 @@ Here is the list of sensors currently natively supported in Lua RTOS.
 
 <table>
     <tr>
-        <th>Col 1</th>
-        <th>Col 2</th>
-        <th>Col 3</th>
+        <th>Type</th>
+        <th>Sensor</th>
     </tr>
     <tr>
-        <td colspan="2">span 2 cols</td>
-        <td rowspan="2">span 2 rows</td>
-    </tr>
-    <tr>
-        <td>stuff</td>
-        <td>stuff</td>
+        <td>Distance</td>
+[2Y0A21](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/2Y0A21-SENSOR)<br/>
+[PING))) 28015 ultrasonic sensor](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/PING-28015-ultrasonic-sensor)
+        <td >
+</td>
     </tr>
 </table>​
 
