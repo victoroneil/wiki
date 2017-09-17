@@ -2,7 +2,7 @@
 
 | What         |                | Comments                   |
 |--------------|----------------|----------------------------|
-| Identifier   | KEY_MATRIX_4_4 | ![](http://git.whitecatboard.org/push_button.png) |
+| Identifier   | KEY_MATRIX_4_4 | ![](http://git.whitecatboard.org/key_matrix_4_4.png) |
 | Interface    | 8 GPIO         | GPIO 1: L1<br/>GPIO 2: L2<br/>GPIO 3: L3<br/>GPIO 4: L4<br/>GPIO 5: H1<br/>GPIO 6: H2<br/>GPIO 7: H3<br/>GPIO 8: H4<br/><br/>Lx: columns<br/>Hx: rows |
 | Provides     | key1<br/>key2<br/>key3<br/>key4<br/>key5<br/>key6<br/>key7<br/>key8<br/>key9<br/>key10<br/>key11<br/>key12<br/>key13<br/>key14<br/>key15<br/>key16<br/>             | 1 = key down<br/>0 = key up|
 | Properties   | repeat           | 1 = enable repeat function, 0 = disable. When enabled this sensor fires a callback when you press and hold a key on the key matrix.                            |
