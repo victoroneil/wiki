@@ -4,7 +4,7 @@
 |--------------|------------------|----------------------------|
 | Identifier   | 3P_TOGGLE_SWITCH | ![](http://git.whitecatboard.org/3p_switch.png) |
 | Interface    | 2 GPIO           |                            |
-| Provides     | pos              | 1 = switch in pos 1<br/>2 = switch in pos 0<br/>0 = switch in pos 0|
+| Provides     | pos              | 1 = switch in pos 1 (up position)<br/>2 = switch in pos 2 (down position)<br/>0 = switch in pos 0 (mid position)|
 | Properties   | none             |                            |
 | Callbacks?   | yes              | |
 
