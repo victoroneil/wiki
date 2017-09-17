@@ -2,14 +2,14 @@
 
 | What         |             | Comments                                 |
 |--------------|-------------|------------------------------------------|
-| Identifier   | SDS011      |                                          |
+| Identifier   | SDS011      | ![](http://git.whitecatboard.org/sds011.png)                                         |
 | Interface    | UART        |                                          |
 | Provides     | PM2.5       | particles per million <= 2.5 micrometers |
 |              |             | in micro-grams / m3                      |   
 |              | PM10        | particles per million <= 10 micrometers  |
 |              |             | in micro-grams / m3                      |   
 | Properties   | none        |                                          |
-| [Datasheet](http://breathe.indiaspend.org/wp-content/uploads/2015/11/nova_laser_sensor.pdf)    |             | ![](http://git.whitecatboard.org/sds011.png)                           |
+| [Datasheet](http://breathe.indiaspend.org/wp-content/uploads/2015/11/nova_laser_sensor.pdf)    |             |                            |
 
 
 # Code
@@ -23,3 +23,5 @@ while true do
    tmr.delayms(500)
 end
 ```
+
+[Back to sensor list](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Sensor-module#supported-sensors)
