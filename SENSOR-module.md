@@ -307,6 +307,9 @@ Here is the list of sensors currently natively supported in Lua RTOS.
   * Illuminance
     - [LDR](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/LDR-SENSOR)
 
+  * Keyboards
+    - [4x4 key matrix](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/KEY-MATRIX-4x4)
+   
   * Magnetic field
     - [AH49E](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/AH49E-LINEAR-HALL-EFFECT-SENSOR)
 
