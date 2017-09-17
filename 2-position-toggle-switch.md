@@ -24,7 +24,7 @@
 s = sensor.attach("2P_TOGGLE_SWITCH", 26)
 s:callback(
    function(data)
-   print(data.pos)
+      print(data.pos)
    end
 )
 ```
