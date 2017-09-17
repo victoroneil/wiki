@@ -2,12 +2,12 @@
 
 | What         |             | Comments                   |
 |--------------|-------------|----------------------------|
-| Identifier   | DHT23       |                            |
+| Identifier   | DHT23       | (http://git.whitecatboard.org/dht23.png)                            |
 | Interface    | GPIO        | 1 pin                      |
 | Provides     | temperature | celsius degrees            |
 |              | humidity    | % relative humidity        |
 | Properties   | none        |                            |
-| [Datasheet](https://kropochev.com/downloads/humidity/AM2301.pdf)    |             | ![](http://git.whitecatboard.org/dht23.png)                           |
+| [Datasheet](https://kropochev.com/downloads/humidity/AM2301.pdf)    |             | ![]                           |
 
 
 # Code
