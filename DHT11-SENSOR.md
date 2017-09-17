@@ -2,12 +2,12 @@
 
 | What         |             | Comments                   |
 |--------------|-------------|----------------------------|
-| Identifier   | DHT11       |                            |
+| Identifier   | DHT11       | ![](http://git.whitecatboard.org/dht11.jpg)                            |
 | Interface    | GPIO        | 1 pin                      |
 | Provides     | temperature | celsius degrees            |
 |              | humidity    | % relative humidity        |
 | Properties   | none        |                            |
-| [Datasheet](http://www.micropik.com/PDF/dht11.pdf)    |             | ![](http://git.whitecatboard.org/dht11.jpg)                           |
+| [Datasheet](http://www.micropik.com/PDF/dht11.pdf)    |             |                           |
 
 
 # Code
