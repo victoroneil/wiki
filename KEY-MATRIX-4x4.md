@@ -6,8 +6,8 @@
 | Interface    | 8 GPIO         | GPIO 1: L1<br/>GPIO 2: L2<br/>GPIO 3: L3<br/>GPIO 4: L4<br/>GPIO 5: H1<br/>GPIO 6: H2<br/>GPIO 7: H3<br/>GPIO 8: H4<br/><br/>Lx: columns<br/>Hx: rows |
 | Provides     | key1<br/>key2<br/>key3<br/>key4<br/>key5<br/>key6<br/>key7<br/>key8<br/>key9<br/>key10<br/>key11<br/>key12<br/>key13<br/>key14<br/>key15<br/>key16<br/>             | 1 = key down<br/>0 = key up|
 | Properties   | repeat           | 1 = enable repeat function. When enabled this sensor fires a callback when you hold a key down.                            |
-|              | repeat delay     | If repeat function is enabled, the time in msecs that you must to hold a key down for start the repeat function. When this time expires the sensor fires a callback at the specified repeat rate time.
-|              | repeat rate      | The repeat rate in msecs. 
+|              | repeat delay     | When you press and hold a key on the key matrix, the sensor fires a callback. The pause between pressing the key and when it starts repeating is the repeat delay, expressed in msecs.<br/><br/>Default value is 1500 msecs.
+|              | repeat rate      | After you press and hold down a key on the key matrix, the key starts repeating once the repeat delay expires. The speed at which it repeats is the repeat rate, expressed in msecs.<br/><br/>Default value is 500 msecs.
 | Callbacks?   | yes            | |
 
 
