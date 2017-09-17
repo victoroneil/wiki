@@ -1,12 +1,14 @@
 # Specification
 
+Infrared sensor
+
 | What         |             | Comments                   |
 |--------------|-------------|----------------------------|
-| Identifier   | 2Y0A21      | Infrared sensor            |
+| Identifier   | 2Y0A21      | ![](http://git.whitecatboard.org/GP2Y0A21YK.jpg)            |
 | Interface    | ADC         |                            |
 | Provides     | distance    | centimeters                |
 | Properties   | none        |                            |
-| [Datasheet](http://www.socle-tech.com/doc/IC%20Channel%20Product/Sensors/Distance%20Measuring%20Sensor/Analog%20Output/gp2y0a21yk_e.pdf)    |             | ![](http://git.whitecatboard.org/GP2Y0A21YK.jpg)                           |
+| [Datasheet](http://www.socle-tech.com/doc/IC%20Channel%20Product/Sensors/Distance%20Measuring%20Sensor/Analog%20Output/gp2y0a21yk_e.pdf)    |             |                            |
 
 
 # Code
