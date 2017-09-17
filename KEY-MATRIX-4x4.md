@@ -13,7 +13,11 @@
 
 # Notes
 
-This sensor requires 8 GPIO. We recommend to use an external GPIO with pull-ups like the PCA9505 chip.
+* This sensor requires 8 GPIO. We recommend to use an external GPIO with pull-ups like the PCA9505 chip.
+* This sensor performs a scan on the entire key matrix every 1 msec. You can find the operating principle in [this article](http://pcbheaven.com/wikipages/How_Key_Matrices_Works/).
+* Hardware pull-ups are not required.
+* Many cheap key matrix don't include diodes for each key, so you may experiment ghosting and masking problems if you use these key matrix.
+* You can use key matrix with diodes with this sensor.
 
 # Code
 
