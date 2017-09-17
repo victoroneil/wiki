@@ -2,7 +2,7 @@
 
 | What         |                  | Comments                   |
 |--------------|------------------|----------------------------|
-| Identifier   | 2P_TOGGLE_SWITCH | ![](http://git.whitecatboard.org/push_button.png) |
+| Identifier   | 2P_TOGGLE_SWITCH | ![](http://git.whitecatboard.org/2p_switch.png) |
 | Interface    | 1 GPIO           |                            |
 | Provides     | pos              | 1 = switch in pos 1<br/>0 = switch in pos 0|
 | Properties   | none             |                            |
