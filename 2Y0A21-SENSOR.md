@@ -1,6 +1,6 @@
 # Specification
 
-Infrared sensor
+Infrared sensor.
 
 | What         |             | Comments                   |
 |--------------|-------------|----------------------------|
