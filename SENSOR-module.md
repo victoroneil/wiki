@@ -307,9 +307,6 @@ Here is the list of sensors currently natively supported in Lua RTOS.
   * Illuminance
     - [LDR](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/LDR-SENSOR)
 
-  * Keyboards
-    - [4x4 key matrix](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/KEY-MATRIX-4x4)
-   
   * Magnetic field
     - [AH49E](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/AH49E-LINEAR-HALL-EFFECT-SENSOR)
 
@@ -326,10 +323,11 @@ Here is the list of sensors currently natively supported in Lua RTOS.
     - [Relative rotary encoder](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Relative-Rotary-Encoder-SENSOR)
 
   * Switches
+    - [4x4 key matrix](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/KEY-MATRIX-4x4)
+    - [ANALOG JOYSTICK](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/ANALOG-JOYSTICK-SENSOR)
     - [HALL EFECT](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/HALL-EFFECT-SWITCH-SENSOR)
     - [PUSH SWITCH](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/PUSH-SWITCH-SENSOR)
     - [TILT SWITCH](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/TILT-SWITCH)
-    - [ANALOG JOYSTICK](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/ANALOG-JOYSTICK-SENSOR)
 
   * Temperature
     - [BME280](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/BME280-SENSOR)
