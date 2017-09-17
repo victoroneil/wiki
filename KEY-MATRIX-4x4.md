@@ -18,7 +18,7 @@ This sensor requires 8 GPIO. We recommend to use an external GPIO with pull-ups 
 # Code
 
 ```lua
--- Attach the key matrix using the PCA9505 external GPIO chip
+-- Attach the key matrix using an external GPIO chip
 km = sensor.attach("KEY_MATRIX_4_4", 40, 41, 42, 43, 44, 45, 46, 47)
 
 km:callback(
