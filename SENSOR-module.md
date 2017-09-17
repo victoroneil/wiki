@@ -289,8 +289,8 @@ s1:read("temperature")
 
 Here is the list of sensors currently natively supported in Lua RTOS.
 
-  | Type         | Sensor                                                             |
-  |--------------|--------------------------------------------------------------------|
+  | Type                     | Sensor                                                             |
+  |--------------------------|--------------------------------------------------------------------|
   | Air Quality  |[SDS011](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/SDS011-NOVA-PM-SENSOR) |
   | Distance     |[2Y0A21](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/2Y0A21-SENSOR)<br/>[PING))) 28015 ultrasonic sensor](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/PING-28015-ultrasonic-sensor)|
   | Geographic position | [GPS](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/GPS-SENSOR) |
