@@ -8,6 +8,15 @@
 | Properties   | none             |                            |
 | Callbacks?   | yes              | |
 
+# Notes
+
+* With this sensor you can get the position of a SPST (single-pole, single-throw) switch, or a SPDT (single-pole, double-throw) switch.
+* A SPST has 2 terminals. Connect one terminal to a GPIO, and the other terminal to GND.
+* A SPDT has 3 terminals. Connect one terminal to a GPIO, and one of the others to GND.
+* Hardware pull-ups are not required.
+* Hardware debouncing are not required.
+* When the GPIO level state changes the sensor reads the switch position and a callback is executed reporting the switch position.
+
 # Code
 
 ```lua
