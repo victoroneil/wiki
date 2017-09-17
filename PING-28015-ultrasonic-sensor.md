@@ -2,11 +2,11 @@
 
 | What         |             | Comments                                    |
 |--------------|-------------|---------------------------------------------|
-| Identifier   | PING28015   |                                             |
+| Identifier   | PING28015   | ![](http://git.whitecatboard.org/ping-sensor.png)                                            |
 | Interface    | GPIO        | 1 pin                                       |
 | Provides     | distance    | meters                                      |
 | Properties   | temperature | sound speed depends on ambient temperature  |
-| [Datasheet](https://www.parallax.com/sites/default/files/downloads/28015-PING-Sensor-Product-Guide-v2.0.pdf)    |             | ![](http://git.whitecatboard.org/ping-sensor.png)                            |
+| [Datasheet](https://www.parallax.com/sites/default/files/downloads/28015-PING-Sensor-Product-Guide-v2.0.pdf)    |             |                             |
 
 # Code
 
@@ -24,3 +24,5 @@ while true do
   tmr.delayms(500)
 end
 ```
+
+[Back to sensor list](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Sensor-module#supported-sensors)
