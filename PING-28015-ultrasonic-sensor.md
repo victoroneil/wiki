@@ -1,3 +1,14 @@
+# About this
+
+This sensor provides precise, non-contact distance measurements from about 2 cm to 3 meters.
+
+The PING))) sensor works by transmitting an ultrasonic (well above human hearing range) burst and providing an output pulse that corresponds to the time required for the burst echo to return to the sensor. By measuring the echo pulse width, the distance to target can easily be calculated.
+
+**Power supply:**
+
+* Supply voltage: +5 VDC
+* Supply current: 30 mA typ; 35 mA max 
+
 # Specification
 
 | What         |             | Comments                                    |
