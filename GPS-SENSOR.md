@@ -24,3 +24,5 @@ while true do
    tmr.delayms(500)
 end
 ```
+
+[Back to sensor list](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Sensor-module#supported-sensors)
