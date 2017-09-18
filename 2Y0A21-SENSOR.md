@@ -6,11 +6,12 @@ The variety of the reflectivity of the object, the environmental temperature and
 
 This device outputs the voltage corresponding to the detection distance. So this sensor can also be used as a proximity sensor.
 
-**Features:**
+Distance measuring range : 10 to 80 cm
 
-1. Distance measuring range : 10 to 80 cm
-2. Consumption current : Typ. 30 mA
-3. Supply voltage : 4.5 to 5.5 V
+**Power supply:**
+
+* Consumption current : Typ. 30 mA
+* Supply voltage : 4.5 to 5.5 V
 
 # Specification
 
