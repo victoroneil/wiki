@@ -4,9 +4,9 @@ The SDS011 using principle of laser scattering, can get the particle concentrati
 
 **Characteristics:**
 
-1. Accurate and reliable: laser detection, stable, good consistency.
-2. Quick response: response time is less than 10 seconds when the scene changes.
-3. High resolution: resolution of 0.3μg/m3.
+* Accurate and reliable: laser detection, stable, good consistency.
+* Quick response: response time is less than 10 seconds when the scene changes.
+* High resolution: resolution of 0.3μg/m3.
 
 **Scope of application:**
 
@@ -16,11 +16,11 @@ Detector of PM2.5. Purifier.
 
 Using laser scattering principle. Light scattering can be induced when particles go through the detecting area. The scattered light is transformed into electrical signals and these signals will be amplified and processed. The number and diameter of particles can be obtained by analysis because the signal waveform has certain relations with the particles diameter.
 
-**Power requirement:**
+**Power supplu:**
 
-Power Voltage：4.7~5.3V
-Power supply：>1W
-Supply voltage ripple：<20mV
+* Power Voltage：4.7~5.3V
+* Power supply：>1W
+* Supply voltage ripple：<20mV
 
 # Specification
 
