@@ -4,6 +4,8 @@ This sensor provides precise, non-contact distance measurements from about 2 cm 
 
 The PING))) sensor works by transmitting an ultrasonic (well above human hearing range) burst and providing an output pulse that corresponds to the time required for the burst echo to return to the sensor. By measuring the echo pulse width, the distance to target can easily be calculated.
 
+Please, take in mind, that sound speed depends on ambient temperature, about 0.6 m/secs per celsius degree, so combine this sensor with a temperature sensor if you want to get accurate measurements or if the sensor can be subjected to a wide temperature range.
+
 **Power supply:**
 
 * Supply voltage: +5 VDC
