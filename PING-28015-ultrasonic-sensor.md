@@ -15,7 +15,7 @@ The PING))) sensor works by transmitting an ultrasonic (well above human hearing
 |--------------|-------------|---------------------------------------------|
 | Identifier   | PING28015   | ![](http://git.whitecatboard.org/ping-sensor.png)                                            |
 | Interface    | GPIO        | 1 pin                                       |
-| Provides     | distance    | meters                                      |
+| Provides     | distance    | cm                                          |
 | Properties   | temperature | sound speed depends on ambient temperature  |
 | [Datasheet](https://www.parallax.com/sites/default/files/downloads/28015-PING-Sensor-Product-Guide-v2.0.pdf)    |             |                             |
 
