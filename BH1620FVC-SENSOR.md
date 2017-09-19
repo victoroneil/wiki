@@ -21,6 +21,7 @@ BH1620FVC is an analog current output ambient light sensor.
 | Provides     | illuminance     | lux (\*)                         |
 | Properties   | gain            | 0 = H-Gain mode<br/>1 = M-Gain mode<br/>2 = L-Gain mode| 
 |              | r1              | Iout R1 resistance value, in ohms.<br/>Default value is set to 5600 ohms.<br/>Please, refer to the datasheet page 4 for more information about R1.                           |
+|              | calibration     | Calibration data +/- lux   |
 | [Datasheet](http://rohmfs.rohm.com/en/products/databook/datasheet/ic/sensor/light/bh1721fvc-e.pdf) | | |
 
 # Notes
