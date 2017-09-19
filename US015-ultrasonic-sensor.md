@@ -40,6 +40,7 @@ end
 
 In this example a BME280 sensor is used for set the ambient temperature at regular interval.
 
+```lua
 -- Create an event for syncronize the ping thread with
 -- the temp thread. We don't want to take the first measure
 -- until the thread temp sets the ping temp
@@ -85,5 +86,6 @@ thread.start(function()
 	  tmr.sleepms(1000)
    end
 end)
+```
 
 [Back to sensor list](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Sensor-module#supported-sensors)
