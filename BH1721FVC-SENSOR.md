@@ -21,18 +21,16 @@ BH1721FVC is an digital Ambient Light Sensor IC for I2C bus interface.
 |--------------|-----------------|-----------------------------|
 | Identifier   | BH1721FVC       | ![](http://git.whitecatboard.org/bh1620fvc.png)                            |
 | Interface    | I2C             |                             |
-| Provides     | illuminance     | lux (\*)                         |
-| Properties   | gain            | 0 = H-Gain mode<br/>1 = M-Gain mode<br/>2 = L-Gain mode| 
-|              | r1              | Iout R1 resistance value, in ohms.<br/>Default value is set to 5600 ohms.<br/>Please, refer to the datasheet page 4 for more information about R1.                           |
+| Provides     | illuminance     | lux (\*)                    |
+| Properties   | resolution      | 0 = Auto-Resolution Mode<br/>1 = H-Resolution Mode<br/>2 = L-Resolution Mode<br/><br/>Default value is H-Resolution Mode | 
+|              | calibration     | Calibration data +/- lux    |
 | [Datasheet](http://rohmfs.rohm.com/en/products/databook/datasheet/ic/sensor/light/bh1721fvc-e.pdf) | | |
 
 # Notes
 
-* The gain must be set according to the illuminance range to be measured (datasheet page 5) through pins 3 and 4.
-* Once the gain is set, the programmer must set the gain property. By default the sensor expects an H-Gain setting.
-* Adjust r1 value to your needs.
-* Once the r1 is set, the programmer must set the r1 property. By default the sensor expects a r1 value of 5600 ohms.
-
+* The resolution must be set according to the illuminance range to be measured (datasheet page 5).
+* The programmer can use the calibration property to correct sensor readings that may be influenced by the location of the sensor, such as when the sensor is mounted behind a protective glass.
+ 
 # Comments
 
 **_(\*)_**
@@ -56,13 +54,13 @@ BH1721FVC is an digital Ambient Light Sensor IC for I2C bus interface.
 # Code
 
 ```lua
--- Attach BH1620FVC sensor to an external ADC (ADS1115) / channel 0
-s = sensor.attach("BH1620FVC", adc.ADS1115, 0)
+-- Attach BH1721FVC sensor to I2C0
+s = sensor.attach("BH1721FVC", i2c.I2C0, 0)
 
--- If your gain / r1 values differ from de default values uncomment the
--- following lines and set your values
--- s:set("gain", 0)
--- s:set("r1", 5600)
+-- If your resolution / calibration values differ from de default values uncomment the
+-- following lines and set your own values
+-- s:set("resolution", 1)
+-- s:set("calibration", 0)
 
 while true do
   print(s:read("illuminance"))
