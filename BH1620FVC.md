@@ -1,3 +1,13 @@
+# About this
+
+BH1620FVC is an analog current output ambient light sensor.
+
+**Features:**
+
+  * Spectral sensitivity close to human eyes sensitivity.
+  * Output current in proportion to brightness.
+  * Supply voltage operates from 2.4V to 5.5V
+
 # Specification
 
 | What         |                 | Comments                    |
@@ -42,3 +52,5 @@
 
 ```lua
 ```
+
+[Back to sensor list](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Sensor-module#supported-sensors)
