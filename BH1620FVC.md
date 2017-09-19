@@ -51,6 +51,18 @@ BH1620FVC is an analog current output ambient light sensor.
 # Code
 
 ```lua
+-- Attach BH1620FVC sensor to an external ADC (ADS1115) / channel 0
+s = sensor.attach("BH1620FVC", adc.ADS1115, 0)
+
+-- If your gain / r1 values differ from de default values uncomment the
+-- following lines and set your values
+-- s:set("gain", 1)
+-- s:set("r1", 5600)
+
+while true do
+  print(s:read("illuminance"))
+  tmr.delayms(500)
+end
 ```
 
 [Back to sensor list](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Sensor-module#supported-sensors)
