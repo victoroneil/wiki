@@ -83,7 +83,7 @@ thread.start(function()
    while true do
       print("distance: "..ping:read("distance"))
 	  
-	  tmr.sleepms(1000)
+      tmr.sleepms(1000)
    end
 end)
 ```
