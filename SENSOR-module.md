@@ -295,7 +295,7 @@ Here is the list of sensors currently natively supported in Lua RTOS.
   | Distance     |[2Y0A21](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/2Y0A21-SENSOR)<br/>[PING))) 28015 ultrasonic sensor](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/PING-28015-ultrasonic-sensor)<br/>[US015 ultrasonic sensor](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/US015-ultrasonic-sensor)|
   | Geographic position | [GPS](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/GPS-SENSOR) |
   | Humidity | [BME280](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/BME280-SENSOR)<br/>[DHT11](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/DHT11-SENSOR)<br/>[DHT22](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/DHT22-SENSOR)<br/>[DHT23](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/DH23-SENSOR) |
-  | Illuminance | [BH1620FVC](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/BH1620FVC-SENSOR)<br/>[LDR](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/LDR-SENSOR)|
+  | Illuminance | [BH1620FVC](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/BH1620FVC-SENSOR)<br/>[BH1721FVC](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/BH1721FVC-SENSOR)<br/>[LDR](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/LDR-SENSOR)|
   | Magnetic field | [AH49E](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/AH49E-LINEAR-HALL-EFFECT-SENSOR)|
   | Potentiometers | [Linear potentiometer](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/LINEAR-POT-SENSOR)|
   | Presence | [AM412](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/AM412-PIR-SENSOR)|
