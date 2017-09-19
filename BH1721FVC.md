@@ -1,23 +1,30 @@
 # About this
 
-BH1620FVC is an analog current output ambient light sensor.
+BH1721FVC is an digital Ambient Light Sensor IC for I2C bus interface. 
 
 **Features:**
 
-  * Spectral sensitivity close to human eyes sensitivity.
-  * Output current in proportion to brightness.
-  * Supply voltage operates from 2.4V to 5.5V
+  * I2C bus Interface, Slave Address : "0100011"
+  * Spectral responsibility is approximately human eye response
+  * Illuminance to Digital Converter
+  * Wide range and High resolution. (1 – 65528 lx )
+  * Low Current by power down function
+  * 50Hz / 60Hz Light noise reject-function
+  * 1.8V Logic input interface
+  * No need any external parts
+  * Light source dependency is little. (ex. Incandescent Lamp. Fluorescent Lamp. Halogen Lamp. White LED. Sun Light)
+  * Small measurement variation (+/- 15%)
 
 # Specification
 
 | What         |                 | Comments                    |
 |--------------|-----------------|-----------------------------|
-| Identifier   | BH1620FVC       | ![](http://git.whitecatboard.org/bh1620fvc.png)                            |
-| Interface    | ADC             |                             |
+| Identifier   | BH1721FVC       | ![](http://git.whitecatboard.org/bh1620fvc.png)                            |
+| Interface    | I2C             |                             |
 | Provides     | illuminance     | lux (\*)                         |
 | Properties   | gain            | 0 = H-Gain mode<br/>1 = M-Gain mode<br/>2 = L-Gain mode| 
 |              | r1              | Iout R1 resistance value, in ohms.<br/>Default value is set to 5600 ohms.<br/>Please, refer to the datasheet page 4 for more information about R1.                           |
-| [Datasheet](http://rohmfs.rohm.com/en/products/databook/datasheet/ic/sensor/light/bh1620fvc-e.pdf) | | |
+| [Datasheet](http://rohmfs.rohm.com/en/products/databook/datasheet/ic/sensor/light/bh1721fvc-e.pdf) | | |
 
 # Notes
 
@@ -25,8 +32,6 @@ BH1620FVC is an analog current output ambient light sensor.
 * Once the gain is set, the programmer must set the gain property. By default the sensor expects an H-Gain setting.
 * Adjust r1 value to your needs.
 * Once the r1 is set, the programmer must set the r1 property. By default the sensor expects a r1 value of 5600 ohms.
-
-![](http://git.whitecatboard.org/bh1620fvc-r1.png)
 
 # Comments
 
