@@ -13,6 +13,10 @@
 
 * The gain must be set according to the illuminance range to be measured (datasheet page 5) through pins 3 and 4.
 * Once the gain is set, the programmer must set the gain property. By default the sensor expects an H-Gain setting.
+* Adjust r1 value to your needs.
+* Once the r1 is set, the programmer must set the r1 property. By default the sensor expects a r1 value of 5600 ohms.
+
+![](http://git.whitecatboard.org/bh1620fvc-r1.png)
 
 # Comments
 
