@@ -29,6 +29,7 @@ BH1620FVC is an analog current output ambient light sensor.
 * Once the gain is set, the programmer must set the gain property. By default the sensor expects an H-Gain setting.
 * Adjust r1 value to your needs.
 * Once the r1 is set, the programmer must set the r1 property. By default the sensor expects a r1 value of 5600 ohms.
+* The programmer can use the calibration property to correct sensor readings that may be influenced by the location of the sensor, such as when the sensor is mounted behind a protective glass.
 
 # Comments
 
@@ -60,6 +61,7 @@ s = sensor.attach("BH1620FVC", adc.ADS1115, 0)
 -- following lines and set your values
 -- s:set("gain", 0)
 -- s:set("r1", 5600)
+-- s:set("calibration", 0)
 
 while true do
   print(s:read("illuminance"))
