@@ -12,7 +12,7 @@ Please, take in mind, that sound speed depends on ambient temperature, about 0.6
 
 | What         |             | Comments                                    |
 |--------------|-------------|---------------------------------------------|
-| Identifier   | US015       | ![](http://git.whitecatboard.org/ping-sensor.png)                                            |
+| Identifier   | US015       | ![](http://git.whitecatboard.org/us015.png)                                            |
 | Interface    | 2 GPIO      | GPIO1: trigger signal<br/>GPIO2: echo signal. |
 | Provides     | distance    | cm                                          |
 |              | calibration | +/- cm. Default set to 0 cm.          |
