@@ -19,7 +19,7 @@ BH1721FVC is an digital Ambient Light Sensor IC for I2C bus interface.
 
 | What         |                 | Comments                    |
 |--------------|-----------------|-----------------------------|
-| Identifier   | BH1721FVC       | ![](http://git.whitecatboard.org/bh1620fvc.png)                            |
+| Identifier   | BH1721FVC       | ![](http://git.whitecatboard.org/BH1721FVC.png)                            |
 | Interface    | I2C             |                             |
 | Provides     | illuminance     | lux (\*)                    |
 | Properties   | resolution      | 0 = Auto-Resolution Mode<br/>1 = H-Resolution Mode<br/>2 = L-Resolution Mode<br/><br/>Default value is H-Resolution Mode | 
