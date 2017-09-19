@@ -2,7 +2,7 @@
 
 | What         |                 | Comments                    |
 |--------------|-----------------|-----------------------------|
-| Identifier   | BH1620FVC       | ![](http://git.whitecatboard.org/ldr.png)                            |
+| Identifier   | BH1620FVC       | ![](http://git.whitecatboard.org/bh1620fvc.png)                            |
 | Interface    | ADC             |                             |
 | Provides     | illuminance     | lux (\*)                         |
 | Properties   | mode            | 0 = H-Gain mode<br/>1 = M-Gain mode<br/>2 = L-Gain mode| 
