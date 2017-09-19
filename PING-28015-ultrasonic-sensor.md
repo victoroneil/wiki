@@ -22,10 +22,6 @@ Please, take in mind, that sound speed depends on ambient temperature, about 0.6
 | Properties   | temperature | current ambient temperature                 |
 | [Datasheet](https://www.parallax.com/sites/default/files/downloads/28015-PING-Sensor-Product-Guide-v2.0.pdf)    |             |                             |
 
-# Notes
-
-* This sensor is calibrated to get the distance from the microphones. User can change the calibration using the "calibration" property.
-
 # Code
 
 ```lua
