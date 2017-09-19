@@ -5,9 +5,16 @@
 | Identifier   | BH1620FVC       | ![](http://git.whitecatboard.org/bh1620fvc.png)                            |
 | Interface    | ADC             |                             |
 | Provides     | illuminance     | lux (\*)                         |
-| Properties   | mode            | 0 = H-Gain mode<br/>1 = M-Gain mode<br/>2 = L-Gain mode| 
+| Properties   | gain            | 0 = H-Gain mode<br/>1 = M-Gain mode<br/>2 = L-Gain mode| 
 |              | r1              | Iout R1 resistance value, in ohms.<br/>Default value is set to 5600 ohms.<br/>Please, refer to the datasheet page 4 for more information about R1.                           |
 | [Datasheet](http://rohmfs.rohm.com/en/products/databook/datasheet/ic/sensor/light/bh1620fvc-e.pdf) | | |
+
+# Notes
+
+* The gain must be set according to the illuminance range to be measured (datasheet page 5) through pins 3 and 4.
+* Once the gain is set, the programmer must set the gain property. By default the sensor expects an H-Gain setting.
+
+# Comments
 
 **_(\*)_**
 
