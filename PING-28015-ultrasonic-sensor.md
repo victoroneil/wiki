@@ -2,7 +2,7 @@
 
 This sensor provides precise, non-contact distance measurements from about 2 cm to 3 meters.
 
-The PING))) sensor works by transmitting an ultrasonic (well above human hearing range) burst and providing an output pulse that corresponds to the time required for the burst echo to return to the sensor. By measuring the echo pulse width, the distance to target can easily be calculated.
+The PING))) sensor works by transmitting an ultrasonic burst and providing an output pulse that corresponds to the time required for the burst echo to return to the sensor. The distance is calculated by measuring the echo pulse width.
 
 Please, take in mind, that sound speed depends on ambient temperature, about 0.6 m/secs per celsius degree, so combine this sensor with a temperature sensor if you want to get accurate measurements or if the sensor can be subjected to a wide temperature range.
 
@@ -47,6 +47,7 @@ end
 
 In this example a BME280 sensor is used for set the ambient temperature at regular interval.
 
+```lua
 -- Create an event for syncronize the ping thread with
 -- the temp thread. We don't want to take the first measure
 -- until the thread temp sets the ping temp
@@ -89,8 +90,9 @@ thread.start(function()
    while true do
       print("distance: "..ping:read("distance"))
 	  
-	  tmr.sleepms(500)
+      tmr.sleepms(500)
    end
 end)
+```
 
 [Back to sensor list](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Sensor-module#supported-sensors)
