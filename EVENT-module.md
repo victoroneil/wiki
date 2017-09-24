@@ -15,8 +15,8 @@ To use this module you must take into consideration the following:
 
   1. Create an event using the event.create function. The create function returns an event instance. You must store this instance into a variable for further operation with it.
 
-  ```lua
-  keyPressed = event.create()
-  ```
+   ```lua
+   keyPressed = event.create()
+   ```
 
-  1. Use the event instance in 
+  2. Use the event instance in 
