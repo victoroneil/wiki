@@ -10,6 +10,10 @@
 | Properties   | none            |                            |
 | Callbacks?   | yes             |    |
 
+# Notes
+
+* Hardware pull-ups are not required for switch.
+
 # Code
 
 ```lua
