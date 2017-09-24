@@ -2,11 +2,11 @@
 
 | What         |             | Comments                   |
 |--------------|-------------|----------------------------|
-| Identifier   | THERMISTOR  |                            |
+| Identifier   | THERMISTOR  | ![](http://git.whitecatboard.org/thermistor.png)                           |
 | Interface    | ADC         |                            |
 | Provides     | temperature | celsius degrees            |
 | Properties   | none        |                            |
-| [Datasheet](https://cdn.sparkfun.com/datasheets/Sensors/Temp/ntcle100.pdf)    |             | ![](http://git.whitecatboard.org/thermistor.png)                           |
+| [Datasheet](https://cdn.sparkfun.com/datasheets/Sensors/Temp/ntcle100.pdf)    |             |                            |
 
 
 # Code
@@ -18,3 +18,5 @@ s1 = sensor.attach("THERMISTOR", adc.ADC1, pio.GPIO35, 12)
 -- Read temperature
 s1:read("temperature")
 ```
+
+[Back to sensor list](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Sensor-module#supported-sensors)
