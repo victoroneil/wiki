@@ -2,11 +2,11 @@
 
 | What         |                | Comments                   |
 |--------------|----------------|----------------------------|
-| Identifier   | AH49E          |                            |
+| Identifier   | AH49E          | ![](http://git.whitecatboard.org/ah49e.png)                           |
 | Interface    | ADC            |                            |
 | Provides     | magnetic field | gauss                      |
 | Properties   | none           |                            |
-| [Datasheet](https://www.diodes.com/assets/Datasheets/AH49E.pdf)    |             | ![](http://git.whitecatboard.org/ah49e.png)                           |
+| [Datasheet](https://www.diodes.com/assets/Datasheets/AH49E.pdf)    |             |                            |
 
 
 # Code
@@ -20,3 +20,5 @@ while true do
   tmr.delayms(500)
 end
 ```
+
+[Back to sensor list](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Sensor-module#supported-sensors)
