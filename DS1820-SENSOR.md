@@ -2,14 +2,14 @@
 
 | What         |             | Comments                    |
 |--------------|-------------|-----------------------------|
-| Identifier   | DS1820      |                             |
+| Identifier   | DS1820      | ![](http://git.whitecatboard.org/ds1820.png)                            |
 | Interface    | 1-WIRE      |                             |
 | Provides     | temperature | celsius degrees             |
 | Properties   | resolution  | bits of resolution          |
 |              | rom         | address in the bus          |
 |              | type        | model                       |
 |              | numdev      | number of DS180 sensors in the bus |
-| [Datasheet](https://datasheets.maximintegrated.com/en/ds/DS18S20.pdf)           |             | ![](http://git.whitecatboard.org/ds1820.png)                                  |
+| [Datasheet](https://datasheets.maximintegrated.com/en/ds/DS18S20.pdf)           |             |                                  |
 
 
 # Code
@@ -23,3 +23,5 @@ while true do
   tmr.delayms(500)
 end
 ```
+
+[Back to sensor list](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Sensor-module#supported-sensors)
