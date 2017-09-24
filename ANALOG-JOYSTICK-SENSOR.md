@@ -40,3 +40,5 @@ s:callback(function(data)
   end
 end)
 ```
+
+[Back to sensor list](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Sensor-module#supported-sensors)
