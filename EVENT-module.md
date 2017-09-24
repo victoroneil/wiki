@@ -11,4 +11,6 @@ In programming, multiple threads can communicate with each other by signaling ev
 
   In a home automation application, a thread may be monitoring the presence of fire. If fire is detected the thread generates an alarm event to 2 threads: one to establish a communication with the firemen, and another to activate a series of actuators to extinguish the fire.
 
+To use this module you must take into consideration the following:
 
+  1. Create an event using the event.create function.
