@@ -2,12 +2,12 @@
 
 | What         |             | Comments                   |
 |--------------|-------------|----------------------------|
-| Identifier   | AM412       |                            |
+| Identifier   | AM412       | ![](http://git.whitecatboard.org/AM412.png)                           |
 | Interface    | GPIO        |                            |
 | Provides     | presence    | 1 = somebody in area       |
 |              |             | 0 = nobody in area         |
 | Properties   | none        |                            |
-| [Datasheet](http://aitendo3.sakura.ne.jp/aitendo_data/product_img/sensor/AM412/Am412.pdf)    |             | ![](http://git.whitecatboard.org/AM412.png)                           |
+| [Datasheet](http://aitendo3.sakura.ne.jp/aitendo_data/product_img/sensor/AM412/Am412.pdf)    |             |                            |
 
 
 # Code
@@ -39,3 +39,5 @@ while true do
    end
 end
 ```
+
+[Back to sensor list](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Sensor-module#supported-sensors)
