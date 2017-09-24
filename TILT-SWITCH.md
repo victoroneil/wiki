@@ -9,6 +9,9 @@
 | Callbacks?   | yes         |                            |
 | [Datasheet](http://funduino.de/DL/SW-520D.pdf)    |             |                            |
 
+# Notes
+
+* Hardware pull-ups are not required for switch.
 
 # Code
 
