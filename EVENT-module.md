@@ -19,4 +19,14 @@ To use this module you must take into consideration the following:
      keyPressed = event.create()
      ```
 
-  2. Use the event instance in 
+  2. Use the event instance and call to the wait function when a thread requires to wait for the event. When the event is processed call to the done function.
+
+     ```lua
+     while true do
+        keyPressed:wait()
+        print("a key is pressed")
+        keyPressed:done()
+     end
+     ``` 
+
+  3. Use the event instance an call to the broadcast function
