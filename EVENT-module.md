@@ -29,4 +29,8 @@ To use this module you must take into consideration the following:
      end
      ``` 
 
-  3. Use the event instance an call to the broadcast function
+  3. Use the event instance an call to the broadcast function when you need to inform the waiting threads that the event has occurred.
+
+     ```lua
+     keyPressed:broadcast()
+     ```
