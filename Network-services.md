@@ -11,20 +11,22 @@ This service can be used by the programmer for get the current time from a NTP s
 
 For start this service:
 
-```lua
--- Setup and start an ethernet connection
-net.en.setup()
-net.en.start()
+   ```lua
+   -- Setup and start an ethernet connection
+   net.en.setup()
+   net.en.start()
 
--- Sync Lua RTOS clock with an NTP server
-net.service.sntp.start()
-```
+   -- Sync Lua RTOS clock with an NTP server
+   net.service.sntp.start()
+   ```
+
+   The net.service.sntp.start accepts an optional argument to set the NTP server name to use. If this argument is not provided the NTP server name is set to "pool.ntp.org".
 
 For stop this service:
 
-```lua
-net.service.sntp.stop()
-```
+   ```lua
+   net.service.sntp.stop()
+   ```
 
 # HTTP
 
