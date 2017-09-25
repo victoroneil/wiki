@@ -3,9 +3,9 @@ Lua RTOS has support for the following network services:
 * [ping](#ping)
 * [scp put](#netscpputhost-port-src-dst-user-password)
 * [scp putget](#netscpgethost-port-src-dst-user-password)
-* [ssh exec](#ssh)
+* [ssh exec](#netsshexechost-port-command-line-user-password)
 
-# net.ping(host)
+## net.ping(host)
 
 The net.ping utility is used to test the reachability of a host on an Internet Protocol (IP) network. The host argument is a string with the host name o the host ip address.
 
@@ -45,9 +45,9 @@ round-trip min/avg/max/stddev = 27.440/27.762/27.853/0.140 ms
 
 Pinging can be interrupted pressing the Ctrl-c key.
 
-# net.scp.put(host, port, src, dst, user, password)
+## net.scp.put(host, port, src, dst, user, password)
 
-# net.scp.get(host, port, src, dst, user, password)
+## net.scp.get(host, port, src, dst, user, password)
 
-# net.ssh.exec(host, port, command line, user, password)
+## net.ssh.exec(host, port, command line, user, password)
 
