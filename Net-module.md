@@ -18,11 +18,11 @@ Please, keep in mind that SPI ethernet support is not enabled by default in KCon
 
 * Check the SPI pin map, and adapt the map to your needs. This is done under the "Component config -> Lua RTOS -> Hardware -> SPI pin map" category in Kconfig.
 
-   ![](https://git.whitecatboard.org/spi_eth_1.png)
+   ![](http://git.whitecatboard.org/spi_eth_1.png)
 
 * Enable SPI ethernet support, and adapt de default configuration to your needs. This is done under "Component config -> Lua RTOS -> Hardware -> SPI ethernet" category in Kconfig.
 
-   ![](https://git.whitecatboard.org/spi_eth_2.png)
+   ![](http://git.whitecatboard.org/spi_eth_2.png)
 
 # Key concepts
 
