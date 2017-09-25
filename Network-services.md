@@ -1,11 +1,11 @@
 Lua RTOS has support for the following network services:
 
-* [SNTP](#sntp)
-* [HTTP](#http)
-* [CAPTIVE DNS](#captive-dns])
+* [sntp](#sntp)
+* [http](#http)
+* [Captive DNS](#captive-dns])
 * [MDNS](#mdns)
 
-# SNTP
+## sntp
 
 This service can be used by the programmer for get the current time from a NTP server and update the internal Lua RTOS clock with this time.
 
@@ -28,8 +28,8 @@ The net.service.sntp.start accepts an optional argument to set the NTP server na
    net.service.sntp.stop()
    ```
 
-# HTTP
+# http
 
-# CAPTIVE DNS
+# Captive DNS
 
 # MDNS
