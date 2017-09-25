@@ -270,6 +270,7 @@ Returns: a mutex instance, or an exception. You must store this instance into a 
 Locks the mutex instance. If the mutex is locked by other thread, the calling thread is blocked until the mutex is unlocked.
 
 Arguments: nothing.
+
 Returns: nothing.
 
 # instance:unlock()
@@ -277,6 +278,7 @@ Returns: nothing.
 Unlocks the mutex instance.
 
 Arguments: nothing.
+
 Returns: nothing.
 
 # instance:trylock()
@@ -284,4 +286,5 @@ Returns: nothing.
 Try to lock the mutex. If the mutex is locked by other thread this functions returns false, and the calling thread is not blocked. If the mutex is not locked by other thread this functions locks the mutex and returns true.
 
 Arguments: nothing.
+
 Returns: true if the mutex has been locked by the calling process, or false if the mutex is locked by other threads.
