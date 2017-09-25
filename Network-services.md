@@ -2,7 +2,7 @@ Lua RTOS has support for the following network services:
 
 * [sntp](#sntp)
 * [http](#http)
-* [Captive DNS](#captive-dns])
+* [Captive DNS](#captive-dns)
 * [MDNS](#mdns)
 
 ## sntp
