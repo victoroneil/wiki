@@ -8,7 +8,7 @@ The functions of this module are organized in the following categories:
 
 * [Thread management functions](#thread-management-functions)
 * [Thread control functions](#thread-control-functions)
-
+* [Mutual exclusion functions](#mutual-exclusion-functions)
 
 # Thread management functions
 
@@ -250,3 +250,38 @@ Returns: nothing.
 -- Sleep for 500000 micro seconds (0,5 seconds)
 thread.sleepus(500000)
 ```
+
+# Mutual exclusion functions
+
+Mutual exclusion (mutex) is a property of concurrency control, which is instituted for the purpose of preventing race conditions; it is the requirement that one thread of execution never enter to a critical section at the same time that another concurrent thread of execution enters in the critical section.
+
+# instance = thread.createmutex([type])
+
+Creates a mutex instance.
+
+Arguments:
+
+* type (optional): type of mutex, can be either thread.Lock or thread.RecursiveLock. The default mutex type is thread.RecursiveLock.
+
+Returns: a mutex instance, or an exception. You must store this instance into a variable for further operations with it.
+
+# instance:lock()
+
+Locks the mutex instance. If the mutex is locked by other thread, the calling thread is blocked until the mutex is unlocked.
+
+Arguments: nothing.
+Returns: nothing.
+
+# instance:unlock()
+
+Unlocks the mutex instance.
+
+Arguments: nothing.
+Returns: nothing.
+
+# instance:trylock()
+
+Try to lock the mutex. If the mutex is locked by other thread this functions returns false, and the calling thread is not blocked. If the mutex is not locked by other thread this functions locks the mutex and returns true.
+
+Arguments: nothing.
+Returns: true if the mutex has been locked by the calling process, or false if the mutex is locked by other threads.
