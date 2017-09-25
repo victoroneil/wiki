@@ -36,6 +36,8 @@ Please, keep in mind that SPI ethernet support is not enabled by default in KCon
    make flash
    ```
 
+   Read the following [instructions](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/How-to-build) if you need a complete guide about how to build Lu RTOS.
+
 # Key concepts
 
 To use this module you must take into consideration the following:
