@@ -6,8 +6,8 @@ Lua RTOS can execute Lua functions into FreeRTOS native threads. Unlike Lua coro
 
 The functions of this module are organized in the following categories:
 
-* [Thread management functions](#configuration-functions)
-* [Thread control functions](#operation-functions)
+* [Thread management functions](#thread-management-functions)
+* [Thread control functions](#thread-control-functions)
 
 
 # Thread management functions
