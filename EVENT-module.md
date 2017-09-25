@@ -81,6 +81,8 @@ sensorsAttached = event.create()
 
 thread.start(function()
    sensorsAttached:wait()
+   sensorsAttached:done()
+
    while true do
         print("Monitor")
 
