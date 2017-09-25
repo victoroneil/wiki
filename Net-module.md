@@ -14,14 +14,14 @@ The functions of this module are organized in the following categories:
 
 To use this module you must take into consideration the following:
 
-1. Configure the interface, using the interface's setup function.
+1. Setup the interface.
 
    ```lua
    -- Setup wifi
    net.wf.setup(...)
    ````
 
-1. Start the interface, using the interface's start function.
+1. Start the interface.
 
    ```lua
    -- Start wifi
@@ -30,7 +30,7 @@ To use this module you must take into consideration the following:
 
 1. Interact with the network, for example, creating and MQTT client instance and publish some messages.
 
-1. Stop the interface, using the interface's stop function.
+1. Stop the interface.
 
    ```lua
    -- Stop wifi
