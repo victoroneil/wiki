@@ -28,7 +28,7 @@ General purpose modules:
    * [Network services](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Network-services)
    * [Network utilities](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Network-utilities)
 
-Middleware modules
+Middleware modules:
 
 * LoRa WAN
    * [LoRa WAN node](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/LoRa-WAN-node-module)
