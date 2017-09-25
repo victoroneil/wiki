@@ -16,6 +16,12 @@ Currently only SPI ethernet based on the ENC424J600 chip is supported in Lua RTO
 
 Please, keep in mind that SPI ethernet support is not enabled by default in KConfig. For enable it, follow the following steps:
 
+* Run the config utility.
+
+   ```lua
+   make menuconfig
+   ```
+
 * Check the SPI pin map, and adapt the map to your needs. This is done under the "Component config -> Lua RTOS -> Hardware -> SPI pin map" category in Kconfig.
 
    ![](http://git.whitecatboard.org/spi_eth_1.png)
@@ -23,6 +29,12 @@ Please, keep in mind that SPI ethernet support is not enabled by default in KCon
 * Enable SPI ethernet support, and adapt de default configuration to your needs. This is done under "Component config -> Lua RTOS -> Hardware -> SPI ethernet" category in Kconfig.
 
    ![](http://git.whitecatboard.org/spi_eth_2.png)
+
+* Save changes and build.
+
+   ```lua
+   make flash
+   ```
 
 # Key concepts
 
