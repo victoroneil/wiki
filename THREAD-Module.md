@@ -195,6 +195,7 @@ thread.status(th1)
 > suspended
 ```
 
+# Thread control functions
 
 ## thread.sleep(seconds)
 
