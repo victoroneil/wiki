@@ -9,6 +9,7 @@ The functions of this module are organized in the following categories:
 
 * [Common functions](#common-functions)
 * [Wi-Fi functions](#wi-fi)
+* [Ethernet functions](#ethernet)
 
 # Comments about ethernet
 
@@ -299,3 +300,13 @@ Stop the wifi interface.
 
 Arguments: nothing.
 Returns: nothing, or an exception.
+
+# Ethernet
+
+## net.en.setup([ip, mask, gw, dns1, dns2])
+
+Setup an ethernet connection.
+
+Arguments:
+
+* ip (optional): the ip address assigned. Use the net.packip function for 
