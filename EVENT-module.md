@@ -81,5 +81,6 @@ In the following example a set of sensors are attached in the main thread, and o
 sensorsAttached = event.create()
 
 -- Instantiate sensors
+temp = sensor.attach("TMP36", adc.ADC1, 6)
 
 ```
