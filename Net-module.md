@@ -303,10 +303,24 @@ Returns: nothing, or an exception.
 
 # Ethernet
 
-## net.en.setup([ip, mask, gw, dns1, dns2])
+## net.en.setup(ip, mask, gw, [dns1, dns2])
 
-Setup an ethernet connection.
+Setup an ethernet connection with a fixed ip address.
 
 Arguments:
 
-* ip (optional): the ip address assigned. Use the net.packip function for 
+* ip: ip address, in packet representation. Use the net.packip for this.
+* mask: network mask, in packet representation. Use the net.packip for this.
+* gw: gateway ip, in packet representation. Use the net.packip for this.
+* dns1 (optional): ip of the main dns server to use for resolve names, in packet representation. Use the net.packip for this. If this argument is not provided dns1 is set to 8.8.8.8.
+* dns2 (optional): ip of the secondry dns server to use for resolve names, in packet representation. Use the net.packip for this. If this argument is not provided dns2 is set to 8.8.4.4.
+
+Returns: nothing or an exception.
+
+```lua
+net.en.setup(
+   net.packip(192,168,1,200), net.packip(255,255,255,0),
+   net.packip(192,168,1,1),
+   net.packip(8,8,8,8), net.packip(8,8,4,4)
+)
+```
