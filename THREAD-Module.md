@@ -4,7 +4,7 @@ A thread of execution is the smallest sequence of programmed instructions that c
 
 Lua RTOS can execute Lua functions into FreeRTOS native threads. Unlike Lua coroutines, threads are scheluded by the operating system, allowing to run Lua programs in real time.
 
-# Functions
+# Thread management functions
 
 ## thread.start(function, [stack, priority, cpu])
 
