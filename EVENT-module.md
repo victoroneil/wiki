@@ -36,3 +36,13 @@ To use this module you must take into consideration the following:
      ```
 
      The broadcast function accepts a boolean argument to indicate if the calling thread must wait for the process of the event by all the waiting threads.
+
+# Functions
+
+## instance = event.create()
+
+## instance:broadcast(wait for completion) 
+
+## instance:wait()
+
+## instance:done()
