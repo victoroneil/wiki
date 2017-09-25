@@ -97,7 +97,7 @@ Lua RTOS allows the programmer to access to external ADC units using the same AP
 
 # Configuration funcions
 
-## adc = adc.attach(id, channel, [resolution, vref, max value])
+## instance = adc.attach(id, channel, [resolution, vref, max value])
 
 Attach an ADC device to an ADC channel.
 
