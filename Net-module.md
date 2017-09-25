@@ -13,7 +13,7 @@ The functions of this module are organized in the following categories:
 
 # Comments about ethernet
 
-Currently only SPI ethernet based on the ENC424J600 chip is supported in Lua RTOS. This is a design decision due to that SPI ethernet only requires 2 dedicated GPIO (chip select, and interrupt) and 3 GPIO more that correspond to the SPI signals (clk, miso, mosi).
+Currently only SPI ethernet based on the ENC424J600 chip is supported in Lua RTOS. This is a design decision due to that SPI ethernet only requires 2 dedicated GPIO (chip select, and interrupt) and 3 shared GPIO that correspond to the SPI signals (clk, miso, mosi).
 
 Please, keep in mind that SPI ethernet support is not enabled by default in KConfig. For enable it, follow the following steps:
 
