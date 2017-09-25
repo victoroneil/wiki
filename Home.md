@@ -20,6 +20,7 @@ General purpose modules:
 * [Sleep](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Sleep)
 * [File system](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/File-system)
 * [Thread](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Thread-Module)
+* [Event](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/EVENT-module)
 * [NVS (non volatile storage)](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/NVS-Module)
 * [Net](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Net-Module)
    * [Wi-Fi](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Net-module#wi-fi)
