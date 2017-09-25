@@ -1,6 +1,6 @@
 # About this
 
-In programming, multiple threads can communicate with each other by signaling events and handling events. An event, then, is like a message from one thread to another threads.
+In programming, multiple threads can communicate with each other by signaling events and handling events. An event, then, is like a message from one thread to another thread.
 
   **Example 1:**
  
