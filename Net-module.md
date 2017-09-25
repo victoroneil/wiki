@@ -10,6 +10,20 @@ The functions of this module are organized in the following categories:
 * [Common functions](#common-functions)
 * [Wi-Fi functions](#wi-fi)
 
+# Comments about ethernet
+
+Currently only SPI ethernet based on the ENC424J600 chip is supported in Lua RTOS. This is a design decision due to that SPI ethernet only requires 2 dedicated GPIO (chip select, and interrupt) and 3 GPIO more that correspond to the SPI signals (clk, miso, mosi).
+
+Please, keep in mind that SPI ethernet support is not enabled by default in KConfig. For enable it, follow the following steps:
+
+* Check the SPI pin map, and adapt the map to your needs. This is done under the "Component config -> Lua RTOS -> Hardware -> SPI pin map" category in Kconfig.
+
+   ![](https://git.whitecatboard.org/spi_eth_1.png)
+
+* Enable SPI ethernet support, and adapt de default configuration to your needs. This is done under "Component config -> Lua RTOS -> Hardware -> SPI ethernet" category in Kconfig.
+
+   ![](https://git.whitecatboard.org/spi_eth_2.png)
+
 # Key concepts
 
 To use this module you must take into consideration the following:
