@@ -1,9 +1,10 @@
-# thread module
+# About this
 
-This module contains functions for running Lua functions into native threads. 
-Unlike Lua coroutines, native threads are scheluded by the operating system, 
-allowing to run operations in real time.
+A thread of execution is the smallest sequence of programmed instructions that can be managed independently by a scheduler, which is a part of the operating system. Multiple threads can exist, executing concurrently and sharing resources such as memory.
 
+Lua RTOS can execute Lua functions into FreeRTOS native threads. Unlike Lua coroutines, threads are scheluded by the operating system, allowing to run Lua programs in real time.
+
+# Functions
 
 ## thread.start(function, [stack, priority, cpu])
 
