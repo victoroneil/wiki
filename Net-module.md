@@ -318,9 +318,65 @@ Arguments:
 Returns: nothing or an exception.
 
 ```lua
+-- Setup an ethernet connection
+-- ip: 192.168.1.200
+-- net mask: 255.255.255.0
+-- gw: 192.168.1.1
+-- dns1: 8.8.8.8
+-- dns2: 8.8.4.4
 net.en.setup(
    net.packip(192,168,1,200), net.packip(255,255,255,0),
    net.packip(192,168,1,1),
    net.packip(8,8,8,8), net.packip(8,8,4,4)
 )
+```
+
+## net.en.setup()
+
+Setup an ethernet connection with a dynamic ip. Connection settings are get from a DHCP server.
+
+Arguments: nothing.
+
+Returns: nothing or an exception.
+
+```lua
+-- Setup an ethernet connection
+net.en.setup()
+```
+
+## net.en.start()
+
+Start the ethernet interface.
+
+Arguments: nothing.
+
+Returns: nothing or an exception.
+
+```lua
+-- Setup an ethernet connection
+net.en.setup()
+
+-- Start
+net.en.start()
+```
+
+## net.en.stop()
+
+Stop the ethernet interface.
+
+Arguments: nothing.
+
+Returns: nothing or an exception.
+
+```lua
+-- Setup an ethernet connection
+net.en.setup()
+
+-- Start
+net.en.start()
+
+....
+
+-- Stop
+net.en.stop()
 ```
