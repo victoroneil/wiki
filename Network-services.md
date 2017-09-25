@@ -28,8 +28,8 @@ The net.service.sntp.start accepts an optional argument to set the NTP server na
    net.service.sntp.stop()
    ```
 
-# http
+## http
 
-# Captive DNS
+## Captive DNS
 
-# MDNS
+## MDNS
