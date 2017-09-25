@@ -70,3 +70,16 @@ Indicates that the thread has been processed the event.
 
 Arguments: nothing.
 Returns: nothing.
+
+# Example
+
+In the following example a set of sensors are attached in the main thread, and once attached the sensor values are monitored in a secondary thread.
+
+```lua
+
+-- Create an event
+sensorsAttached = event.create()
+
+-- Instantiate sensors
+
+```
