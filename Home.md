@@ -25,6 +25,7 @@ General purpose modules:
 * [Net](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Net-Module)
    * [Wi-Fi](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Net-module#wi-fi)
    * [Ethernet](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Net-module#ethernet)
+   * [Network services](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Network-services)
 
 Middleware modules
 
