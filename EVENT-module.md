@@ -76,11 +76,28 @@ Returns: nothing.
 In the following example a set of sensors are attached in the main thread, and once attached the sensor values are monitored in a secondary thread.
 
 ```lua
+-- Create a thread for monitor the sensor values
+thread.create(function()
+   -- Wait until all sensors are attached
+   sensorsAttached:wait()
+
+   -- Monitor sensors
+   while true do
+      print("Monitor step")
+      distance_r = right:read("distance")
+      distance_l = right:read("distance")
+      
+      tmr.delayms(500)
+   end
+end)
 
 -- Create an event
 sensorsAttached = event.create()
 
 -- Instantiate sensors
-temp = sensor.attach("TMP36", adc.ADC1, 6)
+right = sensor.attach("2Y0A21", adc.ADS1115, 0)
+left  = sensor.attach("2Y0A21", adc.ADS1115, 0)
 
+-- Broadcast event
+sensorsAttached:broadcast()
 ```
