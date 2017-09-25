@@ -36,7 +36,23 @@ Please, keep in mind that SPI ethernet support is not enabled by default in KCon
    make flash
    ```
 
-   Read the following [instructions](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/How-to-build) if you need a complete guide about how to build Lu RTOS.
+   Read the following [instructions](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/How-to-build) if you need a complete guide about how to build Lua RTOS.
+
+* Connect the hardware.
+
+   In our tests we use the [Pmod NIC100 module](http://store.digilentinc.com/pmod-nic100-network-interface-controller).
+
+   Proposed connections:
+
+   | ESP32              | Pmid NIC100   |
+   |--------------------|---------------|
+   | GPIO19 - SPI3 MISO | PIN 2 - MISO  |
+   | GPIO23 - SPI3 MOSI | PIN 3 - MOSI  |
+   | GPIO18 - SPI3 CLK  | PIN 4 - SCLK  |
+   | GPIO26             | PIN 1 - CS    |
+   | GPIO21             | PIN 7 - NINT  |
+   | VCC (3.3V)         | PIN 6 - VCC   |
+   | GND                | PIN 5 - GND   |
 
 # Key concepts
 
