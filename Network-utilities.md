@@ -43,7 +43,7 @@ PING 8.8.8.8 (8.8.8.8): 32 data bytes
 round-trip min/avg/max/stddev = 27.440/27.762/27.853/0.140 ms
 ```
 
-Pinging can be interrupted pressing the Ctrl-c key.
+Pinging can be interrupted by pressing the Ctrl-c key.
 
 ## net.scp.put(host, port, src, dst, user, password)
 
