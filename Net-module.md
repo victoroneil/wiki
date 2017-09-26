@@ -47,8 +47,8 @@ Please, keep in mind that SPI ethernet support is not enabled by default in KCon
 
    | ESP32              | Pmid NIC100   |
    |--------------------|---------------|
-   | GPIO19 - SPI3 MISO | PIN 2 - MISO  |
-   | GPIO23 - SPI3 MOSI | PIN 3 - MOSI  |
+   | GPIO19 - SPI3 MISO | PIN 3 - MOSI  |
+   | GPIO23 - SPI3 MOSI | PIN 2 - MISO  |
    | GPIO18 - SPI3 CLK  | PIN 4 - SCLK  |
    | GPIO26             | PIN 1 - CS    |
    | GPIO21             | PIN 7 - NINT  |
