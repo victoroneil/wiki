@@ -37,13 +37,14 @@ Middleware modules:
 
 Low-level hardware access modules:
 
-* [TIMER](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/TIMER-module)
-* [PIO](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/PIO-Module)
 * [ADC](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/ADC-Module)
+* [CAN](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/CAN-module)
+* [PIO](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/PIO-Module)
 * [PWM](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/PWM-Module)
 * [SPI](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/SPI-Module)
+* [TIMER](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/TIMER-module)
 * [UART](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/UART-Module)
-* [CAN](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/CAN-module)
+* [ULP](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/ULP-Module)
 
 High-level hardware access modules:
 
