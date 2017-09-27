@@ -11,3 +11,7 @@ The functions of this module are organized in the following categories:
 * [Information functions](#information-functions)
 * [Configuration functions](#configuration-functions)
 * [Operation functions](#operation-functions)
+
+# Key concepts
+
+I²C (Inter-Integrated Circuit), is a multi-master, multi-slave, packet switched, single-ended, serial computer bus invented by Philips Semiconductor (now NXP Semiconductors). It is typically used for attaching lower-speed peripheral ICs to processors and microcontrollers in short-distance, intra-board communication.
