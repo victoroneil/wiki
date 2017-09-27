@@ -8,7 +8,6 @@ I2C module can work in master or slave mode, each of then identified by i2c.MAST
 
 The functions of this module are organized in the following categories:
 
-* [Information functions](#information-functions)
 * [Configuration functions](#configuration-functions)
 * [Operation functions](#operation-functions)
 
@@ -23,3 +22,17 @@ The I²C reference design has a 7-bit or a 10-bit (depending on the device used)
 Note the bit rates are quoted for the transactions between master and slave without clock stretching or other hardware overhead. Protocol overheads include a slave address and perhaps a register address within the slave device, as well as per-byte ACK/NACK bits. Thus the actual transfer rate of user data is lower than those peak bit rates alone would imply. For example, if each interaction with a slave inefficiently allows only 1 byte of data to be transferred, the data rate will be less than half the peak bit rate.
 
 The maximal number of nodes is limited by the address space and also by the total bus capacitance of 400 pF, which restricts practical communication distances to a few meters.
+
+# Configuration functions
+
+## instance = i2c.attach(id, mode, [speed])
+
+Attach an I2C unit.
+
+Arguments:
+
+* id: I2C unit identifier. Use i2c.I2Cx defined for this purpose.
+* mode: can be either i2c.MASTER or i2c.SLAVE. For now only i2c.MASTER is supported.
+* speed (optional): I2C bus speed, expressed in hertz. This argument is optional, and if not provided default speed for 40000 (400 Khertz) is applied.
+
+Returns: i2c device instance, or an exception. You must store this instance into a variable for further operations with it.
