@@ -28,8 +28,109 @@ The net.service.sntp.start accepts an optional argument to set the NTP server na
    net.service.sntp.stop()
    ```
 
-## http
+## HTTP
+
+This service can be started to serve files via the http:// protocol.
+For security reasons the document root is configured at compile time.
+If a http request doesn't point to a file but a directory then that directory is searched for a file named index.lua or index.html If one of those is found the file is served, if none is found a directory listing is generated.
+If a file is requested that ends on .lua then that file is being executed before it is served to the client.
+
+**To start this service:**
+
+```lua
+-- Setup and start an ethernet connection
+net.en.setup()
+net.en.start()
+
+-- Start HTTP server
+net.service.http.start()
+```
+
+**To stop this service:**
+
+```lua
+net.service.http.stop()
+```
 
 ## Captive DNS
 
+This service can be started to serve fake DNS answers to queries from other devices. That is useful if the Lua RTOS device creates a wifi AP and clients need to connect to the device e.g. to configure the actual wifi settings via a web browser. The Captive DNS service helps by automatically redirecting all name resolution to the Lua RTOS device's local ip in the same way as standard Captive Wifi logon portals do. Instead of providing a website with an "accept" button as usual captive portals (do for legal reasons) the Lua RTOS device can use the HTTP service with lua scripts to e.g. present a Lua RTOS device configuration form. For most operating systems the form will open automatically on the client device once it has connected to the AP.
+
+**To start this service:**
+
+```lua
+-- Setup and start an ethernet connection
+net.en.setup()
+net.en.start()
+
+-- Start HTTP server
+net.service.http.start()
+
+-- Start the Captive DNS service
+net.service.captivedns.start()
+```
+
+**To stop this service:**
+
+```lua
+net.service.captivedns.stop()
+```
+
 ## MDNS
+
+This service adds support for Multicast DNS. MDNS service is configured on a per-interface basis.
+
+mdns = net.service.mdns.start(interface [, hostname [, instancename]])
+
+interface can be one of
+* net.service.mdns.WIFI_STA
+* net.service.mdns.WIFI_AP
+* net.service.mdns.ETH
+* net.service.mdns.SPI_ETH
+
+**To start this service for an interface:**
+
+```lua
+mdns = net.service.mdns.start(net.service.mdns.WIFI_AP)
+```
+
+**To stop this service for an instance:**
+
+```lua
+-- Remove all services from the mdns instance
+mdns:stop()
+-- or simply destroy the instance
+mdns = nil
+```
+
+**To find a device by hostname:**
+
+```lua
+results = mdns:resolvehost(hostname [, timeout_seconds])
+```
+
+**To find a device by service type:**
+
+```lua
+service = "_http"
+protocol = "_tcp"
+results = mdns:findservice(service, protocol [, timeout_seconds])
+```
+
+**To make the Lua RTOS device itself advertise a service:**
+
+```lua
+service = "_http"
+protocol = "_tcp"
+port = 80
+instancename = "ESP WebServer"
+mdns:addservice(service, protocol, port [, instancename [, txt_table]])
+```
+
+**To make the Lua RTOS device itself no longer advertise a previously added service:**
+
+```lua
+service = "_http"
+protocol = "_tcp"
+mdns:removeservice(service, protocol)
+```
