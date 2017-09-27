@@ -78,7 +78,7 @@ net.service.captivedns.stop()
 
 ## MDNS
 
-This service adds support for Multicast DNS aka Zeroconf. MDNS service is configured on a per-interface basis.
+This service adds support for Multicast DNS. MDNS service is configured on a per-interface basis.
 
 mdns = net.service.mdns.start(interface [, hostname [, instancename]])
 
