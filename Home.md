@@ -17,6 +17,7 @@ General purpose modules:
 * [Exception handling](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Exception-handling)
 * [Lua RTOS configuration](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Lua-RTOS-configuration)
 * [Lua RTOS & board status](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Lua-RTOS-&-board-status)
+* [CPU](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/CPU-module)
 * [Sleep](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Sleep)
 * [File system](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/File-system)
 * [Thread](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Thread-Module)

@@ -1,4 +1,4 @@
-The Lua RTOS & board status functions provides information about the operation system and board status. This functions are provided as an extension of the Lua os module.
+The Lua RTOS & board status functions provides information about the operation system and board status. These functions are provided as an extension of the Lua os module.
 
 ## os.cpu()
 

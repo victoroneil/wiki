@@ -1,9 +1,26 @@
 Lua RTOS has support for the following network services:
 
+* [curl](#curl)
 * [ping](#ping)
+* [scp get](#netscpgethost-port-src-dst-user-password)
 * [scp put](#netscpputhost-port-src-dst-user-password)
-* [scp putget](#netscpgethost-port-src-dst-user-password)
 * [ssh exec](#netsshexechost-port-command-line-user-password)
+
+## net.curl
+
+The net.curl utility supports the following functions:
+
+res, header, body = net.curl.get(url [, filename])
+res, header, body = net.curl.post(url, tparams)
+res, header, resp = net.curl.ftp(upload, url, user, pass [, filename])
+ret, msg = net.s.curl.sendmail(options)
+servername, serverport = net.curl.mailserver([servername, serverport])
+net.curl.cleanup()
+version, versionnum = net.curl.info([showdetails])
+verbose = net.curl.verbose([verbose])
+progress_seconds = net.curl.progress([progress_seconds])
+timeout_seconds = net.curl.timeout([timeout_seconds])
+maxbytes = net.curl.reclimit([maxbytes])
 
 ## net.ping(host)
 
@@ -45,9 +62,28 @@ round-trip min/avg/max/stddev = 27.440/27.762/27.853/0.140 ms
 
 Pinging can be interrupted by pressing the Ctrl-c key.
 
-## net.scp.put(host, port, src, dst, user, password)
-
 ## net.scp.get(host, port, src, dst, user, password)
 
+Transfers the file src from the remote host to the Lua device's file system with the name dst.
+
+```lua
+-- Get the file named src-filename.lua
+net.scp.get("remotehost",22,"~/lua/src-filename.lua","/examples/lua/dst-filename.lua","username","secretpass")
+```
+
+## net.scp.put(host, port, src, dst, user, password)
+
+Transfers the file src from the Lua device's file system to the remote host to the file named dst.
+
+```lua
+-- Put the local file named logfile.txt to the remote host
+net.scp.get("remotehost",22,"/examples/lua/logfile.txt","~/logs/logfile.txt","username","secretpass")
+```
+
 ## net.ssh.exec(host, port, command line, user, password)
+
+```lua
+-- Execute a command on the remote host
+net.ssh.exec("remotehost",22,"cat /foo/bar/secret.txt","username","secretpass")
+```
 
