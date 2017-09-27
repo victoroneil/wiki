@@ -36,3 +36,6 @@ Arguments:
 * speed (optional): I2C bus speed, expressed in hertz. This argument is optional, and if not provided default speed for 40000 (400 Khertz) is applied.
 
 Returns: i2c device instance, or an exception. You must store this instance into a variable for further operations with it.
+
+# Operation functions
+
