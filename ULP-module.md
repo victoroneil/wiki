@@ -123,7 +123,7 @@ Arguments:
 
 address: the address of the ULP variable as found in the .ld file during building the ULP program binary.
 
-Returns: the ulp-variable object
+Returns: an ulp-variable object
 
 ```lua
 -- Assign the ULP ADC Sample variable ulp_last_result to the lua variable ulp_last_result
