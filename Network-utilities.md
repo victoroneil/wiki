@@ -10,17 +10,17 @@ Lua RTOS has support for the following network services:
 
 The net.curl utility supports the following functions:
 
-res, header, body = net.curl.get(url [, filename])
-res, header, body = net.curl.post(url, tparams)
-res, header, resp = net.curl.ftp(upload, url, user, pass [, filename])
-ret, msg = net.s.curl.sendmail(options)
-servername, serverport = net.curl.mailserver([servername, serverport])
-net.curl.cleanup()
-version, versionnum = net.curl.info([showdetails])
-verbose = net.curl.verbose([verbose])
-progress_seconds = net.curl.progress([progress_seconds])
-timeout_seconds = net.curl.timeout([timeout_seconds])
-maxbytes = net.curl.reclimit([maxbytes])
+* res, header, body = net.curl.get(url [, filename])
+* res, header, body = net.curl.post(url, tparams)
+* res, header, resp = net.curl.ftp(upload, url, user, pass [, filename])
+* ret, msg = net.s.curl.sendmail(options)
+* servername, serverport = net.curl.mailserver([servername, serverport])
+* net.curl.cleanup()
+* version, versionnum = net.curl.info([showdetails])
+* verbose = net.curl.verbose([verbose])
+* progress_seconds = net.curl.progress([progress_seconds])
+* timeout_seconds = net.curl.timeout([timeout_seconds])
+* maxbytes = net.curl.reclimit([maxbytes])
 
 ## net.ping(host)
 

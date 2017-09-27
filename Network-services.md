@@ -83,10 +83,10 @@ This service adds support for Multicast DNS aka Zeroconf. MDNS service is config
 mdns = net.service.mdns.start(interface [, hostname [, instancename]])
 
 interface can be one of
-net.service.mdns.WIFI_STA
-net.service.mdns.WIFI_AP
-net.service.mdns.ETH
-net.service.mdns.SPI_ETH
+* net.service.mdns.WIFI_STA
+* net.service.mdns.WIFI_AP
+* net.service.mdns.ETH
+* net.service.mdns.SPI_ETH
 
 **To start this service for an interface:**
 
