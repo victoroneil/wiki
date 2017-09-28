@@ -19,7 +19,7 @@ standby current is 0.1uA, thus enabling a longer battery life.
 | Identifier   | ML8511       | ![](http://git.whitecatboard.org/ml8511.png)                            |
 | Interface    | ADC             |                             |
 | Provides     | intensity       | mW/cm2                      |
-| Properties   | enable signal   | This sensor has an EN (enable) pin, <br/>active high. This<br/> property sets the GPIO number<br/>to use for enable the sensor.<br/><br/>Default value is -1<br/>(sensor always enabled). | 
+| Properties   | enable signal   | This sensor has an EN (enable) pin, active high. This property sets the GPIO number to use for enable the sensor.<br/><br/>Default value is -1 (sensor always enabled). | 
 |              | calibration     | Calibration data +/- intensity  |
 | [Datasheet](https://cdn.sparkfun.com/datasheets/Sensors/LightImaging/ML8511_3-8-13.pdf) | | |
 
