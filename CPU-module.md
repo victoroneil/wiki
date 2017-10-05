@@ -47,6 +47,7 @@ Board: ESP32COREBOARD
 Get the reset reason.
 
 Arguments: nothing
+
 Returns: reset reason. one of
 
 cpu.RESET_POWERON
