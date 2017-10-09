@@ -72,8 +72,8 @@ Returns: the real baud rate set on the UART unit, or an exception. This might ha
 
 
 ```lua
--- Attach an UART device to UART3, 115200 bps, 8N1
-uart.attach(uart.UART3, 115200, 8, uart.PARNONE, uart.STOP1)
+-- Attach an UART device to UART2, 115200 bps, 8N1
+uart.attach(uart.UART2, 115200, 8, uart.PARNONE, uart.STOP1)
 ```
 
 ## uart = uart.setup(id, baud rate, data bits, parity, stop bits, [buffer size, flags])
@@ -131,15 +131,15 @@ Write data to an UART unit. Data can be a byte (raw data) or a string.
 Returns: nothing, or an exception.
 
 ```lua
--- Attach an UART device to UART3, 115200 bps, 8N1
-uart.attach(uart.UART3, 115200, 8, uart.PARNONE, uart.STOP1)
+-- Attach an UART device to UART2, 115200 bps, 8N1
+uart.attach(uart.UART2, 115200, 8, uart.PARNONE, uart.STOP1)
 
 -- Sends AT
-uart.write(uart.UART3, "AT")
+uart.write(uart.UART2, "AT")
 
 -- Sends \n and \r
-uart.write(uart.UART3, '\n')
-uart.write(uart.UART3, '\r')
+uart.write(uart.UART2, '\n')
+uart.write(uart.UART2, '\r')
 ```
 
 ## uart.read(id, format, timeout)
@@ -155,11 +155,11 @@ Arguments:
 Returns: the readed data, or nil if nothing is received in the specified timeout, or an exception.
 
 ```lua
--- Attach an UART device to UART3, 115200 bps, 8N1
-uart.attach(uart.UART3, 115200, 8, uart.PARNONE, uart.STOP1)
+-- Attach an UART device to UART2, 115200 bps, 8N1
+uart.attach(uart.UART2, 115200, 8, uart.PARNONE, uart.STOP1)
 
 -- Read line from UART, with a 500 milliseconds timeout
-uart.read(uart.UART3, "*l", 500)
+uart.read(uart.UART2, "*l", 500)
 ```
 
 ## uart.consume(id)
@@ -173,8 +173,8 @@ Arguments:
 Returns: nothing, or an exception.
 
 ```lua
--- Attach an UART device to UART3, 115200 bps, 8N1
-uart.attach(uart.UART3, 115200, 8, uart.PARNONE, uart.STOP1)
+-- Attach an UART device to UART2, 115200 bps, 8N1
+uart.attach(uart.UART2, 115200, 8, uart.PARNONE, uart.STOP1)
 
 -- Do something
 
@@ -182,5 +182,5 @@ uart.attach(uart.UART3, 115200, 8, uart.PARNONE, uart.STOP1)
 ...
 
 -- Consume all bytes from buffer
-uart.consume(uart.UART3)
+uart.consume(uart.UART2)
 ```
