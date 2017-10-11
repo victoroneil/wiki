@@ -289,6 +289,28 @@ Arguments:
 
 Returns: nothing, or an exception.
 
+```lua
+-- Setup a wifi connection using a dynamic IP
+net.nw.setup(net.wf.mode.STA, "ssid", "password")
+```
+
+```lua
+-- Setup a wifi connection using a static IP
+-- ip: 172.16.209.224
+-- net mask: 255.255.0.0
+-- gw: 172.16.0.1
+-- dns1: 8.8.8.8
+-- dns2: 8.8.4.4
+net.wf.setup(
+   net.wf.mode.STA,
+   "ssid",
+   "password",
+   net.packip(172,16,209,224), net.packip(255,255,255,0),
+   net.packip(172,16,0,1),
+   net.packip(8,8,8,8), net.packip(8,8,4,4)
+)
+```
+
 ## net.wf.setup(net.wf.mode.AP, [powersave, channel, hidden])
 
 Setup wifi interface in AP (access point) mode.
@@ -336,7 +358,12 @@ Arguments:
 Returns: nothing or an exception.
 
 ```lua
--- Setup an ethernet connection
+-- Setup an ethernet connection using a dynamic IP
+net.en.setup()
+```
+
+```lua
+-- Setup an ethernet connection using a static IP
 -- ip: 192.168.1.200
 -- net mask: 255.255.255.0
 -- gw: 192.168.1.1
