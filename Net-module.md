@@ -284,8 +284,7 @@ Arguments:
 * dns2 (optional): ip of the secondry dns server to use for resolve names, in packet representation. Use the net.packip for this. If this argument is not provided dns2 is set to 8.8.4.4.
 * power save (optional): power save. Can be either net.wf.powersave.NONE (don't set power save) or net.wf.powersave.MODEM. Default value is net.wf.powersave.NONE.
 * channel (optional): 
-  - When setup in AP is the channel number to use by the Soft-AP. It's a natural number between 1 and 13.
-  - When setup in STA is the starting channel number to use for connect the AP. It's a natural number between 1 and 13. Set to 0 if the AP's channel is unknown.
+  - The starting channel number to use to connect to the AP. It's a natural number between 1 and 13. Set to 0 if the AP's channel is unknown.
   - Default value is 0.
 
 Returns: nothing, or an exception.
@@ -300,9 +299,9 @@ Arguments:
 * password: network's password.
 * power save (optional): power save. Can be either net.wf.powersave.NONE (don't set power save) or net.wf.powersave.MODEM. Default value is net.wf.powersave.NONE.
 * channel (optional): 
-  - When setup in AP is the channel number to use by the Soft-AP. It's a natural number between 1 and 13.
-  - When setup in STA is the starting channel number to use for connect the AP. It's a natural number between 1 and 13. Set to 0 if the AP's channel is unknown.
+  - The channel number to use by the Soft-AP. It's a natural number between 1 and 13.
   - Default value is 0.
+* hidden (optional): If true the SSID is hidden, if false it's visible.
 
 Returns: nothing, or an exception.
 
