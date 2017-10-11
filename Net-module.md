@@ -269,13 +269,51 @@ Returns:
 scan = net.wf.scan(true)
 ````
 
-## net.wf.setup(mode, ssid, password, [powersave, channel, hidden])
 
-Setup wifi interface.
+
+
+
+## net.en.setup(ip, mask, gw, [dns1, dns2])
+
+Setup an ethernet connection with a fixed ip address.
 
 Arguments:
 
-* mode: wifi mode. Can be either net.wf.mode.STA (station) or net.wf.mode.AP (access point).
+* ip: ip address, in packet representation. Use the net.packip for this.
+* mask: network mask, in packet representation. Use the net.packip for this.
+* gw: gateway ip, in packet representation. Use the net.packip for this.
+* dns1 (optional): ip of the main dns server to use for resolve names, in packet representation. Use the net.packip for this. If this argument is not provided dns1 is set to 8.8.8.8.
+* dns2 (optional): ip of the secondry dns server to use for resolve names, in packet representation. Use the net.packip for this. If this argument is not provided dns2 is set to 8.8.4.4.
+
+Returns: nothing or an exception.
+
+## net.wf.setup(net.wf.mode.STA, ssid, password, [ip, mask, gw, dns1, dns2, powersave, channel, hidden])
+
+Setup wifi interface in STATION mode.
+
+Arguments:
+
+* ssid: network's ssid to connect.
+* password: network's password.
+* ip: ip address, in packet representation. Use the net.packip for this.
+* mask: network mask, in packet representation. Use the net.packip for this.
+* gw: gateway ip, in packet representation. Use the net.packip for this.
+* dns1 (optional): ip of the main dns server to use for resolve names, in packet representation. Use the net.packip for this. If this argument is not provided dns1 is set to 8.8.8.8.
+* dns2 (optional): ip of the secondry dns server to use for resolve names, in packet representation. Use the net.packip for this. If this argument is not provided dns2 is set to 8.8.4.4.
+* power save (optional): power save. Can be either net.wf.powersave.NONE (don't set power save) or net.wf.powersave.MODEM. Default value is net.wf.powersave.NONE.
+* channel (optional): 
+  - When setup in AP is the channel number to use by the Soft-AP. It's a natural number between 1 and 13.
+  - When setup in STA is the starting channel number to use for connect the AP. It's a natural number between 1 and 13. Set to 0 if the AP's channel is unknown.
+  - Default value is 0.
+
+Returns: nothing, or an exception.
+
+## net.wf.setup(net.wf.mode.AP, [powersave, channel, hidden])
+
+Setup wifi interface in AP mode.
+
+Arguments:
+
 * ssid: network's ssid to connect.
 * password: network's password.
 * power save (optional): power save. Can be either net.wf.powersave.NONE (don't set power save) or net.wf.powersave.MODEM. Default value is net.wf.powersave.NONE.
@@ -283,7 +321,6 @@ Arguments:
   - When setup in AP is the channel number to use by the Soft-AP. It's a natural number between 1 and 13.
   - When setup in STA is the starting channel number to use for connect the AP. It's a natural number between 1 and 13. Set to 0 if the AP's channel is unknown.
   - Default value is 0.
-* hidden (optional): only available when setup in AP mode. If true the SSID is hidden, if false it's visible.
 
 Returns: nothing, or an exception.
 
