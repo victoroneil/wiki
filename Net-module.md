@@ -269,24 +269,6 @@ Returns:
 scan = net.wf.scan(true)
 ````
 
-
-
-
-
-## net.en.setup(ip, mask, gw, [dns1, dns2])
-
-Setup an ethernet connection with a fixed ip address.
-
-Arguments:
-
-* ip: ip address, in packet representation. Use the net.packip for this.
-* mask: network mask, in packet representation. Use the net.packip for this.
-* gw: gateway ip, in packet representation. Use the net.packip for this.
-* dns1 (optional): ip of the main dns server to use for resolve names, in packet representation. Use the net.packip for this. If this argument is not provided dns1 is set to 8.8.8.8.
-* dns2 (optional): ip of the secondry dns server to use for resolve names, in packet representation. Use the net.packip for this. If this argument is not provided dns2 is set to 8.8.4.4.
-
-Returns: nothing or an exception.
-
 ## net.wf.setup(net.wf.mode.STA, ssid, password, [ip, mask, gw, dns1, dns2, powersave, channel, hidden])
 
 Setup wifi interface in STATION mode.
