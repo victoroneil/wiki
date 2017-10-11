@@ -271,7 +271,7 @@ scan = net.wf.scan(true)
 
 ## net.wf.setup(net.wf.mode.STA, ssid, password, [ip, mask, gw, dns1, dns2, powersave, channel, hidden])
 
-Setup wifi interface in STATION mode.
+Setup wifi interface in STA (station / client) mode.
 
 Arguments:
 
@@ -292,7 +292,7 @@ Returns: nothing, or an exception.
 
 ## net.wf.setup(net.wf.mode.AP, [powersave, channel, hidden])
 
-Setup wifi interface in AP mode.
+Setup wifi interface in AP (access point) mode.
 
 Arguments:
 
