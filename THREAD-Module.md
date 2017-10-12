@@ -12,7 +12,7 @@ The functions of this module are organized in the following categories:
 
 # Thread management functions
 
-## thread.start(function, [stack, priority, cpu])
+## thread.start(function, [stack, priority, cpu, name])
 
 Start a new thread.
 
@@ -22,6 +22,7 @@ Arguments:
 * stack (optional): the number of bytes to allocate for use as the thread's stack. Must be >= 2048.
 * priority (optional): the priority at which the thread will execute. Must be >= 3 and <= 25, where 3 is the minimal priority.
 * cpu (optional): the CPU at which the thread will execute.
+* name (optional): name to assign to the thread, for debug purposes.
 
 Returns: the thread identifier, or an exception. You must store this identifier into a variable for further operations with it.
 
