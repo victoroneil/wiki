@@ -18,11 +18,28 @@ List all threads.
 
 Arguments:
 
-  * table (optional):
-  * monitor(optional):
-  * all (optional):
+  * table (optional): if true, thread list is returned in a Lua table, if false thread list is printed on the console.
+  * monitor(optional): if true, the thread list is refreshed every 0.5 seconds. Only allowed if table = false.
+  * all (optional): if true show all threads. There are 3 types of threads:
 
-Returns: nothing.
+    * task: is a FreeRTOS task managed directly by FreeRTOS. This types of tasks corresponds to system tasks.
+    * thread: is a FreeRTOS task managed by the pthread API.
+    * lua: is a FreeRTOS task managed by the Lua thread module.
+
+Returns:
+
+  * if table is false: nothing or an exception.
+
+  * if table is true: a Lua table with the thread list result, or an exception. This table is an array of tables. Each entry corresponds to a thread. Each thread gives the following fields:
+
+    * thid: thread id.
+    * type: thread type, can be either task, thread or lua.
+    * name: thread name.
+    * status: for lua threads can be either run (running) or susp (suspended), and for other thread types is blank.
+    * core: CPU in which thread is pinned.
+    * stack_size: assigned stack size (in bytes) to the thread.
+    * free_stack: number of free bytes in the stack.
+    * used_stack: number of bytes used in the stack.
 
 ```lua
 / > thread.list()
