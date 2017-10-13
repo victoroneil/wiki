@@ -12,6 +12,34 @@ The functions of this module are organized in the following categories:
 
 # Thread management functions
 
+## thread.list([table, monitor, all])
+
+List all threads.
+
+Arguments:
+
+  * table (optional):
+  * monitor(optional):
+  * all (optional):
+
+Returns: nothing.
+
+```lua
+/ > thread.list()
+-----------------------------------------------------------------------------------------
+     |        |                  |        |      |      |            STACK               
+THID | TYPE   | NAME             | STATUS | CORE | PRIO |   SIZE     FREE     USED       
+-----------------------------------------------------------------------------------------
+   1   lua      lua                run         0     20    10240     7632     2608 ( 25%)   
+   0   task     IDLE                           1      0     1024      600      424 ( 41%)   
+   0   task     IDLE                           0      0     1024      596      428 ( 41%)   
+   0   task     Tmr Svc                        0      1     2048     1648      400 ( 19%)   
+   0   task     ipc0                           0     24     1024      576      448 ( 43%)   
+   0   task     esp_timer                      0     22     4096     3652      444 ( 10%)   
+   0   task     signal                         0     21      768      312      456 ( 59%)   
+   0   task     ipc1                           1     24     1024      500      524 ( 51%)   
+```
+
 ## thread.start(function, [stack, priority, cpu, name])
 
 Start a new thread.
