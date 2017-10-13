@@ -20,7 +20,7 @@ Arguments:
 
   * table (optional): if true, thread list is returned in a Lua table, if false thread list is printed on the console.
   * monitor(optional): if true, the thread list is refreshed every 0.5 seconds. Only allowed if table = false.
-  * all (optional): if true show all threads. There are 3 types of threads:
+  * all (optional): if true show all threads. If false (default) shows only the lua threads. There are 3 types of threads:
 
     * task: is a FreeRTOS task managed directly by FreeRTOS. This types of tasks corresponds to system tasks.
     * thread: is a FreeRTOS task managed by the pthread API.
