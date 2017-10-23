@@ -36,7 +36,7 @@ Returns: the PWM instance or an exception. You must store this instance into a v
 
 ```lua
 -- Attach a device to PWM pin at GPIO16, at 10 Khz, with initial duty value of 50%.
-device = pwm.attach(pwm.PWM0, 0, pio.GPIO16, 10000, 0.5)
+device = pwm.attach(pio.GPIO16, 10000, 0.5)
 ```
 
 # Operation functions
@@ -49,7 +49,7 @@ Returns: nothing, or an exception.
 
 ```lua
 -- Attach a device to PWM pin at GPIO16, at 10 Khz, with initial duty value of 50%.
-device = pwm.attach(pwm.PWM0, 0, pio.GPIO16, 10000, 0.5)
+device = pwm.attach(pio.GPIO16, 10000, 0.5)
 
 -- Start the PWM generation
 device:start()
@@ -63,7 +63,7 @@ Returns: nothing, or an exception.
 
 ```lua
 -- Attach a device to PWM pin at GPIO16, at 10 Khz, with initial duty value of 50%.
-device = pwm.attach(pwm.PWM0, 0, pio.GPIO16, 10000, 0.5)
+device = pwm.attach(pio.GPIO16, 10000, 0.5)
 
 -- Start the PWM generation
 device:start()
@@ -86,7 +86,7 @@ Returns: nothing, or an exception.
 
 ```lua
 -- Attach a device to PWM pin at GPIO16, at 10 Khz, with initial duty value of 50%.
-device = pwm.attach(pwm.PWM0, 0, pio.GPIO16, 10000, 0.5)
+device = pwm.attach(pio.GPIO16, 10000, 0.5)
 
 -- Start the PWM generation
 device:start()
@@ -114,7 +114,7 @@ Returns: nothing, or an exception.
 
 ```lua
 -- Attach a device to PWM pin at GPIO16, at 10 Khz, with initial duty value of 50%.
-device = pwm.attach(pwm.PWM0, 0, pio.GPIO16, 10000, 0.5)
+device = pwm.attach(pio.GPIO16, 10000, 0.5)
 
 -- Start the PWM generation
 device:start()
