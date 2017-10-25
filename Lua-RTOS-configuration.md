@@ -71,3 +71,17 @@ Arguments:
 * enable (optional): true for enable / false for disable. If this argument is not provided the function returns the current shell setting.
 
 Returns: nothing, or the current shell setting (true/false) if the enable argument is not provided.
+
+## os.factoryreset()
+
+Performs a factory reset of your installed firmware. The factory reset performs the following actions:
+
+  * Erase the ota data partition for OTA enabled firmwares, so in the next reboot the factory app is executed.
+
+Arguments: nothing.
+
+Returns: nothing.
+
+```lua
+os.factoryreset()
+```
