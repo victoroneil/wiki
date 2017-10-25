@@ -14,10 +14,13 @@ The url for obtain the last firmware is http://ota.whitecatboard.org/?firmware=F
 
 * FIRMWARE_ID is the firmware id installed in the board, that is formed by [brand-]board type[-board subtype]. Some examples for valid FIRMWARE_ID available in the default OTA server are:
 
-  N1ESP32
-  N1ESP32-OTA
-  ESP32THING
-  ESP32THING-OTA
+  * N1ESP32
+
+  * N1ESP32-OTA
+
+  * ESP32THING
+
+  * ESP32THING-OTA
 
   You can obtain the information about your board in the following way:
 
