@@ -10,7 +10,7 @@ By default the last firmware is obtained from https://ota.whitecatboard.org, and
 
 For security reasons only OTA servers with SSL enabled are supported.
 
-The url for obtain the last firmware is http://ota.whitecatboard.org/?firmware=FIRMWARE_ID&commit=COMMIT, where:
+The url for obtain the last firmware is http://ota.whitecatboard.org/?firmware=FIRMWARE_ID&commit=COMMIT, that must be posted to the OTA server, where:
 
 * FIRMWARE_ID is the firmware id installed in the board, that is formed by [brand-]board type[-board subtype]. Some examples for valid FIRMWARE_ID available in the default OTA server are:
 
@@ -25,3 +25,11 @@ The url for obtain the last firmware is http://ota.whitecatboard.org/?firmware=F
   board_type, board_subtype, brand = os.board()
   ```
 * COMMIT is the current commit for the installed firmware in the board.
+
+When posting the url http://ota.whitecatboard.org/?firmware=FIRMWARE_ID&commit=COMMIT, the server response with one of the following:
+
+* HTTP 200 response code, when a new firmware is available, meaning that your board has to upgrade.
+
+* HTTP 470 response code, when some of the argument values are invalid or are missed.
+
+* HTTP 471 response code, when a new firmware is not available, meaning that your board has the last firmware.
