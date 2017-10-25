@@ -6,4 +6,6 @@ OTA support in Lua RTOS requires to use an OTA enabled firmware.
 
 # Key concepts
 
-By default latest firmware is obtained from https://ota.whitecatboard.org. You can customize Lua RTOS for change the default server and use your own server through Kconfig under the "Component config -> Lua RTOS -> OTA" category.
+By default latest firmware is obtained from https://ota.whitecatboard.org. You can customize Lua RTOS and change the default server to use your own server, this is done through Kconfig under the "Component config -> Lua RTOS -> OTA" category.
+
+For security reasons only OTA servers with SSL enabled are supported.
