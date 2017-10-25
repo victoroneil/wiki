@@ -33,6 +33,8 @@ When posting the url http://ota.whitecatboard.org/?firmware=FIRMWARE_ID&commit=C
 
 * HTTP 200 response code, when a new firmware is available, meaning that your board has to upgrade.
 
+  In this chase the firmware binary is received after the HTTP headers as an application/octet-stream mime type.
+
 * HTTP 470 response code, when some of the argument values are invalid or are missed.
 
 * HTTP 471 response code, when a new firmware is not available, meaning that your board has the last firmware.
