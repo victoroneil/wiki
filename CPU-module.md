@@ -24,22 +24,20 @@ CPU: ESP32 rev 0
 
 ## cpu.board()
 
-Get the name of the board that Lua RTOS is running on.
+Get the information of the board that Lua RTOS is running on.
 
 Arguments: nothing
 
-Returns: the board name used in build.
+Returns: the board type, the board subtype, and the board brand. Board subtype and board brand can be empty.
 
 ```lua
--- Get board name
-board = cpu.board();
+-- Get board information
+type, subtype, brand = cpu.board();
 
 -- Print to screen
-print("Board: "..board)
-```
-
-```lua
-Board: ESP32COREBOARD
+print("Type: "..type)
+print("Subtype: "..subtype)
+print("Brand: "..brand)
 ```
 
 ## cpu.resetreason()
