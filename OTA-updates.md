@@ -38,3 +38,19 @@ When posting the url http://ota.whitecatboard.org/?firmware=FIRMWARE_ID&commit=C
 * HTTP 470 response code, when some of the argument values are invalid or are missed.
 
 * HTTP 471 response code, when a new firmware is not available, meaning that your board has the last firmware.
+
+# How to use
+
+For upgrade your board via OTA yo must do the following:
+
+* Setup and start a network connection (WiFi or Ethernet):
+
+```lua
+net.wf.setup(net.wf.mode.STA, your ssid, your password)
+net.wf.start()
+```
+* Launch the OTA process
+
+```lua
+net.ota()
+```
