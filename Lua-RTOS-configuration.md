@@ -1,5 +1,19 @@
 The Lua RTOS configuration functions allows to configure some aspects of Lua RTOS. This functions are provided as an extension of the Lua os module.
 
+## os.factoryreset()
+
+Performs a factory reset of your installed firmware. The factory reset performs the following actions:
+
+  * Erase the ota data partition for OTA enabled firmwares, so in the next reboot the factory app is executed.
+
+Arguments: nothing.
+
+Returns: nothing.
+
+```lua
+os.factoryreset()
+```
+
 ## os.history([enable])
 
 If enabled Lua RTOS records the commands entered by the programmer. The programmer can access the previous entered commands with the up & down keys. This functions is only available if an SD Card is attached to your board.
@@ -71,17 +85,3 @@ Arguments:
 * enable (optional): true for enable / false for disable. If this argument is not provided the function returns the current shell setting.
 
 Returns: nothing, or the current shell setting (true/false) if the enable argument is not provided.
-
-## os.factoryreset()
-
-Performs a factory reset of your installed firmware. The factory reset performs the following actions:
-
-  * Erase the ota data partition for OTA enabled firmwares, so in the next reboot the factory app is executed.
-
-Arguments: nothing.
-
-Returns: nothing.
-
-```lua
-os.factoryreset()
-```
