@@ -54,3 +54,4 @@ For upgrade your board via OTA yo must do the following:
    ```lua
    net.ota()
    ```
+The programmer can do a factory reset calling the os.factoryreset() function for revert previously OTA updates and back to the factory app.
