@@ -9,6 +9,13 @@ Arguments: nothing
 Returns: the board type, the board subtype, and the board brand. Board subtype and board brand can be empty.
 
 ```lua
+-- Get board information
+type, subtype, brand = cpu.board();
+
+-- Print to screen
+print("Type: "..type)
+print("Subtype: "..subtype)
+print("Brand: "..brand)
 ```
 
 ## os.cpu()
