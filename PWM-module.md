@@ -20,6 +20,14 @@ To use this module you must take into consideration the following:
    device:stop(...)
    ```
 
+3. Detach the device if it is no longer used:
+
+   ```lua
+   device:start(...)
+   ...
+   device:detach(...)
+   ```
+
 # Configuration functions
 
 ## device = pwm.attach(pin, frequency, initial duty)
