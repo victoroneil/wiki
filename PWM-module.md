@@ -129,3 +129,23 @@ device:setfreq(5000)
 -- Stop the PWM generation
 device:stop()
 ```
+
+# device:detach()
+
+Detach a device to a PWM pin. When detaching, the PWM generation is stopped.
+
+Arguments: nothing.
+
+Returns: nothing.
+
+```lua
+-- Attach a device to PWM pin at GPIO16, at 10 Khz, with initial duty value of 50%.
+device = pwm.attach(pio.GPIO16, 10000, 0.5)
+
+-- Start the PWM generation
+device:start()
+
+....
+
+device:stop()
+```
