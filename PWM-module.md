@@ -132,7 +132,7 @@ device:stop()
 
 # device:detach()
 
-Detach a device to a PWM pin. When detaching, the PWM generation is stopped.
+Detach a device to a PWM pin. When detaching, the PWM generation is stopped. The device can be also detached if it is assigned to the nil value.
 
 Arguments: nothing.
 
@@ -147,5 +147,6 @@ device:start()
 
 ....
 
-device:stop()
+-- Detach the device
+device:detach()
 ```
