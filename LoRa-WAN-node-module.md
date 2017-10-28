@@ -130,6 +130,42 @@ Returns: nothing, or an exception.
 lora.setDevAddr("03XXEXXA")
 ```
 
+## lora.setNwksKey(nwkSKey)
+
+Sets the network session key. It must be set before the activation procedure via ABP.
+
+Arguments:
+
+* nwkSKey (16 bytes coded in a hex-string): the nwkSkey.
+
+Returns: nothing, or an exception.
+
+```lua
+....
+....
+
+-- Sets the NwksKey
+lora.setNwksKey("8CXXXX5A80XXXX0FXX18XXBCXX41XXXX")
+```
+
+## lora.setAppsKey(AppSKey)
+
+Set the application session key. It must be set before the activation procedure via ABP.
+
+Arguments:
+
+* AppSKey (16 bytes coded in a hex-string): the AppSKey.
+
+Returns: nothing, or an exception.
+
+```lua
+....
+....
+
+-- Sets the AppSKey
+lora.setAppSKey("8CXXXX5A80XXXX0FXX18XXBCXX41XXXX")
+```
+
 ## lora.join()
 
 Joins the end-device via OTAA.
