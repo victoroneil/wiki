@@ -71,6 +71,18 @@ Returns: nothing, or an exception.
 lora.setAppEui("70XXX57ED0000XX0")
 ```
 
+## lora.getAppEui()
+
+Get the current AppEUI.
+
+Arguments: nothing.
+
+Returns: the AppEUI or an exception.
+
+```lua
+appEUI = lora.getAppEui()
+```
+
 ## lora.setAppKey(appKey)
 
 Sets the AppKey. The AppKey is an AES-128 application key specific for the end-device that is assigned by
@@ -111,6 +123,18 @@ Returns: nothing, or an exception.
 lora.setDevEui("XXB3XX7E000XX000")
 ```
 
+## lora.getDevEui()
+
+Get the current DevEUI.
+
+Arguments: nothing.
+
+Returns: the DevEUI or an exception.
+
+```lua
+devEUI = lora.getDevEui()
+```
+
 ## lora.setDevAddr(devAddr)
 
 Sets the DevAddr. The DevAddr identifies the end-device within the current network, and is provided by the network owner. It must be set before the activation procedure via ABP.
@@ -128,6 +152,18 @@ Returns: nothing, or an exception.
 
 -- Sets the DevAddr
 lora.setDevAddr("03XXEXXA")
+```
+
+## lora.getDevAddr()
+
+Get the current DevAddr.
+
+Arguments: nothing.
+
+Returns: the DevAddr or an exception.
+
+```lua
+DevAddr = lora.getDevAddr()
 ```
 
 ## lora.setNwksKey(nwkSKey)
@@ -205,6 +241,17 @@ Returns: nothing, or an exception.
 lora.setDr(5)
 ```
 
+## lora.getDr()
+
+Get the current data rate.
+
+Arguments: nothing.
+
+Returns: the current data rater, or an exception.
+
+```lua
+dr = lora.getDr()
+````
 
 ## lora.setAdr(enable)
 
@@ -223,6 +270,18 @@ Returns: nothing, or an exception.
 -- Disable the ADR function
 lora.setAdr(false)
 ```
+
+## lora.getAdr()
+
+Get the current adaptative data rate status.
+
+Arguments: nothing.
+
+Returns: true id ADR is enabled, false if ADR is disabled, or an exception.
+
+```lua
+adr = lora.getAdr()
+````
 
 ## lora.setReTx(retransmissions)
 
