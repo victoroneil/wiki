@@ -1,10 +1,10 @@
 # About this
 
-This module contains functions for send and receive information through [LoRa WAN](https://www.lora-alliance.org/What-Is-LoRa/Technology).
+This module contains functions to send and receive information through [LoRa WAN](https://www.lora-alliance.org/What-Is-LoRa/Technology).
 
 Lua RTOS support for LoRa WAN is build over [LMIC](https://www.research.ibm.com/labs/zurich/ics/lrsc/lmic.html) stack from IBM.
 
-Please, take note that build a LoRa WAN network involves a lot of things, such as the end-device, the gateway, the network coordinator, etc ... In this page we only talk about the end-device and how is programmed, you can know more about our work on LoRa WAN in [whitecatboard.org](https://whitecatboard.org).
+Please, take note that build a LoRa WAN network involves a lot of things, such as the end-device, the gateway, the network coordinator, etc ... In this page we only talk about the end-device and how is it programmed, you can know more about our work on LoRa WAN in [whitecatboard.org](https://whitecatboard.org).
 
 # What do you need?
 
@@ -30,7 +30,7 @@ To participate in a LoRaWAN network, each end-device has to be personalized and 
 
 # Configuration functions
 
-Configuration functions are used for configure the LoRa WAN stack, such as init the stack, set the stack configuration, etc ...
+Configuration functions are used to configure the LoRa WAN stack, such as init the stack, set the stack configuration, etc ...
 
 ## lora.attach(band)
 
@@ -113,7 +113,8 @@ lora.setDevEui("XXB3XX7E000XX000")
 
 ## lora.setDevAddr(devAddr)
 
-Sets the DevAddr. The DevAddr identifies the end-device within the current network, and is provided by the network owner.
+Sets the DevAddr. The DevAddr identifies the end-device within the current network, and is provided by the network owner. It must be set before the activation procedure via ABP.
+
 
 Arguments:
 
@@ -147,7 +148,7 @@ lora.join()
 
 # Stack configuration functions
 
-This functions configure certain operating parameters of the stack, such us the data rate. This parameters are configured automatically when you attach the end-device with the lora.attach function, and can be changed using one of the functions that we describe in this section.
+This functions configure certain operating parameters of the stack, such as the data rate. This parameters are configured automatically when you attach the end-device with the lora.attach function, and can be changed using one of the following functions.
 
 
 ## lora.setDr(data_rate)
