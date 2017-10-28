@@ -59,7 +59,7 @@ the application provider of the end-device. It must be set before the activation
 
 Arguments:
 
-* appEui (8 bytes coded in an hex-string): the AppEUI.
+* appEui (8 bytes coded in a hex-string): the AppEUI.
 
 Returns: nothing, or an exception.
 
@@ -90,7 +90,7 @@ the application owner to the end-device. It must be set before the activation pr
 
 Arguments:
 
-* appKey (16 bytes coded in an hex-string): the AppKey.
+* appKey (16 bytes coded in a hex-string): the AppKey.
 
 Returns: nothing, or an exception.
 
@@ -111,7 +111,7 @@ ATTENTION!! it's your responsibility to assign an IEEE EUI64 that you own.
 
 Arguments:
 
-* devEui (8 bytes coded in an hex-string): the DevEUI.
+* devEui (8 bytes coded in a hex-string): the DevEUI.
 
 Returns: nothing, or an exception.
 
@@ -142,7 +142,7 @@ Sets the DevAddr. The DevAddr identifies the end-device within the current netwo
 
 Arguments:
 
-* devAddr (4 bytes coded in an hex-string): the DevAddr.
+* devAddr (4 bytes coded in a hex-string): the DevAddr.
 
 Returns: nothing, or an exception.
 
