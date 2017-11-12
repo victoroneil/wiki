@@ -64,6 +64,17 @@ In ESP32 readings higher than 1.1V are achieved using an attenuation factor that
 
 Lua RTOS allows the programmer to access to external ADC units using the same API.
 
+* adc.ADS1015:
+
+  * This unit is mapped to an external ADS1015 chip (I2C interface).
+  * Working resolution is 12 bits.
+  * The internal voltage reference that cannot be set by hardware or software.
+  * ADC input values can vary from 0 to 6144 mVolts.
+  * Programmer can set the max ADC input value for a given channel. This is used internally to set the PGA.
+  * 4 ADC channels are provided, from 0 to 4.
+
+    [ADS1015 Datasheet](https://cdn-shop.adafruit.com/datasheets/ads1015.pdf)
+
 * adc.ADS1115:
 
   * This unit is mapped to an external ADS1115 chip (I2C interface).
