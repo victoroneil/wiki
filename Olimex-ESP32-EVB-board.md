@@ -1,5 +1,7 @@
 
 **Ethernet (RMII interface):**
+***
+
 
 | Signal | GPIO |
 |--------|------|
