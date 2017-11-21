@@ -43,8 +43,17 @@ CD and WP signal are not used.
 | 2    | MISO   | GPIO15 | Mapped to UEXT connector |
 |      | MOSI   | GPIO2  | |
 |      | CLK    | GPIO14 | |
-|      | CS     | GPI17  | |
+|      | CS     | GPIO17 | |
 | 3    | MISO   | | |
 |      | MOSI   | | |
 |      | CLK    | | |
 |      | CS     | | |
+
+**I2C:**
+
+| Unit | Signal | GPIO   | Notes |
+|------|--------|--------|-------|
+| 0    | SDA    | GPIO13 | Mapped to UEXT connector |
+|      | SCL    | GPIO16 | |
+| 1    | SDA    | GPIO13 | |
+|      | SCL    | GPIO16 | |
