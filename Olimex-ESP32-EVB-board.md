@@ -1,16 +1,12 @@
 
 **Ethernet (RMII interface):**
-***
-
 
 | Signal | GPIO |
 |--------|------|
 | MDC | GPIO23 |
 | MDIO | GPIO18 |
 
-PHY power GPIO is not used.
-
-PHY is LAN8720 at address 0.
+PHY is LAN8720 at address 0. Power GPIO is not used.
 
 **SD Card (MMC interface):**
 
