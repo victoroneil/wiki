@@ -27,11 +27,24 @@ CD and WP signal are not used.
 
 **UART:**
 
-| Unit | Signal | GPIO  | Notes |
-|------|--------|-------|-------|
-| 0    | RX     | GPIO3 | |
-|      | TX     | GPIO1 | |
-| 1    | RX     | GPIO4 | Mapped to UEXT connector |
-|      | TX     | GPI36 | |
+| Unit | Signal | GPIO   | Notes |
+|------|--------|--------|-------|
+| 0    | RX     | GPIO3  | |
+|      | TX     | GPIO1  | |
+| 1    | RX     | GPIO4  | Mapped to UEXT connector |
+|      | TX     | GPIO36 | |
 | 2    | RX     | | |
 |      | TX     | | |
+
+**SPI:**
+
+| Unit | Signal | GPIO   | Notes |
+|------|--------|--------|-------|
+| 2    | MISO   | GPIO15 | Mapped to UEXT connector |
+|      | MOSI   | GPIO2  | |
+|      | CLK    | GPIO14 | |
+|      | CS     | GPI17  | |
+| 3    | MISO   | | |
+|      | MOSI   | | |
+|      | CLK    | | |
+|      | CS     | | |
