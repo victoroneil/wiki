@@ -24,3 +24,14 @@ PHY is LAN8720 at address 0. Power GPIO is not used.
 | DAT0/DO | GPIO2 |
 
 CD and WP signal are not used.
+
+**UART:**
+
+| Unit | Signal | GPIO  | Notes |
+|------|--------|-------|-------|
+| 0    | RX     | GPIO3 | |
+|      | TX     | GPIO1 | |
+| 1    | RX     | GPIO4 | Mapped to UEXT connector |
+|      | TX     | GPI36 | |
+| 2    | RX     | | |
+|      | TX     | | |
