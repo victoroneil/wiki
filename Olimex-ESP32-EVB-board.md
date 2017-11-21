@@ -7,6 +7,7 @@
 | MDIO | GPIO18 |
 
 PHY power GPIO is not used.
+
 PHY is LAN8720 at address 0.
 
 **SD Card (MMC interface):**
