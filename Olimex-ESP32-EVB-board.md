@@ -3,6 +3,13 @@
 
 | Signal | GPIO |
 |--------|------|
+| EMAC_TXD0 | GPIO19 |
+| EMAC_TXD1 | GPIO22 |
+| EMAC_TX_EN | GPIO21 |
+| EMAC_RXD0 | GPIO25 |
+| EMAC_RXD1 | GPIO26 |
+| EMAC_RX_CRS_DV | GPIO27 |
+| CLKIN | GPIO 0 |
 | MDC | GPIO23 |
 | MDIO | GPIO18 |
 
