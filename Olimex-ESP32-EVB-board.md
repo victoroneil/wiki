@@ -26,11 +26,12 @@ PHY is LAN8720 at address 0. Power GPIO is not used.
 
 | Signal | GPIO |
 |--------|------|
-| CLK/SCLK | GPI14 |
+| CD/DAT3/CS | Not used |
 | CMD/DI | GPIO15 |
+| CLK/SCLK | GPIO14 |
 | DAT0/DO | GPIO2 |
-
-CD and WP signals are not used.
+| DAT1/RES | Not used |
+| DAT2/RES | Not used |
 
 **UART:**
 
