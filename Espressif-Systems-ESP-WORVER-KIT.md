@@ -2,12 +2,12 @@
 
 | Signal | GPIO |
 |--------|------|
-| CD/DAT3/CS | GPIO21 |
+| CD/DAT3/CS | GPIO13 |
 | CMD/DI | GPIO15 |
 | CLK/SCLK | GPIO14 |
 | DAT0/DO | GPIO2 |
-| DAT1/RES | Not used |
-| DAT2/RES | Not used |
+| DAT1/RES | GPIO4 |
+| DAT2/RES | GPIO12 |
 
 **UART:**
 
@@ -15,8 +15,8 @@
 |------|--------|--------|-------|
 | 0    | RX     | GPIO3  | |
 |      | TX     | GPIO1  | |
-| 1    | RX     | GPIO4  | Mapped to UEXT connector |
-|      | TX     | GPIO36 | Mapped to UEXT connector |
+| 1    | RX     | | |
+|      | TX     | | |
 | 2    | RX     | | |
 |      | TX     | | |
 
@@ -24,14 +24,14 @@
 
 | Unit | Signal | GPIO   | Notes |
 |------|--------|--------|-------|
-| 2    | MISO   | GPIO15 | Mapped to UEXT connector |
-|      | MOSI   | GPIO2  | Mapped to UEXT connector |
-|      | CLK    | GPIO14 | Mapped to UEXT connector |
-|      | CS     | GPIO17 | Mapped to UEXT connector|
-| 3    | MISO   | | |
+| 2    | MISO   | | |
 |      | MOSI   | | |
 |      | CLK    | | |
 |      | CS     | | |
+| 3    | MISO   | GPIO25 | |
+|      | MOSI   | GPIO23 | |
+|      | CLK    | GPIO19 | |
+|      | CS     | | Not assigned |
 
 **I2C:**
 
