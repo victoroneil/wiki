@@ -37,7 +37,7 @@
 
 | Unit | Signal | GPIO   | Notes |
 |------|--------|--------|-------|
-| 0    | SDA    | GPIO13 | Mapped to UEXT connector |
-|      | SCL    | GPIO16 | Mapped to UEXT connector |
-| 1    | SDA    | GPIO13 | |
-|      | SCL    | GPIO16 | |
+| 0    | SDA    | | |
+|      | SCL    | | |
+| 1    | SDA    | | |
+|      | SCL    | | |
