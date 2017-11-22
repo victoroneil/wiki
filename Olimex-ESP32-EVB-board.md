@@ -30,7 +30,7 @@ PHY is LAN8720 at address 0. Power GPIO is not used.
 | CMD/DI | GPIO15 |
 | DAT0/DO | GPIO2 |
 
-CD and WP signal are not used.
+CD and WP signals are not used.
 
 **UART:**
 
