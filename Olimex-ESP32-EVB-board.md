@@ -1,4 +1,11 @@
 
+**CAN:**
+
+| Signal | GPIO   |
+|--------|--------|
+| TX     | GPIO5  |
+| RX     | GPIO35 |
+
 **Ethernet (RMII interface):**
 
 | Signal | GPIO |
