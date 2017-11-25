@@ -1,6 +1,6 @@
 # About this
 
-This module contains functions for work with leds connected in a one-wired bus, such as the WS2812B led. Each led in the bus is known as pixel.
+This module contains functions to work with leds connected in a one-wired bus, such as the WS2812B led. Each led in the bus is known as pixel.
 
 The primary limiting factor to the number of pixels you can drive with this module is the memory you have on your board. With 1 Kb of memory you can drive 128 pixels. In ESP32, when Lua RTOS is booted you have arround of 200 Kb of memory available for your applications, so you can drive a very high number of pixels.
 
