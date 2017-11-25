@@ -99,7 +99,9 @@ Initialize the display and clear the screen.
 
 After the initialization the display has the following settings:
 
-* In color displays the screen is black, and in monochrome displays all pixels are turned off.
+* All the pixels are turn off.
+* Text foreground is set to white.
+* Text background is set to black.
 * Text rotation is set to 0 degrees.
 * Text warp is set to false.
 * Text transparency is set to true.
