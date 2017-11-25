@@ -233,6 +233,26 @@ gdisplay.putpixel({1,1})
 
 Text functions are used for write text.
 
+## gdisplay.setforeground(color)
+
+Set the foreground color. The foreground color is used to write text when the color is not specified.
+
+Arguments:
+
+* color: the foreground color
+
+Returns: nothing, or an exception.
+
+## gdisplay.setbackground(color)
+
+Set the background color. The background color is used to write text when the color is not specified.
+
+Arguments:
+
+* color: the foreground color
+
+Returns: nothing, or an exception.
+
 ## gdisplay.setfont(font identifier | font name)
 
 Set the font used when writing the text to display.
