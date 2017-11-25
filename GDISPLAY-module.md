@@ -131,7 +131,7 @@ Returns: the screen size, or an exception
 
 ## gdisplay.clear([color])
 
-Clear the display to specified color.
+Clear the display to the specified color. Any text property is change when the display is clear, such as text wrap, text orientation, etc ...
 
 Arguments:
 
