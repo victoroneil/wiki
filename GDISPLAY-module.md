@@ -97,6 +97,13 @@ You can reference a color in two ways:
 
 Initialize the display and clear the screen.
 
+After the initialization the display has the following settings:
+
+* In color displays the screen is black, and in monochrome displays all pixels are turned off.
+* Text rotation is set to 0 degrees.
+* Text warp is set to false.
+* Text transparency is set to true.
+
 Arguments:
 
 * chipset: chipset used by the display. Can be any identifier from the [supported chipsets](#supported-chipsets).
