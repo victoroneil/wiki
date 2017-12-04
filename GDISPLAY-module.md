@@ -96,7 +96,7 @@ You can reference a color in two ways:
 
 # General purpose functions
 
-## gdisplay.attach(chipset, [orientation, framed])
+## gdisplay.attach(chipset, [orientation, framed, address])
 
 Initialize the display and clear the screen.
 
@@ -114,6 +114,7 @@ Arguments:
 * chipset: chipset used by the display. Can be any identifier from the [supported chipsets](#supported-chipsets).
 * orientation (optional): display orientation, can be either gdisplay.LANDSCAPE, gdisplay.LANDSCAPE_FLIP, gdisplay.PORTRAIT, or gdisplay.PORTRAIT_FLIP. Default orientation is gdisplay.LANDSCAPE.
 * framed (optional): if true frame buffer is used. Default is false.
+* address (optional): for I2C displays, is the display address in the I2C bus. If missing or 0 the default address is applied.
 
 Returns: nothing, or an exception.
 
