@@ -237,6 +237,33 @@ gdisplay.putpixel({1,1})
 
 Text functions are used for write text.
 
+## gdisplay.setfont(font identifier | font name)
+
+Set the font used when writing the text to display.
+
+Arguments:
+
+* font identifier: the identifier of the system's font. Can be any identifier from the [system fonts](#system-fonts).
+* font name: if the programmer wants to use a custom font, the file name with the font definition.
+
+Returns: nothing, or an exception.
+
+```lua
+-- Set the font to UBUNTU16_FONT
+gdisplay.setfont(gdisplay.UBUNTU16_FONT)
+```
+
+## gdisplay.write(point, string | number | table, [foreground, background])
+
+Write text on the display using the current font.
+
+Arguments:
+
+* point: the [point coordinates](#points) where draw text.
+* string | number | table: the text to display that can be either a string, a number or a table.
+* foreground (optional): the foreground color. If not specified the current foreground color is used.
+* background (optional): the background color. If not specified the current background color is used.
+
 ## gdisplay.setforeground(color)
 
 Set the foreground color. The foreground color is used to write text when the color is not specified.
@@ -256,22 +283,6 @@ Arguments:
 * color: the foreground color
 
 Returns: nothing, or an exception.
-
-## gdisplay.setfont(font identifier | font name)
-
-Set the font used when writing the text to display.
-
-Arguments:
-
-* font identifier: the identifier of the system's font. Can be any identifier from the [system fonts](#system-fonts).
-* font name: if the programmer wants to use a custom font, the file name with the font definition.
-
-Returns: nothing, or an exception.
-
-```lua
--- Set the font to UBUNTU16_FONT
-gdisplay.setfont(gdisplay.UBUNTU16_FONT)
-```
 
 ## gdisplay.getfontsize()
 
