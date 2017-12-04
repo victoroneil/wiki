@@ -17,6 +17,9 @@ There are functions in this module that are not compatible with some displays. F
 |              | ST7735_096   | Green tab, 0.96"           | gdisplay.ST7735_096  |
 | PCD8544      | ---          | Nokia 5110                 | gdisplay.PCD8544     |
 | ILI9341      | ---          | ---                        | gdisplay.ILI9341     |
+| SSD1306      | 128 x 32     | 128 x 32 pixels            | gdisplay.SSD1306_128_32 |
+|              | 128 x 64     | 128 x 64 pixels            | gdisplay.SSD1306_128_64 |
+|              |  96 x 16     | 96 x 16 pixels            | gdisplay.SSD1306_96_16 |
 
 When using a display with this module you must attach the display, using the gdisplay.attach function, using the right display identifier.
 
