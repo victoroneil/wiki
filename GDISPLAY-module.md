@@ -259,10 +259,50 @@ Write text on the display using the current font.
 
 Arguments:
 
-* point: the [point coordinates](#points) where draw text.
+* point: the [point coordinates](#points) where draw text. You can use the following special coordinates to drawing text:
+
+   * For the x component: 
+
+     gdisplay.RIGHT: align text to the right
+     gdisplay.LEFT: align text to the left
+     gdisplay.CENTER: align text to the center
+     gdisplay.LASTX: draw text at last x position
+
+   * For the y component: 
+
+     gdisplay.BOTTOM: align text to the bottom
+     gdisplay.CENTER: align text to the center
+     gdisplay.LASTY: draw text at last y position
+
 * string | number | table: the text to display that can be either a string, a number or a table.
 * foreground (optional): the foreground color. If not specified the current foreground color is used.
 * background (optional): the background color. If not specified the current background color is used.
+
+Returns: nothing, or an exception.
+
+```lua
+-- Attach the display and clear
+gdisplay.attach(gdisplay.ILI9341, gdisplay.LANDSCAPE_FLIP, false)
+gdisplay.clear()
+
+-- Set the font to UBUNTU16_FONT
+gdisplay.setfont(gdisplay.UBUNTU16_FONT)
+
+-- Write text at 0,0
+gdisplay.write({0,0},"WHITECAT")
+```
+
+```lua
+-- Attach the display and clear
+gdisplay.attach(gdisplay.ILI9341, gdisplay.LANDSCAPE_FLIP, false)
+gdisplay.clear()
+
+-- Set the font to UBUNTU16_FONT
+gdisplay.setfont(gdisplay.UBUNTU16_FONT)
+
+-- Write text at the center of the string
+gdisplay.write({gdisplay.CENTER,gdisplay.CENTER},"WHITECAT")
+```
 
 ## gdisplay.setforeground(color)
 
