@@ -21,8 +21,6 @@ There are functions in this module that are not compatible with some displays. F
 |              | 128 x 64     | 128 x 64 pixels            | gdisplay.SSD1306_128_64 |
 |              |  96 x 16     | 96 x 16 pixels            | gdisplay.SSD1306_96_16 |
 
-When using a display with this module you must attach the display, using the gdisplay.attach function, using the right display identifier.
-
 # System fonts
 
 | Font      | Identifier             | Comments |
