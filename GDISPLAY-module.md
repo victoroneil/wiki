@@ -310,7 +310,7 @@ Set the foreground color. The foreground color is used to write text when the co
 
 Arguments:
 
-* color: the [foreground color](#colors) color
+* color: the [foreground color](#colors).
 
 Returns: nothing, or an exception.
 
@@ -320,7 +320,7 @@ Set the background color. The background color is used to write text when the co
 
 Arguments:
 
-* color: the [background color](#colors) color
+* color: the [background color](#colors).
 
 Returns: nothing, or an exception.
 
