@@ -42,7 +42,7 @@ When using a display with this module you must attach the display, using the gdi
 Screen's coordinates are referenced as points. Many functions of this module expects one ore more points as an argument. For example, the gdisplay.putpixel has the following arguments:
 
 * point: the point coordinates where draw the pixel.
-* color (optional): the color to use for draw the pixel.
+* color (optional): the [color](#colors) to use for draw the pixel.
 
 You can reference a point in two ways:
 
@@ -141,7 +141,7 @@ Clear the display to the specified color. Any text property is change when the d
 
 Arguments:
 
-* color (optional): the color used to fill de display. The default color depends on the display chipset, for example in TFT displays it is black, and in monochrome LCD displays it is white. In general, the default color is one that keeps all of the screen pixels off.
+* color (optional): the [color](#colors) used to fill de display. The default color depends on the display chipset, for example in TFT displays it is black, and in monochrome LCD displays it is white. In general, the default color is one that keeps all of the screen pixels off.
 
 Returns: noting, or an exception.
 
@@ -275,8 +275,8 @@ Arguments:
      gdisplay.LASTY: draw text at last y position
 
 * string | number | table: the text to display that can be either a string, a number or a table.
-* foreground (optional): the foreground color. If not specified the current foreground color is used.
-* background (optional): the background color. If not specified the current background color is used.
+* foreground (optional): the [foreground color](#colors). If not specified the current foreground color is used.
+* background (optional): the [background color](#colors). If not specified the current background color is used.
 
 Returns: nothing, or an exception.
 
@@ -310,7 +310,7 @@ Set the foreground color. The foreground color is used to write text when the co
 
 Arguments:
 
-* color: the foreground color
+* color: the [foreground color](#colors) color
 
 Returns: nothing, or an exception.
 
@@ -320,7 +320,7 @@ Set the background color. The background color is used to write text when the co
 
 Arguments:
 
-* color: the foreground color
+* color: the [background color](#colors) color
 
 Returns: nothing, or an exception.
 
