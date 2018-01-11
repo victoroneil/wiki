@@ -3,7 +3,7 @@ Lua RTOS has support for the following network services:
 * [curl](#curl)
 * [ping](#ping)
 * [scp put](#netscpputhost-port-src-dst-user-password)
-* [scp putget](#netscpgethost-port-src-dst-user-password)
+* [scp get](#netscpgethost-port-src-dst-user-password)
 * [ssh exec](#netsshexechost-port-command-line-user-password)
 
 ## net.curl
