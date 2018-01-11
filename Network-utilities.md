@@ -1,26 +1,10 @@
 Lua RTOS has support for the following network services:
 
-* [curl](#curl)
 * [ping](#ping)
+* [curl](#curl)
 * [scp put](#netscpputhost-port-src-dst-user-password)
 * [scp get](#netscpgethost-port-src-dst-user-password)
 * [ssh exec](#netsshexechost-port-command-line-user-password)
-
-## net.curl
-
-The net.curl utility supports the following functions:
-
-* res, header, body = net.curl.get(url [, filename])
-* res, header, body = net.curl.post(url, tparams)
-* res, header, resp = net.curl.ftp(upload, url, user, pass [, filename])
-* ret, msg = net.s.curl.sendmail(options)
-* servername, serverport = net.curl.mailserver([servername, serverport])
-* net.curl.cleanup()
-* version, versionnum = net.curl.info([showdetails])
-* verbose = net.curl.verbose([verbose])
-* progress_seconds = net.curl.progress([progress_seconds])
-* timeout_seconds = net.curl.timeout([timeout_seconds])
-* maxbytes = net.curl.reclimit([maxbytes])
 
 ## net.ping(host)
 
@@ -61,6 +45,22 @@ round-trip min/avg/max/stddev = 27.440/27.762/27.853/0.140 ms
 ```
 
 Pinging can be interrupted by pressing the Ctrl-c key.
+
+## net.curl
+
+The net.curl utility supports the following functions:
+
+* res, header, body = net.curl.get(url [, filename])
+* res, header, body = net.curl.post(url, tparams)
+* res, header, resp = net.curl.ftp(upload, url, user, pass [, filename])
+* ret, msg = net.s.curl.sendmail(options)
+* servername, serverport = net.curl.mailserver([servername, serverport])
+* net.curl.cleanup()
+* version, versionnum = net.curl.info([showdetails])
+* verbose = net.curl.verbose([verbose])
+* progress_seconds = net.curl.progress([progress_seconds])
+* timeout_seconds = net.curl.timeout([timeout_seconds])
+* maxbytes = net.curl.reclimit([maxbytes])
 
 ## net.scp.get(host, port, src, dst, user, password)
 
