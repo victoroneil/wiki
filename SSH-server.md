@@ -1,4 +1,4 @@
-Lua RTOS include a port of the well-known [dropbear](https://matt.ucc.asn.au/dropbear/dropbear.html) SSH server. This allow to establish secure shell connections to any Lua RTOS device with minimal RAM requirements.
+Lua RTOS include a port of the well-known [dropbear](https://matt.ucc.asn.au/dropbear/dropbear.html) SSH server. This allow to establish secure shell connections to any Lua RTOS device, with minimal RAM requirements.
 
 Notes about the dropbear port:
 
