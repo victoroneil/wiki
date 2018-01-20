@@ -28,6 +28,7 @@ General purpose modules:
    * [Network services](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Network-services)
    * [Network utilities](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Network-utilities)
    * [OTA updates](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/OTA-updates)
+   * [SSH server](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/SSH-server)
 
 Middleware modules:
 
