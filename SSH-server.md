@@ -4,7 +4,7 @@ Notes about the dropbear port:
 
   * Only 1 client connection is allowed.
   * Only the root user is allowed.
-  * The server keys are created on the fly the first time that dropbear are starts.
+  * The server keys are created on the fly the first time that dropbear starts.
   * SCP transfers are not supported by now.
   * Remote SSH command execution are not supported by now.
 
