@@ -16,7 +16,7 @@ How to use:
    /> os.pass()
    ```
 
-   or (if shell is enabled in your device)
+   or (if shell is enabled in your device):
 
    ```lua
    /> passwd
@@ -33,7 +33,7 @@ How to use:
    /> net.stat()
    ```
 
-   or (if shell is enabled in your device)
+   or (if shell is enabled in your device):
 
    ```lua
    /> netstat
