@@ -10,7 +10,7 @@ Notes about the dropbear port:
 
 How to use:
 
-1. Set your's device root password:
+1. Set your device's root password:
 
    ```lua
    /> os.pass()
