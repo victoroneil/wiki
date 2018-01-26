@@ -11,7 +11,7 @@ The Whitecat ESP32 LORA GATEWAT is a mother board designed for the well-know IC8
 * Up to 240MHz clock frequency
 * 520kB internal SRAM
 * 4MB Internal flash memory
-* Integrated 802.11 BGN WiFi transceiver, with onboard antenna, and UFL connector for external antenna
+* Integrated 802.11 BGN WiFi transceiver, with UFL connector for external antenna
 * Integrated dual-mode Bluetooth (classic and BLE)
 * Ethernet 10/100
 * USB to UART bridge with auto-program circuit
