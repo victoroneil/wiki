@@ -12,4 +12,5 @@ Radio control servos are connected through a standard three-wire connection:
 * ground: typically the black or brown wire, that must be connected to the board's and power's supply ground.
 * signal: typically the yellow, orange or white wire, that must be connected to a board's GPIO.
 
+Never connect the power wire to a GPIO, or your board will be permanently damage.
 
