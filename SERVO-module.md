@@ -14,3 +14,18 @@ Radio control servos are connected through a standard three-wire connection:
 
 Never connect the power wire to a GPIO, or your board will be permanently damage.
 
+To use a servo in your program you must do the following:
+
+1. Attach the servo using the servo.attach(..) function. This returns a servo instance that you must store into a variable.
+
+```
+-- Attach the servo to GPIO26
+s = servo.attach(pio.GPIO26)
+```
+
+2. Write values to the servo to move it, using the instance's write function.
+
+```
+-- Move the servo to the 45º position
+s:write(25)
+```
