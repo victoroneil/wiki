@@ -56,6 +56,7 @@ High-level hardware access modules:
 * [GDISPLAY](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/GDISPLAY-module)
 * [NEOPIXEL](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/NEOPIXEL-module)
 * [SENSOR](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Sensor-module)
+* [SERVO](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/SERVO-module)
 * [STEPPER](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/STEPPER-module)
 
 Utility modules:
