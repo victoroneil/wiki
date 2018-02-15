@@ -42,6 +42,11 @@ Arguments:
 
 Returns: a servo instance, or an exception. You must store this instance into a variable for further operations with it.
 
+```lua
+-- Attach the servo to GPIO26
+s = servo.attach(pio.GPIO26)
+```
+
 # Operation functions
 
 ## instance:write(angle)
@@ -53,3 +58,11 @@ Arguments:
 * angle: the angle, expressed in degrees to move the servo.
 
 Returns: nothing, or an exception.
+
+```lua
+-- Attach the servo to GPIO26
+s = servo.attach(pio.GPIO26)
+
+-- Move the servo to the 45º position
+s:write(45)
+```
