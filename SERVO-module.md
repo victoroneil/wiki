@@ -18,16 +18,23 @@ To use a servo in your program you must do the following:
 
 1. Attach the servo using the servo.attach(..) function. This returns a servo instance that you must store into a variable.
 
-   ```
+   ```lua
    -- Attach the servo to GPIO26
    s = servo.attach(pio.GPIO26)
    ```
 
 2. Write values to the servo to move it, using the instance's write function.
 
-   ```
+   ```lua
    -- Move the servo to the 45º position
    s:write(25)
+   ```
+
+3. Detach the stepper instance when it is no longer necessary:
+
+   ```lua
+   -- Detach the servo
+   s:detach()
    ```
 
 # Configuration funcions
@@ -45,6 +52,19 @@ Returns: a servo instance, or an exception. You must store this instance into a 
 ```lua
 -- Attach the servo to GPIO26
 s = servo.attach(pio.GPIO26)
+```
+
+## instance:detach()
+
+Detach the servo and free all resources used by the servo.
+
+Arguments: none.
+
+Returns: nothing, or an exception.
+
+```lua
+-- Detach the servo
+s:detach()
 ```
 
 # Operation functions
