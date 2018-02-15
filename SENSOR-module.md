@@ -206,6 +206,7 @@ s = sensor.attach("DS1820",pio.GPIO26, 3)
 Detach the sensor and free all resources used by the sensor.
 
 Arguments: none.
+
 Returns: nothing, or an exception.
 
 ## instance:callback(function)
