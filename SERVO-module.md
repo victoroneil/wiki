@@ -8,8 +8,8 @@ A servo is a rotary actuator, and typically consists of a small electric motor, 
 
 Radio control servos are connected through a standard three-wire connection:
 
-* power, typically the red wire, and connected to +5V power supply.
-* ground, typically the black or brown wire, and connected to the board and power supply ground.
-* signal, typically the yellow, orange or white wire, an connected to a board's GPIO.
+* power: typically the red wire, that must be connected to a +5V power supply.
+* ground: typically the black or brown wire, that must be connected to the board's and power's supply ground.
+* signal: typically the yellow, orange or white wire, that must be connected to a board's GPIO.
 
 
