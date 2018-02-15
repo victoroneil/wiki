@@ -69,13 +69,17 @@ s:detach()
 
 # Operation functions
 
-## instance:write(angle)
+## instance:write(value)
 
-Write an angle value to a servo instance, moving the servo by the specified angle.
+Write a value to a servo instance, controlling the servo movement according to the type of servo:
+
+* For standard servos: the value is the servo's absolute position expressed in degrees. Typically the value goes from 0º to 180º.
+
+* For continuous rotation servos: the value is expressed also in degrees, being 0º full-speed counter clock wise, 180º full-speed clock wise, and 90º being no movement. 
 
 Arguments:
 
-* angle: the angle, expressed in degrees to move the servo.
+* value: the value to write, expressed in degrees.
 
 Returns: nothing, or an exception.
 
@@ -83,6 +87,14 @@ Returns: nothing, or an exception.
 -- Attach the servo to GPIO26
 s = servo.attach(pio.GPIO26)
 
--- Move the servo to the 45º position
+-- Move an standard servo to the 45º position
 s:write(45)
+```
+
+```lua
+-- Attach the servo to GPIO26
+s = servo.attach(pio.GPIO26)
+
+-- Move a continuous rotation servo clock wise at full-speed
+s:write(180)
 ```
