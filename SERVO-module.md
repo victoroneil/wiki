@@ -30,3 +30,26 @@ To use a servo in your program you must do the following:
    s:write(25)
    ```
 
+# Configuration funcions
+
+## instance = servo.attach(pin)
+
+Create a new servo instance.
+
+Arguments:
+
+* pin: GPIO to use for the servo signal. Use defined constants in the PIO module for this, for example pio.GPIO126.
+
+Returns: a servo instance, or an exception. You must store this instance into a variable for further operations with it.
+
+# Operation functions
+
+## instance:write(angle)
+
+Write an angle value to a servo instance, moving the servo by the specified angle.
+
+Arguments:
+
+* angle: the angle, expressed in degrees to move the servo.
+
+Returns: nothing, or an exception.
