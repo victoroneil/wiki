@@ -75,7 +75,7 @@ Write a value to a servo instance, controlling the servo movement according to t
 
 * For standard servos: the value is the servo's absolute position expressed in degrees. Typically, the value goes from 0º to 180º. In this case writing a new value, moves the servo from it's current position to a new position, and then stops.
 
-* For continuous rotation servos: the value is expressed also in degrees, being 0º full-speed counter clock wise, 180º full-speed clock wise, and 90º being no movement. In this case writing a new value changes the servo rotation direction, or the rotation speed.
+* For continuous rotation servos: the value is expressed also in degrees, being 0º full-speed counter clock wise, 180º full-speed clock wise, and 90º being no movement. In this case, writing a new value, changes the servo rotation direction, or the rotation speed.
 
 Arguments:
 
