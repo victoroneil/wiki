@@ -1,4 +1,4 @@
-Whitecat is an ecosystem that is being developed by a team of engineers, educators and living lab designers, designed for build Internet Of Things networks in an easy way, covering all the aspects for deploy this kind of networks: hardware and software solutions for the node, the gateway, and the cloud. The fact that the Whitecat team covers multiple fields and disciplines allows us to solve issues in a very dynamic and agile way.
+Whitecat is an ecosystem that is being developed by a team of engineers, educators and living lab designers, designed to build Internet Of Things networks in an easy way, covering all the aspects for deploy this kind of networks: hardware and software solutions for the node, the gateway, and the cloud. The fact that the Whitecat team covers multiple fields and disciplines allows us to solve issues in a very dynamic and agile way.
 
 The Whitecat ecosystem it’s a new manner for making Internet Of Things:
 
