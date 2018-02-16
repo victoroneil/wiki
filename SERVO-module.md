@@ -4,7 +4,7 @@ This module contains functions to control RC servo motors.
 
 # Key concepts
 
-A servo is a rotary actuator, and typically consists of a small electric motor, driving a train of reduction gears, controlled by a control circuit. Historically servos have ben used for radio control and small-scale robotics. 
+A servo is a rotary actuator, and typically consists of a small electric motor, driving a train of reduction gears, and controlled by a control circuit. Historically servos have ben used in radio control gadgets and in small-scale robotics. 
 
 Radio control servos are connected through a standard three-wire connection:
 
