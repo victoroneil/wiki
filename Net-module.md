@@ -93,17 +93,17 @@ Returns: true if the network is available, false if is not available, or an exce
 
 ## net.stat([table])
 
-Get the network stats for all the available interfaces.
+Get the network information for all the available interfaces.
 
 Arguments:
 
-* table: if true, stats are return in a Lua table, if false stats are printed on the console.
+* table: if true, the network information is placed into a Lua table, if false the information is printed on the console.
 
 Returns:
 
 * if table is false: nothing or an exception.
 
-* if table is true: a Lua table with the scan's result, or an exception. This table is an array of tables. Each entry corresponds to an interface. Each interface gives the following fields:
+* if table is true: a Lua table with the network information, or an exception. This table is an array of tables. Each entry corresponds to an interface. Each interface gives the following fields:
 
   * interface: the interface name. In this version only wf interface are returned.
   * ip: interface ip
