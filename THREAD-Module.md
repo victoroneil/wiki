@@ -334,3 +334,30 @@ Try to lock the mutex. If the mutex is locked by other thread this functions ret
 Arguments: nothing.
 
 Returns: true if the mutex has been locked by the calling process, or false if the mutex is locked by other threads.
+
+```lua
+counter = 0
+mtx = thread.createmutex()
+
+thread.start(function()
+  local i = 0
+
+  while (i < 1000) do
+    mtx:lock()
+    counter = counter + 1
+    mtx:unlock()
+    i = i + 1
+  end
+end)
+
+thread.start(function()
+  local i = 0
+
+  while (i < 1000) do
+    mtx:lock()
+    counter = counter + 1
+    mtx:unlock()
+    i = i + 1
+  end
+end)
+```
