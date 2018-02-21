@@ -335,6 +335,10 @@ Arguments: nothing.
 
 Returns: true if the mutex has been locked by the calling process, or false if the mutex is locked by other threads.
 
+# Mutual exclusion example
+
+The following example create 4 threads that increment the global variable timer 20000 times each. When all treads end, the counter value must be 80000.
+
 ```lua
 counter = 0
 mtx = thread.createmutex()
@@ -342,10 +346,10 @@ mtx = thread.createmutex()
 thread.start(function()
   local i = 0
 
-  while (i < 1000) do
-    mtx:lock()
+  while (i < 20000) do
+		mtx:lock()
     counter = counter + 1
-    mtx:unlock()
+		mtx:unlock()
     i = i + 1
   end
 end)
@@ -353,10 +357,32 @@ end)
 thread.start(function()
   local i = 0
 
-  while (i < 1000) do
-    mtx:lock()
+  while (i < 20000) do
+		mtx:lock()
     counter = counter + 1
-    mtx:unlock()
+		mtx:unlock()
+    i = i + 1
+  end
+end)
+
+thread.start(function()
+  local i = 0
+
+  while (i < 20000) do
+		mtx:lock()
+    counter = counter + 1
+		mtx:unlock()
+    i = i + 1
+  end
+end)
+
+thread.start(function()
+  local i = 0
+
+  while (i < 20000) do
+		mtx:lock()
+    counter = counter + 1
+		mtx:unlock()
     i = i + 1
   end
 end)
