@@ -347,9 +347,9 @@ thread.start(function()
   local i = 0
 
   while (i < 20000) do
-		mtx:lock()
+    mtx:lock()
     counter = counter + 1
-		mtx:unlock()
+    mtx:unlock()
     i = i + 1
   end
 end)
@@ -358,9 +358,9 @@ thread.start(function()
   local i = 0
 
   while (i < 20000) do
-		mtx:lock()
+    mtx:lock()
     counter = counter + 1
-		mtx:unlock()
+    mtx:unlock()
     i = i + 1
   end
 end)
@@ -369,9 +369,9 @@ thread.start(function()
   local i = 0
 
   while (i < 20000) do
-		mtx:lock()
+    mtx:lock()
     counter = counter + 1
-		mtx:unlock()
+    mtx:unlock()
     i = i + 1
   end
 end)
@@ -380,9 +380,9 @@ thread.start(function()
   local i = 0
 
   while (i < 20000) do
-		mtx:lock()
+    mtx:lock()
     counter = counter + 1
-		mtx:unlock()
+    mtx:unlock()
     i = i + 1
   end
 end)
