@@ -137,7 +137,7 @@ Returns:
 can.attach(can.CAN0, 1000)
 
 -- Receive data frame
-id, type, len, data = can.recv(can.CAN0)
+id, type, len, data = can.receive(can.CAN0)
 ```
 
 # Utility functions
