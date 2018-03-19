@@ -30,7 +30,7 @@ CAN TX / CAN RX pin assignment is done in build-time through Kconfig under Lua R
 
 # Configuration functions
 
-## can.attach(id, speed)
+## can.attach(id, speed, [rx queue] )
 
 Attach a CAN device to a CAN module. When the device is attached no filters are defined, and all CAN packets are accepted.
 
@@ -38,6 +38,7 @@ Arguments:
 
 * id: CAN module identifier, for example can.CAN0.
 * speed: speed for the CAN bus expressed in KBits/s.
+* rx queue (optional): the size of the rx queue expressed in number of frames. If not provided rx queue is set to 100 frames.
 
 Returns: noting, or an exception.
 
