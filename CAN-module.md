@@ -10,6 +10,8 @@ The functions of this module are organized in the following categories:
 
 * [Configuration functions](#configuration-functions)
 * [Operation functions](#operation-functions)
+* [Information functions](#information-functions)
+* [Utility functions](#utility-functions)
 
 # Key concepts
 
@@ -140,6 +142,11 @@ can.attach(can.CAN0, 1000)
 -- Receive data frame
 id, type, len, data = can.receive(can.CAN0)
 ```
+
+# Information functions
+
+## can.stats([table])
+
 
 # Utility functions
 
