@@ -147,6 +147,40 @@ id, type, len, data = can.receive(can.CAN0)
 
 ## can.stats([table])
 
+Get the CAN bus statistics.
+
+Arguments:
+
+table: if true, the statistics are placed into a Lua table, if false the statistics are printed on the console.
+
+Returns:
+
+if table is false: nothing or an exception.
+
+if table is true: a Lua table with the CAN bus statistics, or an exception. The table has the following fields:
+
+  * rx_packets: number of received packets
+  * rx_bytes: number of bytes received
+  * tx_packets: number of transmitted packets
+  * tx_bytes: number of bytes transmitted
+  * hw_overruns: number of hardware overruns errors
+  * sw_overruns: number of software overruns errors
+  * bus_error: number of bus errors
+  * arbitration_lost_errors: number of arbitration lost errors
+  * passive_errors: number of passive errors
+  * irq_errors: number of irq errors
+
+```lua
+/ > can.stats()
+RX packets:147 bytes:0
+TX packets:3 bytes:24
+hw overruns:0
+sw overruns:0
+errors:
+   hw overruns:0
+   sw overruns:0
+   bus:0 arbitration lost:0 passive:0 irq:0
+```
 
 # Utility functions
 
