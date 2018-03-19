@@ -151,13 +151,13 @@ Get the CAN bus statistics.
 
 Arguments:
 
-table: if true, the statistics are placed into a Lua table, if false the statistics are printed on the console.
+* table: if true, the statistics are placed into a Lua table, if false the statistics are printed on the console.
 
 Returns:
 
-if table is false: nothing or an exception.
+* if table is false: nothing or an exception.
 
-if table is true: a Lua table with the CAN bus statistics, or an exception. The table has the following fields:
+* if table is true: a Lua table with the CAN bus statistics, or an exception. The table has the following fields:
 
   * rx_packets: number of received packets
   * rx_bytes: number of bytes received
