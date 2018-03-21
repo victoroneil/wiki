@@ -6,9 +6,9 @@ The primary limiting factor for the number of pixels you can drive with this mod
 
 # Setup funcions
 
-## instance = neopixel.setup(type, gpio, pixels)
+## instance = neopixel.attach(type, gpio, pixels)
 
-Setup the NEOPIXEL bus.
+Attach the NEOPIXEL bus.
 
 Arguments:
 
@@ -19,8 +19,8 @@ Arguments:
 Returns: a NEOPIXEL bus instance, or an exception. You must store this instance into a variable for further operations with it.
 
 ```lua
--- Setup a NEOPIXEL bus formed by 6 WS2812B leds, connected to GPIO14
-neo = neopixel.setup(neopixel.WS2812B, pio.GPIO14, 6)
+-- Attch a NEOPIXEL bus formed by 6 WS2812B leds, connected to GPIO14
+neo = neopixel.attach(neopixel.WS2812B, pio.GPIO14, 6)
 ```
 
 # Operation functions
