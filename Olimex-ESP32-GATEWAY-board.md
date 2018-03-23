@@ -1,3 +1,5 @@
+![](http://git.whitecatboard.org/ESP32-GATEWAY.png)
+
 **Ethernet (RMII interface):**
 
 | Signal | GPIO |
