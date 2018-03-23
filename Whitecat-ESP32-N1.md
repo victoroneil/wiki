@@ -1,6 +1,6 @@
-![](http://git.whitecatboard.org/whitecatn1.png)
-
 The Whitecat ESP32 N1 integrates an ESP32 MCU and a LoRa WAN transceiver in one board. The N1 is an ideal platform for deploy real IOT use cases, in both outdoor and indoor environments, and it's compatible with Lua RTOS and any esp-idf based solution.
+
+![](http://git.whitecatboard.org/whitecatn1.png)
 
 **How to order:**
 
