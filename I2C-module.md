@@ -10,6 +10,7 @@ The functions of this module are organized in the following categories:
 
 * [Configuration functions](#configuration-functions)
 * [Operation functions](#operation-functions)
+* [Example](#example)
 
 # Key concepts
 
