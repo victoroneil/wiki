@@ -15,7 +15,7 @@
 -- Attach sensor using internal ADC / channel 6
 s1 = sensor.attach("VH400", adc.ADC1, 6)
 
-s1:read("temperature")
+s1:read("vwc")
 ```
 
 [Back to sensor list](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Sensor-module#supported-sensors)
