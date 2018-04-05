@@ -298,6 +298,7 @@ Here is the list of sensors currently natively supported in Lua RTOS.
   | Humidity | [BME280](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/BME280-SENSOR)<br/>[DHT11](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/DHT11-SENSOR)<br/>[DHT22](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/DHT22-SENSOR)<br/>[DHT23](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/DH23-SENSOR) |
   | Illuminance | [BH1620FVC](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/BH1620FVC-SENSOR)<br/>[BH1721FVC](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/BH1721FVC-SENSOR)<br/>[LDR](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/LDR-SENSOR)|
   | Magnetic field | [AH49E](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/AH49E-LINEAR-HALL-EFFECT-SENSOR)|
+  | Moisture | [VH400](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/VH400-soil-moisture-sensor) |
   | Potentiometers | [Linear potentiometer](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/LINEAR-POT-SENSOR)|
   | Presence | [AM412](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/AM412-PIR-SENSOR)|
   | Pressure | [BME280](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/BME280-SENSOR)|
