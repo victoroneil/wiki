@@ -39,3 +39,13 @@ Returns: i2c device instance, or an exception. You must store this instance into
 
 # Operation functions
 
+## instance:start()
+
+Start an I2C transaction.
+
+* Arguments: none
+
+* Returns: nothing, or an exception.
+
+
+
