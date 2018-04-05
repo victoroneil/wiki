@@ -45,6 +45,7 @@ Low-level hardware access modules:
 * [ADC](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/ADC-Module)
 * [CAN](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/CAN-module)
 * [CPU](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/CPU-module)
+* [I2C](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/I2C-module)
 * [PIO](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/PIO-Module)
 * [PWM](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/PWM-Module)
 * [SPI](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/SPI-Module)
