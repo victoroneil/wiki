@@ -43,9 +43,55 @@ Returns: i2c device instance, or an exception. You must store this instance into
 
 Start an I2C transaction.
 
-* Arguments: none
+Arguments: none
 
-* Returns: nothing, or an exception.
+Returns: nothing, or an exception.
 
+## instance:address(address, read)
+
+Send an address to the I2C bus for read or write, if the I2C instance is configured in master mode.
+
+Arguments:
+
+* address: an integer value, with the I2C address to send.
+* read: a boolean value, that indicates if the address is used for read or write to / from the I2C bus. If it's true the address is used for read, and if it's false the address is used for write.
+
+Returns: nothing, or an exception.
+
+## instance:read()
+
+Read one byte from the I2C bus. Prior to use this function, you must send the I2C address for read.
+
+Arguments: none
+
+Returns: nothing, or an exception.
+
+## instance:write(byte0, [byte1, ..., byten])
+
+Write one or more bytes to the I2C bus. Prior to use this function, you must send the I2C address for write.
+
+Arguments:
+
+* byte0, ...., byten: the bytes to write.
+
+Returns: nothing, or an exception
+
+## instance:write(string)
+
+Write a string to the I2C bus. Prior to use this function, you must send the I2C address for write.
+
+Arguments:
+
+* string: the string to write.
+
+Returns: nothing, or an exception
+
+## instance:stop()
+
+Stop an I2C transaction.
+
+Arguments: none
+
+Returns: nothing, or an exception.
 
 
