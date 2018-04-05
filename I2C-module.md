@@ -69,13 +69,13 @@ Arguments:
 
 Returns: nothing, or an exception.
 
-## instance:read()
+##  readed data = instance:read()
 
 Read one byte from the I2C bus. Prior to use this function, you must send the I2C address for read.
 
 Arguments: none
 
-Returns: nothing, or an exception.
+Returns:  readed data, or an exception.
 
 ## instance:write(byte0, [byte1, ..., byten])
 
