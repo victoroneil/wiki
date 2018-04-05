@@ -37,6 +37,16 @@ Arguments:
 
 Returns: i2c device instance, or an exception. You must store this instance into a variable for further operations with it.
 
+## instance:setspeed(speed)
+
+Set the I2C bus speed for a particular I2C instance.
+
+Arguments:
+
+* speed: I2C bus speed, expressed in hertz. 
+
+Returns: nothing, or an exception.
+
 # Operation functions
 
 ## instance:start()
