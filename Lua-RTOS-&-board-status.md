@@ -96,3 +96,13 @@ Returns:
   * hours: up time hours
   * mins: up time minutes
   * secs: up time seconds
+
+```lua
+/ > os.uptime()
+23:26 up  0:19:05
+```
+
+```lua
+up = os.uptime(true)
+print("days: "..up.days..", hours: "..up.hours..", mins: "..up.mins..", secs: "..up.secs)
+```
