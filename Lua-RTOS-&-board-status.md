@@ -76,3 +76,23 @@ Returns: the SPI FLASH EUI or nil if EUI is not available in your board.
 / > os.flashEUI()
 cb6254185b430e2e
 ```
+
+## os.uptime([table])
+
+Show the Lua RTOS up time on the console, or return a table with the Lua RTOS up time information.
+
+Arguments:
+
+* table (optional): if true, the up time information is returned in a Lua table, if false the up time information is printed on the console. 
+
+Returns:
+
+* if table is false: nothing or an exception.
+
+* if table is true: a Lua table with up time information, or an exception, with the following fields:
+
+  * current: a string with the current time in %H:%M format
+  * days: up time days
+  * hours: up time hours
+  * mins: up time minutes
+  * secs: up time seconds
