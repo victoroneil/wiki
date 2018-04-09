@@ -38,16 +38,19 @@ To use this module you must take into consideration the following:
 
 # Setup functions
 
-## client = mqtt.client(clientid, host, port, secure)
+## client = mqtt.client(clientid, host, port, secure, [CA file, persistence, persistence path])
 
 Creates a new MQTT client instance.
 
 Arguments:
 
-* clientid: client identifier
-* host: broker domain name or ip
-* port: broker port (tipically 1883)
-* secure: true for secure communicacition (not tested), false for non-secure comunication
+* clientid: client identifier.
+* host: broker domain name or ip.
+* port: broker port (typically 1883).
+* secure: true for secure communication, false for non-secure communication.
+* CA file (optional): path to CA file, used only if secure argument it's true.
+* persistence (optional): if true use persistence, if false don't use persistence.
+* persistence path (optional): the path to a file system's folder where persistence data will be stored. If the folder doesn't exists it is created the first time.
 
 Returns: a client instance, or an exception. You must store this instance into a variable for further operations with it.
 
@@ -64,9 +67,9 @@ Connects the client instance to the broker.
 
 Arguments:
 
-* username: user name
-* password: password
-* Returns: nothing
+* username: user name.
+* password: password.
+* Returns: nothing.
 
 Returns: nothing, or an exception.
 
@@ -82,7 +85,7 @@ client:connect("","")
 
 Disconnects the client instance from the broker.
 
-Arguments: nothing
+Arguments: nothing.
 Returns: nothing, or an exception.
 
 ```lua
@@ -107,7 +110,7 @@ Arguments:
 
 * topic: topic name.
 * payload: payload, a string with the information to publish packed on it.
-* qos: quality of service, according to MQTT specs, can be either mqtt.QOS0, mqtt.QOS1, or mqtt.QOS2
+* qos: quality of service, according to MQTT specs, can be either mqtt.QOS0, mqtt.QOS1, or mqtt.QOS2. To use mqtt.QOS1, or mqtt.QOS2 you must enable the persistence when calling to the mqtt.client function.
 
 Returns: nothing or an exception
 
