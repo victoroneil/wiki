@@ -45,7 +45,7 @@ Arguments:
 Returns: noting, or an exception.
 
 ```lua
--- Attach the CAN device to CAN0 at 1000 KBits/s
+-- Attach the CAN device to CAN0 at 1000 bits/s
 can.attach(can.CAN0, 1000)
 ```
 
@@ -62,7 +62,7 @@ Arguments:
 Returns: noting, or an exception.
 
 ```lua
--- Attach the CAN device to CAN0 at 1000 KBits/s
+-- Attach the CAN device to CAN0 at 1000 bits/s
 can.attach(can.CAN0, 1000)
 
 -- Accept only packets from 200 to 250
@@ -82,7 +82,7 @@ Arguments:
 Returns: noting, or an exception.
 
 ```lua
--- Attach the CAN device to CAN0 at 1000 KBits/s
+-- Attach the CAN device to CAN0 at 1000 bits/s
 can.attach(can.CAN0, 1000)
 
 -- Accept only packets from 200 to 250
@@ -112,7 +112,7 @@ Returns: nothing, or an exception.
 
 
 ```lua
--- Attach the CAN device to CAN0 at 1000 KBits/s
+-- Attach the CAN device to CAN0 at 1000 bits/s
 can.attach(can.CAN0, 1000)
 
 -- Send a data frame with standard identifier 100 and contents 1234
@@ -136,7 +136,7 @@ Returns:
 
 
 ```lua
--- Attach the CAN device to CAN0 at 1000 KBits/s
+-- Attach the CAN device to CAN0 at 1000 bits/s
 can.attach(can.CAN0, 1000)
 
 -- Receive data frame
@@ -195,7 +195,7 @@ Arguments:
 Returns: nothing, or an exception.
 
 ```lua
--- Attach the CAN device to CAN0 at 1000 KBits/s
+-- Attach the CAN device to CAN0 at 1000 bits/s
 can.attach(can.CAN0, 1000)
 
 can.dump(can.CAN0)
