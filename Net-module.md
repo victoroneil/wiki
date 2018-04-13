@@ -241,27 +241,21 @@ Returns:
 
 * if table is true: a Lua table with the scan's result, or an exception. This table is an array of tables. Each entry corresponds to an station. Each station gives the following fields:
 
-   * ssid: station ssid.
-   * auth: authoritation type. Can be either net.wf.auth.OPEN, net.wf.auth.WEP, net.wf.auth.WPA_PSK, net.wf.auth.WPA2_PSK, or net.wf.auth.WPA_WPA2_PSK.
+   * ssid: access point ssid.
    * rssi: signal rssi.
+   * auth: authoritation type. Can be either net.wf.auth.OPEN, net.wf.auth.WEP, net.wf.auth.WPA_PSK, net.wf.auth.WPA2_PSK, or net.wf.auth.WPA_WPA2_PSK.
+   * ch1: primary channel of access point
+   * ch2: secondary channel of access point
 
 ```lua
 -- Scan wifi, and print to the console
 / > net.wf.scan()
 
-                           SSID  RSSI          AUTH
----------------------------------------------------
-                  MOVISTAR_B450   -46      WPA2_PSK
-           Xarxa Wi-Fi de JAUME   -71  WPA_WPA2_PSK
-                  MASMOVIL_TVsm   -82  WPA_WPA2_PSK
-                    Orange-3A24   -86  WPA_WPA2_PSK
-                  MOVISTAR_8B90   -86      WPA2_PSK
-                   vodafoneF6A7   -90       WPA_PSK
-                  MOVISTAR_C461   -90      WPA2_PSK
-                  MOVISTAR_91B0   -91      WPA2_PSK
-                  MOVISTAR_C460   -91      WPA2_PSK
-                   VodafoneG18F   -94       WPA_PSK
-                    Josema_Casa   -94      WPA2_PSK
+
+                           SSID  RSSI          AUTH  CH1  CH2
+-------------------------------------------------------------
+          Xarxa Wi-Fi de JAUME2   -43      WPA2_PSK    6    0
+           Xarxa Wi-Fi de JAUME   -85  WPA_WPA2_PSK   11    0
 ```
 
 ```lua
