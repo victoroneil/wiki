@@ -28,68 +28,68 @@ km = sensor.attach("KEY_MATRIX_4_4", 40, 41, 42, 43, 44, 45, 46, 47)
 km:callback(
    function(data)
       if (data.key1 == 1) then
-	     print("key1")
-	  end
+         print("key1")
+      end
 
       if (data.key2 == 1) then
-	     print("key2")
-	  end
+         print("key2")
+      end
 
       if (data.key3 == 1) then
-	     print("key4")
-	  end
+         print("key3")
+      end
 
       if (data.key4 == 1) then
-	     print("key4")
-	  end
+         print("key4")
+      end
 
       if (data.key5 == 1) then
-	     print("key5")
-	  end
+         print("key5")
+      end
 
       if (data.key6 == 1) then
-	     print("key6")
-	  end
+         print("key6")
+      end
 
       if (data.key7 == 1) then
-	     print("key7")
-	  end
+         print("key7")
+      end
 
       if (data.key8 == 1) then
-	     print("key8")
-	  end
+         print("key8")
+      end
 
       if (data.key9 == 1) then
-	     print("key0")
-	  end
+         print("key9")
+      end
 
       if (data.key10 == 1) then
-	     print("key10")
-	  end
+         print("key10")
+      end
 
       if (data.key11 == 1) then
-	     print("key11")
-	  end
+         print("key11")
+      end
 
       if (data.key12 == 1) then
-	     print("key12")
-	  end
+         print("key12")
+      end
 
       if (data.key13 == 1) then
-	     print("key13")
-	  end
+         print("key13")
+      end
 
       if (data.key14 == 1) then
-	     print("key14")
-	  end
+         print("key14")
+      end
 
       if (data.key14 == 1) then
-	     print("key14")
-	  end
+         print("key15")
+      end
 
       if (data.key16 == 1) then
-	     print("key16")
-	  end
+         print("key16")
+      end
    end
 )
 ```
