@@ -285,7 +285,7 @@ Returns: nothing, or an exception.
 
 ```lua
 -- Setup a wifi connection using a dynamic IP
-net.nw.setup(net.wf.mode.STA, "ssid", "password")
+net.wf.setup(net.wf.mode.STA, "ssid", "password")
 ```
 
 ```lua
