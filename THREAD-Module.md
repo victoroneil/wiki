@@ -90,6 +90,19 @@ end
 th1 = thread.start(f1)
 ```
 
+## thread.self()
+
+Get the thread identifier of the calling thread.
+
+Arguments: none.
+
+Returns: the thread identifier.
+
+```lua
+thread.start(function()
+print("I'm: "..thread.self())
+end)
+```
 
 ## thread.suspend([thread id])
 
