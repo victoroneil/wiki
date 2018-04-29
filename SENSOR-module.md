@@ -172,7 +172,7 @@ The arguments for this function varies according to the hardware interface type.
    * id: a string containing the sensor id, for example GPS.
    * uart: UART unit identifier. Use uart.UARTx defined for this purpose.
    * baud rate (optional): desired baud rate, expressed in bauds. If not provided, the baud rate is set to 9600.
-   * data bits (optional): number of data bits, can be 8 or 9. If not provided, the data bits is set to 8.
+   * data bits (optional): number of data bits, can be 8 or 9. If not provided, the data bits are set to 8.
    * parity (optional): parity, can be either uart.PARNONE (none parity), uart.PAREVEN (even parity) or uart.PARODD (odd parity). If not provided, the parity is set to uart.PARNONE.
    * stop bits (optional): number of stop bits, can be either uart.STOP1 (1 stop bits) or uart.STOP2 (2 stop bits). If not provided, the stop bits are set to uart.STOP1.
 
