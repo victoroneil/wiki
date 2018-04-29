@@ -38,6 +38,14 @@ Arguments:
 
 Returns: i2c device instance, or an exception. You must store this instance into a variable for further operations with it.
 
+## instance:detach()
+
+Detach an i2c device instance from the I2C bus, and releases all the used resources.
+
+Arguments: none.
+
+Returns: nothing, or an exception.
+
 ## instance:setspeed(speed)
 
 Set the I2C bus speed for a particular I2C instance.
