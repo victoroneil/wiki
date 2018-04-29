@@ -40,7 +40,7 @@ Returns: i2c device instance, or an exception. You must store this instance into
 
 ## instance:detach()
 
-Detach an i2c device instance from the I2C bus, and releases all the used resources.
+Detach an i2c device instance from the I2C bus, and release all the used resources.
 
 Arguments: none.
 
