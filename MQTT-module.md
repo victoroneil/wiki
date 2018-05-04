@@ -131,9 +131,7 @@ Subscribe to a topic.
 
 Arguments:
 
-* topic: topic name.
-
-  The topic name can contain wildcard characters:
+* topic: topic name. The topic name can contain wildcard characters:
 
   - A '#' character represents a complete sub-tree of the hierarchy and thus must be the last character in a subscription topic string, such as SENSOR/#. This will match any topic starting with SENSOR/, such as SENSOR/1/TEMP and SENSOR/2/HUMIDITY.
 
