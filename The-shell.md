@@ -86,10 +86,12 @@ f	     280		test2.lua
 Creates a new directory named _directory_ in the current directory.
 
 ## more _file_
-	
-## mv _SOURCE_ _DESTINATION_
 
-Move (rename) _SOURCE_ to _DESTINATION_.
+Print the contents of _file_ one screen at a time.
+	
+## mv _source_ _destination_
+
+Move (rename) the _source_ file to the _destination_ file.
 
 ## pwd
 
@@ -101,11 +103,48 @@ Print name of current/working directory.
 /examples > 
 ```
 
-## rm _FILE_
+## rm _file_
 
-Remove _FILE_.
+Remove _file_.
 
 # Network commands
+
+## netstat
+
+Prints information about the status of the network interfaces.
+
+```lua
+/ > netstat
+wf: mac address 24:0a:c4:01:96:ec
+   ip address 192.168.1.46 / netmask 255.255.255.0
+   gw address 192.168.1.1
+  ip6 address fe80:0000:0000:0000:260a:c4ff:fe01:96ec
+
+en: mac address 00:00:00:00:00:00
+   ip address 0.0.0.0 netmask 0.0.0.0
+   gw address 0.0.0.0
+```
+
+## ping _host_
+
+Send ICMP ECHO_REQUEST to network hosts to test connectivity between Lua RTOS an the _host_.
+
+```lua
+/ > ping whitecatboard.org
+PING whitecatboard.org (5.196.211.36): 32 data bytes
+60 bytes from 5.196.211.36: icmp_seq=1 time=35.515 ms
+60 bytes from 5.196.211.36: icmp_seq=2 time=39.351 ms
+60 bytes from 5.196.211.36: icmp_seq=3 time=35.153 ms
+60 bytes from 5.196.211.36: icmp_seq=4 time=35.429 ms
+60 bytes from 5.196.211.36: icmp_seq=5 time=35.362 ms
+60 bytes from 5.196.211.36: icmp_seq=6 time=35.490 ms
+60 bytes from 5.196.211.36: icmp_seq=7 time=35.216 ms
+60 bytes from 5.196.211.36: icmp_seq=8 time=35.389 ms
+60 bytes from 5.196.211.36: icmp_seq=9 time=35.739 ms
+60 bytes from 5.196.211.36: icmp_seq=10 time=35.223 ms
+10 packets transmitted, 10 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 35.153/35.787/39.351/1.199 ms
+```
 
 # System commands
 
@@ -114,6 +153,10 @@ Remove _FILE_.
 Print the syslog contents on the standard output.
 
 **Note:** dmesg is only available if the underlying storage for your root filesystem is not the SPI FLASH.
+
+## uptime
+
+Shows 
 
 ## reboot
 
