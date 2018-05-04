@@ -2,6 +2,26 @@ Lua RTOS has an integrated shell that allows you to execute certain commands in 
 
 The following explains all the commands supported by the shell.
 
+# Utility commands
+
+## luac _SOURCE_ _[DESTINATION]_
+
+Translates programs written in the Lua programming language into binary files that can be later loaded and executed.
+
+_DESTINATION_ is optional, and if it's not provided the compiled filename is the _SOURCE_ filename postfixed with the "c" character.
+
+Example:
+
+```lua
+-- Compile test.lua into test.luac file
+luac test.lua test.luac
+
+-- Compile test.lua into test.luac file
+luac test.lua
+```
+
+# File system commands
+
 ## cat _FILE_
 
 Print _FILE_ on the standard output.
@@ -32,10 +52,6 @@ Change the working directory.
 /examples > 
 ````
 
-## clear
-
-Clear the terminal screen.
-
 ## cp _SOURCE_ _DESTINATION_
 
 Copy the _SOURCE_ file to the _DESTINATION_ file.
@@ -45,38 +61,12 @@ Copy the _SOURCE_ file to the _DESTINATION_ file.
 / > 
 ```
 
-## dmesg
-
-Print the syslog contents on the standard output.
-
-**Note:** dmesg is only available if the underlying storage for your root filesystem is not the SPI FLASH.
-
-## reboot
-
-Reboot the system.
-
 ## ls _PATTERN_
-
-## luac _SOURCE_ _[DESTINATION]_
-
-Translates programs written in the Lua programming language into binary files that can be later loaded and executed.
-
-_DESTINATION_ is optional, and if it's not provided the compiled filename is the _SOURCE_ filename postfixed with the "c" character.
-
-Example:
-
-```lua
--- Compile test.lua into test.luac file
-luac test.lua test.luac
-
--- Compile test.lua into test.luac file
-luac test.lua
-```
 
 ## mkdir _DIRECTORY_
 
 ## more _FILE_
-
+	
 ## mv _SOURCE_ _DESTINATION_
 
 Move (rename) _SOURCE_ to _DESTINATION_.
@@ -94,3 +84,21 @@ Print name of current/working directory.
 ## rm _FILE_
 
 Remove _FILE_.
+
+# Network commands
+
+# System commands
+
+## clear
+
+Clear the terminal screen.
+
+## dmesg
+
+Print the syslog contents on the standard output.
+
+**Note:** dmesg is only available if the underlying storage for your root filesystem is not the SPI FLASH.
+
+## reboot
+
+Reboot the system.
