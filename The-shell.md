@@ -68,6 +68,10 @@ Copy the _source_ file to the _destination_ file.
 / > cp autorun.lua autorun.old
 ```
 
+## edit _filename_
+
+Edit the _filename_.
+
 ## ls _pattern_
 
 Lists directory contents of files and directories that matches the _pattern_.
@@ -154,9 +158,18 @@ Print the syslog contents on the standard output.
 
 **Note:** dmesg is only available if the underlying storage for your root filesystem is not the SPI FLASH.
 
+## passwd
+
+Changes the root password, used to establish a ssh connection to Lua RTOS.
+
 ## uptime
 
-Shows 
+Prints the Lua RTOS up time (the time that Lua RTOS is up since last reboot).
+
+```lua
+/ > uptime
+23:42 up  0:04:14
+```
 
 ## reboot
 
