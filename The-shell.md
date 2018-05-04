@@ -4,11 +4,19 @@ The following explains all the commands supported by the shell.
 
 # Utility commands
 
-## luac _SOURCE_ _[DESTINATION]_
+## clear
 
-Translates programs written in the Lua programming language into binary files that can be later loaded and executed.
+Clear the terminal screen.
 
-_DESTINATION_ is optional, and if it's not provided the compiled filename is the _SOURCE_ filename postfixed with the "c" character.
+## luac _source_ _[destination]_
+
+**luac** is the Lua compiler. It translates programs written in the Lua programming language (**_source_** argument) into binary files (**_[destination]_** argument) that can be later loaded and executed.
+
+The main advantages of precompiling chunks are: faster loading, protecting source code from accidental user changes, and off-line syntax checking.
+
+Precompiling does not imply faster execution because in Lua chunks are always compiled into bytecodes before being executed. luac simply allows those bytecodes to be saved in a file for later execution.
+
+**_destination_** argument is optional, and if it's not provided the compiled filename is the _source_ filename postfixed with the "c" character.
 
 Example:
 
@@ -22,9 +30,9 @@ luac test.lua
 
 # File system commands
 
-## cat _FILE_
+## cat _file_
 
-Print _FILE_ on the standard output.
+Print the _file_ on the standard output.
 
 ```lua
 / > cat system.lua
@@ -43,29 +51,41 @@ os.history(false)          -- Enable/disable history
 / > 
 ```
 
-## cd _DIRECTORY_
+## cd _directory_
 
-Change the working directory.
+Change the working directory to _directory_.
 
 ```lua
 / > cd examples
 /examples > 
 ````
 
-## cp _SOURCE_ _DESTINATION_
+## cp _source_ _destination_
 
-Copy the _SOURCE_ file to the _DESTINATION_ file.
+Copy the _source_ file to the _destination_ file.
 
 ```lua
 / > cp autorun.lua autorun.old
-/ > 
 ```
 
-## ls _PATTERN_
+## ls _pattern_
 
-## mkdir _DIRECTORY_
+Lists directory contents of files and directories that matches the _pattern_.
 
-## more _FILE_
+```lua
+/ > ls *.lua
+f	       0		autorun.lua
+f	    2446		system.lua
+f	    2445		config.lua
+f	     252		test.lua
+f	     280		test2.lua
+```
+
+## mkdir _directory_
+
+Creates a new directory named _directory_ in the current directory.
+
+## more _file_
 	
 ## mv _SOURCE_ _DESTINATION_
 
@@ -88,10 +108,6 @@ Remove _FILE_.
 # Network commands
 
 # System commands
-
-## clear
-
-Clear the terminal screen.
 
 ## dmesg
 
