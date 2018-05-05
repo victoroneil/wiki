@@ -112,9 +112,9 @@ Print name of current/working directory.
 /examples > 
 ```
 
-## rm _file_
+## rm _pattern_
 
-Remove _file_.
+Remove the files that match the _pattern_.
 
 # Network commands
 
