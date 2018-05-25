@@ -321,11 +321,15 @@ Arguments:
 
 Returns: nothing, or an exception.
 
-## net.wf.start()
+## net.wf.start([async])
 
 Start the wifi interface.
 
-Arguments: nothing.
+Arguments:
+
+* async (optional): if true the interface is started asynchronously (don't wait for getting IP), and if false 
+the interface is started synchronously. If not provided, the default value for this argument is true.
+
 Returns: nothing, or an exception.
 
 ## net.wf.stop()
@@ -383,11 +387,14 @@ Returns: nothing or an exception.
 net.en.setup()
 ```
 
-## net.en.start()
+## net.en.start([async])
 
 Start the ethernet interface.
 
-Arguments: nothing.
+Arguments:
+
+* async (optional): if true the interface is started asynchronously (don't wait for getting IP), and if false 
+the interface is started synchronously. If not provided, the default value for this argument is true.
 
 Returns: nothing or an exception.
 
