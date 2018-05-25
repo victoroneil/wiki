@@ -104,13 +104,13 @@ Returns:
 
 * if table is false: nothing or an exception.
 
-* if table is true: a Lua table with the network information, or an exception. This table is an array of tables. Each entry corresponds to an interface. Each interface gives the following fields:
+* if table is true: a Lua table with the network information, or an exception. This table is an array of tables. Each entry corresponds to an interface, and each interface has the following fields:
 
-  * interface: the interface name. In this version only wf interface are returned.
-  * ip: interface ip
-  * gw: interface gateway ip
-  * netmask: interface netmask
-  * mac: interface mac address
+  * interface: the interface name (wf = wifi, en = ethernet).
+  * ip: interface ip.
+  * gw: interface gateway ip.
+  * netmask: interface netmask.
+  * mac: interface mac address.
 
 ```lua
 -- Get the network stats to the console
