@@ -86,9 +86,10 @@ To use this module you must take into consideration the following:
 
 ## net.connected()
 
-Check if the network is available.
+Check if the network is available. The network is available if one of the network interfaces are up and have an IP address.
 
 Arguments: nothing.
+
 Returns: true if the network is available, false if is not available, or an exception.
 
 ## net.stat([table])
@@ -337,6 +338,7 @@ Returns: nothing, or an exception.
 Stop the wifi interface.
 
 Arguments: nothing.
+
 Returns: nothing, or an exception.
 
 # Ethernet
