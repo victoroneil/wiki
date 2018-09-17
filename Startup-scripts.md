@@ -4,7 +4,7 @@ When Lua RTOS launches the Lua interpreter, and before the Lua prompt appears, 2
 
 1. system.lua
 
-   This script is intended for setup the system, for example enable Lua RTOS configurations disabled by default, change default configurations, setup a network connection, etc. The system.lua script is optional, and nothing happens if it's not present in the root directory.
+   This script is intended for setup the system, for example enable Lua RTOS configurations disabled by default, modify default configurations, setup a network connection, etc. The system.lua script is optional, and nothing happens if it's not present in the root directory.
 
    Example:
    ```lua
