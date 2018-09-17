@@ -2,7 +2,7 @@ Lua RTOS has support for the following file systems:
 
 * RAM file system (RFS):
 
-  RFS is a file system, enterely developed by the Whitecat Team, in which all the data is stored in RAM, without persistence. This means that all the data stored in the file system is lost on each reboot.
+  RFS is a file system, enterely developed by the Lua RTOS team, in which all the data is stored in RAM, without persistence. This means that all the data stored in the file system is lost on each reboot.
 
 * Little file system (LFS):
 
@@ -16,4 +16,4 @@ Lua RTOS has support for the following file systems:
 
   FAT is a legacy file system, which is simple and robust, and commonly used in a large range of devices. In Lua RTOS, FAT uses an SDCard as the underlying storage.
 
-In Lua RTOS, each file system is mounted into a logical file system, in which each folder (mount point) is linked with a file system. When booting, Lua RTOS mounts the root file system at /. Secondary file systems can be mounted later in [a startup script](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Startup-scripts) or in the user application.
+In Lua RTOS, each file system is mounted into a logical file system, in which each folder (mount point) is linked with a file system. When booting, Lua RTOS mounts the root file system at /. Secondary file systems can be mounted later in [a startup script](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Startup-scripts), or in the user application.
