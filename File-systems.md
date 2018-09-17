@@ -8,13 +8,13 @@ Lua RTOS has support for the following file systems:
 
 * Little file system (LFS):
 
-  LFS is a file system designed to work with a limited amount of memory, and for systems that may have random power failures. Also implements dynamic wear leveling, to extend the lifetime of the underlying storage (SPI FLASH).
+  LFS is a file system designed to work with a limited amount of memory, and for systems that may have random power failures. Also implements dynamic wear leveling, to extend the lifetime of the underlying storage. In Lua RTOS, LFS uses the SPI FLASH as the underlying storage.
   
   [Project repository](https://github.com/ARMmbed/littlefs)  
   
 * Spiffs file system (SPIFFS):
 
-  SPIFFS is a file system designed to run on embedded systems, using a small quantity of RAM. Also implements static wear leveling, to extend the lifetime of the underlying storage (SPI FLASH).
+  SPIFFS is a file system designed to run on embedded systems, using a small quantity of RAM. Also implements static wear leveling, to extend the lifetime of the underlying storage. In Lua RTOS, LFS uses the SPI FLASH as the underlying storage.
 
   [Project repository](https://github.com/pellepl/spiffs)  
 
