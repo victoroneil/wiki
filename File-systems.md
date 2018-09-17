@@ -14,11 +14,11 @@ Lua RTOS has support for the following file systems:
   
 * Spiffs file system (SPIFFS):
 
-  SPIFFS is a file system designed to run on embedded systems, usinng a small quantity of RAM. Also implements static wear leveling, to extend the lifetime of the underlying storage (SPI FLASH).
+  SPIFFS is a file system designed to run on embedded systems, using a small quantity of RAM. Also implements static wear leveling, to extend the lifetime of the underlying storage (SPI FLASH).
 
   [Project repository](https://github.com/pellepl/spiffs)  
 
-* FAT file system (FAT): is a legacy file system which is simple and robust, and commonly used in a large range of devices.
+* FAT file system (FAT):
 
-  FAT is a legacy file system which is simple and robust, and commonly used in a large range of devices. In Lua RTOS, FAT uses an SDCard as the underlying storage.
+  FAT is a legacy file system, which is simple and robust, and commonly used in a large range of devices. In Lua RTOS, FAT uses an SDCard as the underlying storage.
 
