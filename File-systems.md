@@ -1,13 +1,24 @@
-Lua RTOS supports two types of file systems:
+Lua RTOS has support for the following file systems:
 
-* SPIFFS: is a file system intended for SPI NOR flash devices on embedded targets. This means that the file system can reside on the same memory where firmware is stored without additional hardware.
+* RAM file system (RFS):
 
-  SPIFFS is the default file system in Lua RTOS. Please note that NOR flash technology has the following drawbacks, which you should keep in mind when designing your application:
+  RFS is a file system enterely developed by the Whitecat Team, in which all the data is stored in RAM, without persistence. This means that all the data stored in the file system is lost on each reboot.
 
-    * 10.000 - 100.000 erase cycles. Don't use SPIFFS if your application needs to do intensive write operations to the file system.
-    * Small sizes (<= 16 Mb).
+  [Project repository](https://github.com/whitecatboard/Lua-RTOS-ESP32/tree/master/components/ramfs)
 
-* FAT: is a legacy file system which is simple and robust, and commonly used in a large range of devices.
+* Little file system (LFS):
 
-  In Lua RTOS FAT file system requires an SDCard, and can coexist with SPIFFS.
+  LFS is a file system designed to work with a limited amount of memory, and for systems that may have random power failures. Also implements dynamic wear leveling, to extend the lifetime of the underlying storage (SPI FLASH).
+  
+  [Project repository](https://github.com/ARMmbed/littlefs)  
+  
+* Spiffs file system (SPIFFS):
+
+  SPIFFS is a file system designed to run on embedded systems, usinng a small quantity of RAM. Also implements static wear leveling, to extend the lifetime of the underlying storage (SPI FLASH).
+
+  [Project repository](https://github.com/pellepl/spiffs)  
+
+* FAT file system (FAT): is a legacy file system which is simple and robust, and commonly used in a large range of devices.
+
+  FAT is a legacy file system which is simple and robust, and commonly used in a large range of devices. In Lua RTOS, FAT uses an SDCard as the underlying storage.
 
