@@ -1,6 +1,6 @@
 # About this
 
-When Lua RTOS launches the Lua interpreter, and before the Lua prompt appears, 2 scripts are automatically executed. These scripts resides in the root directory and are written in Lua:
+When Lua RTOS launches the Lua interpreter, and before the Lua prompt appears, 2 scripts are automatically executed. These scripts reside in the root directory and are written in Lua:
 
 1. system.lua
 
