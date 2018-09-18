@@ -16,7 +16,7 @@ Lua RTOS has support for the following file systems:
 
   FAT is a legacy file system, which is simple and robust, and commonly used in a large range of devices. In Lua RTOS, FAT uses an SDCard as the underlying storage.
 
-In Lua RTOS, each file system is mounted into a folder of a logical file system. This folder is physically linked to the file system. When booting, Lua RTOS mounts the root file system at the "/" folder automatically. Secondary file systems can be mounted later, in a [startup script](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Startup-scripts), or from the user application. A typical setup could be:
+In Lua RTOS, each file system is mounted into a folder of a logical file system. This folder is physically linked to the file system. When booting, Lua RTOS mounts the root file system at the "/" folder automatically. Secondary file systems can be mounted later, in a [startup script](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Startup-scripts), or in the user application. A typical setup could be:
 
 | Mount point | Linked with | Storage   | Notes   
 |-------------|-------------|-----------|------------------|
