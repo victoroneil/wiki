@@ -34,3 +34,6 @@ The mount point must be a subfolder of the root folder, so /sd and /rfs are vali
 
 Any mounted file system can be unmounted at any time. When a file system is unmounted all pending changes are written to the underlying storage device, and then all the used resources are free.
 
+## Path resolution
+
+In Lua RTOS some system calls have as parameter one or more filenames.
