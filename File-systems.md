@@ -32,3 +32,5 @@ When booting, Lua RTOS mounts the root file system at the root folder ("/") auto
 
 The mount point must be a subfolder of the root folder, so /sd and /rfs are valid mount points, but /other/sd and /other/rfs are invalid mount points.
 
+Any mounted file system can be unmounted at any time. When a file system is unmounted all pending changes are written to the underlying storage device, and then all the used resources are free.
+
