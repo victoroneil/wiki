@@ -36,6 +36,8 @@ Any mounted file system can be unmounted at any time. When a file system is unmo
 
 ## Path resolution
 
+(under construction)
+
 In Lua RTOS some system calls have as parameter one or more pathnames When one of this system calls is invoked, Lua RTOS starts the path resolution process before using the path pathname. The path resolution process works as follow:
 
 * If the pathname starts with the "/" character (absolute path), the starting lookup directory is the root directory, which is the same for all the threads.
