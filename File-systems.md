@@ -20,9 +20,9 @@ Lua RTOS has support for the following file systems:
 
 ## Logical file system and mount points
 
-In Lua RTOS, each file system is mounted into a folder within a logical file system. This folder is physically linked to the file system.
+In Lua RTOS, each file system is mounted into a directory within a logical file system. This directory is physically linked to the file system.
 
-When booting, Lua RTOS mounts the root file system at the root folder ("/") automatically. Secondary file systems can be mounted later, in a [startup script](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Startup-scripts), or in the user application. A typical setup could be:
+When booting, Lua RTOS mounts the root file system at the root directory ("/") automatically. Secondary file systems can be mounted later, in a [startup script](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Startup-scripts), or in the user application. A typical setup could be:
 
 | Mount point | Linked with | Storage   | Notes   
 |-------------|-------------|-----------|------------------|
@@ -30,7 +30,7 @@ When booting, Lua RTOS mounts the root file system at the root folder ("/") auto
 | /sd         | FAT         | SDCard    |
 | /rfs        | RFS         | RAM       |
 
-The mount point must be a subfolder of the root folder, so /sd and /rfs are valid mount points, but /other/sd and /other/rfs are invalid mount points.
+The mount point must be a subdirectory of the root directory, so /sd and /rfs are valid mount points, but /other/sd and /other/rfs are invalid mount points.
 
 Any mounted file system can be unmounted at any time. When a file system is unmounted all pending changes are written to the underlying storage device, and then all the used resources are free.
 
