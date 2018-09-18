@@ -43,3 +43,5 @@ In Lua RTOS some system calls have as parameter one or more pathnames When one o
 * If the pathname starts with the "/" character (absolute path), the starting lookup directory is the root directory, which is the same for all the threads.
 
 * If the pathname does not start with the "/" character (relative path), the starting lookup directory of the resolution process is the current working directory, which is the same for all the threads.
+
+* For each non-final component of the pathname, where a component is a substring delimited by '/' characters:
