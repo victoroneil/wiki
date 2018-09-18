@@ -18,11 +18,11 @@ Lua RTOS has support for the following file systems:
 
 In Lua RTOS, each file system is mounted into a folder of a logical file system. This folder is physically linked to the file system. When booting, Lua RTOS mounts the root file system at the "/" folder automatically. Secondary file systems can be mounted later, in a startup script, or from the user application. A typical setup could be:
 
-| Mount point | Linked with | Storage   | Notes   
-|-------------|-------------|-----------|------------------|
-| /           | LFS         | SPI FLASH | Root file system |
-| /sd         | FAT         | SDCard    | 
-| /rfs        | RFS         | RAM       |
+  | Mount point | Linked with | Storage   | Notes   
+  |-------------|-------------|-----------|------------------|
+  | /           | LFS         | SPI FLASH | Root file system |
+  | /sd         | FAT         | SDCard    |
+  | /rfs        | RFS         | RAM       |
 
 
 
