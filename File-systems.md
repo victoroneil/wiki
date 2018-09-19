@@ -36,12 +36,22 @@ Any mounted file system can be unmounted at any time. When a file system is unmo
 
 ## Path resolution
 
-(under construction)
-
-In Lua RTOS some system calls have as parameter one or more pathnames When one of this system calls is invoked, Lua RTOS starts the path resolution process before using the path pathname. The path resolution process works as follow:
+In Lua RTOS some system calls have as parameter one or more pathnames. When one of this system calls is invoked, Lua RTOS starts the path resolution process before using the pathname. The path resolution process works as follow:
 
 * If the pathname starts with the "/" character (absolute path), the starting lookup directory is the root directory, which is the same for all the threads.
 
 * If the pathname does not start with the "/" character (relative path), the starting lookup directory of the resolution process is the current working directory, which is the same for all the threads.
 
 * For each non-final component of the pathname, where a component is a substring delimited by '/' characters:
+
+  - If the component is "." (current directory), the lookup directory remains intact, and go to the next component.
+  - If the component is ".." (previous directory), the lookup up directory is set to the previous component, and go to the next component.
+  - If the component is not found, an ENOENT error is returned.
+  - If the component is found, but is not a directory an ENOTDIR error is returned.
+  - If the component is found and is a directory, the current lookup directory is set to that directory, and go to the next component.
+
+* For the final component of the pathname:
+
+  - If the component is "." (current directory), the lookup directory remains intact.
+  - If the component is ".." (previous directory), the lookup up directory is set to the previous component.
+  - If the component is not found, an ENOENT error is returned.
