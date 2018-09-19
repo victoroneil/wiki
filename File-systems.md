@@ -32,7 +32,7 @@ When booting, Lua RTOS mounts the root file system at the root directory ("/") a
 
 The mount point must be a subdirectory of the root directory, so /sd and /rfs are valid mount points, but /other/sd and /other/rfs are invalid mount points.
 
-Any mounted file system can be unmounted at any time. When a file system is unmounted all pending changes are written to the underlying storage device, and then all the used resources are free.
+Any mounted file system can be unmounted at any time. When a file system is unmounted, all pending changes are written to the underlying storage device, and then all the used resources are free.
 
 ## Path resolution
 
@@ -49,6 +49,7 @@ In Lua RTOS some system calls have as parameter one or more pathnames. When one 
   - If the component is not found, an ENOENT error is returned.
   - If the component is found, but is not a directory an ENOTDIR error is returned.
   - If the component is found and is a directory, the current lookup directory is set to that directory, and go to the next component.
+  - If the component is a mount point, the current lookup directory is set to the root directory of the linked file system.
 
 * For the final component of the pathname:
 
