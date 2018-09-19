@@ -18,6 +18,11 @@ Lua RTOS has support for the following file systems:
 
   FAT is a legacy file system, which is simple and robust, and commonly used in a large range of devices. In Lua RTOS, FAT uses an SDCard as the underlying storage.
 
+In Lua RTOS, the supported file systems have the following characteristics:
+
+* POSIX-compliant
+* Support for files and directories (even in case of SPIFFS where directories are emulated)
+
 ## Logical file system and mount points
 
 In Lua RTOS, each file system is mounted into a directory (mount point) within a logical file system. The mount point is physically linked to the file system.
