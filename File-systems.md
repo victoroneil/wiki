@@ -36,19 +36,19 @@ Any mounted file system can be unmounted at any time. When a file system is unmo
 
 ## Path resolution
 
-In Lua RTOS some system calls have as parameter one or more pathnames. When one of this system calls is invoked, Lua RTOS starts the path resolution process before using the pathname. The path resolution process works as follow:
+In Lua RTOS some system calls have as parameter one or more pathnames. When one of these system calls is used, Lua RTOS starts the path resolution process. The path resolution process works as follow:
 
 * If the pathname starts with the "/" character (absolute path), the starting lookup directory is the root directory, which is the same for all the threads.
 
-* If the pathname does not start with the "/" character (relative path), the starting lookup directory of the resolution process is the current working directory, which is the same for all the threads.
+* If the pathname does not start with the "/" character (relative path), the starting lookup directory is the current working directory, which is the same for all the threads.
 
-* For each non-final component of the pathname, where a component is a substring delimited by '/' characters:
+* For each non-final component of the pathname, where a component is a substring delimited by the '/' character:
 
   - If the component is "." (current directory), the lookup directory remains intact, and go to the next component.
   - If the component is ".." (previous directory), the lookup up directory is set to the previous component, and go to the next component.
   - If the component is not found, an ENOENT error is returned.
-  - If the component is found, but is not a directory an ENOTDIR error is returned.
-  - If the component is found and is a directory, the current lookup directory is set to that directory, and go to the next component.
+  - If the component is found, but is not a directory, an ENOTDIR error is returned.
+  - If the component is found, and is a directory, the current lookup directory is set to that directory, and go to the next component.
   - If the component is a mount point, the current lookup directory is set to the root directory of the linked file system.
 
 * For the final component of the pathname:
