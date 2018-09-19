@@ -21,7 +21,8 @@ Lua RTOS has support for the following file systems:
 In Lua RTOS, the supported file systems have the following characteristics:
 
 * POSIX-compliant
-* Support for files and directories (even in case of SPIFFS where directories are emulated)
+* Thread-safe
+* Support for files and directories (even in case of SPIFFS, where directories are emulated)
 
 ## Logical file system and mount points
 
