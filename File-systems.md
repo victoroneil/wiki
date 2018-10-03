@@ -2,9 +2,20 @@
 
 Lua RTOS has support for the following file systems:
 
-* RAM file system (RFS):
+* ROM file system (ROMFS):
 
-  RFS is a file system, enterely developed by the Lua RTOS team, in which all the data is stored in RAM, without persistence. This means that all the data stored in the file system is lost on each reboot.
+  ROMFS is a file system, enterely developed by the Lua RTOS team, in which all it's data is stored together with the Lua RTOS firmware.
+
+  Although you can use other general-purpose file systems, such as SPIFFS or LFS (and mount them as read-only), the use of ROMFS has the following advantages:
+
+  * There is no wasted space, since in ROMFS each file consists of a single block of data, that has the same size as the file content.
+  * As the file system is build and linked together with the firmware, it can be updated through OTA.
+  * Small footprint, and minimal RAM usage (usually 1K per opened file if setvbuf is not used).
+  * ESP32 firmwares based on Lua RTOS and Lua scripts are deployed in the same way as firmwares enterely written in C.
+
+* RAM file system (RAMFS):
+
+  RAMFS is a file system, enterely developed by the Lua RTOS team, in which all the data is stored in RAM, without persistence. This means that all the data stored in the file system is lost on each reboot.
 
 * Little file system (LFS):
 
@@ -34,9 +45,9 @@ When booting, Lua RTOS mounts the root file system at the root directory ("/") a
 |-------------|-------------|-----------|------------------|
 | /           | LFS         | SPI FLASH | Root file system |
 | /sd         | FAT         | SDCard    |
-| /rfs        | RFS         | RAM       |
+| /ram        | RAMFS       | RAM       |
 
-The mount point must be a subdirectory of the root directory, so /sd and /rfs are valid mount points, but /other/sd and /other/rfs are invalid mount points.
+The mount point must be a subdirectory of the root directory, so /sd and /ram are valid mount points, but /other/sd and /other/ram are invalid mount points.
 
 Any mounted file system can be unmounted at any time. When a file system is unmounted, all pending changes are written to the underlying storage device, and then all the used resources are free.
 
