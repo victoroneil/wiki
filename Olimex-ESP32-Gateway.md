@@ -1,12 +1,10 @@
-# Olimex ESP32-Gateway
-
 ## Included features
 
 <table><tbody>
 <tr><td>File systems</td><td>FAT, RAMFS, SPIFFS.</td></tr>
 <tr><td>Lua modules</td><td>adc, bt, can, cjson, cpu, encoder, event, fs, gdisplay, i2c, mqtt, neopixel, net, nvs, pack, pio, pwm, sensor, servo, socket, spi, stepper, thread, tmr, uart, ulp.</td></tr>
 <tr><td>Networking</td><td>RMII Ethernet, WiFi.</td></tr>
-<tr><td>Network services</td><td>CAN gateway, Captive DNS, HTTP server.</td></tr>
+<tr><td>Network services</td><td>CAN gateway, Captive DNS, HTTP server, SNTP.</td></tr>
 <tr><td>Sensors</td><td>10K Thermistor, 2P toggle switch, 2Y0A21, 3P toggle switch, 4x4 key matrix, A49E, Analog joystick, BDE0600G, BH1620FVC, BH1721FVC, BME280, DHT11, DHT22, DHT23, DS1820, GPS, GUVA S12SD, Hall flow sensor, Hall internal, Hall switch, LDR, LM35, Linear potentiometer, ML8511, PING28015, PIR AM412, Push switch, Relative rotary encoder, SDS011, TMP36, Tilt switch, US015.</td></tr>
 </tbody></table>
 
