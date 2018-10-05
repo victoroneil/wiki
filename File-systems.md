@@ -4,7 +4,7 @@ Lua RTOS has support for the following file systems:
 
 * ROM file system (ROMFS):
 
-  ROMFS is a file system, enterely developed by the Lua RTOS team, in which all it's data is stored together with the Lua RTOS firmware.
+  ROMFS is a file system, developed by the Lua RTOS team from the scratch, in which all it's data is stored together with the Lua RTOS firmware.
 
   Although you can use other general-purpose file systems, such as SPIFFS or LFS (and mount them as read-only), the use of ROMFS has the following advantages:
 
@@ -15,7 +15,7 @@ Lua RTOS has support for the following file systems:
 
 * RAM file system (RAMFS):
 
-  RAMFS is a file system, enterely developed by the Lua RTOS team, in which all the data is stored in RAM, without persistence. This means that all the data stored in the file system is lost on each reboot.
+  RAMFS is a file system, developed by the Lua RTOS team from the scratch, in which all the data is stored in RAM, without persistence. This means that all the data stored in the file system is lost on each reboot.
 
 * Little file system (LFS):
 
