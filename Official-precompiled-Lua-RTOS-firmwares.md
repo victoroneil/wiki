@@ -10,5 +10,7 @@
 | SparkFun | ESP32 Thing | [Factory](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Firmware-SparkFun-ESP32-Thing)<br/>[OTA](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Firmware-SparkFun-ESP32-Thing-with-OTA)
 | Adafruit | HUZZAH32 | [Factory](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Firmware-Adafruit-HUZZAH32)<br/>[OTA](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Firmware-Adafruit-HUZZAH32-with-OTA)
 | Pycom | FiPy | [Factory](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Firmware-Pycom-FIPY)<br/>[OTA](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Firmware-Pycom-FIPY-with-OTA)
-
-| | | [Factory](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/)<br/>[OTA](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/)
+| Olimex | ESP32-Gateway | [Factory](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Firmware-Olimex-ESP32-Gateway)<br/>[OTA](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Firmware-Olimex-ESP32-Gateway-with-OTA)
+| Olimex | ESP32-EVB | [Factory](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Firmware-Olimex-ESP32-EVB)<br/>[OTA](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Firmware-Olimex-ESP32-EVB-with-OTA)
+| doit.am | DOIT ESP32 DEVKIT V1 | [Factory](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Firmware-DOIT-ESP32-DEVKIT-V1)<br/>[OTA](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Firmware-DOIT-ESP32-DEVKIT-V1-with-OTA)
+| WeMos | WeMos ESP32 with 128x64 OLED | [Factory](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Firmware-WeMos-ESP32-with-128x64-OLED)<br/>[OTA](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Firmware-WeMos-ESP32-with-128x64-OLED-with-OTA)
