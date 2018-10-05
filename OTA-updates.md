@@ -10,7 +10,7 @@ By default the last firmware is obtained from https://ota.whitecatboard.org, and
 
 For security reasons only OTA servers with SSL enabled are supported.
 
-The url for obtain the last firmware is http://ota.whitecatboard.org/?firmware=FIRMWARE_ID&commit=COMMIT, that must be posted to the OTA server, where:
+The url to obtain the last firmware is http://ota.whitecatboard.org/?firmware=FIRMWARE_ID&commit=COMMIT, that must be posted to the OTA server, where:
 
 * FIRMWARE_ID is the firmware id installed in the board, that is formed by [brand-]board type[-board subtype]. Some examples for valid FIRMWARE_ID available in the default OTA server are:
 
@@ -41,7 +41,7 @@ When posting the url http://ota.whitecatboard.org/?firmware=FIRMWARE_ID&commit=C
 
 # How to use
 
-For upgrade your board via OTA yo must do the following:
+To upgrade your board via OTA yo must do the following:
 
 * Setup and start a network connection ([WiFi](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Net-module#wi-fi) or [Ethernet](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Net-module#ethernet)):
 
@@ -54,7 +54,7 @@ For upgrade your board via OTA yo must do the following:
    ```lua
    net.ota()
    ```
-The programmer can do a factory reset calling the [os.factoryreset()](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Lua-RTOS-configuration#osfactoryreset) function for revert previously OTA updates and back to the factory app.
+The programmer can do a factory reset calling the [os.factoryreset()](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Lua-RTOS-configuration#osfactoryreset) function to revert previously OTA updates and back to the factory app.
 
    ```lua
    os.factoryreset()
