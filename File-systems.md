@@ -51,6 +51,25 @@ The mount point must be a subdirectory of the root directory, so /sd and /ram ar
 
 Any mounted file system can be unmounted at any time. When a file system is unmounted, all pending changes are written to the underlying storage device, and then all the used resources are free.
 
+To mount a file system use the Lua _fs.mount(target, file system)_ function:
+
+  * target: is the mount point.
+  * file system: is the file system to mount in the mount point, and can be either romfs, ramfs, lfs, spiffs, or fat.
+
+  ```lua
+  -- Mount a SD card (FAT file system) on /sd
+  fs.mount("sd", "fat")
+  ```
+
+To unmount a file system use the Lua _fs.unmount(target)_ function:
+
+  * target: is the mount point.
+
+  ```lua
+  -- Unmount a SD card mounted on /sd
+  fs.unmount("/sd")
+  ```
+
 ## Path resolution
 
 In Lua RTOS some system calls have as parameter one or more pathnames. When one of these system calls is used, Lua RTOS starts the path resolution process. The path resolution process works as follow:
