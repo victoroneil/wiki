@@ -1,0 +1,59 @@
+![](http://git.whitecatboard.org/ESP32-EVB.png)
+
+## Included features
+
+<table><tbody>
+<tr><td>File systems</td><td>FAT, RAMFS, SPIFFS.</td></tr>
+<tr><td>Lua modules</td><td>adc, bt, can, cjson, cpu, encoder, event, fs, gdisplay, i2c, mqtt, neopixel, net, nvs, pack, pio, pwm, sensor, servo, socket, spi, stepper, thread, tmr, uart, ulp.</td></tr>
+<tr><td>Networking</td><td>RMII Ethernet, WiFi.</td></tr>
+<tr><td>Network services</td><td>CAN gateway, Captive DNS, HTTP server, SNTP.</td></tr>
+<tr><td>Sensors</td><td>10K Thermistor, 2P toggle switch, 2Y0A21, 3P toggle switch, 4x4 key matrix, A49E, Analog joystick, BDE0600G, BH1620FVC, BH1721FVC, BME280, DHT11, DHT22, DHT23, DS1820, GPS, GUVA S12SD, Hall flow sensor, Hall internal, Hall switch, LDR, LM35, Linear potentiometer, ML8511, PING28015, PIR AM412, Push switch, Relative rotary encoder, SDS011, TMP36, Tilt switch, US015.</td></tr>
+</tbody></table>
+
+## Hardware mapping
+
+| CAN | Signal | GPIO |
+|--------|--------|------|
+| 0 | RX<br/>TX | GPIO35<br/>GPIO5 |
+
+| I2C | Signal | GPIO |
+|--------|--------|------|
+| 0 | SCL<br/>SDA | GPIO16<br/>GPIO13 |
+| 1 | SCL<br/>SDA | GPIO32<br/>GPIO33 |
+
+| SPI | Signal | GPIO |
+|--------|--------|------|
+| 2 | MISO<br/>MOSI<br/>CLK | GPIO15<br/>GPIO2<br/>GPIO14 |
+| 3 | MISO<br/>MOSI<br/>CLK | GPIO19<br/>GPIO23<br/>GPIO18 |
+
+| UART | Signal | GPIO |
+|--------|--------|------|
+| 0 | RX<br/>TX | GPIO3<br/>GPIO1 |
+| 1 | RX<br/>TX | GPIO36<br/>GPIO4 |
+| 2 | RX<br/>TX | GPIO16<br/>GPIO17 |
+
+| SD/MMC | Signal | GPIO |
+|--------|--------|------|
+| 0 | CMD<br/>CLK<br/>DAT0<br/>CD<br/>WP | GPIO15<br/>GPIO14<br/>GPIO2<br/>Not used<br/>Not used |
+
+|  RMII  | Signal | GPIO |
+|--------|--------|------|
+| 0 | TXD0<br/>TXD1<br/>TX_EN<br/>RXD0<br/>RXD1<br/>CLK<br/>MDC<br/>MDIO<br/>POWER | GPIO19<br/>GPIO22<br/>GPIO21<br/>GPIO25<br/>GPIO26<br/>GPIO0<br/>GPIO23<br/>GPIO18<br/>Not used |
+
+## SPI displays on SPI3, touch panel on SPI3
+
+| Display signal | GPIO |
+|--------|------|
+| MISO<br/>MOSI<br/>CLK<br/>CS<br/>RST<br/>CMD<br/>BCKL* | GPIO19<br/>GPIO23<br/>GPIO18<br/>GPIO15<br/>GPIO26<br/>GPIO2<br/>Not used |
+
+_* back light_
+
+| Touch panel signal | GPIO
+|--------|------|
+| MISO<br/>MOSI<br/>CLK<br/>CS | GPIO19<br/>GPIO23<br/>GPIO18<br/>GPIO21 |
+
+## I2C displays on I2C0
+
+| Signal | GPIO |
+|--------|------|
+| SCL<br/>SDA | GPIO16<br/>GPIO13 |
