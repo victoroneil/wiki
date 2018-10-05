@@ -1,4 +1,4 @@
-![](http://git.whitecatboard.org/esp32-pico-kit.jpg)
+![](http://git.whitecatboard.org/esp32-core-board.png)
 
 ## Included features
 
