@@ -9,7 +9,7 @@ Lua RTOS has support for the following file systems:
   Although you can use other general-purpose file systems, such as SPIFFS or LFS (and mount them as read-only), the use of ROMFS has the following advantages:
 
   * There is no wasted space, since in ROMFS each file consists of a single block of data, that has the same size as the file content.
-  * As the file system is build and linked together with the firmware, it can be updated through OTA.
+  * As the file system is builded and linked together with the firmware, it can be updated through OTA.
   * Small footprint, and minimal RAM usage (usually 1K per opened file).
   * ESP32 firmwares based on Lua RTOS and Lua scripts are deployed in the same way as firmwares enterely written in C.
 
