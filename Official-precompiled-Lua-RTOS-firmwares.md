@@ -7,7 +7,6 @@
 | Espressif Systems | ESP32-CoreBoard | [Factory](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Firmware-Espressif-Systems-ESP32-CoreBoard)<br/>[OTA](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Firmware-Espressif-Systems-ESP32-CoreBoard-with-OTA)
 | Espressif Systems | ESP32 PICO KIT | [Factory](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Firmware-Espressif-Systems-ESP32-PICO-KIT)<br/>[OTA](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Firmware-Espressif-Systems-ESP32-PICO-KIT-with-OTA)
 | Espressif Systems | ESP-WROVER-KIT | [Factory](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Firmware-Espressif-Systems-ESP-WROVER-KIT)<br/>[OTA](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Firmware-Espressif-Systems-ESP-WROVER-KIT-with-OTA)
-
 | Adafruit | HUZZAH32 | [Factory](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Firmware-Adafruit-HUZZAH32)<br/>[OTA](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Firmware-Adafruit-HUZZAH32-with-OTA)
 | doit.am | DOIT ESP32 DEVKIT V1 | [Factory](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Firmware-DOIT-ESP32-DEVKIT-V1)<br/>[OTA](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Firmware-DOIT-ESP32-DEVKIT-V1-with-OTA)
 | Olimex | ESP32-Gateway | [Factory](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Firmware-Olimex-ESP32-Gateway)<br/>[OTA](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Firmware-Olimex-ESP32-Gateway-with-OTA)
