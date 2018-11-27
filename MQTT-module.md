@@ -102,7 +102,7 @@ client:connect("","")
 client:disconnect()
 ```
 
-## client:publish(topic, payload, qos)
+## client:publish(topic, payload, qos, [retained])
 
 Publish a message to a topic.
 
@@ -111,6 +111,7 @@ Arguments:
 * topic: topic name.
 * payload: payload, a string with the information to publish packed on it.
 * qos: quality of service, according to MQTT specs, can be either mqtt.QOS0, mqtt.QOS1, or mqtt.QOS2. To use mqtt.QOS1, or mqtt.QOS2 you must enable the persistence when calling to the mqtt.client function.
+* retained (optional): a boolean to set the retained flag for the message. If it's true the retained flag is set, and if it's false the retained flag is clear. If not provided, the default value for this argument is false (not retained).
 
 Returns: nothing or an exception
 
