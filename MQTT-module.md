@@ -61,7 +61,7 @@ client = mqtt.client("100", "xxxx.xx", 1883, false)
 
 # Operation functions
 
-## instance:connect(username,password)
+## instance:connect(username,password,[clean session])
 
 Connects the client instance to the broker.
 
@@ -69,7 +69,9 @@ Arguments:
 
 * username: user name.
 * password: password.
-* Returns: nothing.
+* clean session (optional): a boolean that indicates if the session must be cleaned when connected. If true the session is cleaned, and not cleaned if it's false. If not provided, the argument is set to false (no clean the session).
+
+Returns: nothing.
 
 Returns: nothing, or an exception.
 
