@@ -4,10 +4,14 @@ The Whitecat ESP32 N1 integrates an ESP32 MCU and a LoRa WAN transceiver in one 
 
 **How to order:**
 
-| Reference              | Comments                 | Price                 | Buy now                  |
-|------------------------|--------------------------|-----------------------|---------------------------
-| Whitecat ESP32 N1 LORA | With LoRa transceiver    | 40,00 EUR + 5,00 EUR world wide shipping | [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=P59CMKZDTJRYS)                           |
-| Whitecat ESP32 N1      | Without LoRa transceiver | 30,00 EUR + 5,00 EUR world wide shipping | [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LHHPU9XFDZD56)                      |
+Contact to our sales department, sending an email to admin@whitecatboard.org to request a quote.
+
+| Reference              | Comments                 | List Price*           |
+|------------------------|--------------------------|-----------------------|
+| Whitecat ESP32 N1 LORA | With LoRa transceiver    | 40,00 EUR             | 
+| Whitecat ESP32 N1      | Without LoRa transceiver | 30,00 EUR             |
+
+(*) Taxes and shipping costs not included.
 
 **Features:**
 * Dual-core Tensilica LX6 microprocessor
