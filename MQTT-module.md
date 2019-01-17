@@ -141,7 +141,7 @@ Arguments:
   - A '+' character represents a single level of the hierarchy and is used between delimiters. For example, SENSOR/+/TEMP will match SENSOR/1/TEMP and SENSOR/2/TEMP.
 
 * qos: quality of service, according to MQTT specs, can be either mqtt.QOS0, mqtt.QOS1, or mqtt.QOS2
-* function: callback function that will be executed when a message is received on topic. This function takes 2 arguments: the message length, and the message.
+* callback: callback function that will be executed when a message is received on topic. This function takes 2 arguments: the message length, and the message.
 
 Returns: nothing or an exception
 
