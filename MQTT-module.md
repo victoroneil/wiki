@@ -44,13 +44,13 @@ Creates a new MQTT client instance.
 
 Arguments:
 
-* clientid: client identifier.
-* host: broker domain name or ip.
-* port: broker port (typically 1883).
-* secure: true for secure communication, false for non-secure communication.
-* CA file (optional): path to CA file, used only if secure argument it's true.
-* persistence (optional): if true use persistence, if false don't use persistence.
-* persistence path (optional): the path to a file system's folder where persistence data will be stored. If the folder doesn't exists it is created the first time.
+* clientid (string): client identifier.
+* host (string): broker domain name or ip.
+* port (integer): broker port (typically 1883).
+* secure (boolean): true for secure communication, false for non-secure communication.
+* CA file (optional string): path to CA file, used only if secure argument it's true.
+* persistence (optional boolean): if true use persistence, if false don't use persistence.
+* persistence path (optional string): the path to a file system's folder where persistence data will be stored. If the folder doesn't exists it is created the first time.
 
 Returns: a client instance, or an exception. You must store this instance into a variable for further operations with it.
 
@@ -67,11 +67,9 @@ Connects the client instance to the broker.
 
 Arguments:
 
-* username: user name.
-* password: password.
-* clean session (optional): a boolean that indicates if the session must be cleaned when connected. If true the session is cleaned, and not cleaned if it's false. If not provided, the argument is set to false (no clean the session).
-
-Returns: nothing.
+* username (string): user name.
+* password (string): password.
+* clean session (optional boolean): indicates if the session must be cleaned when connected. If true the session is cleaned, and not cleaned if it's false. If not provided, the argument is set to false (no clean the session).
 
 Returns: nothing, or an exception.
 
@@ -88,6 +86,7 @@ client:connect("","")
 Disconnects the client instance from the broker.
 
 Arguments: nothing.
+
 Returns: nothing, or an exception.
 
 ```lua
@@ -110,10 +109,10 @@ Publish a message to a topic.
 
 Arguments:
 
-* topic: topic name.
-* payload: payload, a string with the information to publish packed on it.
-* qos: quality of service, according to MQTT specs, can be either mqtt.QOS0, mqtt.QOS1, or mqtt.QOS2. To use mqtt.QOS1, or mqtt.QOS2 you must enable the persistence when calling to the mqtt.client function.
-* retained (optional): a boolean to set the retained flag for the message. If it's true the retained flag is set, and if it's false the retained flag is clear. If not provided, the default value for this argument is false (not retained).
+* topic (string): topic name.
+* payload (string): payload, a string with the information to publish packed on it.
+* qos (integer): quality of service, according to MQTT specs, can be either mqtt.QOS0, mqtt.QOS1, or mqtt.QOS2. To use mqtt.QOS1, or mqtt.QOS2 you must enable the persistence when calling to the mqtt.client function.
+* retained (optional boolean): the retained flag for the message. If it's true the retained flag is set, and if it's false the retained flag is clear. If not provided, the default value for this argument is false (not retained).
 
 Returns: nothing or an exception
 
@@ -134,19 +133,19 @@ Subscribe to a topic.
 
 Arguments:
 
-* topic: topic name. The topic name can contain wildcard characters:
+* topic (string): topic name. The topic name can contain wildcard characters:
 
   - A '#' character represents a complete sub-tree of the hierarchy and thus must be the last character in the topic name, such as SENSOR/#. This will match any topic starting with SENSOR/, such as SENSOR/1/TEMP and SENSOR/2/HUMIDITY.
 
   - A '+' character represents a single level of the hierarchy and is used between delimiters. For example, SENSOR/+/TEMP will match SENSOR/1/TEMP and SENSOR/2/TEMP.
 
-* qos: quality of service, according to MQTT specs, can be either mqtt.QOS0, mqtt.QOS1, or mqtt.QOS2
-* callback: callback function, fired when a message is received on topic. This function takes the following arguments:
+* qos (integer): quality of service, according to MQTT specs, can be either mqtt.QOS0, mqtt.QOS1, or mqtt.QOS2
+* callback (function): callback function, fired when a message is received on topic. This function takes the following arguments:
 
-  * len: the length of the received message (integer).
-  * message: the received message (string).
-  * topic len: the length of the topic where message has been received (integer).
-  * topic name: the name of the topic where message has been received (string).
+  * len (integer): the length of the received message.
+  * message (string): the received message.
+  * topic len (integer): the length of the topic where message has been received.
+  * topic name (string): the name of the topic where message has been received.
 
 Returns: nothing or an exception
 
