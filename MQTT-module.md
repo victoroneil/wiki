@@ -141,7 +141,12 @@ Arguments:
   - A '+' character represents a single level of the hierarchy and is used between delimiters. For example, SENSOR/+/TEMP will match SENSOR/1/TEMP and SENSOR/2/TEMP.
 
 * qos: quality of service, according to MQTT specs, can be either mqtt.QOS0, mqtt.QOS1, or mqtt.QOS2
-* callback: callback function that will be executed when a message is received on topic. This function takes 2 arguments: the message length, and the message.
+* callback: callback function, fired when a message is received on topic. This function takes the following arguments:
+
+  * len: the length of the received message (integer).
+  * message: the received message (string).
+  * topic len: the length of the topic where message has been received (integer).
+  * topic name: the name of the topic where message has been received (string).
 
 Returns: nothing or an exception
 
@@ -153,8 +158,8 @@ client = mqtt.client("100", "xxxx.xx", 1883, false)
 client:connect("","")
 
 -- Subscribe to topic
-client:subscribe("/100", mqtt.QOS0, function(len, message)
-  print("new message received")
+client:subscribe("/100", mqtt.QOS0, function(len, message, topic_len, topic_name)
+  print("new message received on topic "..topic_name.." (length: "..topic_len..")")
   print("message length: "..len)
   print("message: "..message)
 end)
