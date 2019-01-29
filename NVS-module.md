@@ -26,7 +26,7 @@ Arguments:
 * namespace (string): the namespace to read the key-value pair.
 * key (string): the key name to read
 
-Returns: nothing, or an exception.
+Returns: linked value, or an exception.
 
 ```lua
 nvs.read("settings","timeout")
