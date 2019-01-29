@@ -2,12 +2,12 @@ This module contains functions for store key-value pairs in flash without the ne
 
 ## nvs.write(namespace, key, value)
 
-Write key-value pair into a namesapace.
+Write key-value pair into a namespace.
 
 Arguments:
 
 * namespace (string): the namespace to store the key-value pair.
-* key (string): the key name
+* key (string): the key name.
 * value (Lua value): the value. Can be any Lua type: nil, integer, number, boolean, or string.
 
 Returns: nothing, or an exception.
@@ -19,15 +19,30 @@ nvs.write("settings","timeout", 10)
 
 ## nvs.read(namespace, key)
 
-Read a key-value pair from namesapace.
+Read a key-value pair from namespace.
 
 Arguments:
 
 * namespace (string): the namespace to read the key-value pair.
-* key (string): the key name to read
+* key (string): the key name to read.
 
 Returns: linked value, or an exception.
 
 ```lua
 nvs.read("settings","timeout")
+```
+
+## nvs.exists(namespace, key)
+
+Check if a key-value pair exists in namespace.
+
+Arguments:
+
+* namespace (string): the namespace to check the key-value pair existence.
+* key (string): the key name to to check.
+
+Returns: linked value, or an exception.
+
+```lua
+nvs.exists("settings","timeout")
 ```
