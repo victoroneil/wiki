@@ -46,3 +46,18 @@ Returns: linked value, or an exception.
 ```lua
 nvs.exists("settings","timeout")
 ```
+
+## nvs.rm(namespace, key)
+
+Remove key-value pair in namespace.
+
+Arguments:
+
+* namespace (string): the namespace where the key is.
+* key (string): the key name remove in namespace.
+
+Returns: a boolean indicating if the key has been removed (true), or an exception.
+
+```lua
+nvs.rm("settings","timeout")
+```
