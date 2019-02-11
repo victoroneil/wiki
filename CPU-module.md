@@ -52,6 +52,22 @@ speed = cpu.speed();
 print("Speed: "..speed.." MHz")
 ```
 
+## cpu.temperature()
+
+Get the current CPU temperature in celsius degrees.
+
+Arguments: nothing
+
+Returns: CPU temperature in celsius degrees.
+
+```lua
+-- Get CPU temperature
+temp = cpu.temperature();
+
+-- Print to screen
+print("Temp: "..temp.." ºC")
+```
+
 ## cpu.resetreason()
 
 Get the reset reason.
