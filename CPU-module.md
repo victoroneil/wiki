@@ -40,6 +40,22 @@ print("Subtype: "..subtype)
 print("Brand: "..brand)
 ```
 
+## cpu.speed()
+
+Get the current CPU speed in MHz.
+
+Arguments: nothing
+
+Returns: CPU speed in MHz.
+
+```lua
+-- Get CPU speed
+speed = cpu.speed();
+
+-- Print to screen
+print("Speed: "..speed.." MHz")
+```
+
 ## cpu.resetreason()
 
 Get the reset reason.
