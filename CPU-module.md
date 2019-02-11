@@ -18,10 +18,6 @@ cpu = cpu.model();
 print("CPU: "..cpu)
 ```
 
-```lua
-CPU: ESP32 rev 0
-```
-
 ## cpu.board()
 
 Get the information of the board that Lua RTOS is running on.
