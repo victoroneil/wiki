@@ -1,4 +1,4 @@
-The Lua RTOS configuration functions allows to configure some aspects of Lua RTOS. This functions are provided as an extension of the Lua os module.
+The Lua RTOS configuration functions allows to configure some aspects of Lua RTOS. These functions are provided as an extension of the Lua os module.
 
 ## os.factoryreset()
 
@@ -16,7 +16,7 @@ os.factoryreset()
 
 ## os.history([enable])
 
-If enabled Lua RTOS records the commands entered by the programmer. The programmer can access the previous entered commands with the up & down keys. This functions is only available if an SD Card is attached to your board or if the system was built with support for a RAM FS. In that latter case, make sure the RAM FS has properly been mounted using fs.mount("/rfs","ramfs")
+If enabled Lua RTOS records the commands entered by the programmer. The programmer can access the previous entered commands with the up & down keys. This function is only available if an SD Card is attached to your board or if the system was built with support for a RAM FS. In that latter case, make sure the RAM FS has properly been mounted using fs.mount("/rfs","ramfs")
 
 Arguments:
 

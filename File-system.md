@@ -1,6 +1,6 @@
 The Lua RTOS file system functions provides access to the supported file systems. Some functions, such as create a directory, are provided as an extension of the Lua os and module.
 
-File access functions are provided through the standard Lua io module. This functions are not documented in this wiki, please refer to [this link](http://www.lua.org/manual/5.1/manual.html#5.7) for give more information.
+File access functions are provided through the standard Lua io module. These functions are not documented in this wiki, please refer to [this link](http://www.lua.org/manual/5.1/manual.html#5.7) for give more information.
 
 The functions of this module are organized in the following categories:
 

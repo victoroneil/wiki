@@ -1,4 +1,4 @@
-The Lua RTOS & board status functions provides information about the operation system and board status. This functions are provided as an extension of the Lua os module.
+The Lua RTOS & board status functions provides information about the operation system and board status. These functions are provided as an extension of the Lua os module.
 
 ## os.board()
 
@@ -10,7 +10,7 @@ Returns: the board type, the board subtype, and the board brand. Board subtype a
 
 ```lua
 -- Get board information
-type, subtype, brand = cpu.board(); --deprecated, use cpu.board()
+type, subtype, brand = os.board(); --deprecated, use cpu.board()
 
 -- Print to screen
 print("Type: "..type)

@@ -49,7 +49,7 @@ lora.attach(lora.BAND868)
 
 # End-device activation functions
 
-This functions set the data that must be provided for the end-device activation. Remember that for OTAA you must provide DevEUI, AppEUI, and AppKey, and for ABP you must provide DevAddr, NwkSKey and AppSKey. Use the functions described in this section for that.
+These functions set the data that must be provided for the end-device activation. Remember that for OTAA you must provide DevEUI, AppEUI, and AppKey, and for ABP you must provide DevAddr, NwkSKey and AppSKey. Use the functions described in this section for that.
 
 
 ## lora.setAppEui(appEui)
@@ -220,7 +220,7 @@ lora.join()
 
 # Stack configuration functions
 
-This functions configure certain operating parameters of the stack, such as the data rate. This parameters are configured automatically when you attach the end-device with the lora.attach function, and can be changed using one of the following functions.
+These functions configure certain operating parameters of the stack, such as the data rate. This parameters are configured automatically when you attach the end-device with the lora.attach function, and can be changed using one of the following functions.
 
 
 ## lora.setDr(data_rate)
