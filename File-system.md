@@ -75,7 +75,7 @@ Returns: nothing
 
 ## os.ls([path])
 
-List the path contents.
+List the path contents. Limited wildcard support.
 
 Arguments:
 
@@ -93,6 +93,15 @@ d              -        lib
 f             27        test1.lua
 f            956        autorun.lua
 f           1871        lcd.lua
+```
+
+```lua
+/examples/lua > os.ls("/*.lua")
+f	    2407	                        	config.lua
+f	    1034	                        	autorun.lua
+f	    2446	                        	system.lua
+f	    1105	                        	settings.lua
+/examples/lua > 
 ```
 
 Directory contents is listed on the screen in columns (separated by tab):
@@ -144,13 +153,18 @@ Returns: the current directory
 
 ## os.remove(path)
 
-Remove a file or a directory.
+Remove a file or a directory. Limited wildcard support.
 
 Arguments:
 
 * path: file or directory path to remove. Path can be absolute or relative to current working directory.
 
 Returns: nothing or an error.
+
+```lua
+/examples/lua > os.remove("*.bak")
+/examples/lua > 
+```
 
 ## os.rename(old path, new path)
 

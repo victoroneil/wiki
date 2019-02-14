@@ -44,6 +44,15 @@ net.en.start()
 
 -- Start HTTP server
 net.service.http.start()
+
+-- Start the HTTP server on a non-standard port
+net.service.http.start(81)
+
+-- Start the HTTP Server with HTTPS on port 443
+net.service.http.start(80, 443, "/path/to/certificate.pem", "/path/to/privatekey.pem")
+
+-- Start the HTTP Server with HTTPS on port 443 but do not serve HTTP
+net.service.http.start(0, 443, "/path/to/certificate.pem", "/path/to/privatekey.pem")
 ```
 
 **To stop this service:**
@@ -80,33 +89,24 @@ net.service.captivedns.stop()
 
 This service adds support for Multicast DNS. MDNS service is configured on a per-interface basis.
 
-mdns = net.service.mdns.start(interface [, hostname [, instancename]])
+net.service.mdns.start([hostname [, instancename]])
 
-interface can be one of
-* net.service.mdns.WIFI_STA
-* net.service.mdns.WIFI_AP
-* net.service.mdns.ETH
-* net.service.mdns.SPI_ETH
-
-**To start this service for an interface:**
+**To start this service:**
 
 ```lua
-mdns = net.service.mdns.start(net.service.mdns.WIFI_AP)
+net.service.mdns.start("ESP32")
 ```
 
-**To stop this service for an instance:**
+**To stop this service:**
 
 ```lua
--- Remove all services from the mdns instance
-mdns:stop()
--- or simply destroy the instance
-mdns = nil
+net.service.mdns.stop()
 ```
 
 **To find a device by hostname:**
 
 ```lua
-results = mdns:resolvehost(hostname [, timeout_seconds])
+results = net.service.mdns.resolvehost(hostname [, timeout_seconds])
 ```
 
 **To find a device by service type:**
@@ -114,7 +114,7 @@ results = mdns:resolvehost(hostname [, timeout_seconds])
 ```lua
 service = "_http"
 protocol = "_tcp"
-results = mdns:findservice(service, protocol [, timeout_seconds])
+results = net.service.mdns.findservice(service, protocol [, timeout_seconds])
 ```
 
 **To make the Lua RTOS device itself advertise a service:**
@@ -124,7 +124,7 @@ service = "_http"
 protocol = "_tcp"
 port = 80
 instancename = "ESP WebServer"
-mdns:addservice(service, protocol, port [, instancename [, txt_table]])
+net.service.mdns.addservice(service, protocol, port [, instancename [, txt_table]])
 ```
 
 **To make the Lua RTOS device itself no longer advertise a previously added service:**
@@ -132,5 +132,5 @@ mdns:addservice(service, protocol, port [, instancename [, txt_table]])
 ```lua
 service = "_http"
 protocol = "_tcp"
-mdns:removeservice(service, protocol)
+net.service.mdns.removeservice(service, protocol)
 ```

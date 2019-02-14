@@ -341,6 +341,31 @@ Arguments: nothing.
 
 Returns: nothing, or an exception.
 
+## net.wf.wps(type [, callback])
+
+Connect to the wifi using WPS instead of SSID+Password.
+This function is only available if CONFIG_ESP32_WIFI_NVS_ENABLED was used during build.
+
+Arguments:
+
+* type: wps type. Can be either net.wf.wpstype.PBC or net.wf.wpstype.PIN.
+* callback (optional): if type is net.wf.wpstype.PIN then a lua callback needs to be provided here. that callback will receive the PIN and has to show it to the user
+
+Returns: nothing, or an exception.
+
+## net.wf.startsc(callback)
+
+Configure the wifi using ESPTOUCH. Download ESPTOUCH APP from:
+[Android source code](https://github.com/EspressifApp/EsptouchForAndroid)
+[iOS source code](https://github.com/EspressifApp/EsptouchForIOS) is available.
+
+Arguments:
+
+* callback: lua callback that will receive the SSID+Password that are being sent from the user's phone via smartconfig.
+
+Returns: nothing, or an exception.
+
+
 # Ethernet
 
 ## net.en.setup(ip, mask, gw, [dns1, dns2])

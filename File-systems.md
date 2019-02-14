@@ -15,7 +15,15 @@ Lua RTOS has support for the following file systems:
 
 * RAM file system (RAMFS):
 
-  RAMFS is a file system, developed by the Lua RTOS team from the scratch, in which all the data is stored in RAM, without persistence. This means that all the data stored in the file system is lost on each reboot.
+  RAMFS is a file system, developed by the Lua RTOS team from the scratch, in which all the data is stored in RAM, without persistence. This means that all the data stored in the file system is lost on each reboot. It is especially useful to store the console history file which contains the commands entered by the programmer on the system console. The programmer can access the previously entered commands with the up & down keys.
+
+  ```lua
+  -- Mount the RAM FS on /rfs
+  fs.mount("/rfs","ramfs")
+
+  -- Enable history
+  os.histrory(true)
+  ```
 
 * Little file system (LFS):
 

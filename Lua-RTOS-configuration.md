@@ -16,7 +16,7 @@ os.factoryreset()
 
 ## os.history([enable])
 
-If enabled Lua RTOS records the commands entered by the programmer. The programmer can access the previous entered commands with the up & down keys. This functions is only available if an SD Card is attached to your board.
+If enabled Lua RTOS records the commands entered by the programmer. The programmer can access the previous entered commands with the up & down keys. This functions is only available if an SD Card is attached to your board or if the system was built with support for a RAM FS. In that latter case, make sure the RAM FS has properly been mounted using fs.mount("/rfs","ramfs")
 
 Arguments:
 

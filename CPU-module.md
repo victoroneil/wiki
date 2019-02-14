@@ -36,11 +36,14 @@ print("Subtype: "..subtype)
 print("Brand: "..brand)
 ```
 
-## cpu.speed()
+## cpu.speed([speed [, dynamic]])
 
-Get the current CPU speed in MHz.
+Gets and optionally sets the current CPU speed in MHz.
 
-Arguments: nothing
+Arguments:
+
+* speed: one of cpu.SPEED_DEFAULT, cpu.SPEED_FAST, cpu.SPEED_MEDIUM, cpu.SPEED_SLOW OR any actual MHz value supported by the system
+* dynamic: default: false. which sets the new cpu speed as a fixed value. set dynamic to true to use the new cpu speed as a maximum speed, allowing the system to dynamically switch the actual speed on demand.
 
 Returns: CPU speed in MHz.
 
@@ -197,4 +200,28 @@ mask = cpu.wakeupext1mask()
 print("EXT1 wake GPIO mask: "..mask)
 ```
 
+## cpu.watchpoint(addr [, size [, flags]])
+
+Enables to set a watchpoint to a specific address, on LOAD, STORE or ACCESS.
+
+Arguments:
+
+* addr: the address to watch
+* size: the size of the address, default 4, must be one of 2^n, with n in [0..6]
+* flags: one of cpu.WATCHPOINT_LOAD, cpu.ESP_WATCHPOINT_STORE, cpu.ESP_WATCHPOINT_ACCESS
+
+Returns: nothing
+
+## cpu.backtrace()
+
+If the system has been restarted after a crash/panic/abort the callstack of the crash will be preserved in a special area of the memory. Use this function to get that callstack.
+
+Arguments: none
+
+Returns: nothing or a lua table containing the backtrace
+
+```lua
+/examples/lua > cpu.backtrace()
+Backtrace: none
+```
 

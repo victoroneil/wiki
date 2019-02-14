@@ -2,7 +2,7 @@ The Lua RTOS & board status functions provides information about the operation s
 
 ## os.board()
 
-Get information about your board.
+Get information about your board. Deprecated. Use cpu.board()
 
 Arguments: nothing
 
@@ -10,7 +10,7 @@ Returns: the board type, the board subtype, and the board brand. Board subtype a
 
 ```lua
 -- Get board information
-type, subtype, brand = cpu.board();
+type, subtype, brand = cpu.board(); --deprecated, use cpu.board()
 
 -- Print to screen
 print("Type: "..type)
@@ -18,7 +18,7 @@ print("Subtype: "..subtype)
 print("Brand: "..brand)
 ```
 
-## os.cpu()
+## os.cpu() Deprecated. Use cpu.model()
 
 Get the CPU name and CPU revision number, installed in your board.
 
@@ -28,7 +28,7 @@ Returns: a string, with the CPU name installed on your board.
 
 ```lua
 -- Get the CPU model
-cpu = os.cpu();
+cpu = os.cpu(); --deprecated, use cpu.model()
 
 -- Print to screen
 print("CPU: "..cpu)
@@ -60,7 +60,7 @@ OS: Lua RTOS, version: beta 0.1, build: 1495574689, commit: 4d92804451cbec7d3ad5
 
 ## os.resetreason()
 
-Get the reset reason.
+Get the reset reason. Deprecated. Use cpu.resetreason()
 
 Arguments: nothing
 Returns: reset reason.

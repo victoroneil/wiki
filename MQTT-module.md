@@ -57,6 +57,18 @@ Returns: a client instance, or an exception. You must store this instance into a
 ```lua
 -- Creates an mqtt instance. Broker domain is xxxx.xx, at port 1883
 client = mqtt.client("100", "xxxx.xx", 1883, false)
+
+-- Creates an mqtt instance, secured connection to xxxx.xx
+client = mqtt.client(id, "xxxx.xx", 8883, true)
+
+-- Creates an mqtt instance, secured connection to xxxx.xx, and checks if the MQTT Server is the expected one
+client = mqtt.client(id, "xxxx.xx", 8883, true, "/path/to/certificate.pem")
+
+-- Creates an mqtt instance, secured connection to xxxx.xx, with persistence in subfolder of the current script
+client = mqtt.client(id, "xxxx.xx", 8883, true, nil, true)
+
+-- Creates an mqtt instance, secured connection to xxxx.xx, with persistence in /sdcard
+client = mqtt.client(id, "xxxx.xx", 8883, true, nil, true, "/sdcard")
 ```
 
 # Operation functions
@@ -80,6 +92,14 @@ client = mqtt.client("100", "xxxx.xx", 1883, false)
 -- Connect
 client:connect("","")
 ```
+
+## instance:connected()
+
+Can be called to see if the client is currently still connected to the server.
+
+Arguments: nothing.
+
+Returns: true or false
 
 ## instance:disconnect()
 
