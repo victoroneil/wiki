@@ -20,6 +20,20 @@ This file is a JSON file that defines an array of boards supported by Lua RTOS, 
      Board type: 
      ```
 
+   - Flashing an official Lua RTOS firmware when using the wcc tool, to select the board:
+
+     ```
+     Please, enter your board type:
+
+      1: Whitecat ESP32N1
+      2: Whitecat ESP32N1 with OTA
+
+     34: Generic ESP32 board
+     35: Generic ESP32 board with OTA
+
+     Board type: 
+     ```
+
 * manufacturer (string):
 
 * type (string):
