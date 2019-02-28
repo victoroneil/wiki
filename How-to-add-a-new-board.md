@@ -133,3 +133,9 @@ This file is a JSON file that defines an array of boards supported by Lua RTOS, 
   $ make menuconfig
   ```
 
+  Start with Component config > Lua RTOS, and select the new firmware in "Firmware type":
+  
+  ![](http://git.whitecatboard.org/new_board1.png)
+
+  ![](http://git.whitecatboard.org/new_board2.png)
+
