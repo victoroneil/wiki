@@ -34,13 +34,15 @@ _adc.ADC1:_
   * ADC1 can work at 9, 10, 11 and 12 bits of resolution.
   * VRef- is 0.0V and VRef+ is set to 1.1V. This reference voltages can't be set by the programmer.
   * Programmer can set the max ADC input value for a given channel. This is used internally to set the attenuation factor.
-  * 8 ADC channels are provided, but only 6 are available: 0, 3, 4, 5, 6, 7.
+  * 8 ADC channels are provided, from 0 to 7.
 
 When using the internal ADC the programmer can reference the channel by it's number or by GPIO:
 
 | Channel | GPIO |
 |---------|------|
 | 0       | 36   |
+| 1       | 37   |
+| 2       | 38   |
 | 3       | 39   |
 | 4       | 32   |
 | 5       | 32   |
