@@ -1,5 +1,3 @@
-UNDER CONSTRUCTION!!
-
 ## Step 1: add a new entry to the boards/supported_boards.json file
 
 This file is a JSON file that defines an array of boards supported by Lua RTOS, in which each item contains a JSON object that registers the board into the Whitecat Ecosystem. This object has the following properties:
@@ -157,4 +155,22 @@ This file is a JSON file that defines an array of boards supported by Lua RTOS, 
   
   * Serial flasher config: remember to set the baud rate at the max speed allowed by the board's USB 2 serial adapter, and the flash size.
 
+## Step 6: build and test the firmware
 
+  Now it's time to check that things go well:
+
+  ```
+  $ make -j5 flash
+  ```
+
+  If something has to be changed go to step 5.
+
+## Step 7: update the sdkconfig files
+
+  In this point the firmware configuration file is stored into the sdkconfig file within the Lua RTOS root folder. This file must be copied into the boards folder if we don't want to loose it. Continuing with the above examples:
+
+  ```
+  $ cp sdkconfig boards/NEW-BOARD
+  ```
+
+## Step 8: make a pull request
