@@ -29,7 +29,7 @@ This file is a JSON file that defines an array of boards supported by Lua RTOS, 
 
 * usb_port_exp (string): it's a valid javascript regular expression used to select the right port when the board's USB 2 Serial adapter is a dual adapter. This happens, for example, in the Espressif Systems ESP-WROVER-KIT board, in which the USB adapter provides a port for JTAG (first port) and other port Serial (second port). Leave this property empty if the board's USB 2 Serial adapter provides only one port.
 
-* firmwares (JSON array): it's an array of firmware versions available for the board in the Whitecat Ecosystem. For example, Whitecat, usually provide a firmware with OTA enabled and another without OTA enable. Each firmware is defined with a JSON object with the following properties:
+* firmwares (JSON array): it's an array of firmware versions available for the board in the Whitecat Ecosystem. For example, Whitecat, usually provide a firmware with OTA enabled and other without OTA enabled. Each firmware is defined with a JSON object that has the following properties:
 
   * id (string): the firmware id, that must be unique.
 
