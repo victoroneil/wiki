@@ -124,3 +124,12 @@ This file is a JSON file that defines an array of boards supported by Lua RTOS, 
   ```
 
   And wait until build is finished.
+
+## Step 5: configure the firmware
+
+  Now it's time to setup our new firmware (remember that now it's a copy of other firmware!).
+
+  ```
+  $ make menuconfig
+  ```
+
