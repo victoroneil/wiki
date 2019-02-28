@@ -14,7 +14,9 @@ This file is a JSON file that defines an array of boards supported by Lua RTOS, 
 
   To get the VID/PID of your board you can use the following command:
 
-
+  ```
+  $ python -m serial.tools.list_ports -v
+  ```
 
 * usb_port_exp (string):
 
