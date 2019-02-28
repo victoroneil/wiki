@@ -1,53 +1,20 @@
 UNDER CONSTRUCTION!!
 
-## Step 1: add a new entry to the boards/boards.json file
+## Step 1: add a new entry to the boards/supported_boards.json file
 
-This file is a JSON file that defines an array of boards supported by Lua RTOS, in which each item contains a JSON object that registers the board's entry point into the Whitecat Ecosystem. This object has the following properties:
+This file is a JSON file that defines an array of boards supported by Lua RTOS, in which each item contains a JSON object that registers the board into the Whitecat Ecosystem. This object has the following properties:
 
-* description (string): a string that contains a description of the board in natural language. This description is used when:
+* description (string): description of the board in natural language.
 
-   - Building Lua RTOS from the scratch, to select the board:
+* manufacturer (string): manufacturer name of the board.
 
-     ```
-     Please, enter your board type:
+* image (string): valid url that points to an image of the board.
 
-      1: Whitecat ESP32N1
-      2: Whitecat ESP32N1 with OTA
+* usb_vid_pid (string): the USB ID of the board's USB 2 Serial adapter. This ID is formed by the concatenation of the VID (Vendor ID) and the PID (Product ID), using the ":" character as separator.
 
-     34: Generic ESP32 board
-     35: Generic ESP32 board with OTA
+  To get the VID/PID of your board you can use the following command:
 
-     Board type: 
-     ```
 
-   - Flashing an official Lua RTOS firmware when using the wcc tool, to select the board:
-
-     ```
-     Please, enter your board type:
-
-      1: Whitecat ESP32N1
-      2: Whitecat ESP32N1 with OTA
-
-     34: Generic ESP32 board
-     35: Generic ESP32 board with OTA
-
-     Board type: 
-     ```
-
-* manufacturer (string):
-
-* type (string):
-
-* subtype (string):
-
-* id (string):
-
-* eol (string):
-
-* filesystem (string):
-
-* usb_vid_pid (string):
 
 * usb_port_exp (string):
 
-* image (string):
