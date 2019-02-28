@@ -25,7 +25,7 @@ This file is a JSON file that defines an array of boards supported by Lua RTOS, 
   2 ports found
   ```
 
-  In the above example the VID:PID is 10C4:EA60.
+  In the above example the VID:PID is 10C4:EA60. Leave this property empty if your board hasn't a USB 2 Serial adapter.
 
 * usb_port_exp (string):
 
