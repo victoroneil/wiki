@@ -12,11 +12,20 @@ This file is a JSON file that defines an array of boards supported by Lua RTOS, 
 
 * usb_vid_pid (string): the USB ID of the board's USB 2 Serial adapter. This ID is formed by the concatenation of the VID (Vendor ID) and the PID (Product ID), using the ":" character as separator.
 
-  To get the VID/PID of your board you can use the following command:
+  To get the VID:PID of your board you can use the following command:
 
   ```
   $ python -m serial.tools.list_ports -v
+  /dev/cu.Bluetooth-Incoming-Port
+      desc: n/a
+      hwid: n/a
+  /dev/cu.SLAB_USBtoUART
+      desc: CP2102N USB to UART Bridge Controller
+      hwid: USB VID:PID=10C4:EA60 SER=049bb399844fe811942337fdc2460985 LOCATION=20-1
+  2 ports found
   ```
+
+  In the above example the VID:PID is 10C4:EA60.
 
 * usb_port_exp (string):
 
