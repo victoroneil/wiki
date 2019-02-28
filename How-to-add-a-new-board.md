@@ -139,3 +139,22 @@ This file is a JSON file that defines an array of boards supported by Lua RTOS, 
 
   ![](http://git.whitecatboard.org/new_board2.png)
 
+  ![](http://git.whitecatboard.org/new_board3.png)
+
+  Continue with the configuration. Important sections are:
+
+  * Component config > Lua RTOS > OTA: OTA configuration if enabled.
+
+  * Component config > Lua RTOS > General
+
+  * Component config > Lua RTOS > File Systems: enable / disable filesystems.
+
+  * Component config > Lua RTOS > Network services: enable / disable networking services.
+
+  * Component config > Lua RTOS > Hardware: hardware mapping.
+
+  * Component config > Lua RTOS > Lua: Lua tuning and enable / disable Lua modules.
+  
+  * Serial flasher config: remember to set the baud rate at the max speed allowed by the board's USB 2 serial adapter, and the flash size.
+
+
