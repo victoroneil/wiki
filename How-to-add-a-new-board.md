@@ -98,3 +98,29 @@ This file is a JSON file that defines an array of boards supported by Lua RTOS, 
   ```
   $ make -j5
   ```
+
+  Select the new board:
+
+  ```
+    Please, select a board:
+
+     1: Whitecat ESP32N1
+      .
+      .
+    18: Generic ESP32 board
+    19: New board description
+
+  Selected board: 19
+  ```
+
+  Select the firmware:
+
+  ```
+  Please, select a firmware for New board description:
+
+     1: New board description
+
+  Selected firmware: 1
+  ```
+
+  And wait until build is finished.
