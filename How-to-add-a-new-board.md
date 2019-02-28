@@ -174,3 +174,5 @@ This file is a JSON file that defines an array of boards supported by Lua RTOS, 
   ```
 
 ## Step 8: make a pull request
+
+This is important! Your work can be helpful for other members of the community. Share your work!.
