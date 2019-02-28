@@ -12,6 +12,7 @@ Boards:
 
 * [Whitecat ESP32 N1](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Whitecat-ESP32-N1)
 * [Whitecat ESP32 LORA GATEWAY](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Whitecat-ESP32-LORA-GATEWAY)
+* [How to add a new board?](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/How-to-add-a-new-board)
 
 General purpose modules:
 
