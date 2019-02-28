@@ -71,15 +71,22 @@ This file is a JSON file that defines an array of boards supported by Lua RTOS, 
 
 # Step 2: create the sdkconfig configuration files
 
-  For each firmware provided for the new board a sdkconfig file is required. This files are located into the boards folder within the Lua RTOS root folder. The easy way to create these files are copying the configuration files provided for one board that has similarities with the new one.
+  For each firmware provided for the new board a sdkconfig file is required. This files are located into the boards folder within the Lua RTOS root folder. The easy way to create these files are copying the configuration files provided by a board that has similarities with the new one.
 
   Each sdkconfig file has to be named in the same way as the value of the property "id" of the firmware JSON file. 
 
-  Continuing with the above example, the sdkconfig files are created as follows from the Generic board:
+  Continuing with the above example, the sdkconfig files are created as follows from the EVK-NINA-W board:
 
   ```
   $ cd boards
-  $ cp GENERIC NEW-BOARD --> sdkconfig file for NEW-BOARD firmware
-  $ cp GENERIC-OTA NEW-BOARD-OTA --> sdkconfig file for NEW-BOARD-OTA firmware
+  $ cp EVK-NINA-W NEW-BOARD --> sdkconfig file for NEW-BOARD firmware
   ```
 
+# Step 3: preparing for building
+
+  Once the sdkconfig files are created, we need to prepare Lua RTOS to build the new firmware. Proceed in this way for it, from the Lua RTOS root folder:
+
+  ```
+  $ make clean
+  $ python boards/gen_info.py
+  ```
