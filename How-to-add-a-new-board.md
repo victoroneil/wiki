@@ -37,3 +37,37 @@ This file is a JSON file that defines an array of boards supported by Lua RTOS, 
 
   * filesystem (string): 
 
+  ```
+      {
+          "description": "Generic ESP32 board",
+          "manufacturer": "Generic",
+          .
+          .
+          .
+      },
+      {
+          "description": "New board description",
+          "manufacturer": "New board manufacturer",
+          "image": "http://...../board.png",
+          "usb_vid_pid": "1XXX:2XXX",
+          "usb_port_exp": "",
+          "firmwares": [
+              {
+                  "id": "NEW-BOARD",
+                  "description": "New board description",
+                  "filesystem": "default"
+              },
+              {
+                  "id": "NEW-BOARD-OTA",
+                  "description": "New board description with OTA",
+                  "filesystem": "default"
+              }
+          ]
+      }
+  ]
+  ```
+
+# Step 2: create the sdkconfig configuration files for each firmware of the new board
+
+  For each firmware provided for the new board a sdkconfig file is required. This files are located into the boards folder within the Lua RTOS root folder. The easy way to create these files are copying the configuration files provided for one board that has similarities with the new one. So, imagine that the candidate board is the GENERIC board.
+
