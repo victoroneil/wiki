@@ -46,10 +46,10 @@ neo = neopixel.attach(neopixel.WS2812B, pio.GPIO14, 6)
 neo:setPixel(0, 255, 0, 0)
 
 -- Set color for pixel 1 (pure green)
-neo:setPixel(0, 0, 255, 0)
+neo:setPixel(1, 0, 255, 0)
 
 -- Set color for pixel 2 (pure white)
-neo:setPixel(0, 255, 255, 255)
+neo:setPixel(2, 255, 255, 255)
 ```
 
 ## instance:update()
@@ -68,10 +68,10 @@ neo = neopixel.attach(neopixel.WS2812B, pio.GPIO14, 6)
 neo:setPixel(0, 255, 0, 0)
 
 -- Set color for pixel 1 (pure green)
-neo:setPixel(0, 0, 255, 0)
+neo:setPixel(1, 0, 255, 0)
 
 -- Set color for pixel 2 (pure white)
-neo:setPixel(0, 255, 255, 255)
+neo:setPixel(2, 255, 255, 255)
 
 -- Update the bus
 neo:update()
