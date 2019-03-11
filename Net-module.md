@@ -306,7 +306,7 @@ net.wf.setup(
 )
 ```
 
-## net.wf.setup(net.wf.mode.AP, [powersave, channel, hidden])
+## net.wf.setup(net.wf.mode.AP, ssid, password, [powersave, channel, hidden])
 
 Setup wifi interface in AP (access point) mode.
 
