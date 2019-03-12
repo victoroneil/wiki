@@ -322,7 +322,7 @@ Arguments:
 
 Returns: nothing, or an exception.
 
-## net.wf.setup(net.wf.mode.STAENT, ssid [, identity, username, password, ca, cert, key, "empty-string-or-my-client-key-password", timecheck, powersave, channel, hidden])
+## net.wf.setup(net.wf.mode.STAENT, ssid [, identity, username, password, ca, cert, key, keypwd, timecheck, powersave, channel, hidden])
 
 Setup wifi interface in STA (station / client) mode where the AP requires WPA2 enterprise authentication.
 
@@ -335,7 +335,7 @@ Arguments:
 * ca (optional): nil, empty string or /path/to/my-ca.pem
 * cert (optional): nil, empty string or /path/to/my-client.crt
 * key (optional): nil, empty string or /path/to/my-client.key
-* keypass (optional): nil, empty string or the given my-client.key's password
+* keypwd (optional): nil, empty string or the given my-client.key's password
 * timecheck (optional): one of net.wf.timecheck.DEFAULT, net.wf.timecheck.ENABLE, net.wf.timecheck.DISABLE
 * power save (optional): power save. Can be either net.wf.powersave.NONE (don't set power save) or net.wf.powersave.MODEM. Default value is net.wf.powersave.NONE.
 * channel (optional):
