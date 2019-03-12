@@ -59,6 +59,47 @@ Returns: nothing, or the current loglevel setting if the enable argument is not 
 os.loglevel(os.LOG_ERR)
 ```
 
+## os.syslog(message[, level])
+
+Logs a message to the syslog.
+
+Arguments:
+
+* message: the message to log to the syslog
+* level (optional): the log level, can be either os.LOG_ALL, os.LOG_INFO, os.LOG_EMERG, os.LOG_ALERT, os.LOG_CRIT, os.LOG_ERR, os.LOG_WARNING, os.LOG_NOTICE, os.LOG_DEBUG. If this argument is not provided the function returns the current loglevel setting.
+
+Returns: nothing
+
+```lua
+-- Log an informative message
+os.syslog("foo", os.LOG_INFO)
+```
+
+## os.rsyslog([server])
+
+Enables or disables logging to a remote rsyslog server.
+
+Arguments:
+
+* server (optional): the name or ip address of the remote syslog server. Empty string or 0.0.0.0 to disable.
+
+Returns: the currently set rsyslog server
+
+```lua
+-- Retrieve the currently set rsyslog server
+/ > os.rsyslog()
+0.0.0.0
+-- Set a new rsyslog server
+/ > os.rsyslog("10.0.0.1")
+10.0.0.1
+-- Retrieve the currently set rsyslog server
+/ > os.rsyslog()
+10.0.0.1
+-- Disable logging to a remote syslog server
+/ > os.rsyslog("0.0.0.0")
+0.0.0.0
+```
+
 ## os.shell([enable])
 
 Enable or disable Lua RTOS shell. If shell is enabled the programmer can interact with Lua RTOS in a friendly way:
