@@ -106,3 +106,48 @@ Returns:
 up = os.uptime(true)
 print("days: "..up.days..", hours: "..up.hours..", mins: "..up.mins..", secs: "..up.secs)
 ```
+
+## os.time([os.settime{year=1970, month=1, day=1, hour=0, min=0, sec=0}])
+
+The time function, when called without arguments, returns the current date and time, coded as a number.
+The time function, when called with arguments, returns the date and time, coded as a number, which was given as parameters.
+See https://www.lua.org/pil/22.1.html for further details.
+
+```lua
+/ > os.time()
+1552405265
+```
+
+## os.date([format, [timestamp]])
+
+The date function, despite its name, is a kind of a reverse of the time function: It converts a number representing the date and time back to some higher-level representation. Its first parameter is a format string, describing the representation we want. The second is the numeric date-time; it defaults to the current date and time. 
+See https://www.lua.org/pil/22.1.html for further details.
+
+```lua
+/ > table = os.date("*t", 906000490)
+```
+
+```lua
+/ > os.date("today is %A, in %B")
+today is Tuesday, in March
+```
+
+```lua
+/ > os.date()
+Tue Mar 12 15:35:36 2019
+```
+
+## os.settime(hours, minutes, seconds, month, day, year)
+or
+## os.settime{os.settime{year=1970, month=1, day=1, hour=0, min=0, sec=0}}
+
+The settime function set's the system clock to the date+time given as parameters.
+As Lua-RTOS doesn't depict the concept of time zones, this usually should be the GMT time.
+
+```lua
+/ > os.settime{year=1970, month=1, day=1, hour=0, min=0, sec=0}
+0
+/ > os.settime{year=1970, month=1, day=1, hour=0, min=1, sec=0}
+60
+```
+
