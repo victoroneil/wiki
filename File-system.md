@@ -4,8 +4,31 @@ File access functions are provided through the standard Lua io module. These fun
 
 The functions of this module are organized in the following categories:
 
+* [Overview functions](#overview-functions)
 * [Format functions](#format-functions)
 * [File and directory management functions](#file-and-directory-management-functions)
+
+# Overview functions
+
+## os.partitions()
+
+List partitions available on the device.
+
+Arguments: nothing
+
+Returns: the available partitions, partition types, names, encoded-state, start addresses and lengths in bytes.
+
+```lua
+/ > os.partitions()
+TYPE:SUB	 ADDRESS	  LENGTH	ENC	LABEL
+0x00:0x10	  655360	 1769472	N	ota_0 < boot < running
+0x00:0x11	 2424832	 1769472	N	ota_1
+0x01:0x02	   36864	   24576	N	nvs
+0x01:0x40	   61440	  524288	N	storage
+0x01:0x01	  585728	    4096	N	phy_init
+0x01:0x00	  589824	    8192	N	otadata
+/ > 
+```
 
 # Format functions
 
