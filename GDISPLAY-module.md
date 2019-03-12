@@ -520,3 +520,30 @@ end
 
 senyera()
 ```
+
+## gdisplay.qrcode(point, text [, eccmode[, multisize]])
+
+Draws pixel on display at the point coordinates using the current foreground color, or a given color.
+
+Arguments:
+
+* point: the [point coordinates](#points) where draw qr-code's upper-left corner.
+* text: the content of qr-code
+* eccmode (optional): one of gdisplay.ECC_LOW, gdisplay.ECC_MEDIUM, gdisplay.ECC_QUARTILE or gdisplay.ECC_HIGH
+* multisize (optional): multiply the size of the qr-code by this factor, e.g. use 2 to make the size double, 3 to make the size triple, etc.
+
+Returns: nothing, or an exception.
+
+```lua
+gdisplay.qrcode(0,0,"text-to-encode")
+gdisplay.qrcode(0,0,"text-to-encode",gdisplay.ECC_HIGH)
+gdisplay.qrcode({0,0},"text-to-encode"[,gdisplay.ECC_LOW[, 2]])
+```
+
+This function supports qr code segmentation which can save a lot of qr-space and so make the qr-code smaller:
+https://www.nayuki.io/page/optimal-text-segmentation-for-qr-codes
+
+```lua
+gdisplay.qrcode(0,0,{{mode=gdisplay.MODE_ALPHANUM,val="WIFI:S:MY-EXTRA-LONG-NAME"},{mode=gdisplay.MODE_BYTE,val=";T:WPA;P:87654321;;"}})
+```
+
