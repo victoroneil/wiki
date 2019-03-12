@@ -278,7 +278,7 @@ Arguments:
 * dns1 (optional): ip of the main dns server to use for resolve names, in packet representation. Use the net.packip for this. If this argument is not provided dns1 is set to 8.8.8.8.
 * dns2 (optional): ip of the secondry dns server to use for resolve names, in packet representation. Use the net.packip for this. If this argument is not provided dns2 is set to 8.8.4.4.
 * power save (optional): power save. Can be either net.wf.powersave.NONE (don't set power save) or net.wf.powersave.MODEM. Default value is net.wf.powersave.NONE.
-* channel (optional): 
+* channel (optional):
   - The starting channel number to use to connect to the AP. It's a natural number between 1 and 13. Set to 0 if the AP's channel is unknown.
   - Default value is 0.
 
@@ -315,7 +315,30 @@ Arguments:
 * ssid: network's ssid to connect.
 * password: network's password.
 * power save (optional): power save. Can be either net.wf.powersave.NONE (don't set power save) or net.wf.powersave.MODEM. Default value is net.wf.powersave.NONE.
-* channel (optional): 
+* channel (optional):
+  - The channel number to use by the Soft-AP. It's a natural number between 1 and 13.
+  - Default value is 0.
+* hidden (optional): If true the SSID is hidden, if false it's visible.
+
+Returns: nothing, or an exception.
+
+## net.wf.setup(net.wf.mode.STAENT, ssid [, identity, username, password, ca, cert, key, "empty-string-or-my-client-key-password", timecheck, powersave, channel, hidden])
+
+Setup wifi interface in STA (station / client) mode where the AP requires WPA2 enterprise authentication.
+
+Arguments:
+
+* ssid: network's ssid to connect.
+* identity (optional): nil, empty string or the required wpa2 enterprise identity
+* username (optional): nil, empty string or the required wpa2 enterprise username
+* password (optional): nil, empty string or the required wpa2 enterprise password
+* ca (optional): nil, empty string or /path/to/my-ca.pem
+* cert (optional): nil, empty string or /path/to/my-client.crt
+* key (optional): nil, empty string or /path/to/my-client.key
+* keypass (optional): nil, empty string or the given my-client.key's password
+* timecheck (optional): one of net.wf.timecheck.DEFAULT, net.wf.timecheck.ENABLE, net.wf.timecheck.DISABLE
+* power save (optional): power save. Can be either net.wf.powersave.NONE (don't set power save) or net.wf.powersave.MODEM. Default value is net.wf.powersave.NONE.
+* channel (optional):
   - The channel number to use by the Soft-AP. It's a natural number between 1 and 13.
   - Default value is 0.
 * hidden (optional): If true the SSID is hidden, if false it's visible.
