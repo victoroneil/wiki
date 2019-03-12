@@ -43,7 +43,7 @@ When posting the url http://ota.whitecatboard.org/?firmware=FIRMWARE_ID&commit=C
 
 To upgrade your board via OTA yo must do the following:
 
-* Setup and start a network connection ([WiFi](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Net-module#wi-fi) or [Ethernet](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Net-module#ethernet)):
+* Setup and start a network connection ([WiFi](./Net-module#wi-fi) or [Ethernet](./Net-module#ethernet)):
 
    ```lua
    net.wf.setup(net.wf.mode.STA, your ssid, your password)
@@ -54,7 +54,7 @@ To upgrade your board via OTA yo must do the following:
    ```lua
    net.ota()
    ```
-The programmer can do a factory reset calling the [os.factoryreset()](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Lua-RTOS-configuration#osfactoryreset) function to revert previously OTA updates and back to the factory app.
+The programmer can do a factory reset calling the [os.factoryreset()](./Lua-RTOS-configuration#osfactoryreset) function to revert previously OTA updates and back to the factory app.
 
    ```lua
    os.factoryreset()

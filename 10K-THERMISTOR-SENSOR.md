@@ -19,4 +19,4 @@ s1 = sensor.attach("THERMISTOR", adc.ADC1, pio.GPIO35, 12)
 s1:read("temperature")
 ```
 
-[Back to sensor list](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Sensor-module#supported-sensors)
+[Back to sensor list](./Sensor-module#supported-sensors)

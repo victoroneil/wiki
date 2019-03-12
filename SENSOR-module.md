@@ -296,17 +296,17 @@ Here is the list of sensors currently natively supported in Lua RTOS.
 
   | Type                     | Sensor                                                             |
   |--------------------------|--------------------------------------------------------------------|
-  | Air Quality  |[SDS011](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/SDS011-NOVA-PM-SENSOR) |
-  | Distance     |[2Y0A21](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/2Y0A21-SENSOR)<br/>[PING))) 28015 ultrasonic sensor](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/PING-28015-ultrasonic-sensor)<br/>[US015 ultrasonic sensor](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/US015-ultrasonic-sensor)|
-  | Geographic position | [GPS](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/GPS-SENSOR) |
-  | Humidity | [BME280](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/BME280-SENSOR)<br/>[DHT11](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/DHT11-SENSOR)<br/>[DHT22](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/DHT22-SENSOR)<br/>[DHT23](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/DH23-SENSOR) |
-  | Illuminance | [BH1620FVC](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/BH1620FVC-SENSOR)<br/>[BH1721FVC](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/BH1721FVC-SENSOR)<br/>[LDR](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/LDR-SENSOR)|
-  | Magnetic field | [AH49E](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/AH49E-LINEAR-HALL-EFFECT-SENSOR)|
-  | Moisture | [VH400](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/VH400-soil-moisture-sensor) |
-  | Potentiometers | [Linear potentiometer](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/LINEAR-POT-SENSOR)|
-  | Presence | [AM412](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/AM412-PIR-SENSOR)|
-  | Pressure | [BME280](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/BME280-SENSOR)|
-  | Rotation | [Relative rotary encoder](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Relative-Rotary-Encoder-SENSOR)|
-  | Switches | [4x4 key matrix](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/KEY-MATRIX-4x4)<br/>[2 POSITION TOGGLE SWITCH](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/2-POSITION-TOGGLE-SWITCH)<br/>[3 POSITION TOGGLE SWITCH](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/3-POSITION-TOGGLE-SWITCH)<br/>[ANALOG JOYSTICK](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/ANALOG-JOYSTICK-SENSOR)<br/>[HALL EFECT](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/HALL-EFFECT-SWITCH-SENSOR)<br/>[PUSH SWITCH](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/PUSH-SWITCH-SENSOR)<br/>[TILT SWITCH](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/TILT-SWITCH)|
-  | Temperature | [BDE0600G](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/BDE0600G-SENSOR)<br/>[BME280](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/BME280-SENSOR)<br/>[DHT11](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/DHT11-SENSOR)<br/>[DHT22](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/DHT22-SENSOR)<br/>[DHT23](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/DH23-SENSOR)<br/>[DS1820](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/DS1820-SENSOR)<br/>[LM35](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/LM35-SENSOR)<br/>[10K THERMISTOR](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/10K-THERMISTOR-SENSOR)<br/>[TMP36](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/TMP36-SENSOR)
-  | UV | [GUVA-S12SD](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/GUVA-S12SD-SENSOR)<br/>[ML8511](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/ML8511-SENSOR)|
+  | Air Quality  |[SDS011](./SDS011-NOVA-PM-SENSOR) |
+  | Distance     |[2Y0A21](./2Y0A21-SENSOR)<br/>[PING))) 28015 ultrasonic sensor](./PING-28015-ultrasonic-sensor)<br/>[US015 ultrasonic sensor](./US015-ultrasonic-sensor)|
+  | Geographic position | [GPS](./GPS-SENSOR) |
+  | Humidity | [BME280](./BME280-SENSOR)<br/>[DHT11](./DHT11-SENSOR)<br/>[DHT22](./DHT22-SENSOR)<br/>[DHT23](./DH23-SENSOR) |
+  | Illuminance | [BH1620FVC](./BH1620FVC-SENSOR)<br/>[BH1721FVC](./BH1721FVC-SENSOR)<br/>[LDR](./LDR-SENSOR)|
+  | Magnetic field | [AH49E](./AH49E-LINEAR-HALL-EFFECT-SENSOR)|
+  | Moisture | [VH400](./VH400-soil-moisture-sensor) |
+  | Potentiometers | [Linear potentiometer](./LINEAR-POT-SENSOR)|
+  | Presence | [AM412](./AM412-PIR-SENSOR)|
+  | Pressure | [BME280](./BME280-SENSOR)|
+  | Rotation | [Relative rotary encoder](./Relative-Rotary-Encoder-SENSOR)|
+  | Switches | [4x4 key matrix](./KEY-MATRIX-4x4)<br/>[2 POSITION TOGGLE SWITCH](./2-POSITION-TOGGLE-SWITCH)<br/>[3 POSITION TOGGLE SWITCH](./3-POSITION-TOGGLE-SWITCH)<br/>[ANALOG JOYSTICK](./ANALOG-JOYSTICK-SENSOR)<br/>[HALL EFECT](./HALL-EFFECT-SWITCH-SENSOR)<br/>[PUSH SWITCH](./PUSH-SWITCH-SENSOR)<br/>[TILT SWITCH](./TILT-SWITCH)|
+  | Temperature | [BDE0600G](./BDE0600G-SENSOR)<br/>[BME280](./BME280-SENSOR)<br/>[DHT11](./DHT11-SENSOR)<br/>[DHT22](./DHT22-SENSOR)<br/>[DHT23](./DH23-SENSOR)<br/>[DS1820](./DS1820-SENSOR)<br/>[LM35](./LM35-SENSOR)<br/>[10K THERMISTOR](./10K-THERMISTOR-SENSOR)<br/>[TMP36](./TMP36-SENSOR)
+  | UV | [GUVA-S12SD](./GUVA-S12SD-SENSOR)<br/>[ML8511](./ML8511-SENSOR)|

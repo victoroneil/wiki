@@ -1,4 +1,4 @@
-After executing the [startup scripts](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Startup-scripts), Lua RTOS runs the Lua interpreter in interactive mode, and the prompt is showed:
+After executing the [startup scripts](./Startup-scripts), Lua RTOS runs the Lua interpreter in interactive mode, and the prompt is showed:
 
    ```lua
    / > 

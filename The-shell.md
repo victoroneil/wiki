@@ -1,11 +1,11 @@
-Lua RTOS has an integrated shell that allows you to execute commands in a linux similar way. The shell is disabled by default, but you can enable it typing os.shell(true) in the [prompt](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/The-Lua-prompt), or putting os.shell(true) in the [system.lua](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Startup-scripts) file.
+Lua RTOS has an integrated shell that allows you to execute commands in a linux similar way. The shell is disabled by default, but you can enable it typing os.shell(true) in the [prompt](./The-Lua-prompt), or putting os.shell(true) in the [system.lua](./Startup-scripts) file.
 
 The shell command are organised into the following categories:
 
-* [Utility commands](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/The-shell#utility-commands)
-* [File system commands](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/The-shell#file-system-commands)
-* [Network commands](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/The-shell#network-commands)
-* [System commands](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/The-shell#system-commands)
+* [Utility commands](./The-shell#utility-commands)
+* [File system commands](./The-shell#file-system-commands)
+* [Network commands](./The-shell#network-commands)
+* [System commands](./The-shell#system-commands)
 
 # Utility commands
 

@@ -6,7 +6,7 @@ Lua RTOS support for MQTT is build over [Eclipse Paho MQTT](https://github.com/e
 
 # What do you need?
 
-For use MQTT you need an internet connection, and credentials to connect to a MQTT broker. You can configure an internet connection in Lua RTOS through [Net module](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki/Net-module).
+For use MQTT you need an internet connection, and credentials to connect to a MQTT broker. You can configure an internet connection in Lua RTOS through [Net module](./Net-module).
 
 # Key concepts
 
