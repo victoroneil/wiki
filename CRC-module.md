@@ -1,7 +1,7 @@
-This module contains functions for creating a [CRC](https://en.wikipedia.org/wiki/Cyclic_redundancy_check) for a Lua string.
-It currently supports the following different crcs:
+This module contains functions for creating a [CRC](https://en.wikipedia.org/wiki/Cyclic_redundancy_check) checksum for a Lua string.
+It currently supports the following different crc checksum types:
 
-## pack.crc8(text [, init-value])
+## crc.crc8(text [, init-value])
 
 Create an 8-bit crc code for the text.
 
@@ -18,7 +18,7 @@ Returns: crc-code of the lua string
 140
 ```
 
-## pack.crc16(text [, init-value])
+## crc.crc16(text [, init-value])
 
 Create an 16-bit crc code for the text.
 
@@ -35,7 +35,7 @@ Returns: crc-code of the lua string
 1193
 ```
 
-## pack.crc32(text [, init-value])
+## crc.crc32(text [, init-value])
 
 Create an 32-bit crc code for the text.
 
