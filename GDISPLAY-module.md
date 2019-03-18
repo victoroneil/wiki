@@ -518,7 +518,8 @@ gdisplay.qrcode({0,0}, content)
 ```
 
 Each segment consists of a table with two attributes: `mode` and `val`. Instead of `val` the key `value` or `text` can be used, which are synonym.
-Supported values for `mode` are: gdisplay.MODE_NUMERIC, gdisplay.MODE_ALPHANUM, gdisplay.MODE_BYTE, gdisplay.MODE_ECI
+Supported values for `mode` are: gdisplay.MODE_NUMERIC, gdisplay.MODE_ALPHANUM, gdisplay.MODE_BYTE or gdisplay.MODE_ECI
+
 
 ## Full examples
 
