@@ -40,16 +40,16 @@ Returns: nothing, or an exception.
 
 ```lua
 -- Setup a NEOPIXEL bus formed by 6 WS2812B leds, connected to GPIO14
-neo = neopixel.setup(neopixel.WS2812B, pio.GPIO14, 6)
+neo = neopixel.attach(neopixel.WS2812B, pio.GPIO14, 6)
 
 -- Set color for pixel 0 (pure red)
 neo:setPixel(0, 255, 0, 0)
 
 -- Set color for pixel 1 (pure green)
-neo:setPixel(0, 255, 0, 0)
+neo:setPixel(1, 0, 255, 0)
 
 -- Set color for pixel 2 (pure white)
-neo:setPixel(0, 255, 255, 255)
+neo:setPixel(2, 255, 255, 255)
 ```
 
 ## instance:update()
@@ -62,16 +62,16 @@ Returns: nothing, or an exception.
 
 ```lua
 -- Setup a NEOPIXEL bus formed by 6 WS2812B leds, connected to GPIO14
-neo = neopixel.setup(neopixel.WS2812B, pio.GPIO14, 6)
+neo = neopixel.attach(neopixel.WS2812B, pio.GPIO14, 6)
 
 -- Set color for pixel 0 (pure red)
 neo:setPixel(0, 255, 0, 0)
 
 -- Set color for pixel 1 (pure green)
-neo:setPixel(0, 255, 0, 0)
+neo:setPixel(1, 0, 255, 0)
 
 -- Set color for pixel 2 (pure white)
-neo:setPixel(0, 255, 255, 255)
+neo:setPixel(2, 255, 255, 255)
 
 -- Update the bus
 neo:update()
@@ -83,7 +83,7 @@ In this example a pixel is moved from right to left, and from left to right, in 
 
 ```lua
 thread.start(function()
-  neo = neopixel.setup(neopixel.WS2812B, pio.GPIO14, 6)
+  neo = neopixel.attach(neopixel.WS2812B, pio.GPIO14, 6)
 
   pixel = 0
   direction = 0

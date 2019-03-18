@@ -12,6 +12,7 @@ Boards:
 
 * [Whitecat ESP32 N1](./Whitecat-ESP32-N1)
 * [Whitecat ESP32 LORA GATEWAY](./Whitecat-ESP32-LORA-GATEWAY)
+* [How to add a new board?](./How-to-add-a-new-board)
 
 General purpose modules:
 
