@@ -9,7 +9,6 @@ Arguments:
 
 * text: the lua string to create the crc for
 * init-value (optional): init value to begin the crc calculation with. default is 0xFF
-* ....
 
 Returns: crc-code of the lua string
 
@@ -26,7 +25,6 @@ Arguments:
 
 * text: the lua string to create the crc for
 * init-value (optional): init value to begin the crc calculation with. default is 0xFFFF
-* ....
 
 Returns: crc-code of the lua string
 
@@ -43,7 +41,6 @@ Arguments:
 
 * text: the lua string to create the crc for
 * init-value (optional): init value to begin the crc calculation with. default is 0xFFFFFFFF
-* ....
 
 Returns: crc-code of the lua string
 
