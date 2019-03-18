@@ -25,7 +25,7 @@ Create an 16-bit crc code for the text.
 Arguments:
 
 * text: the lua string to create the crc for
-* init-value (optional): init value to begin the crc calculation with. default is 0xFF
+* init-value (optional): init value to begin the crc calculation with. default is 0xFFFF
 * ....
 
 Returns: crc-code of the lua string
@@ -42,7 +42,7 @@ Create an 32-bit crc code for the text.
 Arguments:
 
 * text: the lua string to create the crc for
-* init-value (optional): init value to begin the crc calculation with. default is 0xFF
+* init-value (optional): init value to begin the crc calculation with. default is 0xFFFFFFFF
 * ....
 
 Returns: crc-code of the lua string
