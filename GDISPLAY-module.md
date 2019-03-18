@@ -514,6 +514,7 @@ The above could be written as:
 segment1 = {mode=gdisplay.MODE_ALPHANUM,val="WIFI:S:MY-EXTRA-LONG-NAME"}
 segment2 = {mode=gdisplay.MODE_BYTE,val=";T:WPA;P:87654321;;"}
 content = {segment1, segment2}
+gdisplay.qrcode({0,0}, content)
 ```
 
 Each segment consists of a table with two attributes: `mode` and `val`. Instead of `val` the key `value` or `text` can be used, which are synonym.
