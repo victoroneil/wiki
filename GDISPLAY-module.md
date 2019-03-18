@@ -508,6 +508,17 @@ https://www.nayuki.io/page/optimal-text-segmentation-for-qr-codes
 gdisplay.qrcode(0,0,{{mode=gdisplay.MODE_ALPHANUM,val="WIFI:S:MY-EXTRA-LONG-NAME"},{mode=gdisplay.MODE_BYTE,val=";T:WPA;P:87654321;;"}})
 ```
 
+As shown above, segmentation is achieved by providing a specially formatted table instead of the "text-to-encode".
+The above could be written as:
+```lua
+segment1 = {mode=gdisplay.MODE_ALPHANUM,val="WIFI:S:MY-EXTRA-LONG-NAME"}
+segment2 = {mode=gdisplay.MODE_BYTE,val=";T:WPA;P:87654321;;"}
+content = {segment1, segment2}
+```
+
+Each segment consists of a table with two attributes: `mode` and `val`. Instead of `val` the key `value` or `text` can be used, which are synonym.
+Supported values for `mode` are: gdisplay.MODE_NUMERIC, gdisplay.MODE_ALPHANUM, gdisplay.MODE_BYTE, gdisplay.MODE_ECI
+
 ## Full examples
 
 Display the "Senyera", the Catalonian's flag. This flag has been selected as a testimonial of where Lua RTOS has been developed.
