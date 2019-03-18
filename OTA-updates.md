@@ -60,7 +60,7 @@ The programmer can do a factory reset calling the [os.factoryreset()](./Lua-RTOS
    os.factoryreset()
    ```
 
-## net.ota([server[, project[, reboot[, verfiy]])
+## net.ota([server[, project[, reboot[, verify]])
 
 Upgrade the board via OTA.
 
@@ -69,7 +69,7 @@ Arguments:
 * server (optional): the ota server to use, e.g. http://ota.whitecatboard.org/
 * project (optional): a hint for the ota server on which project the firmware is for
 * reboot (optional): boolean that states if the device should be rebooted after a successful ota
-* verfiy (optional): boolean that states if the ota partition should be verfied after downloading and writing it
+* verify (optional): boolean that states if the ota partition should be verfied after downloading and writing it
 
 Returns: nothing, an exception, or does not return
 
