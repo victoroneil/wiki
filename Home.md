@@ -64,4 +64,5 @@ High-level hardware access modules:
 * [STEPPER](./STEPPER-module)
 
 Utility modules:
+* [CRC](./CRC-module)
 * [PACK](./Pack-module)
