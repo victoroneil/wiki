@@ -59,30 +59,3 @@ The programmer can do a factory reset calling the [os.factoryreset()](./Lua-RTOS
    ```lua
    os.factoryreset()
    ```
-
-## net.ota([server[, project[, reboot[, verify]])
-
-Upgrade the board via OTA.
-
-Arguments:
-
-* server (optional): the ota server to use, e.g. http://ota.whitecatboard.org/
-* project (optional): a hint for the ota server on which project the firmware is for
-* reboot (optional): boolean that states if the device should be rebooted after a successful ota
-* verify (optional): boolean that states if the ota partition should be verfied after downloading and writing it
-
-Returns: nothing, an exception, or does not return
-
-```lua
-/ > net.ota(nil, "myproject", false, true)
-Connecting to https://sdkconfig-ota-server.tld ...
-Current firmware commit is 09d7592cf183fdc138428c756e0ec124ea043a01
-Running from ota_0 at offset 0x000a0000
-Writing to   ota_1 at offset 0x00250000 - capacity is 1.69 MB
-Starting OTA update, downloading partition image with 1.14 MB
-Writing chunk at 0x00373d50... (100 %)
-OTA update finished
-Successfully changed boot partition
-/ > 
-```
-
