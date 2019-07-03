@@ -72,10 +72,10 @@ Arguments:
 
     | Duration | English | USA | |
     |---|-----------|------------|-|
-    | 1 | Semibreve | Whole note | &#119133; |
-    | 2 | Minim | Half note | &#9831; |
-    | 4 | Crotchet | Quarter note | &#9832; |
-    | 8 | Quaver | Eighth note | &#9833; |
+![](http://git.whitecatboard.org/semibrev.gif) |
+    | 2 | Minim | Half note | ![](http://git.whitecatboard.org/minim.gif) |
+    | 4 | Crotchet | Quarter note | ![](http://git.whitecatboard.org/semibrev.gif) |
+    | 8 | Quaver | Eighth note | ![](http://git.whitecatboard.org/quaver.gif) |
     | 16 | Semiquaver | Sixteenth note | &#9834; |
     | 32 | Demisemiquaver | Thirty-second note | &#9835; |
     | 64 | Hemidemisemiquaver | Sixty-fourth note | &#9836; |
