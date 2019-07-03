@@ -1,6 +1,10 @@
 # About this
 
-This module contains functions to generate audible tones, attaching a piezo buzzer or a speaker to an output GPIO. The tones can be 
+This module contains functions to generate audible tones, attaching a piezo buzzer or a speaker to an output GPIO. The module can be used in two ways:
+
+* Raw notation, in which tones are described in terms of tone frequency and duration.
+
+* Musical notation, in which 
 
 # Key concepts
 
