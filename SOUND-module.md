@@ -50,17 +50,19 @@ Play a musical note on the desired octave.
 
 Arguments:
 
-* note: a string which describe the musical note to play and it's duration.
+* note: a formatted string describing the musical note to play and it's duration.
 
-| English | German | Latin |
-|---|---|----|
-| A | A | La |
-| B | H | Si |
-| C | C | Do |
-| D | D | Re |
-| E | E | Mi |
-| F | F | Fa |
-| G | G | Sol |
+  - note name: the name of the note using the English naming convention.
+
+  | English | German | Latin |
+  |---|---|----|
+  | A | A | La |
+  | B | H | Si |
+  | C | C | Do |
+  | D | D | Re |
+  | E | E | Mi |
+  | F | F | Fa |
+  | G | G | Sol |
 
 * octave: the octave
 
