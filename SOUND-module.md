@@ -15,13 +15,13 @@ This module contains functions to generate audible tones, attaching a piezo buzz
 
 # Configuration funcions
 
-## instance = servo.attach(pin)
+## instance = sound.attach(tone_generator, pin)
 
-Create a new servo instance.
+Attach a tone generator to a pin.
 
 Arguments:
 
-* pin: GPIO to use for the servo signal. Use defined constants in the PIO module for this, for example pio.GPIO126.
+* tone generator: GPIO to use for the servo signal. Use defined constants in the PIO module for this, for example pio.GPIO126.
 
 Returns: a servo instance, or an exception. You must store this instance into a variable for further operations with it.
 
