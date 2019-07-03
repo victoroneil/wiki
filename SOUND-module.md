@@ -53,6 +53,7 @@ Arguments:
 * note: a string which describe the musical note to play and it's duration.
 
 | English | German | Latin |
+|---|---|----|
 | A | A | La |
 | B | H | Si |
 | C | C | Do |
