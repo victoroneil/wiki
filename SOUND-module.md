@@ -23,8 +23,8 @@ Attach a tone generator to a piezo buzzer or a speaker.
 
 Arguments:
 
-* tone_generator: tone generator used to synthesize the tone.
-* pin: GPIO where the piezo buzzer or the speaker is attached.
+* **tone_generator:** tone generator used to synthesize the tone.
+* **pin:** GPIO where the piezo buzzer or the speaker is attached.
 
 Returns: a sound instance, or an exception. You must store this instance into a variable for further operations with it.
 
@@ -50,19 +50,21 @@ Play a musical note on the desired octave.
 
 Arguments:
 
-* note: a formatted string describing the musical note to play and it's duration.
+* **note:** a formatted string describing the musical note to play and it's duration.
 
-  - note name: the name of the note using the English naming convention.
+  - **note name:** the name of the note using the English naming convention.
 
-  | English | German | Latin |
-  |---|---|----|
-  | A | A | La |
-  | B | H | Si |
-  | C | C | Do |
-  | D | D | Re |
-  | E | E | Mi |
-  | F | F | Fa |
-  | G | G | Sol |
+    | English | German | Latin |
+    |---|---|----|
+    | A | A | La |
+    | B | H | Si |
+    | C | C | Do |
+    | D | D | Re |
+    | E | E | Mi |
+    | F | F | Fa |
+    | G | G | Sol |
+
+    _Notes in English naming convention, and their correspondence to other naming conventions._
 
 * octave: the octave
 
