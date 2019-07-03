@@ -19,7 +19,7 @@ Tones are synthesized by the module using a tone generator:
 
 ## instance = sound.attach(tone_generator, pin)
 
-Attach a tone generator to a pin.
+Attach a tone generator to a piezo buzzer or a speaker.
 
 Arguments:
 
@@ -29,36 +29,29 @@ Arguments:
 Returns: a sound instance, or an exception. You must store this instance into a variable for further operations with it.
 
 ```lua
--- Attach the servo to GPIO26
-s = servo.attach(pio.GPIO26)
 ```
 
 ## instance:detach()
 
-Detach the servo and free all resources used by the servo.
+Detach the tone generator and free all resources used.
 
 Arguments: none.
 
 Returns: nothing, or an exception.
 
 ```lua
--- Detach the servo
-s:detach()
 ```
 
 # Operation functions
 
-## instance:write(value)
+## instance:playnote(note, octave)
 
-Write a value to a servo instance, controlling the servo movement according to the type of servo:
-
-* For standard servos: the value is the servo's absolute position expressed in degrees. Typically, the value goes from 0º to 180º. In this case writing a new value, moves the servo from it's current position to a new position, and then stops.
-
-* For continuous rotation servos: the value is expressed also in degrees, being 0º full-speed counter clock wise, 180º full-speed clock wise, and 90º being no movement. In this case, writing a new value, changes the servo rotation direction, or the rotation speed.
+Play a musical note on the desired octave.
 
 Arguments:
 
-* value: the value to write, expressed in degrees.
+* note: a string which describe the musical note to play and it's duration.
+* octave: 
 
 Returns: nothing, or an exception.
 
