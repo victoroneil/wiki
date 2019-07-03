@@ -70,9 +70,9 @@ Arguments:
 
   - **duration:** 
 
-    | Duration | English | USA |
-    |---|-----------|------------|
-    | 1 | Semibreve | Whole note |
+    | Duration | English | USA | |
+    |---|-----------|------------|-|
+    | 1 | Semibreve | Whole note | &#119133; |
     | 2 | Minim | Half note |
     | 4 | Crotchet | Quarter note |
     | 8 | Quaver | Eighth note |
