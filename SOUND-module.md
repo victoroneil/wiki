@@ -70,15 +70,15 @@ Arguments:
 
   - **duration:** 
 
-    | Duration | English | USA | |
+    | Duration | English | USA | Example |
     |---|-----------|------------|-|
     | 1 | Semibreve | Whole note | ![](http://git.whitecatboard.org/semibrev.gif) |
     | 2 | Minim | Half note | ![](http://git.whitecatboard.org/minim.gif) |
-    | 4 | Crotchet | Quarter note | ![](http://git.whitecatboard.org/semibrev.gif) |
+    | 4 | Crotchet | Quarter note | ![](http://git.whitecatboard.org/crotchet.gif |
     | 8 | Quaver | Eighth note | ![](http://git.whitecatboard.org/quaver.gif) |
-    | 16 | Semiquaver | Sixteenth note | &#9834; |
-    | 32 | Demisemiquaver | Thirty-second note | &#9835; |
-    | 64 | Hemidemisemiquaver | Sixty-fourth note | &#9836; |
+    | 16 | Semiquaver | Sixteenth note | ![](http://git.whitecatboard.org/semiquav.gif) |
+    | 32 | Demisemiquaver | Thirty-second note | ![](http://git.whitecatboard.org/demisemi.gif) |
+    | 64 | Hemidemisemiquaver | Sixty-fourth note | ![](http://git.whitecatboard.org/hemidemi.gif) |
 
 * octave: the octave
 
