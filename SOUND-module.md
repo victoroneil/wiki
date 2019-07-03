@@ -10,8 +10,8 @@ This module contains functions to generate audible tones, attaching a piezo buzz
 
 | Generator | Description |
 |-----------|-------------|
-| PWM       | The tone is synthesized by an available PWM hardware module, which generates a square wave with a 50% duty cycle |
-| DAC       | |
+| PWM       | The tone is synthesized by a PWM hardware module, which generates a square wave with a 50% duty cycle. |
+| DAC       | The tone is synthesized by an I2S / DAC hardware module, which generates a sine wave at a 38 KHz sampling rate.|
 
 # Configuration funcions
 
