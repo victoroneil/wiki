@@ -51,7 +51,17 @@ Play a musical note on the desired octave.
 Arguments:
 
 * note: a string which describe the musical note to play and it's duration.
-* octave: 
+
+| English | German | Latin |
+| A | A | La |
+| B | H | Si |
+| C | C | Do |
+| D | D | Re |
+| E | E | Mi |
+| F | F | Fa |
+| G | G | Sol |
+
+* octave: the octave
 
 Returns: nothing, or an exception.
 
