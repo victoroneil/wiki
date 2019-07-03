@@ -66,6 +66,20 @@ Arguments:
 
     _Notes in English naming convention, and their correspondence to other naming conventions._
 
+  - **accidental (optional):** can be either **#** to raise the note by a semitone or **b** to lower the note by the same amount.
+
+  - **duration:** 
+
+    | Duration | English | USA |
+    |---|-----------|------------|
+    | 1 | Semibreve | Whole note |
+    | 2 | Minim | Half note |
+    | 4 | Crotchet | Quarter note |
+    | 8 | Quaver | Eighth note |
+    | 16 | Semiquaver | Sixteenth note |
+    | 32 | Demisemiquaver | Thirty-second note |
+    | 64 | Hemidemisemiquaver | Sixty-fourth note |    
+
 * octave: the octave
 
 Returns: nothing, or an exception.
