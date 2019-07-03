@@ -6,30 +6,11 @@ This module contains functions to generate audible tones, attaching a piezo buzz
 
 * **Musical notation**, in which tones are described in terms of the musical note, note duration, octave, time signature, etc ... 
 
-# Key concepts
+# Tone generator
 
-To generate sounds in your program you must do the following:
-
-1. Attach the servo using the servo.attach(..) function. This returns a servo instance that you must store into a variable.
-
-   ```lua
-   -- Attach the servo to GPIO26
-   s = servo.attach(pio.GPIO26)
-   ```
-
-2. Write values to the servo to move it, using the instance's write function.
-
-   ```lua
-   -- Move the servo to the 45º position
-   s:write(25)
-   ```
-
-3. Detach the stepper instance when it is no longer necessary:
-
-   ```lua
-   -- Detach the servo
-   s:detach()
-   ```
+| Generator | Description |
+|-----------|-------------|
+| PWM       | The tone is synthesized using a square wave with 50% duty cycle |
 
 # Configuration funcions
 
