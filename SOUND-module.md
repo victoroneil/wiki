@@ -8,6 +8,8 @@ This module contains functions to generate audible tones, attaching a piezo buzz
 
 # Tone generator
 
+Tones are synthesized by the module using a tone generator:
+
 | Generator | Description |
 |-----------|-------------|
 | PWM       | The tone is synthesized by a PWM hardware module, which generates a square wave with a 50% duty cycle. |
