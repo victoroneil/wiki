@@ -75,8 +75,8 @@ Arguments:
     | 1 | Semibreve | Whole note | &#119133; |
     | 2 | Minim | Half note |
     | 4 | Crotchet | Quarter note |
-    | 8 | Quaver | Eighth note |
-    | 16 | Semiquaver | Sixteenth note |
+    | 8 | Quaver | Eighth note | &#9833; |
+    | 16 | Semiquaver | Sixteenth note | &#9834; |
     | 32 | Demisemiquaver | Thirty-second note |
     | 64 | Hemidemisemiquaver | Sixty-fourth note |    
 
