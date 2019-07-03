@@ -10,10 +10,10 @@ This module contains functions to generate audible tones, attaching a piezo buzz
 
 Tones are synthesized by the module using a tone generator:
 
-| Generator | Description |
-|-----------|-------------|
-| PWM       | The tone is synthesized by a PWM hardware module, which generates a square wave with a 50% duty cycle. |
-| DAC       | The tone is synthesized by an I2S / DAC hardware module, which generates a sine wave at a 38 KHz sampling rate.|
+| Generator | Id | Description |
+|-----------|----|---------|
+| PWM       | sound.PWM | The tone is synthesized by a PWM hardware module, which generates a square wave with a 50% duty cycle. |
+| DAC       | sound.DAC | The tone is synthesized by an I2S / DAC hardware module, which generates a sine wave at a 38 KHz sampling rate.|
 
 # Configuration funcions
 
@@ -23,9 +23,10 @@ Attach a tone generator to a pin.
 
 Arguments:
 
-* tone generator: GPIO to use for the servo signal. Use defined constants in the PIO module for this, for example pio.GPIO126.
+* tone_generator: tone generator used to synthesize the tone.
+* pin: GPIO where the piezo buzzer or the speaker is attached.
 
-Returns: a servo instance, or an exception. You must store this instance into a variable for further operations with it.
+Returns: a sound instance, or an exception. You must store this instance into a variable for further operations with it.
 
 ```lua
 -- Attach the servo to GPIO26
