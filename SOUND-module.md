@@ -78,34 +78,6 @@ Arguments:
 
 * **octave:** the octave in which the note must be played.
 
-**Example:**
-
-In the following example it is shown how to translate the first 8 bars of the Harry Potter's music sheet.
-
-![](http://git.whitecatboard.org/harry1.png)
-![](http://git.whitecatboard.org/harry2.png)
-
-```lua
-buzzer = sound.attach(sound.DAC, pio.GPIO26)
-
-buzzer:timesignature(3, 4, 240)
-
-buzzer:playnote("B4",   4)
-buzzer:playnote("E4.",  5)
-buzzer:playnote("G8",   5)
-buzzer:playnote("F#4",  5)
-buzzer:playnote("E2",   5)
-buzzer:playnote("B4",   5)
-buzzer:playnote("A2.",  5)
-buzzer:playnote("F#2.", 5)
-buzzer:playnote("E4.",  5)
-buzzer:playnote("G8",   5)
-buzzer:playnote("F#4",  5)
-buzzer:playnote("D2",   5)
-buzzer:playnote("F4",   5)
-buzzer:playnote("B2.",  4)
-```
-
 Returns: nothing, or an exception.
 
 ## instance:timesignature(upper, lower, bpm)
@@ -135,10 +107,62 @@ Arguments:
 
    _Some basic tempo markings an their correspondence to bpm._
 
-**Examples:**
+Returns: nothing, or an exception.
 
-| Example | How to code|
-|---------|-|
-|![](http://git.whitecatboard.org/rhythm1.gif) | instance:timesignature(3,4,120) |
-|![](http://git.whitecatboard.org/timesig2.gif) | instance:timesignature(4,4,120) |
-|![](http://git.whitecatboard.org/timesig5.gif) | instance:timesignature(4,4,120) |
+   **Examples:**
+
+   | Example | How to code|
+   |---------|-|
+   |![](http://git.whitecatboard.org/rhythm1.gif) | instance:timesignature(3,4,120) |
+   |![](http://git.whitecatboard.org/timesig2.gif) | instance:timesignature(4,4,120) |
+   |![](http://git.whitecatboard.org/timesig5.gif) | instance:timesignature(4,4,120) |
+
+## instance:playsilence(duration)
+
+Play a silence of a specified duration.
+
+Arguments:
+
+  - **duration:** silence duration, relative to a semibreve of 1 time unit.
+
+    | Duration | Time units | English | USA | Spanish | Example |
+    |---|-------|----|------------|-|-|
+    | 1 | 1 | Semibreve | Whole note | Redonda | ![](http://git.whitecatboard.org/semibrev.gif) |
+    | 2 | 1/2 | Minim | Half note | Blanca | ![](http://git.whitecatboard.org/minim.gif) |
+    | 4 | 1/4 | Crotchet | Quarter note | Negra | ![](http://git.whitecatboard.org/crotchet.gif) |
+    | 8 | 1/8 | Quaver | Eighth note | Corchea | ![](http://git.whitecatboard.org/quaver.gif) |
+    | 16 | 1/16 | Semiquaver | Sixteenth note | Semi-corchea | ![](http://git.whitecatboard.org/semiquav.gif) |
+    | 32 | 1/32 | Demisemiquaver | Thirty-second note | Fusa | ![](http://git.whitecatboard.org/demisemi.gif) |
+    | 64 | 1/64 | Hemidemisemiquaver | Sixty-fourth note | Semi-fusa | ![](http://git.whitecatboard.org/hemidemi.gif) |
+
+    The duration of the silence can be increasing by the half of the note duration adding a dot (**.**).
+
+**Example:**
+
+In the following example it is shown how to translate the first 8 bars of the Harry Potter's music sheet.
+
+![](http://git.whitecatboard.org/harry1.png)
+![](http://git.whitecatboard.org/harry2.png)
+
+```lua
+buzzer = sound.attach(sound.DAC, pio.GPIO26)
+
+buzzer:timesignature(3, 4, 240)
+
+buzzer:playsilence("4")
+buzzer:playsilence("4")
+buzzer:playnote("B4",   4)
+buzzer:playnote("E4.",  5)
+buzzer:playnote("G8",   5)
+buzzer:playnote("F#4",  5)
+buzzer:playnote("E2",   5)
+buzzer:playnote("B4",   5)
+buzzer:playnote("A2.",  5)
+buzzer:playnote("F#2.", 5)
+buzzer:playnote("E4.",  5)
+buzzer:playnote("G8",   5)
+buzzer:playnote("F#4",  5)
+buzzer:playnote("D2",   5)
+buzzer:playnote("F4",   5)
+buzzer:playnote("B2.",  4)
+```
