@@ -28,9 +28,6 @@ Arguments:
 
 Returns: a sound instance, or an exception. You must store this instance into a variable for further operations with it.
 
-```lua
-```
-
 ## instance:detach()
 
 Detach the tone generator and free all resources used.
@@ -38,9 +35,6 @@ Detach the tone generator and free all resources used.
 Arguments: none.
 
 Returns: nothing, or an exception.
-
-```lua
-```
 
 # Operation functions
 
