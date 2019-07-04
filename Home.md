@@ -61,6 +61,7 @@ High-level hardware access modules:
 * [NEOPIXEL](./NEOPIXEL-module)
 * [SENSOR](./Sensor-module)
 * [SERVO](./SERVO-module)
+* [SOUND](./SOUND-module)
 * [STEPPER](./STEPPER-module)
 
 Utility modules:
