@@ -30,7 +30,7 @@ Returns: a sound instance, or an exception. You must store this instance into a 
 
 ## instance:detach()
 
-Detach the tone generator and free all resources used.
+Detach the tone generator and free all the resources used.
 
 Arguments: none.
 
