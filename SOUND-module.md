@@ -80,7 +80,30 @@ Arguments:
     | 32 | 1/32 | Demisemiquaver | Thirty-second note | Fusa | ![](http://git.whitecatboard.org/demisemi.gif) |
     | 64 | 1/64 | Hemidemisemiquaver | Sixty-fourth note | Semi-fusa | ![](http://git.whitecatboard.org/hemidemi.gif) |
 
-* octave: the octave
+    The duration of the note can be increasing by the half of the note duration adding a dot (**.**).
+
+* **octave:** the octave in which the note must be played.
+
+```lua
+buzzer = sound.attach(sound.DAC, pio.GPIO26)
+
+buzzer:timesignature(3, 4, 240)
+
+buzzer:playnote("B4",   4)
+buzzer:playnote("E4.",  5)
+buzzer:playnote("G8",   5)
+buzzer:playnote("F#4",  5)
+buzzer:playnote("E2",   5)
+buzzer:playnote("B4",   5)
+buzzer:playnote("A2.",  5)
+buzzer:playnote("F#2.", 5)
+buzzer:playnote("E4.",  5)
+buzzer:playnote("G8",   5)
+buzzer:playnote("F#4",  5)
+buzzer:playnote("D2",   5)
+buzzer:playnote("F4",   5)
+buzzer:playnote("B2.",  4)
+```
 
 Returns: nothing, or an exception.
 
