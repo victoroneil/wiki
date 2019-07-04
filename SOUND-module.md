@@ -137,6 +137,25 @@ Arguments:
 
     The duration of the silence can be increasing by the half of the note duration adding a dot (**.**).
 
+## instance:playtone(frequency, duration)
+
+Play a tone of a specified frequency an duration.
+
+Arguments:
+
+* **frequency:** the frequency of the tone to play in hertz.
+
+* **duration:** the duration of the tone in milliseconds.
+
+Returns: nothing, or an exception.
+
+```lua
+-- Play an audible tone at 440 Hz during 1 second
+buzzer = sound.attach(sound.DAC, pio.GPIO26)
+
+buzzer:playtone(440, 1000)
+```
+
 # Example
 
 In the following example it is shown how to translate the first 8 bars of the Harry Potter's music sheet.
