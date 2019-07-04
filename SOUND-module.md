@@ -86,7 +86,7 @@ Arguments:
 
 **Example:**
 
-In the following example it is shown how to translate the first 6 bars of the Harry Potter's music sheet.
+In the following example it is shown how to translate the first 8 bars of the Harry Potter's music sheet.
 
 ![](http://git.whitecatboard.org/harry1.png)
 ![](http://git.whitecatboard.org/harry2.png)
