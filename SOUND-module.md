@@ -137,7 +137,7 @@ Arguments:
 
     The duration of the silence can be increasing by the half of the note duration adding a dot (**.**).
 
-**Example:**
+# Example
 
 In the following example it is shown how to translate the first 8 bars of the Harry Potter's music sheet.
 
