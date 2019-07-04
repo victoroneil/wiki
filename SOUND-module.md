@@ -114,18 +114,30 @@ buzzer:playnote("B2.",  4)
 
 Returns: nothing, or an exception.
 
-```lua
--- Attach the servo to GPIO26
-s = servo.attach(pio.GPIO26)
+## instance:timesignature(upper, lower, bpm)
 
--- Move an standard servo to the 45º position
-s:write(45)
-```
+Set the time signature for the future notes to play. 
 
-```lua
--- Attach the servo to GPIO26
-s = servo.attach(pio.GPIO26)
+Arguments:
 
--- Move a continuous rotation servo clock wise at full-speed
-s:write(180)
-```
+* **upper:** upper value of the signature, which specifies how many beats are contained in each bar.
+
+* **lower:** lower value of the signature, which specifies which note duration is equivalent to 1 beat.
+
+* **bpm:** beats per minute.
+
+   | Tempo | bpm |
+   |-------|-----|
+   | Adagio| 66–76 | 
+   | Adagietto | 70–80 |   
+   | Andante | 76–108 |
+   | Andantino | 80–108 |
+   | Marcia moderato | 83–85 |
+   | Andante moderato | 92–112 |
+   | Moderato | 108–120 |
+   | Allegretto | 112–120 |
+   | Allegro moderato | 116–120 |
+   | Allegro | 120–156 |
+
+   _Some basic tempo markings an their correspondence to bpm._
+
