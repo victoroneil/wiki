@@ -142,6 +142,8 @@ Arguments:
    _Some basic tempo markings an their correspondence to bpm._
 
 
-![](http://git.whitecatboard.org/rhythm1.gif)
-![](http://git.whitecatboard.org/timesig2.gif)
-![](http://git.whitecatboard.org/timesig5.gif)
+| Example | |
+|---------|-|
+|![](http://git.whitecatboard.org/rhythm1.gif) | instance:timesignature(3,4,120) |
+|![](http://git.whitecatboard.org/timesig2.gif) |
+|![](http://git.whitecatboard.org/timesig5.gif) | 
