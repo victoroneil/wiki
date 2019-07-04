@@ -50,7 +50,7 @@ Play a musical note on the desired octave.
 
 Arguments:
 
-* **note:** a formatted string describing the musical note to play and it's duration.
+* **note:** a formatted string (**name [accidental] duration**) describing the musical note to play and it's duration.
 
   - **note name:** the name of the note using the English naming convention.
 
@@ -68,17 +68,17 @@ Arguments:
 
   - **accidental (optional):** can be either **#** to raise the note by a semitone or **b** to lower the note by the same amount.
 
-  - **duration:** 
+  - **duration:** note duration, relative to a semibreve of 1 time unit.
 
-    | Duration | English | USA | Spanish | Example |
-    |---|-----------|------------|-|-|
-    | 1 | Semibreve | Whole note | Redonda | ![](http://git.whitecatboard.org/semibrev.gif) |
-    | 2 | Minim | Half note | Blanca | ![](http://git.whitecatboard.org/minim.gif) |
-    | 4 | Crotchet | Quarter note | Negra | ![](http://git.whitecatboard.org/crotchet.gif) |
-    | 8 | Quaver | Eighth note | Corchea | ![](http://git.whitecatboard.org/quaver.gif) |
-    | 16 | Semiquaver | Sixteenth note | Semi-corchea | ![](http://git.whitecatboard.org/semiquav.gif) |
-    | 32 | Demisemiquaver | Thirty-second note | Fusa | ![](http://git.whitecatboard.org/demisemi.gif) |
-    | 64 | Hemidemisemiquaver | Sixty-fourth note | Semi-fusa | ![](http://git.whitecatboard.org/hemidemi.gif) |
+    | Duration | Time units | English | USA | Spanish | Example |
+    |---|-------|----|------------|-|-|
+    | 1 | 1 | Semibreve | Whole note | Redonda | ![](http://git.whitecatboard.org/semibrev.gif) |
+    | 2 | 1/2 | Minim | Half note | Blanca | ![](http://git.whitecatboard.org/minim.gif) |
+    | 4 | 1/4 | Crotchet | Quarter note | Negra | ![](http://git.whitecatboard.org/crotchet.gif) |
+    | 8 | 1/8 | Quaver | Eighth note | Corchea | ![](http://git.whitecatboard.org/quaver.gif) |
+    | 16 | 1/16 | Semiquaver | Sixteenth note | Semi-corchea | ![](http://git.whitecatboard.org/semiquav.gif) |
+    | 32 | 1/32 | Demisemiquaver | Thirty-second note | Fusa | ![](http://git.whitecatboard.org/demisemi.gif) |
+    | 64 | 1/64 | Hemidemisemiquaver | Sixty-fourth note | Semi-fusa | ![](http://git.whitecatboard.org/hemidemi.gif) |
 
 * octave: the octave
 
