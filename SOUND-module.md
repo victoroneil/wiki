@@ -88,8 +88,8 @@ Arguments:
 
 In the following example it is shown how to translate the first 6 bars of the Harry Potter's music sheet.
 
-![](http://git.whitecatboard.org/harry1.gif)
-![](http://git.whitecatboard.org/harry2.gif)
+![](http://git.whitecatboard.org/harry1.png)
+![](http://git.whitecatboard.org/harry2.png)
 
 ```lua
 buzzer = sound.attach(sound.DAC, pio.GPIO26)
