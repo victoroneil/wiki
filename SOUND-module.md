@@ -125,16 +125,6 @@ Arguments:
 
   - **duration:** silence duration, relative to a semibreve of 1 time unit.
 
-    | Duration | Time units | English | USA | Spanish | Example |
-    |---|-------|----|------------|-|-|
-    | 1 | 1 | Semibreve | Whole note | Redonda | ![](http://git.whitecatboard.org/semibrev.gif) |
-    | 2 | 1/2 | Minim | Half note | Blanca | ![](http://git.whitecatboard.org/minim.gif) |
-    | 4 | 1/4 | Crotchet | Quarter note | Negra | ![](http://git.whitecatboard.org/crotchet.gif) |
-    | 8 | 1/8 | Quaver | Eighth note | Corchea | ![](http://git.whitecatboard.org/quaver.gif) |
-    | 16 | 1/16 | Semiquaver | Sixteenth note | Semi-corchea | ![](http://git.whitecatboard.org/semiquav.gif) |
-    | 32 | 1/32 | Demisemiquaver | Thirty-second note | Fusa | ![](http://git.whitecatboard.org/demisemi.gif) |
-    | 64 | 1/64 | Hemidemisemiquaver | Sixty-fourth note | Semi-fusa | ![](http://git.whitecatboard.org/hemidemi.gif) |
-
     The duration of the silence can be increasing by the half of the note duration adding a dot (**.**).
 
 ## instance:playtone(frequency, duration)
