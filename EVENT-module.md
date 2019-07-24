@@ -47,6 +47,22 @@ Arguments: nothing.
 
 Returns: an event instance, or an exception. You must store this instance into a variable for further operations with it.
 
+## instance:disable() 
+
+Disables an event instance, unblocking all the threads that are waiting for the event instance. When an event is disabled all calls to instance:broadcast or instance:wait are ignored.
+
+Arguments: nothing.
+
+Returns: nothing, or an exception
+
+## instance:enable() 
+
+Enables a disabled event instance.
+
+Arguments: nothing.
+
+Returns: nothing, or an exception
+
 ## instance:broadcast([wait for completion]) 
 
 Broadcast an event instance to all the threads that are waiting for this event.
@@ -55,20 +71,22 @@ Arguments:
 
 * wait for completion (optional): is a boolean that indicates whether the calling thread must wait for the event to be processed on all threads that are waiting for the event. If true the calling thread is blocked until all threads have processed the event. By default the value for this argument is false (don't wait).
 
-Returns: nothing, or an exception.
+Returns: true if the event has been broadcasted, false if the event is disabled, or an exception.
 
 ## instance:wait()
 
 Wait for an event, blocking the calling thread until the event is broadcasted.
 
 Arguments: nothing.
-Returns: nothing.
+
+Returns: true if the event has been broadcasted, false if the event has been disabled while waiting, or an exception.
 
 ## instance:done()
 
 Indicates that the thread has been processed the event.
 
 Arguments: nothing.
+
 Returns: nothing.
 
 # Example
