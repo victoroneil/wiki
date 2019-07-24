@@ -2,13 +2,13 @@
 
 This module contains functions to work with leds connected in a one-wired bus, such as the WS2812B led. Each led in the bus is known as pixel.
 
-The primary limiting factor for the number of pixels you can drive with this module is the memory you have on your board. With 1 Kb of memory you can drive 128 pixels. In ESP32, when Lua RTOS is booted you have arround of 200 Kb of memory available for your applications, so you can drive a very high number of pixels.
+The primary limiting factor for the number of pixels you can drive with this module is the memory you have on your board. With 1 Kb of memory you can drive up to 128 pixels.
 
 # Setup funcions
 
 ## instance = neopixel.attach(type, gpio, pixels)
 
-Attach the NEOPIXEL bus.
+Attach NEOPIXEL to a gpio. When NEOXIPEL is attached the brightness is set to 20%.
 
 Arguments:
 
@@ -22,6 +22,16 @@ Returns: a NEOPIXEL bus instance, or an exception. You must store this instance 
 -- Attch a NEOPIXEL bus formed by 6 WS2812B leds, connected to GPIO14
 neo = neopixel.attach(neopixel.WS2812B, pio.GPIO14, 6)
 ```
+
+## instance:setBrightness(brightness)
+
+Set the brightnesss.
+
+Arguments:
+
+* brightness: brightness value, a number between 0 and 1, which is used internally to set the brightness.
+
+Returns: nothing, or an exception.
 
 # Operation functions
 
