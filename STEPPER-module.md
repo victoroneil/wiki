@@ -2,9 +2,9 @@
 
 This module contains functions for controlling stepper motors.
 
-Please, take in advance that you need a stepper motor driver for connect the motor to your board. Stepper motors works at voltages and currents that are not compatible with your board. Never connect a stepper motor to the board without a stepper motor driver, or your board will be permanently damage.
+Please, take in advance that you need a stepper motor driver to connect the motor to your board. Stepper motors works at voltages and currents that are not compatible with your board. Never connect a stepper motor to the board without a stepper motor driver, or your board will be permanently damage.
 
-Stepper module can handle up to 8 motors, each motor needs 2 GPIO, for control the step and direction signals.
+Stepper module can handle up to 8 motors, each motor needs 2 GPIO, to control the step and direction signals.
 
 # Key concepts
 
@@ -68,7 +68,7 @@ Movement is specified by:
 * speed (optional): a decimal number that indicates the speed of the movement.
 * accel (optional): a decimal number that indicates the acceleration of the movement.
 
-Returns: noting, or an exception.
+Returns: nothing, or an exception.
 
 ```lua
 -- Attach 2 steppers, using the default configuration
@@ -90,17 +90,17 @@ s2:move(5)
 
 Start the movement for a group of steppers defined by the move function. This function blocks until the movement is done.
 
-Arguments: noting
+Arguments: nothing
 
-Returns: noting, or an exception.
+Returns: nothing, or an exception.
 
 ## stepper.start(table)
 
 Start the movement for a group of steppers defined by the move function. This function blocks until the movement is done. 
 
-Arguments: noting
+Arguments: nothing
 
-Returns: noting, or an exception.
+Returns: nothing, or an exception.
 
 ```lua
 -- Attach 2 steppers, using the default configuration
@@ -120,6 +120,14 @@ s2:move(5)
 -- Start the movement
 stepper.start(s1, s2)
 ```
+
+## stepper.stop()
+
+Stop all the steppers that are moving.
+
+Arguments: nothing
+
+Returns: nothing, or an exception.
 
 # Full example
 
