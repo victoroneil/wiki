@@ -88,7 +88,15 @@ s2:move(5)
 
 ## stepper.start(instance1, [instance2, instance3, ...])
 
-Start the movement for a group of stepper defined by the move function. This function blocks until the movement is done.
+Start the movement for a group of steppers defined by the move function. This function blocks until the movement is done.
+
+Arguments: noting
+
+Returns: noting, or an exception.
+
+## stepper.start(table)
+
+Start the movement for a group of steppers defined by the move function. This function blocks until the movement is done. 
 
 Arguments: noting
 
